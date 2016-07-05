@@ -1,4 +1,4 @@
-<h1>1、LDChained<span style="font-size: 12px;">(链式编程思想下的链式设置框架属性)</span></h1>
+<h1>1、LDChained<span style="font-size: 12px;">(链式编程思想下的链式设置控件属性)</span></h1>
 <h2><span style="font-size: 12px;">1.1 、代码演示</span></h2>
 <div class="cnblogs_code">
 <pre>    UILabel *label = [UILabel <span style="color: #0000ff;">new</span><span style="color: #000000;">];
