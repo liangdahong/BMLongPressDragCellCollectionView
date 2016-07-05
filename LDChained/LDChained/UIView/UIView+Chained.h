@@ -45,6 +45,9 @@ kPropertyViewObject(UIView, UIColor, backgroundColor) UI_APPEARANCE_SELECTOR;
 kPropertyViewObject(UIView, UIView, maskView)NS_AVAILABLE_IOS(8_0);
 kPropertyViewObject(UIView, UIColor, tintColor)  NS_AVAILABLE_IOS(7_0);
 
+#pragma mark - 辅助方法
+
+- (instancetype)_;
 - (instancetype)with;
 - (instancetype)and;
 @end
