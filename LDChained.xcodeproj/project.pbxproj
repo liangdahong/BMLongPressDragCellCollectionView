@@ -15,10 +15,6 @@
 		63564D851D2AA7DC00AA756C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63564D831D2AA7DC00AA756C /* LaunchScreen.storyboard */; };
 		63564D901D2AA7DD00AA756C /* LDChainedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564D8F1D2AA7DD00AA756C /* LDChainedTests.m */; };
 		63564D9B1D2AA7DD00AA756C /* LDChainedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564D9A1D2AA7DD00AA756C /* LDChainedUITests.m */; };
-		63564DCE1D2AA84B00AA756C /* LDCollocationLabelMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DAA1D2AA84B00AA756C /* LDCollocationLabelMaker.m */; };
-		63564DCF1D2AA84B00AA756C /* LDCollocationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DAC1D2AA84B00AA756C /* LDCollocationMaker.m */; };
-		63564DD01D2AA84B00AA756C /* UILabel+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DAE1D2AA84B00AA756C /* UILabel+Chained.m */; };
-		63564DD11D2AA84B00AA756C /* UIView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DB01D2AA84B00AA756C /* UIView+Chained.m */; };
 		63564DD21D2AA84B00AA756C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 63564DB21D2AA84B00AA756C /* LICENSE */; };
 		63564DD31D2AA84B00AA756C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DB51D2AA84B00AA756C /* MASCompositeConstraint.m */; };
 		63564DD41D2AA84B00AA756C /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DB81D2AA84B00AA756C /* MASConstraint.m */; };
@@ -31,6 +27,13 @@
 		63564DDB1D2AA84B00AA756C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DC91D2AA84B00AA756C /* View+MASAdditions.m */; };
 		63564DDC1D2AA84B00AA756C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63564DCC1D2AA84B00AA756C /* ViewController+MASAdditions.m */; };
 		63564DDD1D2AA84B00AA756C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 63564DCD1D2AA84B00AA756C /* README.md */; };
+		ED5551AE1D2B868300EDFECB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5551AD1D2B868300EDFECB /* UIKit.framework */; };
+		ED5551D01D2B8B1D00EDFECB /* UIButton+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551C01D2B8B1D00EDFECB /* UIButton+Chained.m */; };
+		ED5551D11D2B8B1D00EDFECB /* UIImageView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551C31D2B8B1D00EDFECB /* UIImageView+Chained.m */; };
+		ED5551D21D2B8B1D00EDFECB /* UILabel+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551C61D2B8B1D00EDFECB /* UILabel+Chained.m */; };
+		ED5551D31D2B8B1D00EDFECB /* UITableView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551C91D2B8B1D00EDFECB /* UITableView+Chained.m */; };
+		ED5551D41D2B8B1D00EDFECB /* UITextField+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551CC1D2B8B1D00EDFECB /* UITextField+Chained.m */; };
+		ED5551D51D2B8B1D00EDFECB /* UIView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,14 +70,6 @@
 		63564D961D2AA7DD00AA756C /* LDChainedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDChainedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63564D9A1D2AA7DD00AA756C /* LDChainedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDChainedUITests.m; sourceTree = "<group>"; };
 		63564D9C1D2AA7DD00AA756C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63564DA91D2AA84B00AA756C /* LDCollocationLabelMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCollocationLabelMaker.h; sourceTree = "<group>"; };
-		63564DAA1D2AA84B00AA756C /* LDCollocationLabelMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCollocationLabelMaker.m; sourceTree = "<group>"; };
-		63564DAB1D2AA84B00AA756C /* LDCollocationMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDCollocationMaker.h; sourceTree = "<group>"; };
-		63564DAC1D2AA84B00AA756C /* LDCollocationMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDCollocationMaker.m; sourceTree = "<group>"; };
-		63564DAD1D2AA84B00AA756C /* UILabel+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Chained.h"; sourceTree = "<group>"; };
-		63564DAE1D2AA84B00AA756C /* UILabel+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Chained.m"; sourceTree = "<group>"; };
-		63564DAF1D2AA84B00AA756C /* UIView+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chained.h"; sourceTree = "<group>"; };
-		63564DB01D2AA84B00AA756C /* UIView+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chained.m"; sourceTree = "<group>"; };
 		63564DB21D2AA84B00AA756C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		63564DB41D2AA84B00AA756C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		63564DB51D2AA84B00AA756C /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -102,6 +97,21 @@
 		63564DCB1D2AA84B00AA756C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		63564DCC1D2AA84B00AA756C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		63564DCD1D2AA84B00AA756C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ED5551AD1D2B868300EDFECB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ED5551BC1D2B8B1D00EDFECB /* LDChained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDChained.h; sourceTree = "<group>"; };
+		ED5551BD1D2B8B1D00EDFECB /* LDDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDefinition.h; sourceTree = "<group>"; };
+		ED5551BF1D2B8B1D00EDFECB /* UIButton+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Chained.h"; sourceTree = "<group>"; };
+		ED5551C01D2B8B1D00EDFECB /* UIButton+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Chained.m"; sourceTree = "<group>"; };
+		ED5551C21D2B8B1D00EDFECB /* UIImageView+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Chained.h"; sourceTree = "<group>"; };
+		ED5551C31D2B8B1D00EDFECB /* UIImageView+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Chained.m"; sourceTree = "<group>"; };
+		ED5551C51D2B8B1D00EDFECB /* UILabel+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Chained.h"; sourceTree = "<group>"; };
+		ED5551C61D2B8B1D00EDFECB /* UILabel+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Chained.m"; sourceTree = "<group>"; };
+		ED5551C81D2B8B1D00EDFECB /* UITableView+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Chained.h"; sourceTree = "<group>"; };
+		ED5551C91D2B8B1D00EDFECB /* UITableView+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Chained.m"; sourceTree = "<group>"; };
+		ED5551CB1D2B8B1D00EDFECB /* UITextField+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Chained.h"; sourceTree = "<group>"; };
+		ED5551CC1D2B8B1D00EDFECB /* UITextField+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Chained.m"; sourceTree = "<group>"; };
+		ED5551CE1D2B8B1D00EDFECB /* UIView+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chained.h"; sourceTree = "<group>"; };
+		ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chained.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5551AE1D2B868300EDFECB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +143,7 @@
 		63564D691D2AA7DC00AA756C = {
 			isa = PBXGroup;
 			children = (
+				ED5551AD1D2B868300EDFECB /* UIKit.framework */,
 				63564D741D2AA7DC00AA756C /* LDChained */,
 				63564D8E1D2AA7DD00AA756C /* LDChainedTests */,
 				63564D991D2AA7DD00AA756C /* LDChainedUITests */,
@@ -196,14 +208,13 @@
 		63564DA81D2AA84B00AA756C /* LDChained */ = {
 			isa = PBXGroup;
 			children = (
-				63564DA91D2AA84B00AA756C /* LDCollocationLabelMaker.h */,
-				63564DAA1D2AA84B00AA756C /* LDCollocationLabelMaker.m */,
-				63564DAB1D2AA84B00AA756C /* LDCollocationMaker.h */,
-				63564DAC1D2AA84B00AA756C /* LDCollocationMaker.m */,
-				63564DAD1D2AA84B00AA756C /* UILabel+Chained.h */,
-				63564DAE1D2AA84B00AA756C /* UILabel+Chained.m */,
-				63564DAF1D2AA84B00AA756C /* UIView+Chained.h */,
-				63564DB01D2AA84B00AA756C /* UIView+Chained.m */,
+				ED5551BB1D2B8B1D00EDFECB /* Header */,
+				ED5551CD1D2B8B1D00EDFECB /* UIView */,
+				ED5551C41D2B8B1D00EDFECB /* UILabel */,
+				ED5551BE1D2B8B1D00EDFECB /* UIButton */,
+				ED5551C11D2B8B1D00EDFECB /* UIImageView */,
+				ED5551C71D2B8B1D00EDFECB /* UITableView */,
+				ED5551CA1D2B8B1D00EDFECB /* UITextField */,
 			);
 			path = LDChained;
 			sourceTree = "<group>";
@@ -248,6 +259,69 @@
 				63564DCC1D2AA84B00AA756C /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		ED5551BB1D2B8B1D00EDFECB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551BC1D2B8B1D00EDFECB /* LDChained.h */,
+				ED5551BD1D2B8B1D00EDFECB /* LDDefinition.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		ED5551BE1D2B8B1D00EDFECB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551BF1D2B8B1D00EDFECB /* UIButton+Chained.h */,
+				ED5551C01D2B8B1D00EDFECB /* UIButton+Chained.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		ED5551C11D2B8B1D00EDFECB /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551C21D2B8B1D00EDFECB /* UIImageView+Chained.h */,
+				ED5551C31D2B8B1D00EDFECB /* UIImageView+Chained.m */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		ED5551C41D2B8B1D00EDFECB /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551C51D2B8B1D00EDFECB /* UILabel+Chained.h */,
+				ED5551C61D2B8B1D00EDFECB /* UILabel+Chained.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		ED5551C71D2B8B1D00EDFECB /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551C81D2B8B1D00EDFECB /* UITableView+Chained.h */,
+				ED5551C91D2B8B1D00EDFECB /* UITableView+Chained.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		ED5551CA1D2B8B1D00EDFECB /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551CB1D2B8B1D00EDFECB /* UITextField+Chained.h */,
+				ED5551CC1D2B8B1D00EDFECB /* UITextField+Chained.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		ED5551CD1D2B8B1D00EDFECB /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				ED5551CE1D2B8B1D00EDFECB /* UIView+Chained.h */,
+				ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,12 +455,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5551D01D2B8B1D00EDFECB /* UIButton+Chained.m in Sources */,
+				ED5551D41D2B8B1D00EDFECB /* UITextField+Chained.m in Sources */,
 				63564DD91D2AA84B00AA756C /* NSArray+MASAdditions.m in Sources */,
 				63564DD81D2AA84B00AA756C /* MASViewConstraint.m in Sources */,
-				63564DCF1D2AA84B00AA756C /* LDCollocationMaker.m in Sources */,
+				ED5551D11D2B8B1D00EDFECB /* UIImageView+Chained.m in Sources */,
+				ED5551D21D2B8B1D00EDFECB /* UILabel+Chained.m in Sources */,
 				63564DD51D2AA84B00AA756C /* MASConstraintMaker.m in Sources */,
+				ED5551D31D2B8B1D00EDFECB /* UITableView+Chained.m in Sources */,
 				63564DDB1D2AA84B00AA756C /* View+MASAdditions.m in Sources */,
-				63564DD11D2AA84B00AA756C /* UIView+Chained.m in Sources */,
 				63564DDD1D2AA84B00AA756C /* README.md in Sources */,
 				63564DD41D2AA84B00AA756C /* MASConstraint.m in Sources */,
 				63564D7D1D2AA7DC00AA756C /* ViewController.m in Sources */,
@@ -395,10 +472,9 @@
 				63564D7A1D2AA7DC00AA756C /* AppDelegate.m in Sources */,
 				63564DD31D2AA84B00AA756C /* MASCompositeConstraint.m in Sources */,
 				63564DD61D2AA84B00AA756C /* MASLayoutConstraint.m in Sources */,
-				63564DD01D2AA84B00AA756C /* UILabel+Chained.m in Sources */,
 				63564D771D2AA7DC00AA756C /* main.m in Sources */,
 				63564DDC1D2AA84B00AA756C /* ViewController+MASAdditions.m in Sources */,
-				63564DCE1D2AA84B00AA756C /* LDCollocationLabelMaker.m in Sources */,
+				ED5551D51D2B8B1D00EDFECB /* UIView+Chained.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +700,7 @@
 				63564DA11D2AA7DD00AA756C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63564DA21D2AA7DD00AA756C /* Build configuration list for PBXNativeTarget "LDChainedTests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +709,7 @@
 				63564DA41D2AA7DD00AA756C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63564DA51D2AA7DD00AA756C /* Build configuration list for PBXNativeTarget "LDChainedUITests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +718,7 @@
 				63564DA71D2AA7DD00AA756C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

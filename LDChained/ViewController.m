@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "Masonry.h"
-#import "UIView+Chained.h"
-#import "UILabel+Chained.h"
+#import "LDChained.h"
 
 @interface ViewController ()
 
@@ -19,41 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIView *view = [UIView new];
-    [view ld_makeCollocation:^(LDCollocationMaker *make) {
-        make.frameBlock(CGRectMake(0, 0, 100, 100)).and.with.and.tagBlock(1).backgroundColorBlock([UIColor orangeColor]).centerBlock(CGPointMake(0, 0));
-    }];
-    [self.view addSubview:view];
-    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_offset(0);
-    }];
-    
-    
-    [view ld_makeCollocation:^(LDCollocationMaker *make) {
-        
-        make.frameBlock(CGRectMake(0, 0, 100, 100)).and.with.and.tagBlock(1).backgroundColorBlock([UIColor redColor]).centerBlock(CGPointMake(0, 0));
-    }];
-    
+
     UILabel *label = [UILabel new];
-    [label ld_makeCollocationLabel:^(LDCollocationLabelMaker *make) {
-        make
-        .textBlock(@"123")
-        .textColorBlock([UIColor redColor])
-        .textAlignmentBlock(NSTextAlignmentCenter)
-        .shadowColorBlock([UIColor blueColor])
-        .backgroundColorBlock([UIColor orangeColor]);
-    }];
-    
-    
-    [label ld_makeCollocationLabel:^(LDCollocationLabelMaker *make) {
-        make.textAlignmentBlock(2);
-    }];
     [self.view addSubview:label];
-    [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_offset(100).and.left.mas_offset(100);
-        make.size.mas_offset(CGSizeMake(100, 100));
-    }];
+
+    // 这样是可以的.
+    label.ld_text(@"123").ld_textAlignment(1).ld_textColor([UIColor orangeColor]).ld_frame(CGRectMake(100, 100, 100, 20)).ld_backgroundColor([UIColor grayColor]);
+
+    //  如果先调 view 的方法就没办法在调label的方法
+    //  {{{{{{{ 因为每一个点语法返回他自己 使用先调view时返回view 类型 就不可以调labl 的方法了 想用什么方法处理一下
+    label.ld_frame(CGRectMake(100, 100, 100, 20)).ld_backgroundColor([UIColor grayColor]);
+    label.ld_text(@"123").ld_textAlignment(1).ld_textColor([UIColor orangeColor]);
 }
 
 @end
