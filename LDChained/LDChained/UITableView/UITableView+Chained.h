@@ -18,26 +18,20 @@ kPropertyView(UITableView, CGFloat, estimatedRowHeight) NS_AVAILABLE_IOS(7_0);
 kPropertyView(UITableView, CGFloat, estimatedSectionHeaderHeight) NS_AVAILABLE_IOS(7_0);
 kPropertyView(UITableView, CGFloat, estimatedSectionFooterHeight) NS_AVAILABLE_IOS(7_0);
 kPropertyView(UITableView, UIEdgeInsets, separatorInset);
-
 kPropertyView(UITableView, BOOL, editing);
 kPropertyView(UITableView, BOOL, allowsSelection);
 kPropertyView(UITableView, BOOL, allowsSelectionDuringEditing);
 kPropertyView(UITableView, BOOL, allowsMultipleSelection);
 kPropertyView(UITableView, BOOL, allowsMultipleSelectionDuringEditing);
-
 kPropertyView(UITableView, NSInteger, sectionIndexMinimumDisplayRowCount);
-
-
-kPropertyViewObject(UITableView, UIView, backgroundView);
-
-kPropertyViewObject(UITableView, UIColor, sectionIndexColor);
-kPropertyViewObject(UITableView, UIColor, sectionIndexBackgroundColor);
-kPropertyViewObject(UITableView, UIColor, sectionIndexTrackingBackgroundColor);
-
 kPropertyView(UITableView, UITableViewCellSeparatorStyle, separatorStyle);
 kPropertyView(UITableView, BOOL, remembersLastFocusedIndexPath);
 kPropertyView(UITableView, BOOL, cellLayoutMarginsFollowReadableWidth);
 
+kPropertyViewObject(UITableView, UIView, backgroundView);
+kPropertyViewObject(UITableView, UIColor, sectionIndexColor);
+kPropertyViewObject(UITableView, UIColor, sectionIndexBackgroundColor);
+kPropertyViewObject(UITableView, UIColor, sectionIndexTrackingBackgroundColor);
 kPropertyViewObject(UITableView, UIColor, separatorColor);
 kPropertyViewObject(UITableView, UIVisualEffect, separatorEffect) NS_AVAILABLE_IOS(8_0) UI_APPEARANCE_SELECTOR __TVOS_PROHIBITED;
 kPropertyViewObject(UITableView, UIView, tableHeaderView);

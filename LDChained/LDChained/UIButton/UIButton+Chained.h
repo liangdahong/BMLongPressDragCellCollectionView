@@ -20,6 +20,7 @@ kPropertyView(UIButton, BOOL, adjustsImageWhenDisabled);
 kPropertyView(UIButton, BOOL, showsTouchWhenHighlighted);
 kPropertyView(UIButton, NSLineBreakMode, lineBreakMode) NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
 kPropertyView(UIButton, CGSize, titleShadowOffset) NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
+
 kPropertyViewObject(UIButton, UIColor, tintColor);
 kPropertyViewObject(UIButton, UIFont, font) NS_DEPRECATED_IOS(2_0, 3_0) __TVOS_PROHIBITED;
 

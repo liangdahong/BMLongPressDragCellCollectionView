@@ -19,6 +19,7 @@ kImplementView(UIButton, BOOL, adjustsImageWhenDisabled);
 kImplementView(UIButton, BOOL, showsTouchWhenHighlighted);
 kImplementView(UIButton, NSLineBreakMode, lineBreakMode);
 kImplementView(UIButton, CGSize, titleShadowOffset);
+
 kImplementViewObject(UIButton, UIColor, tintColor);
 kImplementViewObject(UIButton, UIFont, font);
 

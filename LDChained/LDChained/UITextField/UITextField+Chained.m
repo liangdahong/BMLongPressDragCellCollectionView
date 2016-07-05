@@ -8,7 +8,6 @@
 
 #import "UITextField+Chained.h"
 
-
 @implementation UITextField (Chained)
 
 kImplementView(UITextField, NSTextAlignment, textAlignment);

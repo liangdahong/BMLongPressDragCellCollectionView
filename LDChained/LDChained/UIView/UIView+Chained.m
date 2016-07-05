@@ -44,6 +44,12 @@ kImplementViewObject(UIView, UIColor, backgroundColor);
 kImplementViewObject(UIView, UIView, maskView);
 kImplementViewObject(UIView, UIColor, tintColor);
 
-- (instancetype)with {return self;}
-- (instancetype)and  {return self;}
+- (instancetype)with {
+    
+    return self;
+}
+
+- (instancetype)and  {
+    return self;
+}
 @end

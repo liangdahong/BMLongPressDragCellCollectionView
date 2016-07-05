@@ -11,13 +11,6 @@
 
 @interface UILabel (Chained)
 
-kPropertyViewObject(UILabel, NSString, text);
-kPropertyViewObject(UILabel, UIFont,   font);
-kPropertyViewObject(UILabel, UIColor,  textColor);
-kPropertyViewObject(UILabel, UIColor,  shadowColor);
-kPropertyViewObject(UILabel, NSAttributedString, attributedText);
-kPropertyViewObject(UILabel, UIColor, highlightedTextColor);
-
 kPropertyView(UILabel, CGSize, shadowOffset);
 kPropertyView(UILabel, NSTextAlignment, textAlignment);
 kPropertyView(UILabel, NSLineBreakMode, lineBreakMode);
@@ -32,5 +25,12 @@ kPropertyView(UILabel, BOOL, allowsDefaultTighteningForTruncation);
 kPropertyView(UILabel, CGFloat, preferredMaxLayoutWidth);
 kPropertyView(UILabel, CGFloat, minimumFontSize)  NS_DEPRECATED_IOS(2_0, 6_0) __TVOS_PROHIBITED;;
 kPropertyView(UILabel, BOOL, adjustsLetterSpacingToFitWidth) NS_DEPRECATED_IOS(6_0,7_0) __TVOS_PROHIBITED;
+
+kPropertyViewObject(UILabel, NSString, text);
+kPropertyViewObject(UILabel, UIFont,   font);
+kPropertyViewObject(UILabel, UIColor,  textColor);
+kPropertyViewObject(UILabel, UIColor,  shadowColor);
+kPropertyViewObject(UILabel, NSAttributedString, attributedText);
+kPropertyViewObject(UILabel, UIColor, highlightedTextColor);
 
 @end

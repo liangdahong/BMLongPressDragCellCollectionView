@@ -10,13 +10,6 @@
 
 @implementation UILabel (Chained)
 
-kImplementViewObject(UILabel, NSString, text);
-kImplementViewObject(UILabel, UIFont,   font);
-kImplementViewObject(UILabel, UIColor,  textColor);
-kImplementViewObject(UILabel, UIColor,  shadowColor);
-kImplementViewObject(UILabel, NSAttributedString, attributedText);
-kImplementViewObject(UILabel, UIColor, highlightedTextColor);
-
 kImplementView(UILabel, CGSize, shadowOffset);
 kImplementView(UILabel, NSTextAlignment, textAlignment);
 kImplementView(UILabel, NSLineBreakMode, lineBreakMode);
@@ -32,6 +25,12 @@ kImplementView(UILabel, CGFloat, preferredMaxLayoutWidth);
 kImplementView(UILabel, CGFloat, minimumFontSize);
 kImplementView(UILabel, BOOL, adjustsLetterSpacingToFitWidth);
 
+kImplementViewObject(UILabel, NSString, text);
+kImplementViewObject(UILabel, UIFont,   font);
+kImplementViewObject(UILabel, UIColor,  textColor);
+kImplementViewObject(UILabel, UIColor,  shadowColor);
+kImplementViewObject(UILabel, NSAttributedString, attributedText);
+kImplementViewObject(UILabel, UIColor, highlightedTextColor);
 @end
 
 

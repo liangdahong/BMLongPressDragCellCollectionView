@@ -6,6 +6,12 @@
 //  Copyright © 2016年 LiangDahong. All rights reserved.
 //
 
+/*!
+ *  常用控件的常用属性的链式编程属性设置 
+ *  有任何问题可以 asiosldh@163.com || QQ 2244784466 || https://github.com/asiosldh
+ *  求 star ❤️
+ */
+
 #ifndef ______LDChained______
 #define ______LDChained______
 
