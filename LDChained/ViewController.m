@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Masonry.h"
 #import "LDChained.h"
 
 @interface ViewController ()
@@ -21,14 +20,19 @@
 
     UILabel *label = [UILabel new];
     [self.view addSubview:label];
-
+#if 0
+    label.text = @"123";
+    label.textAlignment = 1;
+    label.textColor = [UIColor orangeColor];
+    label.font = [UIFont systemFontOfSize:15];
+    label.frame = CGRectMake(100, 100, 100, 20);
+    label.backgroundColor = [UIColor grayColor];
+#else
     // 这样是可以的.
-    label.ld_text(@"123").ld_textAlignment(1).ld_textColor([UIColor orangeColor]).ld_frame(CGRectMake(100, 100, 100, 20)).ld_backgroundColor([UIColor grayColor]);
+    label.ld_text(@"123").ld_textAlignment(1).ld_textColor([UIColor orangeColor]).ld_font([UIFont systemFontOfSize:15]).ld_frame(CGRectMake(100, 100, 100, 20)).ld_backgroundColor([UIColor grayColor]);
+#endif
 
-    //  如果先调 view 的方法就没办法在调label的方法
-    //  {{{{{{{ 因为每一个点语法返回他自己 使用先调view时返回view 类型 就不可以调labl 的方法了 想用什么方法处理一下
-    label.ld_frame(CGRectMake(100, 100, 100, 20)).ld_backgroundColor([UIColor grayColor]);
-    label.ld_text(@"123").ld_textAlignment(1).ld_textColor([UIColor orangeColor]);
+
 }
 
 @end
