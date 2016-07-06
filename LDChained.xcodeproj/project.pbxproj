@@ -21,6 +21,8 @@
 		ED5551D31D2B8B1D00EDFECB /* UITableView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551C91D2B8B1D00EDFECB /* UITableView+Chained.m */; };
 		ED5551D41D2B8B1D00EDFECB /* UITextField+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551CC1D2B8B1D00EDFECB /* UITextField+Chained.m */; };
 		ED5551D51D2B8B1D00EDFECB /* UIView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */; };
+		EDC7048D1D2C98A900421126 /* UISwitch+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC704891D2C98A900421126 /* UISwitch+Chained.m */; };
+		EDC7048E1D2C98A900421126 /* UITableViewCell+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC7048C1D2C98A900421126 /* UITableViewCell+Chained.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		ED5551CC1D2B8B1D00EDFECB /* UITextField+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Chained.m"; sourceTree = "<group>"; };
 		ED5551CE1D2B8B1D00EDFECB /* UIView+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chained.h"; sourceTree = "<group>"; };
 		ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chained.m"; sourceTree = "<group>"; };
+		EDC704881D2C98A900421126 /* UISwitch+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+Chained.h"; sourceTree = "<group>"; };
+		EDC704891D2C98A900421126 /* UISwitch+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Chained.m"; sourceTree = "<group>"; };
+		EDC7048B1D2C98A900421126 /* UITableViewCell+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Chained.h"; sourceTree = "<group>"; };
+		EDC7048C1D2C98A900421126 /* UITableViewCell+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Chained.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				ED5551BB1D2B8B1D00EDFECB /* Header */,
+				EDC704871D2C98A900421126 /* UISwitch */,
+				EDC7048A1D2C98A900421126 /* UITableViewCell */,
 				ED5551CD1D2B8B1D00EDFECB /* UIView */,
 				ED5551C41D2B8B1D00EDFECB /* UILabel */,
 				ED5551BE1D2B8B1D00EDFECB /* UIButton */,
@@ -236,6 +244,24 @@
 				ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		EDC704871D2C98A900421126 /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				EDC704881D2C98A900421126 /* UISwitch+Chained.h */,
+				EDC704891D2C98A900421126 /* UISwitch+Chained.m */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		EDC7048A1D2C98A900421126 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EDC7048B1D2C98A900421126 /* UITableViewCell+Chained.h */,
+				EDC7048C1D2C98A900421126 /* UITableViewCell+Chained.m */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC7048E1D2C98A900421126 /* UITableViewCell+Chained.m in Sources */,
 				ED5551D01D2B8B1D00EDFECB /* UIButton+Chained.m in Sources */,
 				ED5551D41D2B8B1D00EDFECB /* UITextField+Chained.m in Sources */,
 				ED5551D11D2B8B1D00EDFECB /* UIImageView+Chained.m in Sources */,
@@ -376,6 +403,7 @@
 				63564D7D1D2AA7DC00AA756C /* ViewController.m in Sources */,
 				63564D7A1D2AA7DC00AA756C /* AppDelegate.m in Sources */,
 				63564D771D2AA7DC00AA756C /* main.m in Sources */,
+				EDC7048D1D2C98A900421126 /* UISwitch+Chained.m in Sources */,
 				ED5551D51D2B8B1D00EDFECB /* UIView+Chained.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

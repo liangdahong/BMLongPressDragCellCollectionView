@@ -21,5 +21,7 @@
 #import "UIImageView+Chained.h"
 #import "UITableView+Chained.h"
 #import "UITextField+Chained.h"
+#import "UISwitch+Chained.h"
+#import "UITableViewCell+Chained.h"
 
 #endif
