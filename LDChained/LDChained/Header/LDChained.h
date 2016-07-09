@@ -23,5 +23,6 @@
 #import "UITextField+Chained.h"
 #import "UISwitch+Chained.h"
 #import "UITableViewCell+Chained.h"
+#import "UIScrollView+Chained.h"
 
 #endif

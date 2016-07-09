@@ -27,7 +27,8 @@
     wself(self)\
     return ^viewType * (type *name) { \
         sself(self)\
-        self.name = name; return self;\
+        self.name = name;\
+        return self;\
     };\
 }\
 
@@ -37,7 +38,8 @@
         wself(self)\
     return ^viewType * (type name) { \
         sself(self)\
-        self.name = name; return self;\
+        self.name = name; \
+        return self; \
     }; \
 }
 

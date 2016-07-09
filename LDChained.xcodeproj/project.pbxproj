@@ -23,6 +23,8 @@
 		ED5551D51D2B8B1D00EDFECB /* UIView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5551CF1D2B8B1D00EDFECB /* UIView+Chained.m */; };
 		EDC7048D1D2C98A900421126 /* UISwitch+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC704891D2C98A900421126 /* UISwitch+Chained.m */; };
 		EDC7048E1D2C98A900421126 /* UITableViewCell+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC7048C1D2C98A900421126 /* UITableViewCell+Chained.m */; };
+		EDE942191D30F45E0022D4C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE942181D30F45E0022D4C1 /* UIKit.framework */; };
+		EDE942201D30F5110022D4C1 /* UIScrollView+Chained.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE9421F1D30F5110022D4C1 /* UIScrollView+Chained.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		EDC704891D2C98A900421126 /* UISwitch+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Chained.m"; sourceTree = "<group>"; };
 		EDC7048B1D2C98A900421126 /* UITableViewCell+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Chained.h"; sourceTree = "<group>"; };
 		EDC7048C1D2C98A900421126 /* UITableViewCell+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Chained.m"; sourceTree = "<group>"; };
+		EDE942181D30F45E0022D4C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDE9421E1D30F5110022D4C1 /* UIScrollView+Chained.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Chained.h"; sourceTree = "<group>"; };
+		EDE9421F1D30F5110022D4C1 /* UIScrollView+Chained.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Chained.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE942191D30F45E0022D4C1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,7 @@
 		63564D691D2AA7DC00AA756C = {
 			isa = PBXGroup;
 			children = (
+				EDE942181D30F45E0022D4C1 /* UIKit.framework */,
 				63564D741D2AA7DC00AA756C /* LDChained */,
 				63564D8E1D2AA7DD00AA756C /* LDChainedTests */,
 				63564D991D2AA7DD00AA756C /* LDChainedUITests */,
@@ -171,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				ED5551BB1D2B8B1D00EDFECB /* Header */,
+				EDE9421A1D30F4DB0022D4C1 /* UIScrollView */,
 				EDC704871D2C98A900421126 /* UISwitch */,
 				EDC7048A1D2C98A900421126 /* UITableViewCell */,
 				ED5551CD1D2B8B1D00EDFECB /* UIView */,
@@ -262,6 +270,15 @@
 				EDC7048C1D2C98A900421126 /* UITableViewCell+Chained.m */,
 			);
 			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		EDE9421A1D30F4DB0022D4C1 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EDE9421E1D30F5110022D4C1 /* UIScrollView+Chained.h */,
+				EDE9421F1D30F5110022D4C1 /* UIScrollView+Chained.m */,
+			);
+			path = UIScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +419,7 @@
 				ED5551D31D2B8B1D00EDFECB /* UITableView+Chained.m in Sources */,
 				63564D7D1D2AA7DC00AA756C /* ViewController.m in Sources */,
 				63564D7A1D2AA7DC00AA756C /* AppDelegate.m in Sources */,
+				EDE942201D30F5110022D4C1 /* UIScrollView+Chained.m in Sources */,
 				63564D771D2AA7DC00AA756C /* main.m in Sources */,
 				EDC7048D1D2C98A900421126 /* UISwitch+Chained.m in Sources */,
 				ED5551D51D2B8B1D00EDFECB /* UIView+Chained.m in Sources */,
