@@ -44,6 +44,77 @@ kImplementViewObject(UIView, UIColor, backgroundColor);
 kImplementViewObject(UIView, UIView, maskView);
 kImplementViewObject(UIView, UIColor, tintColor);
 
+- (UIView *(^)(CGFloat x))ld_x {
+    
+    wself(self)
+   return  ^ UIView * (CGFloat x) {
+       sself(self);
+       CGRect frame = self.frame;
+       frame.origin.x = x;
+       self.frame = frame;
+       return self;
+   };
+}
+
+- (UIView *(^)(CGFloat y))ld_y {
+    
+    wself(self)
+    return  ^ UIView * (CGFloat y) {
+        sself(self);
+        CGRect frame = self.frame;
+        frame.origin.y = y;
+        self.frame = frame;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGFloat width))ld_width {
+    
+    wself(self)
+    return  ^ UIView * (CGFloat width) {
+        sself(self);
+        CGRect frame = self.frame;
+        frame.size.width = width;
+        self.frame = frame;
+        return self;
+    };
+}
+- (UIView *(^)(CGFloat height))ld_height {
+    
+    wself(self)
+    return  ^ UIView * (CGFloat height) {
+        sself(self);
+        CGRect frame = self.frame;
+        frame.size.height = height;
+        self.frame = frame;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGPoint origin))ld_origin {
+    
+    wself(self)
+    return  ^ UIView * (CGPoint origin) {
+        sself(self);
+        CGRect frame = self.frame;
+        frame.origin = origin;
+        self.frame = frame;
+        return self;
+    };
+}
+
+- (UIView *(^)(CGSize size))ld_size {
+    
+    wself(self)
+    return  ^ UIView * (CGSize size) {
+        sself(self);
+        CGRect frame = self.frame;
+        frame.size = size;
+        self.frame = frame;
+        return self;
+    };
+}
+
 - (instancetype)_ {
     
     return self;
@@ -57,5 +128,10 @@ kImplementViewObject(UIView, UIColor, tintColor);
 - (instancetype)and  {
     
     return self;
+}
+
+- (instancetype)stop {
+    
+    return [[self class] new];
 }
 @end

@@ -45,9 +45,18 @@ kPropertyViewObject(UIView, UIColor, backgroundColor) UI_APPEARANCE_SELECTOR;
 kPropertyViewObject(UIView, UIView, maskView)NS_AVAILABLE_IOS(8_0);
 kPropertyViewObject(UIView, UIColor, tintColor)  NS_AVAILABLE_IOS(7_0);
 
+@property (copy, nonatomic, readonly, getter=ld_x) UIView * (^x_block)(CGFloat x);
+@property (copy, nonatomic, readonly, getter=ld_y) UIView * (^y_block)(CGFloat y);
+@property (copy, nonatomic, readonly, getter=ld_width)  UIView * (^width_block)(CGFloat width);
+@property (copy, nonatomic, readonly, getter=ld_height) UIView * (^height_block)(CGFloat height);
+@property (copy, nonatomic, readonly, getter=ld_origin) UIView * (^origin_block)(CGPoint origin);
+@property (copy, nonatomic, readonly, getter=ld_size)   UIView * (^size_block)(CGSize size);
+
 #pragma mark - 辅助方法
 
 - (instancetype)_;
 - (instancetype)with;
 - (instancetype)and;
+- (instancetype)stop;
+
 @end
