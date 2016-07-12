@@ -47,13 +47,13 @@ kImplementViewObject(UIView, UIColor, tintColor);
 - (UIView *(^)(CGFloat x))ld_x {
     
     wself(self)
-   return  ^ UIView * (CGFloat x) {
-       sself(self);
-       CGRect frame = self.frame;
-       frame.origin.x = x;
-       self.frame = frame;
-       return self;
-   };
+    return  ^ UIView * (CGFloat x) {
+        sself(self);
+        CGRect frame = self.frame;
+        frame.origin.x = x;
+        self.frame = frame;
+        return self;
+    };
 }
 
 - (UIView *(^)(CGFloat y))ld_y {
@@ -134,4 +134,10 @@ kImplementViewObject(UIView, UIColor, tintColor);
     
     return [[self class] new];
 }
+
+- (instancetype)end {
+    
+    return [[self class] new];
+}
+
 @end

@@ -58,5 +58,6 @@ kPropertyViewObject(UIView, UIColor, tintColor)  NS_AVAILABLE_IOS(7_0);
 - (instancetype)with;
 - (instancetype)and;
 - (instancetype)stop;
+- (instancetype)end
 
 @end
