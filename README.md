@@ -1,27 +1,33 @@
-# XWDragCellCollectionView
-封装的CollectionView的拖动重排的效果控件，先请看图：(吐槽:不知道为啥从xcode7开始，模拟器变得很卡很卡，所以截图的效果不好，大家可以在真机上测试，效果还是非常不错的)
-####图1：垂直滚动
+## 写在前面
 
-![drag1.gif](http://ww2.sinaimg.cn/mw690/5ededce5gw1ezoq84h05ig208m0gawwn.gif)
-####图2：水平滚动
+> 最近公司准备做一个类似支付宝`UICollectionViewCell`拖拽重排的功能，`UICollectionViewCell`的任意拖拽排列，支付宝最新的版本已去掉了任意拖拽功能，而只是对常用功能进行拖拽重排，没有出现超出屏幕的情况。个人感觉应该更好，毕竟太多功能去拖拽重排对用户来说是一个特别大的工作量，只需把常用功能提即可。相应的功能点还是在对应的分组里，至于我们的需求暂时不怎么清楚，使用还是研究下任意拖拽吧。
 
-![drag2.gif](http://ww1.sinaimg.cn/mw690/5ededce5gw1ezoq869c1ig208m0gahb3.gif)
-####图3：配合瀑布流
+## 效果图 
+### 效果1
+<img src="Resources/1.gif" width="40%">
 
-![drag5.gif](http://ww3.sinaimg.cn/mw690/5ededce5gw1ezoq8a18dzg208m0gab2a.gif)
+## 使用到的技术
+1. UICollectionView 的基本使用
+2. CADisplayLink 简单使用
+3. 屏幕快照
 
+## 思路分析
+### 需求分析
+> 以支付宝之前的功能来说，我们长按 `Cell` 时进入可拖拽模式，长按下的`Cell`放大同时根着手指移动，当移动的`Cell`中心点移动到另外的`Cell`时与之交换，当移到接近屏幕`UICollectionView`边缘时滚动`UICollectionView`使用其自动显示出其他的`Cell`。
 
-使用也非常简单，只需3步，步骤如下：
+### 技术分析
+1. 为`UICollectionView`增加长按手势
+2. 在`Cell` 上触发手势时，使用系统截图快照生成一个和`Cell`一样的`View`，同时把`Cell`隐藏
+3. 随着手指的移动，把屏幕快照`View` 随着手指
+4. 当中心点移动到其他的`Cell`时调用`UICollectionView`的相关方法使其交换
+5. 当移到接近屏幕`UICollectionView`边缘时使用`CADisplayLink`来处理`UICollectionView`的滚动
+6. 当结束手势时，将截图快照view移动到隐藏的cell同时删除截图快照view，把隐藏的`Cell`显示即可。
+7. 交换条件处理（交换临界点处理）
+8. 其实`iOS9` 以后系统已提供了相应方法，但是必须在`iOS9+`使用，所以暂未使用系统方法
 
-```
-1、继承于XWDragCellCollectionView；
+### 代码实现
+> 具体代码实现就不讲解了，可以查看demo代码。代码有完整注释，暂未封装，以后会封装下。
 
-2、实现必须实现的DataSouce代理方法：（在该方法中返回整个CollectionView的数据数组用于重排）
-    - (NSArray *)dataSourceArrayOfCollectionView:(XWDragCellCollectionView *)collectionView;
-    
-3、实现必须实现的一个Delegate代理方法：（在该方法中将重拍好的新数据源设为当前数据源）(例如 :_data = newDataArray)
-    - (void)dragCellCollectionView:(XWDragCellCollectionView *)collectionView newDataArrayAfterMove:(NSArray *)newDataArray;
-    
- ```
- 
-详细的使用可以查看代码中的demo，支持设置长按事件，是否开启边缘滑动，抖动、以及设置抖动等级，这些在h文件里面都有详细说明，有需要的可以尝试一下，并多多提意见，详细请浏览我的简书：[可拖拽重排的CollectionView](http://www.jianshu.com/p/8f0153ce17f9)
+1. [完整Demo](https://github.com/asiosldh/BMDragCellCollectionView)
+2. [blog讲解](http://idhong.com/2017/07/17/iOS-UICollectionView-Cell%E6%8B%96%E6%8B%BD%E9%87%8D%E6%8E%92%E7%9A%84%E5%AE%9E%E7%8E%B0/)
+
