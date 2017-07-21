@@ -1,36 +1,27 @@
-<h1>1、LDChained<span style="font-size: 12px;">(链式编程思想下的链式设置控件属性)</span></h1>
-<h2><span style="font-size: 12px;">1.1 、代码演示</span></h2>
-<p>&nbsp;</p>
-<div class="cnblogs_code">
-<pre>    UILabel *label = [UILabel <span style="color: #0000ff;">new</span><span style="color: #000000;">];
-    [self.view addSubview:label];
-    
-</span><span style="color: #0000ff;">#if</span> 0<span style="color: #000000;">
-    label.text </span>= <span style="color: #800000;">@"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span><span style="color: #000000;">;
-    label.textAlignment </span>= <span style="color: #800080;">1</span><span style="color: #000000;">;
-    label.textColor </span>=<span style="color: #000000;"> [UIColor orangeColor];
-    label.font </span>= [UIFont systemFontOfSize:<span style="color: #800080;">15</span><span style="color: #000000;">];
-    label.frame </span>= CGRectMake(<span style="color: #800080;">100</span>, <span style="color: #800080;">100</span>, <span style="color: #800080;">100</span>, <span style="color: #800080;">20</span><span style="color: #000000;">);
-    label.backgroundColor </span>=<span style="color: #000000;"> [UIColor grayColor];
-</span><span style="color: #0000ff;">#else</span>
-    <span style="color: #008000;">//</span><span style="color: #008000;"> 这样是可以的.</span>
-    label.ld_text(<span style="color: #800000;">@"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span>).ld_textAlignment(<span style="color: #800080;">1</span>).ld_textColor([UIColor orangeColor]).ld_font([UIFont systemFontOfSize:<span style="color: #800080;">15</span>]).ld_frame(CGRectMake(<span style="color: #800080;">100</span>, <span style="color: #800080;">100</span>, <span style="color: #800080;">100</span>, <span style="color: #800080;">20</span><span style="color: #000000;">)).ld_backgroundColor([UIColor grayColor]);
-</span><span style="color: #0000ff;">#endif</span><span style="color: #000000;">
-    
-    label._._._.ld_tag(</span><span style="color: #800080;">1</span><span style="color: #000000;">);
-    UIButton </span>*button = [UIButton <span style="color: #0000ff;">new</span><span style="color: #000000;">];
-    button.ld_title(</span><span style="color: #800000;">@"</span><span style="color: #800000;">1</span><span style="color: #800000;">"</span>,<span style="color: #800080;">1</span>).ld_titleShadowColor([UIColor redColor],<span style="color: #800080;">1</span>).ld_attributedTitle(nil,<span style="color: #800080;">1</span><span style="color: #000000;">);
-    
-    label.ld_x(</span><span style="color: #800080;">100</span><span style="color: #000000;">);
-    label.ld_y(</span><span style="color: #800080;">100</span><span style="color: #000000;">);
-    label.ld_origin(CGPointMake(</span><span style="color: #800080;">0</span>, <span style="color: #800080;">0</span><span style="color: #000000;">));
-    label.ld_size(CGSizeMake(</span><span style="color: #800080;">100</span>, <span style="color: #800080;">100</span><span style="color: #000000;">));
+# XWDragCellCollectionView
+封装的CollectionView的拖动重排的效果控件，先请看图：(吐槽:不知道为啥从xcode7开始，模拟器变得很卡很卡，所以截图的效果不好，大家可以在真机上测试，效果还是非常不错的)
+####图1：垂直滚动
 
-    label.ld_x(</span><span style="color: #800080;">100</span>).ld_width(<span style="color: #800080;">100</span>).ld_height(<span style="color: #800080;">100</span><span style="color: #000000;">);
-    label.ld_x(</span><span style="color: #800080;">100</span>).ld_y(<span style="color: #800080;">0</span>).ld_width(<span style="color: #800080;">100</span>).stop.ld_height(<span style="color: #800080;">100</span>);</pre>
-</div>
-<p>&nbsp;</p>
-<p>求❤️<a href="http://www.jianshu.com/users/8cd6042f01e8/latest_articles" target="_blank">简书地址😊</a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+![drag1.gif](http://ww2.sinaimg.cn/mw690/5ededce5gw1ezoq84h05ig208m0gawwn.gif)
+####图2：水平滚动
+
+![drag2.gif](http://ww1.sinaimg.cn/mw690/5ededce5gw1ezoq869c1ig208m0gahb3.gif)
+####图3：配合瀑布流
+
+![drag5.gif](http://ww3.sinaimg.cn/mw690/5ededce5gw1ezoq8a18dzg208m0gab2a.gif)
+
+
+使用也非常简单，只需3步，步骤如下：
+
+```
+1、继承于XWDragCellCollectionView；
+
+2、实现必须实现的DataSouce代理方法：（在该方法中返回整个CollectionView的数据数组用于重排）
+    - (NSArray *)dataSourceArrayOfCollectionView:(XWDragCellCollectionView *)collectionView;
+    
+3、实现必须实现的一个Delegate代理方法：（在该方法中将重拍好的新数据源设为当前数据源）(例如 :_data = newDataArray)
+    - (void)dragCellCollectionView:(XWDragCellCollectionView *)collectionView newDataArrayAfterMove:(NSArray *)newDataArray;
+    
+ ```
+ 
+详细的使用可以查看代码中的demo，支持设置长按事件，是否开启边缘滑动，抖动、以及设置抖动等级，这些在h文件里面都有详细说明，有需要的可以尝试一下，并多多提意见，详细请浏览我的简书：[可拖拽重排的CollectionView](http://www.jianshu.com/p/8f0153ce17f9)
