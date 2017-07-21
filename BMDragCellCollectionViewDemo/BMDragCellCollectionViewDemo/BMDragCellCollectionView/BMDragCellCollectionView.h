@@ -33,7 +33,7 @@
 @interface BMDragCellCollectionView : UICollectionView
 
 @property (nonatomic, weak) id<BMDragCellCollectionViewDelegate> delegate;
-@property (nonatomic, weak) id <BMDragCollectionViewDataSource> dataSource;
+@property (nonatomic, weak) id<BMDragCollectionViewDataSource> dataSource;
 @property (nonatomic, assign) NSTimeInterval minimumPressDuration;
 @property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
 

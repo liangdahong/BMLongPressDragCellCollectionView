@@ -48,7 +48,7 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 - (BMDragCellCollectionView *)collectionView{
     if (_collectionView == nil) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        CGFloat width = arc4random_uniform(100)+50;
+        CGFloat width = arc4random_uniform(50)+50;
         layout.itemSize = CGSizeMake(width, width);
         layout.headerReferenceSize = CGSizeMake(width, 50);
         _collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 20, WIDTH, HEIGHT - 20) collectionViewLayout:layout];

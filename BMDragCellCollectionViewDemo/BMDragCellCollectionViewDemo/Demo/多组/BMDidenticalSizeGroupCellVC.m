@@ -39,7 +39,7 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
             UIColor *color = [UIColor colorWithHue:arc4random_uniform(128)/255.0 + 0.5 saturation:arc4random_uniform(128)/255.0 + 0.5  brightness:arc4random_uniform(128)/255.0 + 0.5  alpha:1];
             [dataSource addObject:@{@"color" : color,
                                      @"title" : [NSString stringWithFormat:@"%d", i],
-                                     @"size" : [NSValue valueWithCGSize:CGSizeMake(arc4random_uniform(3) * 50 +50, arc4random_uniform(3) * 50 +50)]}];
+                                     @"size" : [NSValue valueWithCGSize:CGSizeMake(arc4random_uniform(2) * 50 +50, arc4random_uniform(3) * 50 +50)]}];
         }
         [_dataSource addObject:dataSource];
     }
