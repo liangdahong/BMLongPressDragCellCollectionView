@@ -4,6 +4,9 @@
 
 ## 效果图 
 ### 效果1
+<img src="Resources/2.gif" width="40%">
+
+### 效果1
 <img src="Resources/1.gif" width="40%">
 
 ## 使用到的技术

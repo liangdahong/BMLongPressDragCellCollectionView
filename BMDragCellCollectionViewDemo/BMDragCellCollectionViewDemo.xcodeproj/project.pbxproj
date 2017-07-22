@@ -14,13 +14,11 @@
 		31ADB0851F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ADB0841F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m */; };
 		31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B261F20F3D500A8670B /* AppDelegate.m */; };
 		31B00B341F20F3D500A8670B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B271F20F3D500A8670B /* main.m */; };
-		31B00B3D1F20F40500A8670B /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B3C1F20F40500A8670B /* BMDragCellCollectionView.m */; };
-		31B00B5F1F2104D400A8670B /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B591F2104D400A8670B /* BMDragCollectionViewCell.m */; };
-		31B00B601F2104D400A8670B /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B5A1F2104D400A8670B /* BMDragCollectionViewCell.xib */; };
-		324216331F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242162B1F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.m */; };
-		324216341F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3242162D1F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.m */; };
-		324216351F21DD45009DDA5F /* BMDidenticalSizeCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 324216301F21DD45009DDA5F /* BMDidenticalSizeCellVC.m */; };
-		324216361F21DD45009DDA5F /* BMIdenticalSizeCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 324216321F21DD45009DDA5F /* BMIdenticalSizeCellVC.m */; };
+		31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B631F22507C00A8670B /* BMDragCellCollectionView.m */; };
+		31B00B671F22524900A8670B /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B661F22524900A8670B /* BMDragCellCollectionViewVC.m */; };
+		31B00B6A1F2252C500A8670B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B691F2252C500A8670B /* ViewController.m */; };
+		31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */; };
+		31B00B6F1F233C5D00A8670B /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,19 +53,15 @@
 		31B00B251F20F3D500A8670B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31B00B261F20F3D500A8670B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		31B00B271F20F3D500A8670B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		31B00B3B1F20F40500A8670B /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
-		31B00B3C1F20F40500A8670B /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
-		31B00B581F2104D400A8670B /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
-		31B00B591F2104D400A8670B /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
-		31B00B5A1F2104D400A8670B /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
-		3242162A1F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDidenticalSizeGroupCellVC.h; sourceTree = "<group>"; };
-		3242162B1F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDidenticalSizeGroupCellVC.m; sourceTree = "<group>"; };
-		3242162C1F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIdenticalSizeGroupCellVC.h; sourceTree = "<group>"; };
-		3242162D1F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIdenticalSizeGroupCellVC.m; sourceTree = "<group>"; };
-		3242162F1F21DD45009DDA5F /* BMDidenticalSizeCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDidenticalSizeCellVC.h; sourceTree = "<group>"; };
-		324216301F21DD45009DDA5F /* BMDidenticalSizeCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDidenticalSizeCellVC.m; sourceTree = "<group>"; };
-		324216311F21DD45009DDA5F /* BMIdenticalSizeCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIdenticalSizeCellVC.h; sourceTree = "<group>"; };
-		324216321F21DD45009DDA5F /* BMIdenticalSizeCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIdenticalSizeCellVC.m; sourceTree = "<group>"; };
+		31B00B621F22507C00A8670B /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
+		31B00B631F22507C00A8670B /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
+		31B00B651F22524900A8670B /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
+		31B00B661F22524900A8670B /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
+		31B00B681F2252C500A8670B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		31B00B691F2252C500A8670B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31B00B6B1F233C5D00A8670B /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
+		31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
+		31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +112,7 @@
 		31ADB05E1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				31B00B3A1F20F40500A8670B /* BMDragCellCollectionView */,
+				31B00B611F22507C00A8670B /* BMDragCellCollectionView */,
 				31B00B241F20F3D500A8670B /* AppDelegate */,
 				31B00B2B1F20F3D500A8670B /* Demo */,
 				31ADB0681F1D04EB00FE7FA1 /* Main.storyboard */,
@@ -168,52 +162,25 @@
 		31B00B2B1F20F3D500A8670B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				324216291F21DD45009DDA5F /* MoreGroup */,
-				3242162E1F21DD45009DDA5F /* SingleGroup */,
-				31B00B571F2104D400A8670B /* cell */,
+				31B00B6B1F233C5D00A8670B /* BMDragCollectionViewCell.h */,
+				31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */,
+				31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */,
+				31B00B681F2252C500A8670B /* ViewController.h */,
+				31B00B691F2252C500A8670B /* ViewController.m */,
+				31B00B651F22524900A8670B /* BMDragCellCollectionViewVC.h */,
+				31B00B661F22524900A8670B /* BMDragCellCollectionViewVC.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		31B00B3A1F20F40500A8670B /* BMDragCellCollectionView */ = {
+		31B00B611F22507C00A8670B /* BMDragCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				31B00B3B1F20F40500A8670B /* BMDragCellCollectionView.h */,
-				31B00B3C1F20F40500A8670B /* BMDragCellCollectionView.m */,
+				31B00B621F22507C00A8670B /* BMDragCellCollectionView.h */,
+				31B00B631F22507C00A8670B /* BMDragCellCollectionView.m */,
 			);
-			path = BMDragCellCollectionView;
-			sourceTree = "<group>";
-		};
-		31B00B571F2104D400A8670B /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				31B00B581F2104D400A8670B /* BMDragCollectionViewCell.h */,
-				31B00B591F2104D400A8670B /* BMDragCollectionViewCell.m */,
-				31B00B5A1F2104D400A8670B /* BMDragCollectionViewCell.xib */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		324216291F21DD45009DDA5F /* MoreGroup */ = {
-			isa = PBXGroup;
-			children = (
-				3242162A1F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.h */,
-				3242162B1F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.m */,
-				3242162C1F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.h */,
-				3242162D1F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.m */,
-			);
-			path = MoreGroup;
-			sourceTree = "<group>";
-		};
-		3242162E1F21DD45009DDA5F /* SingleGroup */ = {
-			isa = PBXGroup;
-			children = (
-				3242162F1F21DD45009DDA5F /* BMDidenticalSizeCellVC.h */,
-				324216301F21DD45009DDA5F /* BMDidenticalSizeCellVC.m */,
-				324216311F21DD45009DDA5F /* BMIdenticalSizeCellVC.h */,
-				324216321F21DD45009DDA5F /* BMIdenticalSizeCellVC.m */,
-			);
-			path = SingleGroup;
+			name = BMDragCellCollectionView;
+			path = ../../BMDragCellCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B00B601F2104D400A8670B /* BMDragCollectionViewCell.xib in Resources */,
+				31B00B6F1F233C5D00A8670B /* BMDragCollectionViewCell.xib in Resources */,
 				31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */,
 				31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */,
 				31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */,
@@ -353,14 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B00B3D1F20F40500A8670B /* BMDragCellCollectionView.m in Sources */,
-				324216361F21DD45009DDA5F /* BMIdenticalSizeCellVC.m in Sources */,
+				31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */,
 				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
-				31B00B5F1F2104D400A8670B /* BMDragCollectionViewCell.m in Sources */,
-				324216331F21DD45009DDA5F /* BMDidenticalSizeGroupCellVC.m in Sources */,
-				324216341F21DD45009DDA5F /* BMIdenticalSizeGroupCellVC.m in Sources */,
+				31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */,
+				31B00B6A1F2252C500A8670B /* ViewController.m in Sources */,
+				31B00B671F22524900A8670B /* BMDragCellCollectionViewVC.m in Sources */,
 				31B00B341F20F3D500A8670B /* main.m in Sources */,
-				324216351F21DD45009DDA5F /* BMDidenticalSizeCellVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
 				INFOPLIST_FILE = BMDragCellCollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.BMDragCellCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,6 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
 				INFOPLIST_FILE = BMDragCellCollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.BMDragCellCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

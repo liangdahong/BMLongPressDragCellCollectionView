@@ -1,13 +1,13 @@
 //
-//  BMIdenticalSizeCellVC.h
+//  ViewController.h
 //  BMDragCellCollectionViewDemo
 //
-//  Created by __liangdahong on 2017/7/20.
+//  Created by __liangdahong on 2017/7/21.
 //  Copyright © 2017年 http://idhong.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface BMIdenticalSizeCellVC : UIViewController
+@interface ViewController : UIViewController
 
 @end

@@ -39,7 +39,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 @property (strong, nonatomic) NSIndexPath *oldIndexPath;     ///< 旧路径
 @property (assign, nonatomic) CGPoint lastPoint;             ///< 最后的触摸点
 @property (assign, nonatomic) BOOL isEndDrag;                ///< 是否正在拖动
-
 @property (strong, nonatomic) UILongPressGestureRecognizer *longGesture; ///< 长按手势
 
 @end
@@ -166,7 +165,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 - (void)_updateSourceData {
     // 获取数据源
     NSMutableArray *array = [[self.dataSource dataSourceWithDragCellCollectionView:self] mutableCopy];
-    
+
+    // ==========处理数据
     BOOL dataTypeCheck = ([self numberOfSections] != 1 || ([self  numberOfSections] == 1 && [array[0] isKindOfClass:[NSArray class]]));
     if (dataTypeCheck) {
         for (int i = 0; i < array.count; i ++) {
@@ -190,7 +190,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         [currentSection insertObject:orignalSection[_oldIndexPath.item] atIndex:_currentIndexPath.item];
         [orignalSection removeObject:orignalSection[_oldIndexPath.item]];
     }
-    // 通知外面更新数据源
+    // ==========处理数据
+    
+    // 更新外面的数据源
     [self.delegate dragCellCollectionView:self newDataArrayAfterMove:array];
 }
 
@@ -222,7 +224,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             [self setContentOffset:CGPointMake(self.contentOffset.x + 4, self.contentOffset.y) animated:NO];
             _snapedView.center = CGPointMake(_snapedView.center.x + 4, _snapedView.center.y);
             _lastPoint.x += 4;
-            
         }
             break;
         case BMDragCellCollectionViewScrollDirectionUp:{
@@ -279,7 +280,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (_oldIndexPath == nil) {
                 break;
             }
-            
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewShouldBeginMove:indexPath:)]) {
                 if (![self.delegate dragCellCollectionViewShouldBeginMove:self indexPath:_oldIndexPath]) {
                     _oldIndexPath = nil;
