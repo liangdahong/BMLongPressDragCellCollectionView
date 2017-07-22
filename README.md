@@ -80,7 +80,7 @@ collectionView.dataSource = self;
 }
 ```
 
-- 其他相关用发，详见代码，均有健全的注释。
+- 其他相关用法，详见代码，均有健全的注释。
 
 - [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
 

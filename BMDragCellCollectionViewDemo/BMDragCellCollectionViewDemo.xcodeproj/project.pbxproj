@@ -19,6 +19,9 @@
 		31B00B6A1F2252C500A8670B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B691F2252C500A8670B /* ViewController.m */; };
 		31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */; };
 		31B00B6F1F233C5D00A8670B /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */; };
+		31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */; };
+		31B00B741F238DAC00A8670B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B711F238DAC00A8670B /* LICENSE */; };
+		31B00B751F238DAC00A8670B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B721F238DAC00A8670B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		31B00B6B1F233C5D00A8670B /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
 		31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
 		31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
+		31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
+		31B00B711F238DAC00A8670B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		31B00B721F238DAC00A8670B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 		31ADB0531F1D04EB00FE7FA1 = {
 			isa = PBXGroup;
 			children = (
+				31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */,
+				31B00B711F238DAC00A8670B /* LICENSE */,
+				31B00B721F238DAC00A8670B /* README.md */,
 				31ADB05E1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */,
 				31ADB0781F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests */,
 				31ADB0831F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests */,
@@ -292,9 +301,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B00B741F238DAC00A8670B /* LICENSE in Resources */,
 				31B00B6F1F233C5D00A8670B /* BMDragCollectionViewCell.xib in Resources */,
 				31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */,
 				31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */,
+				31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */,
 				31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +334,7 @@
 				31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */,
 				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
 				31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */,
+				31B00B751F238DAC00A8670B /* README.md in Sources */,
 				31B00B6A1F2252C500A8670B /* ViewController.m in Sources */,
 				31B00B671F22524900A8670B /* BMDragCellCollectionViewVC.m in Sources */,
 				31B00B341F20F3D500A8670B /* main.m in Sources */,
