@@ -30,6 +30,14 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.collectionView];
+    
+    
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    BMDragCellCollectionView *collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    [self.view addSubview:collectionView];
+
 }
 
 #pragma mark - getters setters
@@ -39,6 +47,9 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = self.collectionViewScrollDirection;
         _collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        
         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         layout.minimumLineSpacing = arc4random_uniform(20)+1;
         layout.minimumInteritemSpacing = arc4random_uniform(20)+1;
@@ -53,8 +64,6 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
         
         [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMDragCollectionViewCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
         _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        _collectionView.delegate = self;
-        _collectionView.dataSource = self;
     }
     return _collectionView;
 }

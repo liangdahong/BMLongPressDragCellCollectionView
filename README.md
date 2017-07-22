@@ -6,11 +6,12 @@
 [![Support](https://img.shields.io/badge/support-iOS%206%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/) 
 [![Weibo](https://img.shields.io/badge/Sina微博-@梁大红-yellow.svg?style=flat)](http://weibo.com/liangdahong) 
 [![GitHub stars](https://img.shields.io/github/stars/asiosldh/BMDragCellCollectionView.svg)](https://github.com/asiosldh/BMDragCellCollectionView/stargazers)
+
 ## 写在前面
 > 最近公司准备做一个类似支付宝`UICollectionViewCell`拖拽重排的功能，`UICollectionViewCell`的任意拖拽排列，支付宝最新的版本已去掉了任意拖拽功能，而只是对常用功能进行拖拽重排，没有出现超出屏幕的情况。个人感觉应该更好，毕竟太多功能去拖拽重排对用户来说是一个特别大的工作量，只需把常用功能提即可。相应的功能点还是在对应的分组里，至于我们的需求暂时不怎么清楚，使用还是研究下任意拖拽吧。
 
 ## 一点说明
-> 部分Demo及文档正在完善中。
+> 部分Demo及文档正在完善中，包括如下演示。
 
 1. `支付宝`拖拽效果实现。
 2. `今日头条`频道拖拽重排效果实现。
@@ -18,38 +19,77 @@
 4. ...
 
 ## 效果图 
+
 ### 效果1
+
 <img src="Resources/2.gif" width="40%">
+
 ### 效果1
+
 <img src="Resources/1.gif" width="40%">
 
 
-## 使用
-```Ruby
-pod 'BMDragCellCollectionView', '~> 1.0.0'
-```		
+## 须知
+>`BMDragCellCollectionView ` 基于 `Xcode 8.2.1 , iOS 6+ ARC `，请使用最新正式版来编译`BMDragCellCollectionView `,旧版本的`Xcode `有效，但不保证会出现一些兼容性问题。
 
-## 使用到的技术
-1. UICollectionView 的基本使用
-2. CADisplayLink 简单使用
-3. 屏幕快照
+>开源不易，来个[star](https://github.com/asiosldh/BMDragCellCollectionView)鼓励下吧
 
-## 思路分析
-### 需求分析
-> 以支付宝之前的功能来说，我们长按 `Cell` 时进入可拖拽模式，长按下的`Cell`放大同时根着手指移动，当移动的`Cell`中心点移动到另外的`Cell`时与之交换，当移到接近屏幕`UICollectionView`边缘时滚动`UICollectionView`使用其自动显示出其他的`Cell`。
+## 集成
+### CocoaPods
+> 推荐使用 CocoaPods 安装。
 
-### 技术分析
-1. 为`UICollectionView`增加长按手势
-2. 在`Cell` 上触发手势时，使用系统截图快照生成一个和`Cell`一样的`View`，同时把`Cell`隐藏
-3. 随着手指的移动，把屏幕快照`View` 随着手指
-4. 当中心点移动到其他的`Cell`时调用`UICollectionView`的相关方法使其交换
-5. 当移到接近屏幕`UICollectionView`边缘时使用`CADisplayLink`来处理`UICollectionView`的滚动
-6. 当结束手势时，将截图快照view移动到隐藏的cell同时删除截图快照view，把隐藏的`Cell`显示即可。
-7. 交换条件处理（交换临界点处理）
-8. 其实`iOS9` 以后系统已提供了相应方法，但是必须在`iOS9+`使用，所以暂未使用系统方法
+1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.0'`
+2. 执行 `pod install` 或 `pod update`
+3. 使用的地方导入 `"BMDragCellCollectionView.h"`
+4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`
+5. 
+### 手动安装
 
-### 代码实现
-> 具体代码实现就不讲解了，可以查看demo代码。代码有完整注释，暂未封装，以后会封装下。
+1. 通过 `Clone ` 或者 `download ` 下载`BMDragCellCollectionView ` 文件夹内的所有内容。
+2. 将 BMDragCellCollectionView 内的源文件添加(拖放)到你的工程。
+3. 导入 `"BMDragCellCollectionView.h"`
 
-1. [完整Demo](https://github.com/asiosldh/BMDragCellCollectionView)
-2. [blog讲解](http://idhong.com/2017/07/17/iOS-UICollectionView-Cell%E6%8B%96%E6%8B%BD%E9%87%8D%E6%8E%92%E7%9A%84%E5%AE%9E%E7%8E%B0/)
+## 使用说明
+- 在需要使用长按拖拽`UICollectionView `的地方使用`BMDragCellCollectionView`代替，用法和`UICollectionView`一样。
+
+```c
+UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+BMDragCellCollectionView *collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
+collectionView.delegate = self;
+collectionView.dataSource = self;
+[self.view addSubview:collectionView];
+```
+
+- 实现 `BMDragCellCollectionViewDelegate`协议的如下方法
+
+> 此协议用于在交换时获取数据源，内部做数据源操作。
+
+```c
+- (NSArray *)dataSourceWithDragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView {
+    return self.dataSource;
+}
+```
+
+- 实现 `BMDragCollectionViewDataSource`协议的如下方法
+
+> 此协议用于在在内部处理好数据源时通知使用者更新数据源。
+
+```c
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray {
+    self.dataSource = [newDataArray mutableCopy];
+}
+```
+
+- 其他相关用发，详见代码，均有健全的注释。
+
+- [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
+
+## 期待
+- 如果在使用过程中遇到BUG，希望你能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
+
+## 版本历史
+### v1.0.0 `2017年07月22日`
+
+## MIT
+BMDragCellCollectionView 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件
+
