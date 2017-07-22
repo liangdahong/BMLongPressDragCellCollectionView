@@ -26,7 +26,7 @@
 
 ## 使用
 ```Ruby
-pod 'BMScan', '~> 0.1.7'
+pod 'BMDragCellCollectionView', '~> 1.0.0'
 ```		
 
 ## 使用到的技术
