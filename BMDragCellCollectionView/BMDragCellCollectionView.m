@@ -84,6 +84,13 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     return self;
 }
 
+- (void)dealloc {
+    if (_edgeTimer) {
+        [_edgeTimer invalidate];
+        _edgeTimer = nil;
+    }
+}
+
 #pragma mark - getters setters
 
 - (void)setCanDrag:(BOOL)canDrag {
