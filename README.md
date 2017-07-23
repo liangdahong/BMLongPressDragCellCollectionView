@@ -1,4 +1,3 @@
-
 # BMDragCellCollectionView
 [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
@@ -60,7 +59,7 @@ collectionView.dataSource = self;
 [self.view addSubview:collectionView];
 ```
 
-- 实现 `BMDragCellCollectionViewDelegate`协议的如下方法
+- 实现 `BMDragCollectionViewDataSource`协议的如下方法
 
 > 此协议用于在交换时获取数据源，内部做数据源操作。
 
@@ -70,7 +69,7 @@ collectionView.dataSource = self;
 }
 ```
 
-- 实现 `BMDragCollectionViewDataSource`协议的如下方法
+- 实现 `BMDragCellCollectionViewDelegate`协议的如下方法
 
 > 此协议用于在在内部处理好数据源时通知使用者更新数据源。
 
@@ -80,12 +79,11 @@ collectionView.dataSource = self;
 }
 ```
 
-- 其他相关用法，详见代码，均有健全的注释。
-
+- 其他相关用法，详见[代码](https://github.com/asiosldh/BMDragCellCollectionView/blob/master/BMDragCellCollectionView/BMDragCellCollectionView.h)
 - [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
 
 ## 期待
-- 如果在使用过程中遇到BUG，希望你能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
+- 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
 
 ## 版本历史
 ### v1.0.1
