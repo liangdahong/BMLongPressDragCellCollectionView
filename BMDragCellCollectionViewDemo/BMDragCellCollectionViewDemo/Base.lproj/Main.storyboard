@@ -60,6 +60,9 @@
                                         <rect key="frame" x="20" y="240" width="335" height="30"/>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="其他一些模仿例子正在完成中..."/>
+                                        <connections>
+                                            <action selector="otherDemoClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="kee-q0-qTx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

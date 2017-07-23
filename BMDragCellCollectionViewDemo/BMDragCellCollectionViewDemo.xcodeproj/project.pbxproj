@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3139EB581F250000007762D8 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3139EB521F250000007762D8 /* BMTodayHeadlinesDragCell.m */; };
+		3139EB591F250000007762D8 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3139EB531F250000007762D8 /* BMTodayHeadlinesDragCell.xib */; };
+		3139EB5A1F250000007762D8 /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3139EB551F250000007762D8 /* BMTodayHeadlinesDragModel.m */; };
+		3139EB601F25006C007762D8 /* BMTodayHeadlinesDragVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3139EB5E1F25006C007762D8 /* BMTodayHeadlinesDragVC.xib */; };
+		3139EB631F2500B6007762D8 /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3139EB621F2500B6007762D8 /* BMTodayHeadlinesDragVC.m */; };
 		31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB0681F1D04EB00FE7FA1 /* Main.storyboard */; };
 		31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */; };
 		31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB06D1F1D04EB00FE7FA1 /* LaunchScreen.storyboard */; };
@@ -42,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3139EB511F250000007762D8 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
+		3139EB521F250000007762D8 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
+		3139EB531F250000007762D8 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
+		3139EB541F250000007762D8 /* BMTodayHeadlinesDragModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragModel.h; sourceTree = "<group>"; };
+		3139EB551F250000007762D8 /* BMTodayHeadlinesDragModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragModel.m; sourceTree = "<group>"; };
+		3139EB5E1F25006C007762D8 /* BMTodayHeadlinesDragVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragVC.xib; sourceTree = "<group>"; };
+		3139EB611F2500B6007762D8 /* BMTodayHeadlinesDragVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragVC.h; sourceTree = "<group>"; };
+		3139EB621F2500B6007762D8 /* BMTodayHeadlinesDragVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragVC.m; sourceTree = "<group>"; };
 		31ADB05C1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCellCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ADB0691F1D04EB00FE7FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +108,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3139EB501F250000007762D8 /* BMTodayHeadlinesDrag */ = {
+			isa = PBXGroup;
+			children = (
+				3139EB611F2500B6007762D8 /* BMTodayHeadlinesDragVC.h */,
+				3139EB621F2500B6007762D8 /* BMTodayHeadlinesDragVC.m */,
+				3139EB5E1F25006C007762D8 /* BMTodayHeadlinesDragVC.xib */,
+				3139EB511F250000007762D8 /* BMTodayHeadlinesDragCell.h */,
+				3139EB521F250000007762D8 /* BMTodayHeadlinesDragCell.m */,
+				3139EB531F250000007762D8 /* BMTodayHeadlinesDragCell.xib */,
+				3139EB541F250000007762D8 /* BMTodayHeadlinesDragModel.h */,
+				3139EB551F250000007762D8 /* BMTodayHeadlinesDragModel.m */,
+			);
+			path = BMTodayHeadlinesDrag;
+			sourceTree = "<group>";
+		};
 		31ADB0531F1D04EB00FE7FA1 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +199,7 @@
 		31B00B2B1F20F3D500A8670B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3139EB501F250000007762D8 /* BMTodayHeadlinesDrag */,
 				31B00B6B1F233C5D00A8670B /* BMDragCollectionViewCell.h */,
 				31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */,
 				31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */,
@@ -307,6 +336,8 @@
 				31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */,
 				31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */,
 				31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */,
+				3139EB591F250000007762D8 /* BMTodayHeadlinesDragCell.xib in Resources */,
+				3139EB601F25006C007762D8 /* BMTodayHeadlinesDragVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3139EB581F250000007762D8 /* BMTodayHeadlinesDragCell.m in Sources */,
 				31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */,
 				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
 				31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */,
 				31B00B751F238DAC00A8670B /* README.md in Sources */,
 				31B00B6A1F2252C500A8670B /* ViewController.m in Sources */,
 				31B00B671F22524900A8670B /* BMDragCellCollectionViewVC.m in Sources */,
+				3139EB631F2500B6007762D8 /* BMTodayHeadlinesDragVC.m in Sources */,
+				3139EB5A1F250000007762D8 /* BMTodayHeadlinesDragModel.m in Sources */,
 				31B00B341F20F3D500A8670B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

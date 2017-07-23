@@ -11,10 +11,10 @@
 #import "BMDragCollectionViewCell.h"
 #import "BMDragCellCollectionView.h"
 
-#define WIDTH   self.view.bounds.size.width
-#define HEIGHT  self.view.bounds.size.height
+#define WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-@interface BMDragCellCollectionViewVC () <BMDragCellCollectionViewDelegate, BMDragCollectionViewDataSource>
+@interface BMDragCellCollectionViewVC () <UICollectionViewDelegateFlowLayout,BMDragCellCollectionViewDelegate, BMDragCollectionViewDataSource>
 
 @property (nonatomic, strong) BMDragCellCollectionView *collectionView; // collectionView
 @property (strong, nonatomic) NSMutableArray *dataSourceArray;
@@ -30,7 +30,6 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.collectionView];
-    
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     BMDragCellCollectionView *collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
@@ -91,10 +90,6 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray {
     self.dataSource = [newDataArray mutableCopy];
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.dataSource[indexPath.section][indexPath.item][@"size"] CGSizeValue];
 }
 
 @end

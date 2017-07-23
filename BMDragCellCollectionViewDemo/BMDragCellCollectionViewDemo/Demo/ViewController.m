@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BMDragCellCollectionViewVC.h"
+#import "BMTodayHeadlinesDragVC.h"
 
 @implementation ViewController
 
@@ -70,5 +71,20 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+- (IBAction)otherDemoClick {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"其他Demo" message:@"正在完善中..." preferredStyle:0];
+    [alert addAction:[UIAlertAction actionWithTitle:@"今日头条" style:0 handler:^(UIAlertAction * _Nonnull action) {
+        [self.navigationController pushViewController:[BMTodayHeadlinesDragVC new] animated:YES];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"支付宝" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"看荐" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
 
 @end
