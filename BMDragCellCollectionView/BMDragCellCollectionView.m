@@ -100,7 +100,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     _minimumPressDuration = minimumPressDuration;
     self.longGesture.minimumPressDuration = minimumPressDuration;
 }
-
+    
 - (UILongPressGestureRecognizer *)longGesture {
     if (!_longGesture) {
         _longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handlelongGesture:)];
@@ -114,6 +114,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 - (void)initConfiguration {
     _canDrag = YES;
     _minimumPressDuration = .5f;
+    _dragZoomScale = 1.2;
     [self addGestureRecognizer:self.longGesture];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0) {
         self.prefetchingEnabled = NO;
@@ -329,7 +330,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             
             // 动画放大和移动到触摸点下面
             [UIView animateWithDuration:0.25 animations:^{
-                _snapedView.transform = CGAffineTransformMakeScale(1.2f, 1.2f);
+                _snapedView.transform = CGAffineTransformMakeScale(_dragZoomScale, _dragZoomScale);
                 _snapedView.center = CGPointMake(currentPoint.x, currentPoint.y);
             }];
             // 开启collectionView的边缘自动滚动检测

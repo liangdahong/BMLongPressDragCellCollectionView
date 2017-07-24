@@ -106,5 +106,13 @@
  如果设置为NO，BMDragCellCollectionView 将失去长按拖拽功能和UICollectionView一样
  */
 @property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
+    
+    /**
+     缩放比例，默认为1.2
+     */
+    @property (nonatomic, assign) CGFloat dragZoomScale;
+
+    
+    
 
 @end
