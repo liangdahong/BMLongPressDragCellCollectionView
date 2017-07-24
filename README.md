@@ -22,10 +22,12 @@
 
 <img src="Resources/2.gif" width="40%">
 
-### 效果1
+### 效果2
 
 <img src="Resources/1.gif" width="40%">
 
+### 效果3
+[在线视频演示](http://v.youku.com/v_show/id_XMjkxNTM2MjIyNA==.html?spm=a2hzp.8244740.0.0)
 
 ## 须知
 >`BMDragCellCollectionView ` 基于 `Xcode 8.2.1 , iOS 6+ ARC `，请使用最新正式版来编译`BMDragCellCollectionView `,旧版本的`Xcode `有效，但不保证会出现一些兼容性问题。
