@@ -12,7 +12,7 @@
 
 @interface BMTodayHeadlinesDragCell : UICollectionViewCell
 
-@property (strong, nonatomic) BMTodayHeadlinesDragModel *todayHeadlinesDragModel;
-
-
-@end
+    @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+    @property (weak, nonatomic) IBOutlet UIButton *removeButton;
+    
+    @end

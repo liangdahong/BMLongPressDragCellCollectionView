@@ -31,9 +31,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     if (!_collectionViewFlowLayout) {
         _collectionViewFlowLayout = [UICollectionViewFlowLayout new];
         _collectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        _collectionViewFlowLayout.minimumLineSpacing = 15;
+        _collectionViewFlowLayout.minimumLineSpacing = 1;
         _collectionViewFlowLayout.minimumInteritemSpacing = 1;
-        _collectionViewFlowLayout.itemSize = CGSizeMake((WIDTH-4)/4.0, 35);
+        _collectionViewFlowLayout.itemSize = CGSizeMake((WIDTH-4)/4.0, 55);
         _collectionViewFlowLayout.headerReferenceSize = CGSizeMake(100, 40);
     }
     return _collectionViewFlowLayout;
@@ -56,9 +56,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         int sec = 2;
         while (sec--) {
             NSMutableArray *muarray = [@[] mutableCopy];
-            int row = 55;
+            int row = 20;
             if (sec == 1) {
-                row = 66;
+                row = 10;
             }
             while (row--) {
                 BMTodayHeadlinesDragModel *obj = [BMTodayHeadlinesDragModel new];
@@ -85,7 +85,22 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     BMTodayHeadlinesDragCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    cell.todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+    BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+    if (indexPath.section == 0) {
+        if (indexPath.item == 0) {
+            cell.removeButton.hidden = YES;
+            cell.titleLabel.text = @"推荐(无)";
+            cell.titleLabel.textColor = [UIColor lightGrayColor];
+        } else {
+            cell.removeButton.hidden = NO;
+            cell.titleLabel.text = todayHeadlinesDragModel.title;
+            cell.titleLabel.textColor = [UIColor blackColor];
+        }
+    } else {
+        cell.removeButton.hidden = YES;
+        cell.titleLabel.textColor = [UIColor blackColor];
+        cell.titleLabel.text = [NSString stringWithFormat:@"＋ %@", todayHeadlinesDragModel.title];
+    }
     return cell;
 }
 
@@ -97,18 +112,63 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 
+    - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+        if (indexPath.section == 0 && indexPath.item == 0) {
+            return ;
+        }
+        
+        if (indexPath.section == 0) {
+            // 删除操作
+            BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+
+            BMTodayHeadlinesDragCell *cell = (BMTodayHeadlinesDragCell *)[collectionView cellForItemAtIndexPath:indexPath];
+            cell.removeButton.hidden = YES;
+            cell.titleLabel.text = [NSString stringWithFormat:@"＋ %@", todayHeadlinesDragModel.title];
+            NSMutableArray *secArray0 = self.dataSourceArray[indexPath.section];
+            [secArray0 removeObject:todayHeadlinesDragModel];
+            
+            NSMutableArray *secArray1 = self.dataSourceArray[1];
+            [secArray1 addObject:todayHeadlinesDragModel];
+            
+            [collectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:secArray1.count-1 inSection:1]];
+        } else {
+            // 添加操作
+            BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+
+            BMTodayHeadlinesDragCell *cell = (BMTodayHeadlinesDragCell *)[collectionView cellForItemAtIndexPath:indexPath];
+            cell.removeButton.hidden = NO;
+            cell.titleLabel.text = todayHeadlinesDragModel.title;
+            
+            NSMutableArray *secArray1 = self.dataSourceArray[1];
+            [secArray1 removeObject:todayHeadlinesDragModel];
+            
+            NSMutableArray *secArray0 = self.dataSourceArray[0];
+            [secArray0 addObject:todayHeadlinesDragModel];
+            
+            [collectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:secArray0.count-1 inSection:0]];
+
+        }
+    }
+    
 - (BOOL)dragCellCollectionViewShouldBeginExchange:(BMDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
     if (destinationIndexPath.section == 1 || sourceIndexPath.section == 1) {
         return NO;
     }
-    return YES;
-}
 
-- (BOOL)dragCellCollectionViewShouldBeginMove:(BMDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 1) {
+    if (destinationIndexPath.section == 0 && destinationIndexPath.item == 0) {
         return NO;
     }
     return YES;
 }
-
+    
+- (BOOL)dragCellCollectionViewShouldBeginMove:(BMDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 1) {
+        return NO;
+    }
+    if (indexPath.section == 0 && indexPath.item == 0) {
+        return NO;
+    }
+    return YES;
+}
+    
 @end

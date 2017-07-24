@@ -32,6 +32,12 @@
 </p>
 
 ### 效果3
+
+<p align="center">
+<img src="Resources/4.gif" width="40%">
+</p>
+
+### 视频演示
 [在线视频演示](http://v.youku.com/v_show/id_XMjkxNTM2MjIyNA==.html?spm=a2hzp.8244740.0.0)
 
 ## 须知

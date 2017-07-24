@@ -18,8 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="112" height="90"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-U5-9VB">
-                        <rect key="frame" x="18" y="0.0" width="69" height="90"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-U5-9VB">
+                        <rect key="frame" x="10" y="10" width="92" height="70"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xn-Dv-ZHE">
@@ -28,21 +28,36 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKC-CG-scv">
+                        <rect key="frame" x="94" y="2" width="16" height="16"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="KlK-51-K7X"/>
+                            <constraint firstAttribute="width" constant="16" id="yaw-zz-Huz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="x">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="9Xn-Dv-ZHE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="2d7-z7-LK2"/>
-                <constraint firstItem="u9c-U5-9VB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J1Y-Ik-Em2"/>
+                <constraint firstItem="u9c-U5-9VB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="J1Y-Ik-Em2"/>
+                <constraint firstItem="YKC-CG-scv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="ObA-Mu-YSm"/>
                 <constraint firstAttribute="bottom" secondItem="9Xn-Dv-ZHE" secondAttribute="bottom" constant="10" id="PdJ-pC-gn6"/>
-                <constraint firstAttribute="bottom" secondItem="u9c-U5-9VB" secondAttribute="bottom" id="ZCS-ko-bb1"/>
+                <constraint firstAttribute="bottom" secondItem="u9c-U5-9VB" secondAttribute="bottom" constant="10" id="ZCS-ko-bb1"/>
                 <constraint firstItem="u9c-U5-9VB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="aPy-Ot-8zF"/>
                 <constraint firstItem="9Xn-Dv-ZHE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="d6f-cL-hRw"/>
+                <constraint firstAttribute="trailing" secondItem="YKC-CG-scv" secondAttribute="trailing" constant="2" id="k9B-aO-xeJ"/>
                 <constraint firstAttribute="trailing" secondItem="9Xn-Dv-ZHE" secondAttribute="trailing" constant="20" id="ovW-RW-WMj"/>
                 <constraint firstAttribute="trailing" secondItem="u9c-U5-9VB" secondAttribute="trailing" constant="10" id="qoh-7h-RDP"/>
             </constraints>
             <size key="customSize" width="112" height="90"/>
             <connections>
                 <outlet property="mybackgroundView" destination="u9c-U5-9VB" id="8Sc-Ff-YjS"/>
+                <outlet property="removeButton" destination="YKC-CG-scv" id="ApD-7p-uUN"/>
                 <outlet property="titleLabel" destination="9Xn-Dv-ZHE" id="wKZ-Uh-cFR"/>
             </connections>
             <point key="canvasLocation" x="65" y="74"/>

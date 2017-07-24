@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface BMTodayHeadlinesDragModel : NSObject
-
+    
 @property (copy, nonatomic) NSString *title;
 
 @end
