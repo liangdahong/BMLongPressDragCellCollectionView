@@ -1,4 +1,4 @@
-# BMDragCellCollectionView
+<img src="Resources/3.png" width="100%">
 [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
@@ -14,7 +14,6 @@
 1. `支付宝`拖拽效果实现。
 2. `今日头条`频道拖拽重排效果实现。
 3. `看荐`拖拽重排效果实现及优化。ps:`看荐`的拖拽重排发现一个bug，哈哈。
-4. 其他
 
 ## 效果图 
 
