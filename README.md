@@ -1,4 +1,6 @@
+<p align="center">
 <img src="Resources/3.png" width="100%">
+</p>
 
 [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
@@ -19,13 +21,15 @@
 ## 效果图 
 
 ### 效果1
-
+<p align="center">
 <img src="Resources/2.gif" width="40%">
+</p>
 
 ### 效果2
 
+<p align="center">
 <img src="Resources/1.gif" width="40%">
-
+</p>
 ### 效果3
 [在线视频演示](http://v.youku.com/v_show/id_XMjkxNTM2MjIyNA==.html?spm=a2hzp.8244740.0.0)
 
