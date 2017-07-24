@@ -20,13 +20,13 @@
 		31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B261F20F3D500A8670B /* AppDelegate.m */; };
 		31B00B341F20F3D500A8670B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B271F20F3D500A8670B /* main.m */; };
 		31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B631F22507C00A8670B /* BMDragCellCollectionView.m */; };
-		31B00B671F22524900A8670B /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B661F22524900A8670B /* BMDragCellCollectionViewVC.m */; };
-		31B00B6A1F2252C500A8670B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B691F2252C500A8670B /* ViewController.m */; };
-		31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */; };
-		31B00B6F1F233C5D00A8670B /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */; };
 		31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */; };
 		31B00B741F238DAC00A8670B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B711F238DAC00A8670B /* LICENSE */; };
 		31B00B751F238DAC00A8670B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B721F238DAC00A8670B /* README.md */; };
+		3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */; };
+		3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */; };
+		3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */; };
+		3281E31B1F25787700BEBF76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3171F25787700BEBF76 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,16 +71,16 @@
 		31B00B271F20F3D500A8670B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31B00B621F22507C00A8670B /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
 		31B00B631F22507C00A8670B /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
-		31B00B651F22524900A8670B /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
-		31B00B661F22524900A8670B /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
-		31B00B681F2252C500A8670B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		31B00B691F2252C500A8670B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		31B00B6B1F233C5D00A8670B /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
-		31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
-		31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
 		31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
 		31B00B711F238DAC00A8670B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31B00B721F238DAC00A8670B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3281E3101F25787700BEBF76 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
+		3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
+		3281E3121F25787700BEBF76 /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
+		3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
+		3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
+		3281E3161F25787700BEBF76 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3281E3171F25787700BEBF76 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,14 +199,9 @@
 		31B00B2B1F20F3D500A8670B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3281E3151F25787700BEBF76 /* RootVC */,
+				3281E30F1F25787700BEBF76 /* BaseDemo */,
 				3139EB501F250000007762D8 /* BMTodayHeadlinesDrag */,
-				31B00B6B1F233C5D00A8670B /* BMDragCollectionViewCell.h */,
-				31B00B6C1F233C5D00A8670B /* BMDragCollectionViewCell.m */,
-				31B00B6D1F233C5D00A8670B /* BMDragCollectionViewCell.xib */,
-				31B00B681F2252C500A8670B /* ViewController.h */,
-				31B00B691F2252C500A8670B /* ViewController.m */,
-				31B00B651F22524900A8670B /* BMDragCellCollectionViewVC.h */,
-				31B00B661F22524900A8670B /* BMDragCellCollectionViewVC.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -219,6 +214,27 @@
 			);
 			name = BMDragCellCollectionView;
 			path = ../../BMDragCellCollectionView;
+			sourceTree = "<group>";
+		};
+		3281E30F1F25787700BEBF76 /* BaseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3281E3101F25787700BEBF76 /* BMDragCellCollectionViewVC.h */,
+				3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */,
+				3281E3121F25787700BEBF76 /* BMDragCollectionViewCell.h */,
+				3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */,
+				3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */,
+			);
+			path = BaseDemo;
+			sourceTree = "<group>";
+		};
+		3281E3151F25787700BEBF76 /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				3281E3161F25787700BEBF76 /* ViewController.h */,
+				3281E3171F25787700BEBF76 /* ViewController.m */,
+			);
+			path = RootVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B00B741F238DAC00A8670B /* LICENSE in Resources */,
-				31B00B6F1F233C5D00A8670B /* BMDragCollectionViewCell.xib in Resources */,
 				31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */,
 				31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */,
+				3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */,
 				31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */,
 				31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */,
 				3139EB591F250000007762D8 /* BMTodayHeadlinesDragCell.xib in Resources */,
@@ -365,11 +381,11 @@
 				3139EB581F250000007762D8 /* BMTodayHeadlinesDragCell.m in Sources */,
 				31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */,
 				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
-				31B00B6E1F233C5D00A8670B /* BMDragCollectionViewCell.m in Sources */,
+				3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */,
 				31B00B751F238DAC00A8670B /* README.md in Sources */,
-				31B00B6A1F2252C500A8670B /* ViewController.m in Sources */,
-				31B00B671F22524900A8670B /* BMDragCellCollectionViewVC.m in Sources */,
+				3281E31B1F25787700BEBF76 /* ViewController.m in Sources */,
 				3139EB631F2500B6007762D8 /* BMTodayHeadlinesDragVC.m in Sources */,
+				3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */,
 				3139EB5A1F250000007762D8 /* BMTodayHeadlinesDragModel.m in Sources */,
 				31B00B341F20F3D500A8670B /* main.m in Sources */,
 			);

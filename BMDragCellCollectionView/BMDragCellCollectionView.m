@@ -86,10 +86,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 }
 
 - (void)dealloc {
-    if (_edgeTimer) {
-        [_edgeTimer invalidate];
-        _edgeTimer = nil;
-    }
+    [self _stopEdgeTimer];
 }
 
 #pragma mark - getters setters
@@ -176,7 +173,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 - (void)_updateSourceData {
     // 获取数据源
     NSMutableArray *array = [[self.dataSource dataSourceWithDragCellCollectionView:self] mutableCopy];
-
     // ==========处理数据
     BOOL dataTypeCheck = ([self numberOfSections] != 1 || ([self  numberOfSections] == 1 && [array[0] isKindOfClass:[NSArray class]]));
     if (dataTypeCheck) {
@@ -222,7 +218,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 }
 
 - (void)_edgeScroll {
-    
     BMDragCellCollectionViewScrollDirection scrollDirection = [self _setScrollDirection];
     switch (scrollDirection) {
         case BMDragCellCollectionViewScrollDirectionLeft:{

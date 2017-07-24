@@ -45,7 +45,7 @@
 /**
  BMDragCellCollectionViewDelegate 协议
  */
-@protocol BMDragCellCollectionViewDelegate <UICollectionViewDelegate>
+@protocol BMDragCellCollectionViewDelegate <UICollectionViewDelegateFlowLayout>
 
 @required
 

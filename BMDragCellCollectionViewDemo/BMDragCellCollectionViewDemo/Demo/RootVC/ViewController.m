@@ -36,13 +36,12 @@
     [self pushWithGroup:3 sizeObj:nil];
 }
 
-
 - (void)pushWithGroup:(int)group sizeObj:(NSValue *)sizeObj {
     NSMutableArray *dataSourceArray = [NSMutableArray array];
     int arc = group;
     while (arc--) {
         NSMutableArray *dataSource = [NSMutableArray array];
-        int arcCount = arc4random_uniform(20)+10;
+        int arcCount = arc4random_uniform(40)+40;
         for (int i = 1; i <= arcCount; i++) {
             UIColor *color = [UIColor colorWithHue:arc4random_uniform(128)/255.0 + 0.5 saturation:arc4random_uniform(128)/255.0 + 0.5  brightness:arc4random_uniform(128)/255.0 + 0.5  alpha:1];
             [dataSource addObject:@{@"color" : color,
@@ -84,7 +83,5 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
 }
-
-
 
 @end
