@@ -37,6 +37,8 @@
 <img src="Resources/4.gif" width="40%">
 </p>
 
+>基本实现了`头条`的频道重排功能，额外增加了当拖拽到边沿时自动滚动的功能。
+
 ### 视频演示
 [在线视频演示](http://v.youku.com/v_show/id_XMjkxNTM2MjIyNA==.html?spm=a2hzp.8244740.0.0)
 

@@ -34,7 +34,7 @@
 
 /**
  获取数据源（内部会做合适的更新数据源处理，必须实现）
-
+ 
  @param dragCellCollectionView dragCellCollectionView
  @return 返回数据源
  */
@@ -51,7 +51,7 @@
 
 /**
  动画和移动完成时（这里会返回更新后的数据源，请在此代理保存数据源，必须实现）
-
+ 
  @param dragCellCollectionView dragCellCollectionView
  @param newDataArray 新的数据源，建议保存。
  */
@@ -61,7 +61,7 @@
 
 /**
  将要开始拖拽时，询问此cell是否可以拖拽
-
+ 
  @param dragCellCollectionView dragCellCollectionView
  @param indexPath indexPath
  @return YES: 正常拖拽和移动 NO:此cell无法移动，如：增加按钮等
@@ -70,7 +70,7 @@
 
 /**
  将要交换时，询问是否可以交换
-
+ 
  @param dragCellCollectionView dragCellCollectionView
  @param sourceIndexPath 源IndexPath
  @param destinationIndexPath 新位置IndexPath
@@ -80,7 +80,7 @@
 
 /**
  拖拽结束（已经停止移动时调用）
-
+ 
  @param dragCellCollectionView dragCellCollectionView
  */
 - (void)dragCellCollectionViewDidEndDrag:(BMDragCellCollectionView *)dragCellCollectionView;
@@ -103,16 +103,16 @@
 
 /**
  是否可以拖拽 默认为YES,
+ If you can drag the default to YES,
+ 
  如果设置为NO，BMDragCellCollectionView 将失去长按拖拽功能和UICollectionView一样
  */
 @property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
-    
-    /**
-     缩放比例，默认为1.2
-     */
-    @property (nonatomic, assign) CGFloat dragZoomScale;
 
-    
-    
+/**
+ 长按拖拽时Cell缩放比例 默认是：1.2
+ Long by drag and drop the Cell scaling default is: 1.2
+ */
+@property (nonatomic, assign) CGFloat dragZoomScale;
 
 @end

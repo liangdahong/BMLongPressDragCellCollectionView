@@ -10,4 +10,6 @@
 
 @interface BMTodayHeadlinesDragVC : UIViewController
 
+@property (assign, nonatomic) int count; ///< count
+
 @end

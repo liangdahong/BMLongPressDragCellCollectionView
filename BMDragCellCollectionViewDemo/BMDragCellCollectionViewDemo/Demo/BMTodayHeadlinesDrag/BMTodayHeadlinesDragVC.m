@@ -56,9 +56,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         int sec = 2;
         while (sec--) {
             NSMutableArray *muarray = [@[] mutableCopy];
-            int row = 20;
+            int row = self.count + 10;
             if (sec == 1) {
-                row = 10;
+                row = self.count;
             }
             while (row--) {
                 BMTodayHeadlinesDragModel *obj = [BMTodayHeadlinesDragModel new];
@@ -116,7 +116,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         if (indexPath.section == 0 && indexPath.item == 0) {
             return ;
         }
-        
+
         if (indexPath.section == 0) {
             // 删除操作
             BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];

@@ -72,13 +72,30 @@
 }
 
 - (IBAction)otherDemoClick {
+
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"其他Demo" message:@"正在完善中..." preferredStyle:0];
     [alert addAction:[UIAlertAction actionWithTitle:@"今日头条" style:0 handler:^(UIAlertAction * _Nonnull action) {
-        [self.navigationController pushViewController:[BMTodayHeadlinesDragVC new] animated:YES];
+        [self headlines];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"支付宝" style:0 handler:^(UIAlertAction * _Nonnull action) {
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"看荐" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)headlines {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"今日头条-频道选择类型" message:nil preferredStyle:0];
+    [alert addAction:[UIAlertAction actionWithTitle:@"超过一屏" style:0 handler:^(UIAlertAction * _Nonnull action) {
+        BMTodayHeadlinesDragVC *todayHeadlinesDragVC = [BMTodayHeadlinesDragVC new];
+        todayHeadlinesDragVC.count = 30;
+        [self.navigationController pushViewController:todayHeadlinesDragVC animated:YES];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"不超过一屏" style:0 handler:^(UIAlertAction * _Nonnull action) {
+        BMTodayHeadlinesDragVC *todayHeadlinesDragVC = [BMTodayHeadlinesDragVC new];
+        todayHeadlinesDragVC.count = 10;
+        [self.navigationController pushViewController:todayHeadlinesDragVC animated:YES];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
