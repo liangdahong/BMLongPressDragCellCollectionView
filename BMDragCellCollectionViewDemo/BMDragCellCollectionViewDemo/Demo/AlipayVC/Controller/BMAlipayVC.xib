@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BMAlipayVC">
+            <connections>
+                <outlet property="alipayHeaderCollectionView" destination="Gi8-Qk-LXY" id="8vB-2J-GDt"/>
+                <outlet property="alipayHeaderCollectionViewHeightCons" destination="aQG-pi-Er6" id="eRg-h6-5VU"/>
+                <outlet property="alipayHeaderHeightCons" destination="AMT-pd-S9L" id="HiK-Bz-SHU"/>
+                <outlet property="alipayHeaderSelectView" destination="tyX-fP-nD9" id="zca-ee-xC8"/>
+                <outlet property="c" destination="Gi8-Qk-LXY" id="gLL-7k-Wu1"/>
+                <outlet property="cellCollectionView" destination="hIi-L9-CJ2" id="z2j-qQ-mTr"/>
+                <outlet property="dd" destination="tyX-fP-nD9" id="JOv-Ay-iIn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="429"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-Qk-LXY" customClass="BMAlipayHeaderCollectionView">
+                    <rect key="frame" x="0.0" y="0.0" width="251" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="aQG-pi-Er6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-fP-nD9" customClass="BMAlipayHeaderSelectView">
+                    <rect key="frame" x="0.0" y="0.0" width="251" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="AMT-pd-S9L"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hIi-L9-CJ2">
+                    <rect key="frame" x="0.0" y="60" width="251" height="369"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HhJ-KC-kQc">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="phb-Cj-bVD"/>
+                        <outlet property="delegate" destination="-1" id="4le-GQ-AHQ"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gi8-Qk-LXY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4gU-NO-7tJ"/>
+                <constraint firstAttribute="trailing" secondItem="Gi8-Qk-LXY" secondAttribute="trailing" id="52f-pY-FYO"/>
+                <constraint firstAttribute="bottom" secondItem="hIi-L9-CJ2" secondAttribute="bottom" id="5vq-M1-LVG"/>
+                <constraint firstItem="Gi8-Qk-LXY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A7c-ZT-XtB"/>
+                <constraint firstAttribute="trailing" secondItem="tyX-fP-nD9" secondAttribute="trailing" id="DnE-ek-w5a"/>
+                <constraint firstItem="hIi-L9-CJ2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WXh-eG-P2C"/>
+                <constraint firstItem="hIi-L9-CJ2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="ZoU-Ww-lY2"/>
+                <constraint firstItem="tyX-fP-nD9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eLa-N4-BBg"/>
+                <constraint firstAttribute="trailing" secondItem="hIi-L9-CJ2" secondAttribute="trailing" id="g8a-O4-uQY"/>
+                <constraint firstItem="tyX-fP-nD9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lhH-Fh-Pwc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="456" y="-468"/>
+        </view>
+    </objects>
+</document>

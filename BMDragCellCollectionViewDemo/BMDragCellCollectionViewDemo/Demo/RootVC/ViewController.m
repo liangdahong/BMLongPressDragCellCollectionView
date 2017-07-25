@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BMDragCellCollectionViewVC.h"
 #import "BMTodayHeadlinesDragVC.h"
+#import "BMAlipayVC.h"
 
 @implementation ViewController
 
@@ -78,6 +79,8 @@
         [self headlines];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"支付宝" style:0 handler:^(UIAlertAction * _Nonnull action) {
+//        BMAlipayVC *alipayVC = [BMAlipayVC new];
+//        [self.navigationController pushViewController:alipayVC animated:YES];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"看荐" style:0 handler:^(UIAlertAction * _Nonnull action) {
     }]];

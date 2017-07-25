@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013C3D7F0196863F2BA855D6 /* libPods-BMDragCellCollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */; };
 		311B39461F26538A0049D014 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */; };
 		311B39471F26538A0049D014 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */; };
 		311B39481F26538A0049D014 /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B39421F26538A0049D014 /* BMTodayHeadlinesDragModel.m */; };
@@ -16,6 +17,8 @@
 		311B39501F26539F0049D014 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 311B394D1F26539F0049D014 /* 2.gif */; };
 		311B39531F2653AA0049D014 /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 311B39521F2653A90049D014 /* 4.gif */; };
 		311B39551F2655650049D014 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 311B39541F2655650049D014 /* 3.png */; };
+		3156530F1F2792EF00DD1B3E /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3156530D1F2792EF00DD1B3E /* BMAlipayCell.m */; };
+		315653101F2792EF00DD1B3E /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3156530E1F2792EF00DD1B3E /* BMAlipayCell.xib */; };
 		31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB0681F1D04EB00FE7FA1 /* Main.storyboard */; };
 		31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */; };
 		31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB06D1F1D04EB00FE7FA1 /* LaunchScreen.storyboard */; };
@@ -27,6 +30,12 @@
 		31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */; };
 		31B00B741F238DAC00A8670B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B711F238DAC00A8670B /* LICENSE */; };
 		31B00B751F238DAC00A8670B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B721F238DAC00A8670B /* README.md */; };
+		31F695BA1F278DFC00F786FB /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695B81F278DFC00F786FB /* BMAlipayVC.m */; };
+		31F695BB1F278DFC00F786FB /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695B91F278DFC00F786FB /* BMAlipayVC.xib */; };
+		31F695BE1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */; };
+		31F695C11F278EFB00F786FB /* BMAlipayHeaderSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */; };
+		31F695C31F278F0200F786FB /* BMAlipayHeaderSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */; };
+		31F695C51F278F0800F786FB /* BMAlipayHeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */; };
 		3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */; };
 		3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */; };
 		3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */; };
@@ -51,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256A2F92BA5BEEECB873113B /* libPods-BMDragCellCollectionViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		311B393E1F26538A0049D014 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
 		311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
 		311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
@@ -63,6 +73,9 @@
 		311B394D1F26539F0049D014 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
 		311B39521F2653A90049D014 /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
 		311B39541F2655650049D014 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		3156530C1F2792EF00DD1B3E /* BMAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayCell.h; sourceTree = "<group>"; };
+		3156530D1F2792EF00DD1B3E /* BMAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayCell.m; sourceTree = "<group>"; };
+		3156530E1F2792EF00DD1B3E /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
 		31ADB05C1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCellCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ADB0691F1D04EB00FE7FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +95,15 @@
 		31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
 		31B00B711F238DAC00A8670B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31B00B721F238DAC00A8670B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31F695B71F278DFC00F786FB /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
+		31F695B81F278DFC00F786FB /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
+		31F695B91F278DFC00F786FB /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
+		31F695BC1F278EEB00F786FB /* BMAlipayHeaderCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderCollectionView.h; sourceTree = "<group>"; };
+		31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderCollectionView.m; sourceTree = "<group>"; };
+		31F695BF1F278EFB00F786FB /* BMAlipayHeaderSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderSelectView.h; sourceTree = "<group>"; };
+		31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderSelectView.m; sourceTree = "<group>"; };
+		31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderSelectView.xib; sourceTree = "<group>"; };
+		31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderCollectionView.xib; sourceTree = "<group>"; };
 		3281E3101F25787700BEBF76 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
 		3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
 		3281E3121F25787700BEBF76 /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
@@ -89,6 +111,10 @@
 		3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
 		3281E3161F25787700BEBF76 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3281E3171F25787700BEBF76 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DD01D17F377709FFE761F8C /* libPods-BMDragCellCollectionViewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D0C194DE48D92C3B355FBA /* Pods-BMDragCellCollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCellCollectionViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C5425CBAA54F13DD6DF7F8CF /* Pods-BMDragCellCollectionViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCellCollectionViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013C3D7F0196863F2BA855D6 /* libPods-BMDragCellCollectionViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +181,8 @@
 				31ADB0781F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests */,
 				31ADB0831F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests */,
 				31ADB05D1F1D04EB00FE7FA1 /* Products */,
+				3950F4BFBCD1A7FB7A30D168 /* Pods */,
+				53DEDBE78D878BD510B77233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +249,7 @@
 		31B00B2B1F20F3D500A8670B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				31F695B31F278DE600F786FB /* AlipayVC */,
 				311B393D1F26538A0049D014 /* BMTodayHeadlinesDrag */,
 				3281E3151F25787700BEBF76 /* RootVC */,
 				3281E30F1F25787700BEBF76 /* BaseDemo */,
@@ -235,6 +265,49 @@
 			);
 			name = BMDragCellCollectionView;
 			path = ../../BMDragCellCollectionView;
+			sourceTree = "<group>";
+		};
+		31F695B31F278DE600F786FB /* AlipayVC */ = {
+			isa = PBXGroup;
+			children = (
+				31F695B41F278DE600F786FB /* Controller */,
+				31F695B51F278DE600F786FB /* Model */,
+				31F695B61F278DE600F786FB /* View */,
+			);
+			path = AlipayVC;
+			sourceTree = "<group>";
+		};
+		31F695B41F278DE600F786FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31F695B71F278DFC00F786FB /* BMAlipayVC.h */,
+				31F695B81F278DFC00F786FB /* BMAlipayVC.m */,
+				31F695B91F278DFC00F786FB /* BMAlipayVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		31F695B51F278DE600F786FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31F695B61F278DE600F786FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31F695BC1F278EEB00F786FB /* BMAlipayHeaderCollectionView.h */,
+				31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */,
+				31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */,
+				31F695BF1F278EFB00F786FB /* BMAlipayHeaderSelectView.h */,
+				31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */,
+				31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */,
+				3156530C1F2792EF00DD1B3E /* BMAlipayCell.h */,
+				3156530D1F2792EF00DD1B3E /* BMAlipayCell.m */,
+				3156530E1F2792EF00DD1B3E /* BMAlipayCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3281E30F1F25787700BEBF76 /* BaseDemo */ = {
@@ -258,6 +331,25 @@
 			path = RootVC;
 			sourceTree = "<group>";
 		};
+		3950F4BFBCD1A7FB7A30D168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5425CBAA54F13DD6DF7F8CF /* Pods-BMDragCellCollectionViewDemo.debug.xcconfig */,
+				B6D0C194DE48D92C3B355FBA /* Pods-BMDragCellCollectionViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53DEDBE78D878BD510B77233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */,
+				256A2F92BA5BEEECB873113B /* libPods-BMDragCellCollectionViewDemoTests.a */,
+				8DD01D17F377709FFE761F8C /* libPods-BMDragCellCollectionViewDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +357,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31ADB0891F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemo" */;
 			buildPhases = (
+				F0F852347325178413311268 /* [CP] Check Pods Manifest.lock */,
 				31ADB0581F1D04EB00FE7FA1 /* Sources */,
 				31ADB0591F1D04EB00FE7FA1 /* Frameworks */,
 				31ADB05A1F1D04EB00FE7FA1 /* Resources */,
+				A61AA5E6E75CCBF93F3F8E75 /* [CP] Embed Pods Frameworks */,
+				B672FA9D75A928B6BADA2D23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,10 +462,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315653101F2792EF00DD1B3E /* BMAlipayCell.xib in Resources */,
 				31B00B741F238DAC00A8670B /* LICENSE in Resources */,
 				311B39501F26539F0049D014 /* 2.gif in Resources */,
+				31F695BB1F278DFC00F786FB /* BMAlipayVC.xib in Resources */,
 				31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */,
+				31F695C31F278F0200F786FB /* BMAlipayHeaderSelectView.xib in Resources */,
 				311B39551F2655650049D014 /* 3.png in Resources */,
+				31F695C51F278F0800F786FB /* BMAlipayHeaderCollectionView.xib in Resources */,
 				31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */,
 				3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */,
 				31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */,
@@ -398,18 +497,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A61AA5E6E75CCBF93F3F8E75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B672FA9D75A928B6BADA2D23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F852347325178413311268 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31ADB0581F1D04EB00FE7FA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F695BE1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m in Sources */,
 				311B39461F26538A0049D014 /* BMTodayHeadlinesDragCell.m in Sources */,
+				3156530F1F2792EF00DD1B3E /* BMAlipayCell.m in Sources */,
+				31F695BA1F278DFC00F786FB /* BMAlipayVC.m in Sources */,
 				31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */,
 				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
 				3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */,
 				31B00B751F238DAC00A8670B /* README.md in Sources */,
 				3281E31B1F25787700BEBF76 /* ViewController.m in Sources */,
 				3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */,
+				31F695C11F278EFB00F786FB /* BMAlipayHeaderSelectView.m in Sources */,
 				311B39491F26538A0049D014 /* BMTodayHeadlinesDragVC.m in Sources */,
 				311B39481F26538A0049D014 /* BMTodayHeadlinesDragModel.m in Sources */,
 				31B00B341F20F3D500A8670B /* main.m in Sources */,
@@ -559,6 +710,7 @@
 		};
 		31ADB08A1F1D04EC00FE7FA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5425CBAA54F13DD6DF7F8CF /* Pods-BMDragCellCollectionViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
@@ -572,6 +724,7 @@
 		};
 		31ADB08B1F1D04EC00FE7FA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D0C194DE48D92C3B355FBA /* Pods-BMDragCellCollectionViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
