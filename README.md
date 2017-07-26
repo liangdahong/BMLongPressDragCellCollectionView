@@ -47,6 +47,15 @@
 
 >开源不易，来个[star](https://github.com/asiosldh/BMDragCellCollectionView)鼓励下吧
 
+## Demo运行 
+> 明白了都懂
+
+1. `cd BMDragCellCollectionView/BMDragCellCollectionViewDemo` 
+
+2. `pod install `
+
+3. `open BMDragCellCollectionViewDemo.xcworkspace`
+
 ## 集成
 ### CocoaPods
 > 推荐使用 CocoaPods 安装。
