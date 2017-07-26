@@ -12,7 +12,7 @@
 
 @interface BMTodayHeadlinesDragCell : UICollectionViewCell
 
-    @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-    @property (weak, nonatomic) IBOutlet UIButton *removeButton;
-    
-    @end
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *removeButton;
+
+@end

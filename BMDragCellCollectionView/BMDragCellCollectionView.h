@@ -79,22 +79,49 @@
 - (BOOL)dragCellCollectionViewShouldBeginExchange:(BMDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 /**
- 拖拽结束（已经停止移动时调用）
+ 结束重排时（已经停止移动时调用）
  
  @param dragCellCollectionView dragCellCollectionView
  */
 - (void)dragCellCollectionViewDidEndDrag:(BMDragCellCollectionView *)dragCellCollectionView;
 
+/**
+ 开始拖拽时
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param point 响应点击
+ @param indexPath 响应的indexPath，如果是nil 说明没有接触 cell
+ */
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView beganDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
+
+/**
+ 拖拽改变时
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param point 响应点击
+ @param indexPath 响应的indexPath，如果是nil 说明没有接触 cell
+ */
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
+
+/**
+ 结束拖拽时
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param point 响应点击
+ @param indexPath 响应的indexPath，如果是nil 说明没有接触 cell
+ */
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
+
 @end
 
 /**
  可以长按拖拽Cell的UICollectionView
+ UICollectionView can grow by drag and drop the Cell
  */
 @interface BMDragCellCollectionView : UICollectionView
 
-@property (nonatomic, weak) id<BMDragCellCollectionViewDelegate> delegate; ///< 代理
-
-@property (nonatomic, weak) id<BMDragCollectionViewDataSource> dataSource; ///< 数据源代理
+@property (nonatomic, weak) id<BMDragCellCollectionViewDelegate> delegate; ///< 代理 delegate
+@property (nonatomic, weak) id<BMDragCollectionViewDataSource> dataSource; ///< 数据源代理 dataSource
 
 /**
  长按触发时间，默认是0.5秒，建议根据实际情况设值
@@ -114,5 +141,17 @@
  Long by drag and drop the Cell scaling default is: 1.2
  */
 @property (nonatomic, assign) CGFloat dragZoomScale;
+
+/**
+ 拖拽的Cell在拖拽移动时的透明度 默认是： 1.0
+ Drag and drop the Cell in drag move when the transparency The default is 1.0
+ */
+@property (assign, nonatomic) CGFloat dragCellAlpha;
+
+/**
+ 拖拽的Cell在拖拽移动时是否自动调整到手指中心
+ Drag and drop the Cell in the drag when the mobile is automatically adjusted to the fingers
+ */
+// @property (assign, nonatomic) BOOL fingerCenter;
 
 @end

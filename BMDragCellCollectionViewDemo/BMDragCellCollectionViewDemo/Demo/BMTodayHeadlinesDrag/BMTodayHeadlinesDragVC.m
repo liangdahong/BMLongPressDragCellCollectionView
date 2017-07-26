@@ -43,7 +43,8 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     [super viewDidLoad];
     
     self.title = @"今日头条-频道选择-正在完善中...";
-    
+
+    self.dragCellCollectionView.dragCellAlpha = 0.9;
     self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
     
     self.dragCellCollectionView.alwaysBounceVertical = YES;
@@ -170,5 +171,17 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     }
     return YES;
 }
-    
+
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView beganDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"beganDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
+}
+
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"changedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
+}
+
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"endedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
+}
+
 @end
