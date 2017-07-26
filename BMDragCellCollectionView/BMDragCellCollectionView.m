@@ -427,14 +427,20 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (!self.oldIndexPath) {
                 return;
             }
+            
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
+            
             //结束动画过程中停止交互，防止出问题
             self.userInteractionEnabled = NO;
             // 结束拖拽了
             self.isEndDrag = YES;
             //给截图视图一个动画移动到隐藏cell的新位置
             [UIView animateWithDuration:0.25 animations:^{
-                _snapedView.center = cell.center;
+                if (!cell) {
+                    _snapedView.center = _oldPoint;
+                } else {
+                    _snapedView.center = cell.center;
+                }
                 _snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
                 _snapedView.alpha = 1.0;
             } completion:^(BOOL finished) {
