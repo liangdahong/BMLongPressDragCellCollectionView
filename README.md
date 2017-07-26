@@ -62,7 +62,7 @@
 2. 将 BMDragCellCollectionView 内的源文件添加(拖放)到你的工程。
 3. 导入 `"BMDragCellCollectionView.h"`
 
-## 使用说明
+## 基本使用
 - 在需要使用长按拖拽`UICollectionView `的地方使用`BMDragCellCollectionView`代替，用法和`UICollectionView`一样。
 
 ```c
@@ -92,6 +92,61 @@ collectionView.dataSource = self;
     self.dataSource = [newDataArray mutableCopy];
 }
 ```
+## BMDragCellCollectionView的方法说明
+>  长按触发时间，默认是0.5秒，建议根据实际情况设值
+
+```c
+@property (nonatomic, assign) NSTimeInterval minimumPressDuration;
+```
+
+>  是否可以拖拽 默认为YES
+
+```c
+@property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
+```
+
+>  长按拖拽时Cell缩放比例 默认是：1.2
+
+```c
+@property (nonatomic, assign) CGFloat dragZoomScale;
+```
+
+>   拖拽的Cell在拖拽移动时的透明度 默认是： 1.0
+
+```c
+@property (assign, nonatomic) CGFloat dragCellAlpha;
+```
+
+## 代理方法
+
+> 当一个`Cell`将要开始拖拽时调用询问是否可以拖拽， `YES`: 可以， `NO`: 不可以，默认是`YES`
+
+```c
+- (BOOL)dragCellCollectionViewShouldBeginMove:(BMDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath;
+
+```
+
+>  当将要交换时，询问是否可以交换时调用询问是否可以交换， `YES`: 可以， `NO`: 不可以，默认是`YES`
+
+```c
+- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
+```
+
+>   完成重排时，重排成成功时
+
+```c
+- (void)dragCellCollectionViewDidEndDrag:(BMDragCellCollectionView *)dragCellCollectionView;
+```
+
+>   下面的三个方法在手势拖拽变化时调用，`开始拖拽` `正在拖拽` `结束拖拽`，
+
+```c
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView beganDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
+
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
+
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
+```
 
 - 其他相关用法，详见[代码](https://github.com/asiosldh/BMDragCellCollectionView/blob/master/BMDragCellCollectionView/BMDragCellCollectionView.h)
 - [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
@@ -100,10 +155,11 @@ collectionView.dataSource = self;
 - 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
 
 ## 版本历史
+### v1.0.3
 ### v1.0.2
 ### v1.0.1
 ### v1.0.0 
 
 ## MIT
-BMDragCellCollectionView 使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件
+`BMDragCellCollectionView `使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件
 
