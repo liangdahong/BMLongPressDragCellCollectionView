@@ -62,7 +62,7 @@
 ### CocoaPods
 > 推荐使用 CocoaPods 安装。
 
-1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.3'`
+1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.4'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 2. 执行 `pod install` 或 `pod update`
 3. 使用的地方导入 `"BMDragCellCollectionView.h"`
 4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`
@@ -166,6 +166,7 @@ collectionView.dataSource = self;
 - 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
 
 ## 版本历史
+### v1.0.4
 ### v1.0.3
 ### v1.0.2
 ### v1.0.1
