@@ -92,7 +92,7 @@ collectionView.dataSource = self;
     self.dataSource = [newDataArray mutableCopy];
 }
 ```
-## BMDragCellCollectionView的方法说明
+## BMDragCellCollectionView属性及方法说明
 >  长按触发时间，默认是0.5秒，建议根据实际情况设值
 
 ```c
