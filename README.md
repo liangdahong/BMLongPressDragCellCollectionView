@@ -48,7 +48,7 @@
 >开源不易，来个[star](https://github.com/asiosldh/BMDragCellCollectionView)鼓励下吧
 
 ## Demo运行 
-> 明白了都懂
+> 老提不要说不会 `Cocoapods`
 
 1. `cd BMDragCellCollectionView/BMDragCellCollectionViewDemo` 
 
