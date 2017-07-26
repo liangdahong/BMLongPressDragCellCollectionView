@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		013C3D7F0196863F2BA855D6 /* libPods-BMDragCellCollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */; };
+		31009BA91F28FF27006615F6 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 31009BA81F28FF27006615F6 /* iTunesArtwork.png */; };
 		311B39461F26538A0049D014 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */; };
 		311B39471F26538A0049D014 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */; };
 		311B39481F26538A0049D014 /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B39421F26538A0049D014 /* BMTodayHeadlinesDragModel.m */; };
@@ -29,13 +30,13 @@
 		31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */; };
 		31B00B741F238DAC00A8670B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B711F238DAC00A8670B /* LICENSE */; };
 		31B00B751F238DAC00A8670B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B721F238DAC00A8670B /* README.md */; };
-		32397BE21F282DEE009DAD26 /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */; };
 		31F695BA1F278DFC00F786FB /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695B81F278DFC00F786FB /* BMAlipayVC.m */; };
 		31F695BB1F278DFC00F786FB /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695B91F278DFC00F786FB /* BMAlipayVC.xib */; };
 		31F695BE1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */; };
 		31F695C11F278EFB00F786FB /* BMAlipayHeaderSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */; };
 		31F695C31F278F0200F786FB /* BMAlipayHeaderSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */; };
 		31F695C51F278F0800F786FB /* BMAlipayHeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */; };
+		32397BE21F282DEE009DAD26 /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */; };
 		3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */; };
 		3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */; };
 		3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		256A2F92BA5BEEECB873113B /* libPods-BMDragCellCollectionViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31009BA81F28FF27006615F6 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		311B393E1F26538A0049D014 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
 		311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
 		311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
@@ -94,7 +96,6 @@
 		31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
 		31B00B711F238DAC00A8670B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31B00B721F238DAC00A8670B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
 		31F695B71F278DFC00F786FB /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
 		31F695B81F278DFC00F786FB /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
 		31F695B91F278DFC00F786FB /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderSelectView.m; sourceTree = "<group>"; };
 		31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderSelectView.xib; sourceTree = "<group>"; };
 		31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderCollectionView.xib; sourceTree = "<group>"; };
+		32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
 		3281E3101F25787700BEBF76 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
 		3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
 		3281E3121F25787700BEBF76 /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		311B394B1F26539F0049D014 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				31009BA81F28FF27006615F6 /* iTunesArtwork.png */,
 				311B394C1F26539F0049D014 /* 1.gif */,
 				311B394D1F26539F0049D014 /* 2.gif */,
 				311B39521F2653A90049D014 /* 4.gif */,
@@ -463,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				315653101F2792EF00DD1B3E /* BMAlipayCell.xib in Resources */,
+				31009BA91F28FF27006615F6 /* iTunesArtwork.png in Resources */,
 				31B00B741F238DAC00A8670B /* LICENSE in Resources */,
 				311B39501F26539F0049D014 /* 2.gif in Resources */,
 				31F695BB1F278DFC00F786FB /* BMAlipayVC.xib in Resources */,
@@ -555,7 +559,6 @@
 				32397BE21F282DEE009DAD26 /* BMDragCellCollectionView.m in Sources */,
 				3156530F1F2792EF00DD1B3E /* BMAlipayCell.m in Sources */,
 				31F695BA1F278DFC00F786FB /* BMAlipayVC.m in Sources */,
-				31B00B641F22507C00A8670B /* BMDragCellCollectionView.m in Sources */,
 				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
 				3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */,
 				31B00B751F238DAC00A8670B /* README.md in Sources */,
