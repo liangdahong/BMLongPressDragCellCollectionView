@@ -25,6 +25,8 @@
 
 @class BMDragCellCollectionView;
 
+#pragma mark - BMDragCollectionViewDataSource
+
 /**
  BMDragCollectionViewDataSource 协议
  */
@@ -36,11 +38,13 @@
  获取数据源（内部会做合适的更新数据源处理，必须实现）
  
  @param dragCellCollectionView dragCellCollectionView
- @return 返回数据源
+ @return 返回数据源  return self.dataArray;
  */
 - (NSArray *)dataSourceWithDragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView;
 
 @end
+
+#pragma mark - BMDragCellCollectionViewDelegate
 
 /**
  BMDragCellCollectionViewDelegate 协议
@@ -53,18 +57,18 @@
  动画和移动完成时（这里会返回更新后的数据源，请在此代理保存数据源，必须实现）
  
  @param dragCellCollectionView dragCellCollectionView
- @param newDataArray 新的数据源，建议保存。
+ @param newDataArray 新的数据源，必须保存。 self.dataArray = [newDataArray copy];
  */
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray;
 
 @optional
 
 /**
- 将要开始拖拽时，询问此cell是否可以拖拽
+ 将要开始拖拽时，询问此位置的Cell是否可以拖拽
  
  @param dragCellCollectionView dragCellCollectionView
  @param indexPath indexPath
- @return YES: 正常拖拽和移动 NO:此cell无法移动，如：增加按钮等
+ @return YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
  */
 - (BOOL)dragCellCollectionViewShouldBeginMove:(BMDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath;
 
@@ -72,14 +76,14 @@
  将要交换时，询问是否可以交换
  
  @param dragCellCollectionView dragCellCollectionView
- @param sourceIndexPath 源IndexPath
- @param destinationIndexPath 新位置IndexPath
- @return YES: 正常拖拽和移动 NO:此cell无法移动，如：增加按钮等
+ @param sourceIndexPath 原来的IndexPath
+ @param destinationIndexPath 将要交换的IndexPath
+ @return YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
  */
 - (BOOL)dragCellCollectionViewShouldBeginExchange:(BMDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 /**
- 结束重排时（已经停止移动时调用）
+ BMDragCellCollectionView重排完成时
  
  @param dragCellCollectionView dragCellCollectionView
  */
@@ -90,16 +94,16 @@
 
  @param dragCellCollectionView dragCellCollectionView
  @param point 响应点击
- @param indexPath 响应的indexPath，如果是nil 说明没有接触 cell
+ @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
  */
-- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView beganDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView beganDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
 
 /**
  拖拽改变时
 
  @param dragCellCollectionView dragCellCollectionView
  @param point 响应点击
- @param indexPath 响应的indexPath，如果是nil 说明没有接触 cell
+ @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
  */
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
 
@@ -108,11 +112,23 @@
 
  @param dragCellCollectionView dragCellCollectionView
  @param point 响应点击
- @param indexPath 响应的indexPath，如果是nil 说明没有接触 cell
+ @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
  */
-- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
+
+/**
+ 结束拖拽时时是否内部自动处理
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param point 响应点击
+ @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
+ @return YES: 内部自动操作 NO:外部处理，内部会保持当前的状态，请注意使用
+ */
+- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;;
 
 @end
+
+#pragma mark - BMDragCellCollectionView
 
 /**
  可以长按拖拽Cell的UICollectionView
@@ -147,6 +163,8 @@
  Drag and drop the Cell in drag move when the transparency The default is 1.0
  */
 @property (assign, nonatomic) CGFloat dragCellAlpha;
+
+#pragma mark - 待增加的功能
 
 /**
  拖拽的Cell在拖拽移动时是否自动调整到手指中心

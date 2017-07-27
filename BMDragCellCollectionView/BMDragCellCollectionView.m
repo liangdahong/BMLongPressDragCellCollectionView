@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     BMDragCellCollectionViewScrollDirectionLeft,
     BMDragCellCollectionViewScrollDirectionRight,
     BMDragCellCollectionViewScrollDirectionUp,
-    BMDragCellCollectionViewScrollDirectionDown
+    BMDragCellCollectionViewScrollDirectionDown,
 };
 
 @interface BMDragCellCollectionView ()
@@ -424,6 +424,14 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self endedDragAtPoint:point indexPath:indexPath];
             }
+
+            if (self.delegate
+                && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAutomaticOperationAtPoint:indexPath:)]) {
+                if (![self.delegate dragCellCollectionView:self endedDragAutomaticOperationAtPoint:point indexPath:indexPath]) {
+                    return;
+                }
+            }
+
             if (!self.oldIndexPath) {
                 return;
             }
