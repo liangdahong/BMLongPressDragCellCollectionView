@@ -428,7 +428,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (self.delegate
                 && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAutomaticOperationAtPoint:indexPath:)]) {
                 if (![self.delegate dragCellCollectionView:self endedDragAutomaticOperationAtPoint:point indexPath:indexPath]) {
-                    return;
+                    indexPath = [NSIndexPath indexPathForItem:0 inSection:1];
+//                    return;
                 }
             }
 

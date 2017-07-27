@@ -190,10 +190,10 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
     NSLog(@"endedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
 }
-//
-//- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
-//    NSLog(@"endedDragAutomaticOperationAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
-//    return NO;
-//}
+
+- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"endedDragAutomaticOperationAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
+    return NO;
+}
 
 @end
