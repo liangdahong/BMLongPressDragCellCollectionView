@@ -166,6 +166,9 @@
 
 #pragma mark - 待增加的功能
 
+
+- (void)dragMoveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
+
 /**
  拖拽的Cell在拖拽移动时是否自动调整到手指中心
  Drag and drop the Cell in the drag when the mobile is automatically adjusted to the fingers

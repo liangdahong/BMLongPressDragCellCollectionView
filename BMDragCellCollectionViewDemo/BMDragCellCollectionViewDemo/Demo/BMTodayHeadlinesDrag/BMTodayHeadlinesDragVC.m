@@ -192,7 +192,10 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 }
 
 - (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
-    NSLog(@"endedDragAutomaticOperationAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
+    if (!indexPath || indexPath.section == 0) {
+        return YES;
+    }
+    [dragCellCollectionView dragMoveItemAtIndexPath:nil toIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
     return NO;
 }
 

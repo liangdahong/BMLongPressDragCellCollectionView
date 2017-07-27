@@ -469,4 +469,23 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }
 }
 
+- (void)dragMoveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
+    if (indexPath) {
+        
+    } else {
+        _oldIndexPath;
+        _currentIndexPath = newIndexPath;
+        
+        // 操作
+        [self _updateSourceData];
+        
+        // 移动 会调用willMoveToIndexPath方法更新数据源
+        [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
+        // 设置移动后的起始indexPath
+        _oldIndexPath = newIndexPath;
+        [self reloadItemsAtIndexPaths:@[newIndexPath]];
+    }
+
+}
+
 @end
