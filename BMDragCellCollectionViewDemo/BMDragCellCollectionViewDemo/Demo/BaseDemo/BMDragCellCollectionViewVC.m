@@ -36,12 +36,12 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 
 - (BMDragCellCollectionView *)collectionView{
     if (_collectionView == nil) {
+
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = self.collectionViewScrollDirection;
         _collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        
         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         layout.minimumLineSpacing = arc4random_uniform(20)+1;
         layout.minimumInteritemSpacing = arc4random_uniform(20)+1;
@@ -53,7 +53,6 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
         } else {
             _collectionView.alwaysBounceHorizontal = YES;
         }
-        
         [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMDragCollectionViewCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
         _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
