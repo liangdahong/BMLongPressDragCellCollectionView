@@ -469,11 +469,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 }
 
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)newIndexPath {
-    
     if (self.isEndDrag) {
         return;
     }
-    
     self.isEndDrag = YES;
     self.longGesture.enabled = NO;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -494,7 +492,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     [self reloadItemsAtIndexPaths:@[newIndexPath]];
     
     UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
-    
+    cell.hidden = YES;
+
     //结束动画过程中停止交互，防止出问题
     self.userInteractionEnabled = NO;
     // 结束拖拽了
