@@ -166,8 +166,12 @@
 
 #pragma mark - 待增加的功能
 
+/**
+ 移动到指定位置
 
-- (void)dragMoveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
+ @param indexPath 移动到的位置（内部处理当）
+ */
+- (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 
 /**
  拖拽的Cell在拖拽移动时是否自动调整到手指中心

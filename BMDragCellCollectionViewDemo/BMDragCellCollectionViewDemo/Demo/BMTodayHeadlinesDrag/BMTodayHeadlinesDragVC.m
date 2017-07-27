@@ -184,6 +184,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 }
 
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+    
     NSLog(@"changedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
 }
 
@@ -195,7 +196,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     if (!indexPath || indexPath.section == 0) {
         return YES;
     }
-    [dragCellCollectionView dragMoveItemAtIndexPath:nil toIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
+    [dragCellCollectionView dragMoveItemToIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
     return NO;
 }
 
