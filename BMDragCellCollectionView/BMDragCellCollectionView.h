@@ -118,13 +118,14 @@
 
 /**
  结束拖拽时时是否内部自动处理
-
+ 
  @param dragCellCollectionView dragCellCollectionView
  @param point 响应点击
+ @param section 当前触摸的组，如果是 -1 表示没有接触组
  @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
  @return YES: 内部自动操作 NO:外部处理，内部会保持当前的状态，请注意使用
  */
-- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;;
+- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -164,19 +165,11 @@
  */
 @property (assign, nonatomic) CGFloat dragCellAlpha;
 
-#pragma mark - 待增加的功能
-
 /**
  移动到指定位置
 
  @param indexPath 移动到的位置（内部只会处理当前正在拖拽的情况，会把拖拽的Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用，如：今日头条）
  */
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
-
-/**
- 拖拽的Cell在拖拽移动时是否自动调整到手指中心
- Drag and drop the Cell in the drag when the mobile is automatically adjusted to the fingers
- */
-// @property (assign, nonatomic) BOOL fingerCenter;
 
 @end
