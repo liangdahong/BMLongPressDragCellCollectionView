@@ -2,7 +2,7 @@
 //  BMDragCellCollectionViewDemoUITests.m
 //  BMDragCellCollectionViewDemoUITests
 //
-//  Created by __liangdahong on 2017/7/17.
+//  Created by __liangdahong on 2017/7/29.
 //  Copyright © 2017年 http://idhong.com. All rights reserved.
 //
 

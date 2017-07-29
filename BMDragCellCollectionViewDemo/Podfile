@@ -1,3 +1,0 @@
-target 'BMDragCellCollectionViewDemo' do
-    pod 'XXNibBridge', '2.3.1'
-end

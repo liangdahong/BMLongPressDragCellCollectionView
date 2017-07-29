@@ -7,135 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013C3D7F0196863F2BA855D6 /* libPods-BMDragCellCollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */; };
-		31009BA91F28FF27006615F6 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 31009BA81F28FF27006615F6 /* iTunesArtwork.png */; };
-		311B39461F26538A0049D014 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */; };
-		311B39471F26538A0049D014 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */; };
-		311B39481F26538A0049D014 /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B39421F26538A0049D014 /* BMTodayHeadlinesDragModel.m */; };
-		311B39491F26538A0049D014 /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 311B39441F26538A0049D014 /* BMTodayHeadlinesDragVC.m */; };
-		311B394A1F26538A0049D014 /* BMTodayHeadlinesDragVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311B39451F26538A0049D014 /* BMTodayHeadlinesDragVC.xib */; };
-		311B394F1F26539F0049D014 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 311B394C1F26539F0049D014 /* 1.gif */; };
-		311B39501F26539F0049D014 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 311B394D1F26539F0049D014 /* 2.gif */; };
-		311B39531F2653AA0049D014 /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 311B39521F2653A90049D014 /* 4.gif */; };
-		311B39551F2655650049D014 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 311B39541F2655650049D014 /* 3.png */; };
-		3156530F1F2792EF00DD1B3E /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3156530D1F2792EF00DD1B3E /* BMAlipayCell.m */; };
-		315653101F2792EF00DD1B3E /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3156530E1F2792EF00DD1B3E /* BMAlipayCell.xib */; };
-		31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB0681F1D04EB00FE7FA1 /* Main.storyboard */; };
-		31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */; };
-		31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADB06D1F1D04EB00FE7FA1 /* LaunchScreen.storyboard */; };
-		31ADB07A1F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ADB0791F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.m */; };
-		31ADB0851F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ADB0841F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m */; };
-		31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B261F20F3D500A8670B /* AppDelegate.m */; };
-		31B00B341F20F3D500A8670B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B271F20F3D500A8670B /* main.m */; };
-		31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */; };
-		31B00B741F238DAC00A8670B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31B00B711F238DAC00A8670B /* LICENSE */; };
-		31B00B751F238DAC00A8670B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31B00B721F238DAC00A8670B /* README.md */; };
-		31F695BA1F278DFC00F786FB /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695B81F278DFC00F786FB /* BMAlipayVC.m */; };
-		31F695BB1F278DFC00F786FB /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695B91F278DFC00F786FB /* BMAlipayVC.xib */; };
-		31F695BE1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */; };
-		31F695C11F278EFB00F786FB /* BMAlipayHeaderSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */; };
-		31F695C31F278F0200F786FB /* BMAlipayHeaderSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */; };
-		31F695C51F278F0800F786FB /* BMAlipayHeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */; };
-		32397BE21F282DEE009DAD26 /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */; };
-		3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */; };
-		3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */; };
-		3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */; };
-		3281E31B1F25787700BEBF76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281E3171F25787700BEBF76 /* ViewController.m */; };
+		31DA8F7A1F2C7EC0002D8B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8F781F2C7EC0002D8B3F /* Main.storyboard */; };
+		31DA8F7C1F2C7EC0002D8B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8F7B1F2C7EC0002D8B3F /* Assets.xcassets */; };
+		31DA8F7F1F2C7EC0002D8B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8F7D1F2C7EC0002D8B3F /* LaunchScreen.storyboard */; };
+		31DA8F8A1F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8F891F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.m */; };
+		31DA8F951F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8F941F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m */; };
+		31DA8FC91F2C7EF6002D8B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FA41F2C7EF6002D8B3F /* AppDelegate.m */; };
+		31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FA51F2C7EF6002D8B3F /* main.m */; };
+		31DA8FCB1F2C7EF6002D8B3F /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAA1F2C7EF6002D8B3F /* BMAlipayVC.m */; };
+		31DA8FCC1F2C7EF6002D8B3F /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FAB1F2C7EF6002D8B3F /* BMAlipayVC.xib */; };
+		31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */; };
+		31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */; };
+		31DA8FCF1F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */; };
+		31DA8FD01F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB31F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib */; };
+		31DA8FD11F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB51F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m */; };
+		31DA8FD21F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB61F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib */; };
+		31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */; };
+		31DA8FD41F2C7EF6002D8B3F /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */; };
+		31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */; };
+		31DA8FD61F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FBF1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m */; };
+		31DA8FD71F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FC01F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib */; };
+		31DA8FD81F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FC21F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m */; };
+		31DA8FD91F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FC41F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m */; };
+		31DA8FDA1F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FC51F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib */; };
+		31DA8FDB1F2C7EF6002D8B3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FC81F2C7EF6002D8B3F /* ViewController.m */; };
+		31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */; };
+		31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */; };
+		31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE01F2C7F7D002D8B3F /* LICENSE */; };
+		31DA8FEB1F2C7F7D002D8B3F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FE11F2C7F7D002D8B3F /* README.md */; };
+		31DA8FEC1F2C7F7D002D8B3F /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE31F2C7F7D002D8B3F /* 1.gif */; };
+		31DA8FED1F2C7F7D002D8B3F /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE41F2C7F7D002D8B3F /* 2.gif */; };
+		31DA8FEE1F2C7F7D002D8B3F /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE51F2C7F7D002D8B3F /* 3.png */; };
+		31DA8FEF1F2C7F7D002D8B3F /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE61F2C7F7D002D8B3F /* 4.gif */; };
+		31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE71F2C7F7D002D8B3F /* iTunesArtwork.png */; };
+		31DA8FF61F2C7FD8002D8B3F /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FF31F2C7FD8002D8B3F /* XXNibBridge.m */; };
+		31DA8FF71F2C7FD8002D8B3F /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FF51F2C7FD8002D8B3F /* XXNibConvention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31ADB0761F1D04EC00FE7FA1 /* PBXContainerItemProxy */ = {
+		31DA8F861F2C7EC1002D8B3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31ADB0541F1D04EB00FE7FA1 /* Project object */;
+			containerPortal = 31DA8F641F2C7EC0002D8B3F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31ADB05B1F1D04EB00FE7FA1;
+			remoteGlobalIDString = 31DA8F6B1F2C7EC0002D8B3F;
 			remoteInfo = BMDragCellCollectionViewDemo;
 		};
-		31ADB0811F1D04EC00FE7FA1 /* PBXContainerItemProxy */ = {
+		31DA8F911F2C7EC1002D8B3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31ADB0541F1D04EB00FE7FA1 /* Project object */;
+			containerPortal = 31DA8F641F2C7EC0002D8B3F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31ADB05B1F1D04EB00FE7FA1;
+			remoteGlobalIDString = 31DA8F6B1F2C7EC0002D8B3F;
 			remoteInfo = BMDragCellCollectionViewDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		256A2F92BA5BEEECB873113B /* libPods-BMDragCellCollectionViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		31009BA81F28FF27006615F6 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		311B393E1F26538A0049D014 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
-		311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
-		311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
-		311B39411F26538A0049D014 /* BMTodayHeadlinesDragModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragModel.h; sourceTree = "<group>"; };
-		311B39421F26538A0049D014 /* BMTodayHeadlinesDragModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragModel.m; sourceTree = "<group>"; };
-		311B39431F26538A0049D014 /* BMTodayHeadlinesDragVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragVC.h; sourceTree = "<group>"; };
-		311B39441F26538A0049D014 /* BMTodayHeadlinesDragVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragVC.m; sourceTree = "<group>"; };
-		311B39451F26538A0049D014 /* BMTodayHeadlinesDragVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragVC.xib; sourceTree = "<group>"; };
-		311B394C1F26539F0049D014 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
-		311B394D1F26539F0049D014 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
-		311B39521F2653A90049D014 /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
-		311B39541F2655650049D014 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		3156530C1F2792EF00DD1B3E /* BMAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayCell.h; sourceTree = "<group>"; };
-		3156530D1F2792EF00DD1B3E /* BMAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayCell.m; sourceTree = "<group>"; };
-		3156530E1F2792EF00DD1B3E /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
-		31ADB05C1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCellCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		31ADB0691F1D04EB00FE7FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		31ADB06E1F1D04EB00FE7FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		31ADB0701F1D04EB00FE7FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31ADB0751F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMDragCellCollectionViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31ADB0791F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewDemoTests.m; sourceTree = "<group>"; };
-		31ADB07B1F1D04EC00FE7FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31ADB0801F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMDragCellCollectionViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31ADB0841F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewDemoUITests.m; sourceTree = "<group>"; };
-		31ADB0861F1D04EC00FE7FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31B00B251F20F3D500A8670B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		31B00B261F20F3D500A8670B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		31B00B271F20F3D500A8670B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		31B00B621F22507C00A8670B /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
-		31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
-		31B00B711F238DAC00A8670B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		31B00B721F238DAC00A8670B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		31F695B71F278DFC00F786FB /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
-		31F695B81F278DFC00F786FB /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
-		31F695B91F278DFC00F786FB /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
-		31F695BC1F278EEB00F786FB /* BMAlipayHeaderCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderCollectionView.h; sourceTree = "<group>"; };
-		31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderCollectionView.m; sourceTree = "<group>"; };
-		31F695BF1F278EFB00F786FB /* BMAlipayHeaderSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderSelectView.h; sourceTree = "<group>"; };
-		31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderSelectView.m; sourceTree = "<group>"; };
-		31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderSelectView.xib; sourceTree = "<group>"; };
-		31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderCollectionView.xib; sourceTree = "<group>"; };
-		32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
-		3281E3101F25787700BEBF76 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
-		3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
-		3281E3121F25787700BEBF76 /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
-		3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
-		3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
-		3281E3161F25787700BEBF76 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3281E3171F25787700BEBF76 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8DD01D17F377709FFE761F8C /* libPods-BMDragCellCollectionViewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6D0C194DE48D92C3B355FBA /* Pods-BMDragCellCollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCellCollectionViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C5425CBAA54F13DD6DF7F8CF /* Pods-BMDragCellCollectionViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCellCollectionViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCellCollectionViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DA8F6C1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCellCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DA8F791F2C7EC0002D8B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31DA8F7B1F2C7EC0002D8B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31DA8F7E1F2C7EC0002D8B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31DA8F801F2C7EC0002D8B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DA8F851F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMDragCellCollectionViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DA8F891F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewDemoTests.m; sourceTree = "<group>"; };
+		31DA8F8B1F2C7EC1002D8B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DA8F901F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMDragCellCollectionViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DA8F941F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewDemoUITests.m; sourceTree = "<group>"; };
+		31DA8F961F2C7EC1002D8B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DA8FA31F2C7EF6002D8B3F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		31DA8FA41F2C7EF6002D8B3F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		31DA8FA51F2C7EF6002D8B3F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31DA8FA91F2C7EF6002D8B3F /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
+		31DA8FAA1F2C7EF6002D8B3F /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
+		31DA8FAB1F2C7EF6002D8B3F /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
+		31DA8FAE1F2C7EF6002D8B3F /* BMAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayCell.h; sourceTree = "<group>"; };
+		31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayCell.m; sourceTree = "<group>"; };
+		31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
+		31DA8FB11F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderCollectionView.h; sourceTree = "<group>"; };
+		31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderCollectionView.m; sourceTree = "<group>"; };
+		31DA8FB31F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderCollectionView.xib; sourceTree = "<group>"; };
+		31DA8FB41F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderSelectView.h; sourceTree = "<group>"; };
+		31DA8FB51F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderSelectView.m; sourceTree = "<group>"; };
+		31DA8FB61F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderSelectView.xib; sourceTree = "<group>"; };
+		31DA8FB81F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
+		31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
+		31DA8FBA1F2C7EF6002D8B3F /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
+		31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
+		31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
+		31DA8FBE1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
+		31DA8FBF1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
+		31DA8FC01F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
+		31DA8FC11F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragModel.h; sourceTree = "<group>"; };
+		31DA8FC21F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragModel.m; sourceTree = "<group>"; };
+		31DA8FC31F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragVC.h; sourceTree = "<group>"; };
+		31DA8FC41F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragVC.m; sourceTree = "<group>"; };
+		31DA8FC51F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragVC.xib; sourceTree = "<group>"; };
+		31DA8FC71F2C7EF6002D8B3F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		31DA8FC81F2C7EF6002D8B3F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31DA8FDD1F2C7F7D002D8B3F /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
+		31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
+		31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
+		31DA8FE01F2C7F7D002D8B3F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		31DA8FE11F2C7F7D002D8B3F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31DA8FE31F2C7F7D002D8B3F /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		31DA8FE41F2C7F7D002D8B3F /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		31DA8FE51F2C7F7D002D8B3F /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		31DA8FE61F2C7F7D002D8B3F /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
+		31DA8FE71F2C7F7D002D8B3F /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		31DA8FF21F2C7FD8002D8B3F /* XXNibBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibBridge.h; sourceTree = "<group>"; };
+		31DA8FF31F2C7FD8002D8B3F /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
+		31DA8FF41F2C7FD8002D8B3F /* XXNibConvention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibConvention.h; sourceTree = "<group>"; };
+		31DA8FF51F2C7FD8002D8B3F /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		31ADB0591F1D04EB00FE7FA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				013C3D7F0196863F2BA855D6 /* libPods-BMDragCellCollectionViewDemo.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31ADB0721F1D04EC00FE7FA1 /* Frameworks */ = {
+		31DA8F691F2C7EC0002D8B3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31ADB07D1F1D04EC00FE7FA1 /* Frameworks */ = {
+		31DA8F821F2C7EC1002D8B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31DA8F8D1F2C7EC1002D8B3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,227 +144,215 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		311B393D1F26538A0049D014 /* BMTodayHeadlinesDrag */ = {
+		31DA8F631F2C7EC0002D8B3F = {
 			isa = PBXGroup;
 			children = (
-				311B393E1F26538A0049D014 /* BMTodayHeadlinesDragCell.h */,
-				311B393F1F26538A0049D014 /* BMTodayHeadlinesDragCell.m */,
-				311B39401F26538A0049D014 /* BMTodayHeadlinesDragCell.xib */,
-				311B39411F26538A0049D014 /* BMTodayHeadlinesDragModel.h */,
-				311B39421F26538A0049D014 /* BMTodayHeadlinesDragModel.m */,
-				311B39431F26538A0049D014 /* BMTodayHeadlinesDragVC.h */,
-				311B39441F26538A0049D014 /* BMTodayHeadlinesDragVC.m */,
-				311B39451F26538A0049D014 /* BMTodayHeadlinesDragVC.xib */,
-			);
-			path = BMTodayHeadlinesDrag;
-			sourceTree = "<group>";
-		};
-		311B394B1F26539F0049D014 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				31009BA81F28FF27006615F6 /* iTunesArtwork.png */,
-				311B394C1F26539F0049D014 /* 1.gif */,
-				311B394D1F26539F0049D014 /* 2.gif */,
-				311B39521F2653A90049D014 /* 4.gif */,
-				311B39541F2655650049D014 /* 3.png */,
-			);
-			name = Resources;
-			path = ../Resources;
-			sourceTree = "<group>";
-		};
-		31ADB0531F1D04EB00FE7FA1 = {
-			isa = PBXGroup;
-			children = (
-				311B394B1F26539F0049D014 /* Resources */,
-				31B00B701F238DAC00A8670B /* BMDragCellCollectionView.podspec */,
-				31B00B711F238DAC00A8670B /* LICENSE */,
-				31B00B721F238DAC00A8670B /* README.md */,
-				31ADB05E1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */,
-				31ADB0781F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests */,
-				31ADB0831F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests */,
-				31ADB05D1F1D04EB00FE7FA1 /* Products */,
-				3950F4BFBCD1A7FB7A30D168 /* Pods */,
-				53DEDBE78D878BD510B77233 /* Frameworks */,
+				31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */,
+				31DA8FE01F2C7F7D002D8B3F /* LICENSE */,
+				31DA8FE11F2C7F7D002D8B3F /* README.md */,
+				31DA8FE21F2C7F7D002D8B3F /* Resources */,
+				31DA8FDC1F2C7F7D002D8B3F /* BMDragCellCollectionView */,
+				31DA8F6E1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo */,
+				31DA8F881F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests */,
+				31DA8F931F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests */,
+				31DA8F6D1F2C7EC0002D8B3F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		31ADB05D1F1D04EB00FE7FA1 /* Products */ = {
+		31DA8F6D1F2C7EC0002D8B3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31ADB05C1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo.app */,
-				31ADB0751F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.xctest */,
-				31ADB0801F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.xctest */,
+				31DA8F6C1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo.app */,
+				31DA8F851F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.xctest */,
+				31DA8F901F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		31ADB05E1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */ = {
+		31DA8F6E1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				31B00B611F22507C00A8670B /* BMDragCellCollectionView */,
-				31B00B241F20F3D500A8670B /* AppDelegate */,
-				31B00B2B1F20F3D500A8670B /* Demo */,
-				31ADB0681F1D04EB00FE7FA1 /* Main.storyboard */,
-				31ADB06B1F1D04EB00FE7FA1 /* Assets.xcassets */,
-				31ADB06D1F1D04EB00FE7FA1 /* LaunchScreen.storyboard */,
-				31ADB0701F1D04EB00FE7FA1 /* Info.plist */,
-				31ADB05F1F1D04EB00FE7FA1 /* Supporting Files */,
+				31DA8FF11F2C7FD8002D8B3F /* XXNibBridge */,
+				31DA8FA21F2C7EF6002D8B3F /* AppDelegate */,
+				31DA8FA61F2C7EF6002D8B3F /* Demo */,
+				31DA8F781F2C7EC0002D8B3F /* Main.storyboard */,
+				31DA8F7B1F2C7EC0002D8B3F /* Assets.xcassets */,
+				31DA8F7D1F2C7EC0002D8B3F /* LaunchScreen.storyboard */,
+				31DA8F801F2C7EC0002D8B3F /* Info.plist */,
+				31DA8F6F1F2C7EC0002D8B3F /* Supporting Files */,
 			);
 			path = BMDragCellCollectionViewDemo;
 			sourceTree = "<group>";
 		};
-		31ADB05F1F1D04EB00FE7FA1 /* Supporting Files */ = {
+		31DA8F6F1F2C7EC0002D8B3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		31ADB0781F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests */ = {
+		31DA8F881F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				31ADB0791F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.m */,
-				31ADB07B1F1D04EC00FE7FA1 /* Info.plist */,
+				31DA8F891F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.m */,
+				31DA8F8B1F2C7EC1002D8B3F /* Info.plist */,
 			);
 			path = BMDragCellCollectionViewDemoTests;
 			sourceTree = "<group>";
 		};
-		31ADB0831F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests */ = {
+		31DA8F931F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				31ADB0841F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m */,
-				31ADB0861F1D04EC00FE7FA1 /* Info.plist */,
+				31DA8F941F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m */,
+				31DA8F961F2C7EC1002D8B3F /* Info.plist */,
 			);
 			path = BMDragCellCollectionViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		31B00B241F20F3D500A8670B /* AppDelegate */ = {
+		31DA8FA21F2C7EF6002D8B3F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				31B00B251F20F3D500A8670B /* AppDelegate.h */,
-				31B00B261F20F3D500A8670B /* AppDelegate.m */,
-				31B00B271F20F3D500A8670B /* main.m */,
+				31DA8FA31F2C7EF6002D8B3F /* AppDelegate.h */,
+				31DA8FA41F2C7EF6002D8B3F /* AppDelegate.m */,
+				31DA8FA51F2C7EF6002D8B3F /* main.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		31B00B2B1F20F3D500A8670B /* Demo */ = {
+		31DA8FA61F2C7EF6002D8B3F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				31F695B31F278DE600F786FB /* AlipayVC */,
-				311B393D1F26538A0049D014 /* BMTodayHeadlinesDrag */,
-				3281E3151F25787700BEBF76 /* RootVC */,
-				3281E30F1F25787700BEBF76 /* BaseDemo */,
+				31DA8FA71F2C7EF6002D8B3F /* AlipayVC */,
+				31DA8FB71F2C7EF6002D8B3F /* BaseDemo */,
+				31DA8FBD1F2C7EF6002D8B3F /* BMTodayHeadlinesDrag */,
+				31DA8FC61F2C7EF6002D8B3F /* RootVC */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		31B00B611F22507C00A8670B /* BMDragCellCollectionView */ = {
+		31DA8FA71F2C7EF6002D8B3F /* AlipayVC */ = {
 			isa = PBXGroup;
 			children = (
-				31B00B621F22507C00A8670B /* BMDragCellCollectionView.h */,
-				32397BE11F282DEE009DAD26 /* BMDragCellCollectionView.m */,
-			);
-			name = BMDragCellCollectionView;
-			path = ../../BMDragCellCollectionView;
-			sourceTree = "<group>";
-		};
-		31F695B31F278DE600F786FB /* AlipayVC */ = {
-			isa = PBXGroup;
-			children = (
-				31F695B41F278DE600F786FB /* Controller */,
-				31F695B51F278DE600F786FB /* Model */,
-				31F695B61F278DE600F786FB /* View */,
+				31DA8FA81F2C7EF6002D8B3F /* Controller */,
+				31DA8FAC1F2C7EF6002D8B3F /* Model */,
+				31DA8FAD1F2C7EF6002D8B3F /* View */,
 			);
 			path = AlipayVC;
 			sourceTree = "<group>";
 		};
-		31F695B41F278DE600F786FB /* Controller */ = {
+		31DA8FA81F2C7EF6002D8B3F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				31F695B71F278DFC00F786FB /* BMAlipayVC.h */,
-				31F695B81F278DFC00F786FB /* BMAlipayVC.m */,
-				31F695B91F278DFC00F786FB /* BMAlipayVC.xib */,
+				31DA8FA91F2C7EF6002D8B3F /* BMAlipayVC.h */,
+				31DA8FAA1F2C7EF6002D8B3F /* BMAlipayVC.m */,
+				31DA8FAB1F2C7EF6002D8B3F /* BMAlipayVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		31F695B51F278DE600F786FB /* Model */ = {
+		31DA8FAC1F2C7EF6002D8B3F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		31F695B61F278DE600F786FB /* View */ = {
+		31DA8FAD1F2C7EF6002D8B3F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				31F695BC1F278EEB00F786FB /* BMAlipayHeaderCollectionView.h */,
-				31F695BD1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m */,
-				31F695C41F278F0800F786FB /* BMAlipayHeaderCollectionView.xib */,
-				31F695BF1F278EFB00F786FB /* BMAlipayHeaderSelectView.h */,
-				31F695C01F278EFB00F786FB /* BMAlipayHeaderSelectView.m */,
-				31F695C21F278F0200F786FB /* BMAlipayHeaderSelectView.xib */,
-				3156530C1F2792EF00DD1B3E /* BMAlipayCell.h */,
-				3156530D1F2792EF00DD1B3E /* BMAlipayCell.m */,
-				3156530E1F2792EF00DD1B3E /* BMAlipayCell.xib */,
+				31DA8FAE1F2C7EF6002D8B3F /* BMAlipayCell.h */,
+				31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */,
+				31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */,
+				31DA8FB11F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.h */,
+				31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */,
+				31DA8FB31F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib */,
+				31DA8FB41F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.h */,
+				31DA8FB51F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m */,
+				31DA8FB61F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		3281E30F1F25787700BEBF76 /* BaseDemo */ = {
+		31DA8FB71F2C7EF6002D8B3F /* BaseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3281E3101F25787700BEBF76 /* BMDragCellCollectionViewVC.h */,
-				3281E3111F25787700BEBF76 /* BMDragCellCollectionViewVC.m */,
-				3281E3121F25787700BEBF76 /* BMDragCollectionViewCell.h */,
-				3281E3131F25787700BEBF76 /* BMDragCollectionViewCell.m */,
-				3281E3141F25787700BEBF76 /* BMDragCollectionViewCell.xib */,
+				31DA8FB81F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.h */,
+				31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */,
+				31DA8FBA1F2C7EF6002D8B3F /* BMDragCollectionViewCell.h */,
+				31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */,
+				31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */,
 			);
 			path = BaseDemo;
 			sourceTree = "<group>";
 		};
-		3281E3151F25787700BEBF76 /* RootVC */ = {
+		31DA8FBD1F2C7EF6002D8B3F /* BMTodayHeadlinesDrag */ = {
 			isa = PBXGroup;
 			children = (
-				3281E3161F25787700BEBF76 /* ViewController.h */,
-				3281E3171F25787700BEBF76 /* ViewController.m */,
+				31DA8FBE1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.h */,
+				31DA8FBF1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m */,
+				31DA8FC01F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib */,
+				31DA8FC11F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.h */,
+				31DA8FC21F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m */,
+				31DA8FC31F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.h */,
+				31DA8FC41F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m */,
+				31DA8FC51F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib */,
+			);
+			path = BMTodayHeadlinesDrag;
+			sourceTree = "<group>";
+		};
+		31DA8FC61F2C7EF6002D8B3F /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				31DA8FC71F2C7EF6002D8B3F /* ViewController.h */,
+				31DA8FC81F2C7EF6002D8B3F /* ViewController.m */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
 		};
-		3950F4BFBCD1A7FB7A30D168 /* Pods */ = {
+		31DA8FDC1F2C7F7D002D8B3F /* BMDragCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				C5425CBAA54F13DD6DF7F8CF /* Pods-BMDragCellCollectionViewDemo.debug.xcconfig */,
-				B6D0C194DE48D92C3B355FBA /* Pods-BMDragCellCollectionViewDemo.release.xcconfig */,
+				31DA8FDD1F2C7F7D002D8B3F /* BMDragCellCollectionView.h */,
+				31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */,
 			);
-			name = Pods;
+			name = BMDragCellCollectionView;
+			path = ../BMDragCellCollectionView;
 			sourceTree = "<group>";
 		};
-		53DEDBE78D878BD510B77233 /* Frameworks */ = {
+		31DA8FE21F2C7F7D002D8B3F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F194369EA6CC987D482033D0 /* libPods-BMDragCellCollectionViewDemo.a */,
-				256A2F92BA5BEEECB873113B /* libPods-BMDragCellCollectionViewDemoTests.a */,
-				8DD01D17F377709FFE761F8C /* libPods-BMDragCellCollectionViewDemoUITests.a */,
+				31DA8FE31F2C7F7D002D8B3F /* 1.gif */,
+				31DA8FE41F2C7F7D002D8B3F /* 2.gif */,
+				31DA8FE51F2C7F7D002D8B3F /* 3.png */,
+				31DA8FE61F2C7F7D002D8B3F /* 4.gif */,
+				31DA8FE71F2C7F7D002D8B3F /* iTunesArtwork.png */,
 			);
-			name = Frameworks;
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		31DA8FF11F2C7FD8002D8B3F /* XXNibBridge */ = {
+			isa = PBXGroup;
+			children = (
+				31DA8FF21F2C7FD8002D8B3F /* XXNibBridge.h */,
+				31DA8FF31F2C7FD8002D8B3F /* XXNibBridge.m */,
+				31DA8FF41F2C7FD8002D8B3F /* XXNibConvention.h */,
+				31DA8FF51F2C7FD8002D8B3F /* XXNibConvention.m */,
+			);
+			path = XXNibBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		31ADB05B1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */ = {
+		31DA8F6B1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31ADB0891F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemo" */;
+			buildConfigurationList = 31DA8F991F2C7EC1002D8B3F /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemo" */;
 			buildPhases = (
-				F0F852347325178413311268 /* [CP] Check Pods Manifest.lock */,
-				31ADB0581F1D04EB00FE7FA1 /* Sources */,
-				31ADB0591F1D04EB00FE7FA1 /* Frameworks */,
-				31ADB05A1F1D04EB00FE7FA1 /* Resources */,
-				A61AA5E6E75CCBF93F3F8E75 /* [CP] Embed Pods Frameworks */,
-				B672FA9D75A928B6BADA2D23 /* [CP] Copy Pods Resources */,
+				31DA8F681F2C7EC0002D8B3F /* Sources */,
+				31DA8F691F2C7EC0002D8B3F /* Frameworks */,
+				31DA8F6A1F2C7EC0002D8B3F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -373,74 +360,74 @@
 			);
 			name = BMDragCellCollectionViewDemo;
 			productName = BMDragCellCollectionViewDemo;
-			productReference = 31ADB05C1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo.app */;
+			productReference = 31DA8F6C1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		31ADB0741F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests */ = {
+		31DA8F841F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31ADB08C1F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoTests" */;
+			buildConfigurationList = 31DA8F9C1F2C7EC1002D8B3F /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoTests" */;
 			buildPhases = (
-				31ADB0711F1D04EC00FE7FA1 /* Sources */,
-				31ADB0721F1D04EC00FE7FA1 /* Frameworks */,
-				31ADB0731F1D04EC00FE7FA1 /* Resources */,
+				31DA8F811F2C7EC1002D8B3F /* Sources */,
+				31DA8F821F2C7EC1002D8B3F /* Frameworks */,
+				31DA8F831F2C7EC1002D8B3F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				31ADB0771F1D04EC00FE7FA1 /* PBXTargetDependency */,
+				31DA8F871F2C7EC1002D8B3F /* PBXTargetDependency */,
 			);
 			name = BMDragCellCollectionViewDemoTests;
 			productName = BMDragCellCollectionViewDemoTests;
-			productReference = 31ADB0751F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.xctest */;
+			productReference = 31DA8F851F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		31ADB07F1F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests */ = {
+		31DA8F8F1F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31ADB08F1F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoUITests" */;
+			buildConfigurationList = 31DA8F9F1F2C7EC1002D8B3F /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoUITests" */;
 			buildPhases = (
-				31ADB07C1F1D04EC00FE7FA1 /* Sources */,
-				31ADB07D1F1D04EC00FE7FA1 /* Frameworks */,
-				31ADB07E1F1D04EC00FE7FA1 /* Resources */,
+				31DA8F8C1F2C7EC1002D8B3F /* Sources */,
+				31DA8F8D1F2C7EC1002D8B3F /* Frameworks */,
+				31DA8F8E1F2C7EC1002D8B3F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				31ADB0821F1D04EC00FE7FA1 /* PBXTargetDependency */,
+				31DA8F921F2C7EC1002D8B3F /* PBXTargetDependency */,
 			);
 			name = BMDragCellCollectionViewDemoUITests;
 			productName = BMDragCellCollectionViewDemoUITests;
-			productReference = 31ADB0801F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.xctest */;
+			productReference = 31DA8F901F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		31ADB0541F1D04EB00FE7FA1 /* Project object */ = {
+		31DA8F641F2C7EC0002D8B3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "http://idhong.com";
 				TargetAttributes = {
-					31ADB05B1F1D04EB00FE7FA1 = {
+					31DA8F6B1F2C7EC0002D8B3F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8RB35RM424;
 						ProvisioningStyle = Automatic;
 					};
-					31ADB0741F1D04EC00FE7FA1 = {
+					31DA8F841F2C7EC1002D8B3F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8RB35RM424;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 31ADB05B1F1D04EB00FE7FA1;
+						TestTargetID = 31DA8F6B1F2C7EC0002D8B3F;
 					};
-					31ADB07F1F1D04EC00FE7FA1 = {
+					31DA8F8F1F2C7EC1002D8B3F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8RB35RM424;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 31ADB05B1F1D04EB00FE7FA1;
+						TestTargetID = 31DA8F6B1F2C7EC0002D8B3F;
 					};
 				};
 			};
-			buildConfigurationList = 31ADB0571F1D04EB00FE7FA1 /* Build configuration list for PBXProject "BMDragCellCollectionViewDemo" */;
+			buildConfigurationList = 31DA8F671F2C7EC0002D8B3F /* Build configuration list for PBXProject "BMDragCellCollectionViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -448,51 +435,51 @@
 				en,
 				Base,
 			);
-			mainGroup = 31ADB0531F1D04EB00FE7FA1;
-			productRefGroup = 31ADB05D1F1D04EB00FE7FA1 /* Products */;
+			mainGroup = 31DA8F631F2C7EC0002D8B3F;
+			productRefGroup = 31DA8F6D1F2C7EC0002D8B3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31ADB05B1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */,
-				31ADB0741F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests */,
-				31ADB07F1F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests */,
+				31DA8F6B1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo */,
+				31DA8F841F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests */,
+				31DA8F8F1F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		31ADB05A1F1D04EB00FE7FA1 /* Resources */ = {
+		31DA8F6A1F2C7EC0002D8B3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315653101F2792EF00DD1B3E /* BMAlipayCell.xib in Resources */,
-				31009BA91F28FF27006615F6 /* iTunesArtwork.png in Resources */,
-				31B00B741F238DAC00A8670B /* LICENSE in Resources */,
-				311B39501F26539F0049D014 /* 2.gif in Resources */,
-				31F695BB1F278DFC00F786FB /* BMAlipayVC.xib in Resources */,
-				31ADB06F1F1D04EB00FE7FA1 /* LaunchScreen.storyboard in Resources */,
-				31F695C31F278F0200F786FB /* BMAlipayHeaderSelectView.xib in Resources */,
-				311B39551F2655650049D014 /* 3.png in Resources */,
-				31F695C51F278F0800F786FB /* BMAlipayHeaderCollectionView.xib in Resources */,
-				31ADB06C1F1D04EB00FE7FA1 /* Assets.xcassets in Resources */,
-				3281E31A1F25787700BEBF76 /* BMDragCollectionViewCell.xib in Resources */,
-				31B00B731F238DAC00A8670B /* BMDragCellCollectionView.podspec in Resources */,
-				31ADB06A1F1D04EB00FE7FA1 /* Main.storyboard in Resources */,
-				311B394F1F26539F0049D014 /* 1.gif in Resources */,
-				311B39531F2653AA0049D014 /* 4.gif in Resources */,
-				311B39471F26538A0049D014 /* BMTodayHeadlinesDragCell.xib in Resources */,
-				311B394A1F26538A0049D014 /* BMTodayHeadlinesDragVC.xib in Resources */,
+				31DA8FEE1F2C7F7D002D8B3F /* 3.png in Resources */,
+				31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */,
+				31DA8FD01F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib in Resources */,
+				31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */,
+				31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */,
+				31DA8F7F1F2C7EC0002D8B3F /* LaunchScreen.storyboard in Resources */,
+				31DA8FEC1F2C7F7D002D8B3F /* 1.gif in Resources */,
+				31DA8F7C1F2C7EC0002D8B3F /* Assets.xcassets in Resources */,
+				31DA8FD71F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib in Resources */,
+				31DA8FED1F2C7F7D002D8B3F /* 2.gif in Resources */,
+				31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */,
+				31DA8FDA1F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib in Resources */,
+				31DA8F7A1F2C7EC0002D8B3F /* Main.storyboard in Resources */,
+				31DA8FD21F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib in Resources */,
+				31DA8FEF1F2C7F7D002D8B3F /* 4.gif in Resources */,
+				31DA8FCC1F2C7EF6002D8B3F /* BMAlipayVC.xib in Resources */,
+				31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31ADB0731F1D04EC00FE7FA1 /* Resources */ = {
+		31DA8F831F2C7EC1002D8B3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31ADB07E1F1D04EC00FE7FA1 /* Resources */ = {
+		31DA8F8E1F2C7EC1002D8B3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,120 +488,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A61AA5E6E75CCBF93F3F8E75 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B672FA9D75A928B6BADA2D23 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMDragCellCollectionViewDemo/Pods-BMDragCellCollectionViewDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0F852347325178413311268 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		31ADB0581F1D04EB00FE7FA1 /* Sources */ = {
+		31DA8F681F2C7EC0002D8B3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F695BE1F278EEB00F786FB /* BMAlipayHeaderCollectionView.m in Sources */,
-				311B39461F26538A0049D014 /* BMTodayHeadlinesDragCell.m in Sources */,
-				32397BE21F282DEE009DAD26 /* BMDragCellCollectionView.m in Sources */,
-				3156530F1F2792EF00DD1B3E /* BMAlipayCell.m in Sources */,
-				31F695BA1F278DFC00F786FB /* BMAlipayVC.m in Sources */,
-				31B00B331F20F3D500A8670B /* AppDelegate.m in Sources */,
-				3281E3181F25787700BEBF76 /* BMDragCellCollectionViewVC.m in Sources */,
-				31B00B751F238DAC00A8670B /* README.md in Sources */,
-				3281E31B1F25787700BEBF76 /* ViewController.m in Sources */,
-				3281E3191F25787700BEBF76 /* BMDragCollectionViewCell.m in Sources */,
-				31F695C11F278EFB00F786FB /* BMAlipayHeaderSelectView.m in Sources */,
-				311B39491F26538A0049D014 /* BMTodayHeadlinesDragVC.m in Sources */,
-				311B39481F26538A0049D014 /* BMTodayHeadlinesDragModel.m in Sources */,
-				31B00B341F20F3D500A8670B /* main.m in Sources */,
+				31DA8FD41F2C7EF6002D8B3F /* BMDragCollectionViewCell.m in Sources */,
+				31DA8FCF1F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m in Sources */,
+				31DA8FD61F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m in Sources */,
+				31DA8FC91F2C7EF6002D8B3F /* AppDelegate.m in Sources */,
+				31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */,
+				31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */,
+				31DA8FDB1F2C7EF6002D8B3F /* ViewController.m in Sources */,
+				31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */,
+				31DA8FF71F2C7FD8002D8B3F /* XXNibConvention.m in Sources */,
+				31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */,
+				31DA8FD91F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m in Sources */,
+				31DA8FCB1F2C7EF6002D8B3F /* BMAlipayVC.m in Sources */,
+				31DA8FEB1F2C7F7D002D8B3F /* README.md in Sources */,
+				31DA8FD81F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m in Sources */,
+				31DA8FF61F2C7FD8002D8B3F /* XXNibBridge.m in Sources */,
+				31DA8FD11F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31ADB0711F1D04EC00FE7FA1 /* Sources */ = {
+		31DA8F811F2C7EC1002D8B3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31ADB07A1F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoTests.m in Sources */,
+				31DA8F8A1F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31ADB07C1F1D04EC00FE7FA1 /* Sources */ = {
+		31DA8F8C1F2C7EC1002D8B3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31ADB0851F1D04EC00FE7FA1 /* BMDragCellCollectionViewDemoUITests.m in Sources */,
+				31DA8F951F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		31ADB0771F1D04EC00FE7FA1 /* PBXTargetDependency */ = {
+		31DA8F871F2C7EC1002D8B3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 31ADB05B1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */;
-			targetProxy = 31ADB0761F1D04EC00FE7FA1 /* PBXContainerItemProxy */;
+			target = 31DA8F6B1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo */;
+			targetProxy = 31DA8F861F2C7EC1002D8B3F /* PBXContainerItemProxy */;
 		};
-		31ADB0821F1D04EC00FE7FA1 /* PBXTargetDependency */ = {
+		31DA8F921F2C7EC1002D8B3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 31ADB05B1F1D04EB00FE7FA1 /* BMDragCellCollectionViewDemo */;
-			targetProxy = 31ADB0811F1D04EC00FE7FA1 /* PBXContainerItemProxy */;
+			target = 31DA8F6B1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo */;
+			targetProxy = 31DA8F911F2C7EC1002D8B3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		31ADB0681F1D04EB00FE7FA1 /* Main.storyboard */ = {
+		31DA8F781F2C7EC0002D8B3F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				31ADB0691F1D04EB00FE7FA1 /* Base */,
+				31DA8F791F2C7EC0002D8B3F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		31ADB06D1F1D04EB00FE7FA1 /* LaunchScreen.storyboard */ = {
+		31DA8F7D1F2C7EC0002D8B3F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				31ADB06E1F1D04EB00FE7FA1 /* Base */,
+				31DA8F7E1F2C7EC0002D8B3F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -622,7 +563,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		31ADB0871F1D04EC00FE7FA1 /* Debug */ = {
+		31DA8F971F2C7EC1002D8B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -666,11 +607,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		31ADB0881F1D04EC00FE7FA1 /* Release */ = {
+		31DA8F981F2C7EC1002D8B3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -707,14 +647,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		31ADB08A1F1D04EC00FE7FA1 /* Debug */ = {
+		31DA8F9A1F2C7EC1002D8B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5425CBAA54F13DD6DF7F8CF /* Pods-BMDragCellCollectionViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
@@ -723,12 +661,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.BMDragCellCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		31ADB08B1F1D04EC00FE7FA1 /* Release */ = {
+		31DA8F9B1F2C7EC1002D8B3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6D0C194DE48D92C3B355FBA /* Pods-BMDragCellCollectionViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RB35RM424;
@@ -737,10 +675,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.BMDragCellCollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		31ADB08D1F1D04EC00FE7FA1 /* Debug */ = {
+		31DA8F9D1F2C7EC1002D8B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -753,7 +692,7 @@
 			};
 			name = Debug;
 		};
-		31ADB08E1F1D04EC00FE7FA1 /* Release */ = {
+		31DA8F9E1F2C7EC1002D8B3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -766,7 +705,7 @@
 			};
 			name = Release;
 		};
-		31ADB0901F1D04EC00FE7FA1 /* Debug */ = {
+		31DA8FA01F2C7EC1002D8B3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8RB35RM424;
@@ -778,7 +717,7 @@
 			};
 			name = Debug;
 		};
-		31ADB0911F1D04EC00FE7FA1 /* Release */ = {
+		31DA8FA11F2C7EC1002D8B3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8RB35RM424;
@@ -793,43 +732,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31ADB0571F1D04EB00FE7FA1 /* Build configuration list for PBXProject "BMDragCellCollectionViewDemo" */ = {
+		31DA8F671F2C7EC0002D8B3F /* Build configuration list for PBXProject "BMDragCellCollectionViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31ADB0871F1D04EC00FE7FA1 /* Debug */,
-				31ADB0881F1D04EC00FE7FA1 /* Release */,
+				31DA8F971F2C7EC1002D8B3F /* Debug */,
+				31DA8F981F2C7EC1002D8B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31ADB0891F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemo" */ = {
+		31DA8F991F2C7EC1002D8B3F /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31ADB08A1F1D04EC00FE7FA1 /* Debug */,
-				31ADB08B1F1D04EC00FE7FA1 /* Release */,
+				31DA8F9A1F2C7EC1002D8B3F /* Debug */,
+				31DA8F9B1F2C7EC1002D8B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31ADB08C1F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoTests" */ = {
+		31DA8F9C1F2C7EC1002D8B3F /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31ADB08D1F1D04EC00FE7FA1 /* Debug */,
-				31ADB08E1F1D04EC00FE7FA1 /* Release */,
+				31DA8F9D1F2C7EC1002D8B3F /* Debug */,
+				31DA8F9E1F2C7EC1002D8B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31ADB08F1F1D04EC00FE7FA1 /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoUITests" */ = {
+		31DA8F9F1F2C7EC1002D8B3F /* Build configuration list for PBXNativeTarget "BMDragCellCollectionViewDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				31ADB0901F1D04EC00FE7FA1 /* Debug */,
-				31ADB0911F1D04EC00FE7FA1 /* Release */,
+				31DA8FA01F2C7EC1002D8B3F /* Debug */,
+				31DA8FA11F2C7EC1002D8B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 31ADB0541F1D04EB00FE7FA1 /* Project object */;
+	rootObject = 31DA8F641F2C7EC0002D8B3F /* Project object */;
 }
