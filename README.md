@@ -54,9 +54,8 @@
 
 1. `cd BMDragCellCollectionView/BMDragCellCollectionViewDemo` 
 
-2. `pod install `
+2. `open BMDragCellCollectionViewDemo.xcodeproj`
 
-3. `open BMDragCellCollectionViewDemo.xcworkspace`
 
 ## 集成
 ### CocoaPods
