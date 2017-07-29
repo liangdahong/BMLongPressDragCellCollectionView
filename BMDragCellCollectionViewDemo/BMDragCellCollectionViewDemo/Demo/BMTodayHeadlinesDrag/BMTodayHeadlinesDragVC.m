@@ -44,7 +44,6 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     {
         self.title = @"今日头条-频道选择-正在完善中...";
         self.dragCellCollectionView.dragCellAlpha = 0.9;
@@ -158,7 +157,6 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     if (destinationIndexPath.section == 1 || sourceIndexPath.section == 1) {
         return NO;
     }
-
     if (destinationIndexPath.section == 0 && destinationIndexPath.item == 0) {
         return NO;
     }
@@ -192,12 +190,13 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     NSLog(@"endedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
 }
 
-- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
-    if (!indexPath || indexPath.section == 0) {
-        return YES;
+- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath {
+    if (section == 1) {
+        // 如果拖到了第一组松开就移动 而且内部不自动处理
+        [dragCellCollectionView dragMoveItemToIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
+        return NO;
     }
-    [dragCellCollectionView dragMoveItemToIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
-    return NO;
+    return YES;
 }
 
 @end

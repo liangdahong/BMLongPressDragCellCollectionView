@@ -62,7 +62,7 @@
 ### CocoaPods
 > 推荐使用 CocoaPods 安装。
 
-1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.4'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
+1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.5'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 2. 执行 `pod install` 或 `pod update`
 3. 使用的地方导入 `"BMDragCellCollectionView.h"`
 4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`
@@ -128,6 +128,12 @@ collectionView.dataSource = self;
 @property (assign, nonatomic) CGFloat dragCellAlpha;
 ```
 
+>  使用者想移动到指定位置操作时
+
+```c
+- (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
+```
+
 ## 代理方法
 
 > 当一个`Cell`将要开始拖拽时调用询问是否可以拖拽， `YES`: 可以， `NO`: 不可以，默认是`YES`
@@ -159,6 +165,17 @@ collectionView.dataSource = self;
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point   indexPath:(NSIndexPath *)indexPath;
 ```
 
+>   结束拖拽时时是否内部自动处理，在一些需要特殊需求时可以在此方法做，如：今日头条当第一组拖拽到第二组（(默认是不交换处理的）松手时需要自动把此Cell移动到第二组中的同步或者尾部。那可在此方法 返回NO,同时调用 `- (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;`方法完成移动
+> 
+
+```c
+- (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath;
+```
+
+
+
+
+
 - 其他相关用法，详见[代码](https://github.com/asiosldh/BMDragCellCollectionView/blob/master/BMDragCellCollectionView/BMDragCellCollectionView.h)
 - [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
 
@@ -166,6 +183,7 @@ collectionView.dataSource = self;
 - 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
 
 ## 版本历史
+### v1.0.5
 ### v1.0.4
 ### v1.0.3
 ### v1.0.2

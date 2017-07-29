@@ -23,6 +23,52 @@
 
 #import "BMDragCellCollectionView.h"
 
+#pragma mark - UICollectionView (BMDragCellCollectionViewRect)
+
+/**
+ 内部工具
+ */
+@interface UICollectionView (BMDragCellCollectionViewRect)
+
+/**
+ 获取一组的rect
+ - (CGRect)rectForSection:(NSInteger)section;
+ 
+ @param section 组
+ @return Rect
+ */
+- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section;
+
+/**
+ 获取 indexPath的Cell 的Rect
+ - (CGRect)rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+ 
+ @param indexPath indexPath
+ @return Rect
+ */
+- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@implementation UICollectionView (BMRect)
+
+- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section {
+    NSInteger sectionNum = [self.dataSource collectionView:self numberOfItemsInSection:section];
+    if (sectionNum <= 0) {
+        return CGRectZero;
+    } else {
+        CGRect firstRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+        CGRect lastRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
+        return CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
+    }
+}
+
+- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [self layoutAttributesForItemAtIndexPath:indexPath].frame;
+}
+
+@end
+
 typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     BMDragCellCollectionViewScrollDirectionNone = 0,
     BMDragCellCollectionViewScrollDirectionLeft,
@@ -319,8 +365,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     NSIndexPath *indexPath = [self indexPathForItemAtPoint:point];
 
     switch (longGesture.state) {
-        case UIGestureRecognizerStateBegan:{
-            
+        case UIGestureRecognizerStateBegan: {
+            self.userInteractionEnabled = NO;
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:beganDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self beganDragAtPoint:point indexPath:indexPath];
             }
@@ -420,14 +466,22 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         }
             break;
         default: {
-
+            self.userInteractionEnabled = YES;
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self endedDragAtPoint:point indexPath:indexPath];
             }
 
             if (self.delegate
-                && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAutomaticOperationAtPoint:indexPath:)]) {
-                if (![self.delegate dragCellCollectionView:self endedDragAutomaticOperationAtPoint:point indexPath:indexPath]) {
+                && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAutomaticOperationAtPoint:section:indexPath:)]) {
+                NSInteger section = -1;
+                NSInteger sec = [self.dataSource numberOfSectionsInCollectionView:self];
+                for (NSInteger i = 0; i < sec; i++) {
+                    if (CGRectContainsPoint([self BMDragCellCollectionView_rectForSection:i], point)) {
+                        section = i;
+                        break;
+                    }
+                }
+                if (![self.delegate dragCellCollectionView:self endedDragAutomaticOperationAtPoint:point section:section indexPath:indexPath]) {
                     return;
                 }
             }
@@ -435,7 +489,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (!self.oldIndexPath) {
                 return;
             }
-            
+
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             
             //结束动画过程中停止交互，防止出问题
