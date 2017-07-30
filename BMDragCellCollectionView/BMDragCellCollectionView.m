@@ -193,12 +193,32 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     return cell;
 }
 
-// 取最近及满足交换条件的Cell
-- (NSIndexPath *)_firstNearlyIndexPath {
-    __block CGFloat width = MAXFLOAT;
+- (NSIndexPath *)_getChangedIndexPath {
     __block NSIndexPath *index = nil;
+    CGPoint point = [self.longGesture locationInView:self];
+    // 遍历拖拽的Cell的中心点在哪一个Cell里
+    [[self visibleCells] enumerateObjectsUsingBlock:^(__kindof UICollectionViewCell * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (CGRectContainsPoint(obj.frame, point)) {
+            index = [self indexPathForCell:obj];
+            *stop = YES;
+        }
+    }];
+    // 找到而且不是当前的Cell就返回此 index
+    if (index) {
+        if ((index.item == self.oldIndexPath.item) && (index.row == self.oldIndexPath.row)) {
+            return nil;
+        }
+        return index;
+    }
+
+    // 获取最应该交换的Cell
+    __block CGFloat width = MAXFLOAT;
     __weak typeof(self) weakSelf = self;
     [[self visibleCells] enumerateObjectsUsingBlock:^(__kindof UICollectionViewCell * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (CGRectContainsPoint(obj.frame, point)) {
+            index = [self indexPathForCell:obj];
+            *stop = YES;
+        }
         __strong typeof(weakSelf) self = weakSelf;
         CGPoint p1 = self.snapedView.center;
         CGPoint p2 = obj.center;
@@ -209,6 +229,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             index = [self indexPathForCell:obj];
         }
     }];
+    if (!index) {
+        return nil;
+    }
     if ((index.item == self.oldIndexPath.item) && (index.row == self.oldIndexPath.row)) {
         // 最近的就是隐藏的Cell时,return nil
         return nil;
@@ -325,7 +348,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }];
 
     // 获取应该交换的Cell的位置
-    NSIndexPath *index = [self _firstNearlyIndexPath];
+    NSIndexPath *index = [self _getChangedIndexPath];
 
     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
         [self.delegate dragCellCollectionView:self changedDragAtPoint:_lastPoint indexPath:index];
@@ -438,7 +461,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 _snapedView.center = _lastPoint;
             }];
             
-            NSIndexPath *index = [self _firstNearlyIndexPath];
+            NSIndexPath *index = [self _getChangedIndexPath];
             
             // 没有取到或者距离隐藏的最近时就返回
             if (!index) {
@@ -571,7 +594,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         }
     }];
     // 关闭定时器
-    self.oldIndexPath = nil;
+    _oldIndexPath = nil;
     [self _stopEdgeTimer];
 }
 

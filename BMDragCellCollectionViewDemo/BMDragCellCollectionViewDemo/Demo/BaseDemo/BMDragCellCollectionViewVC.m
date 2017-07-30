@@ -36,7 +36,6 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 
 - (BMDragCellCollectionView *)collectionView{
     if (_collectionView == nil) {
-
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = self.collectionViewScrollDirection;
         _collectionView = [[BMDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
