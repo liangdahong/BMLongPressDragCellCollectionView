@@ -10,6 +10,7 @@
 #import "BMDragCellCollectionViewVC.h"
 #import "BMTodayHeadlinesDragVC.h"
 #import "BMAlipayVC.h"
+#import "BMImageVC.h"
 
 @implementation ViewController
 
@@ -75,14 +76,17 @@
 - (IBAction)otherDemoClick {
 
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"其他Demo" message:@"正在完善中..." preferredStyle:0];
-    [alert addAction:[UIAlertAction actionWithTitle:@"今日头条" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    [alert addAction:[UIAlertAction actionWithTitle:@"今日头条(已完成)" style:0 handler:^(UIAlertAction * _Nonnull action) {
         [self headlines];
     }]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"支付宝" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    [alert addAction:[UIAlertAction actionWithTitle:@"支付宝(未完成)" style:0 handler:^(UIAlertAction * _Nonnull action) {
 //        BMAlipayVC *alipayVC = [BMAlipayVC new];
 //        [self.navigationController pushViewController:alipayVC animated:YES];
     }]];
-    [alert addAction:[UIAlertAction actionWithTitle:@"看荐" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    [alert addAction:[UIAlertAction actionWithTitle:@"看荐(未完成)" style:0 handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"表情排列(已完成)" style:0 handler:^(UIAlertAction * _Nonnull action) {
+        [self.navigationController pushViewController:[BMImageVC new] animated:YES];
     }]];
     [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil]];
     [self presentViewController:alert animated:YES completion:nil];
