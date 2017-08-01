@@ -19,6 +19,7 @@
 * [ ] `支付宝`拖拽效果实现。
 * [x] `今日头条`频道拖拽重排效果实现。
 * [ ] `看荐`拖拽重排效果实现及优化。ps:`看荐`的拖拽重排发现一个bug，哈哈。
+* [ ] 您认为有必要的也@我哈.
 
 ## 效果图 
 
@@ -72,7 +73,7 @@
 2. 执行 `pod install` 或 `pod update`
 3. 使用的地方导入 `"BMDragCellCollectionView.h"`
 4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`
-5. 
+
 ### 手动安装
 
 1. 通过 `Clone ` 或者 `download ` 下载`BMDragCellCollectionView ` 文件夹内的所有内容。
