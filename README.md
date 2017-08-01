@@ -66,7 +66,7 @@
 
 ## 集成
 ### CocoaPods
-> 推荐使用 CocoaPods 安装。
+> 推荐使用 CocoaPods 安装,Cocoapods的使用请点这里[链接1](http://idhong.com/2016/10/26/cocoapods%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/)、[链接2](http://www.pluto-y.com/cocoapods-getting-stared/)、[链接3](http://blog.devtang.com/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/)
 
 1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.5'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 2. 执行 `pod install` 或 `pod update`
