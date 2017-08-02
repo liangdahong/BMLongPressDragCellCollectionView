@@ -1,7 +1,7 @@
 //
 //  BMDragCellCollectionView.m
 //
-//  Copyright © 2017年 https://github.com/asiosldh/BMDragCellCollectionView/ All rights reserved.
+//  Copyright © 2017年 https://github.com/asiosldh/BMDragCellCollectionViewSwift/ All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -576,7 +576,11 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // 结束拖拽了
     self.isEndDrag = YES;
     //给截图视图一个动画移动到隐藏cell的新位置
+    __weak typeof(self) weakSelf = self;
+    __weak typeof(cell) weakCell = cell;
     [UIView animateWithDuration:0.25 animations:^{
+        __strong typeof(weakSelf) self = weakSelf;
+        __weak typeof(weakCell) cell = weakCell;
         if (!cell) {
             _snapedView.center = _oldPoint;
         } else {
