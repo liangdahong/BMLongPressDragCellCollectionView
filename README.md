@@ -13,6 +13,8 @@
 
 ## 写在前面
 > 最近公司准备做一个类似支付宝`UICollectionViewCell`拖拽重排的功能，`UICollectionViewCell`的任意拖拽排列，支付宝最新的版本已去掉了任意拖拽功能，而只是对常用功能进行拖拽重排，没有出现超出屏幕的情况。个人感觉应该更好，毕竟太多功能去拖拽重排对用户来说是一个特别大的工作量，只需把常用功能提即可。相应的功能点还是在对应的分组里，至于我们的需求暂时不怎么清楚，使用还是研究下任意拖拽吧。
+> 
+> 正在编程Swift版，敬请关注 [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 
 ## 未来计划
 * [ ] [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
@@ -70,7 +72,7 @@
 ### CocoaPods
 > 推荐使用 CocoaPods 安装,Cocoapods的使用请点这里[链接1](http://idhong.com/2016/10/26/cocoapods%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/)、[链接2](http://www.pluto-y.com/cocoapods-getting-stared/)、[链接3](http://blog.devtang.com/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/)
 
-1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.5'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
+1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.6'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 2. 执行 `pod install` 或 `pod update`
 3. 使用的地方导入 `"BMDragCellCollectionView.h"`
 4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`

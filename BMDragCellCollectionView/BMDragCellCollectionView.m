@@ -515,11 +515,11 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             
-            //结束动画过程中停止交互，防止出问题
+            // 结束动画过程中停止交互，防止出问题
             self.userInteractionEnabled = NO;
             // 结束拖拽了
             self.isEndDrag = YES;
-            //给截图视图一个动画移动到隐藏cell的新位置
+            // 给截图视图一个动画移动到隐藏cell的新位置
             [UIView animateWithDuration:0.25 animations:^{
                 if (!cell) {
                     _snapedView.center = _oldPoint;
@@ -529,7 +529,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 _snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
                 _snapedView.alpha = 1.0;
             } completion:^(BOOL finished) {
-                //移除截图视图、显示隐藏的cell并开启交互
+                // 移除截图视图、显示隐藏的cell并开启交互
                 [_snapedView removeFromSuperview];
                 cell.hidden = NO;
                 self.userInteractionEnabled = YES;
@@ -575,12 +575,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     self.userInteractionEnabled = NO;
     // 结束拖拽了
     self.isEndDrag = YES;
-    //给截图视图一个动画移动到隐藏cell的新位置
-    __weak typeof(self) weakSelf = self;
-    __weak typeof(cell) weakCell = cell;
+    // 给截图视图一个动画移动到隐藏cell的新位置
     [UIView animateWithDuration:0.25 animations:^{
-        __strong typeof(weakSelf) self = weakSelf;
-        __weak typeof(weakCell) cell = weakCell;
         if (!cell) {
             _snapedView.center = _oldPoint;
         } else {
@@ -589,7 +585,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         _snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
         _snapedView.alpha = 1.0;
     } completion:^(BOOL finished) {
-        //移除截图视图、显示隐藏的cell并开启交互
+        // 移除截图视图、显示隐藏的cell并开启交互
         [_snapedView removeFromSuperview];
         cell.hidden = NO;
         self.userInteractionEnabled = YES;
