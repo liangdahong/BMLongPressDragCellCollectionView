@@ -25,31 +25,6 @@
 
 #pragma mark - UICollectionView (BMDragCellCollectionViewRect)
 
-/**
- 内部工具
- */
-@interface UICollectionView (BMDragCellCollectionViewRect)
-
-/**
- 获取一组的rect
- - (CGRect)rectForSection:(NSInteger)section;
- 
- @param section 组
- @return Rect
- */
-- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section;
-
-/**
- 获取 indexPath的Cell 的Rect
- - (CGRect)rectForRowAtIndexPath:(NSIndexPath *)indexPath;
- 
- @param indexPath indexPath
- @return Rect
- */
-- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
-
-@end
-
 @implementation UICollectionView (BMRect)
 
 - (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section {
@@ -59,7 +34,11 @@
     } else {
         CGRect firstRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
         CGRect lastRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
-        return CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
+        if (((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+            return CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame));
+        } else {
+            return CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
+        }
     }
 }
 

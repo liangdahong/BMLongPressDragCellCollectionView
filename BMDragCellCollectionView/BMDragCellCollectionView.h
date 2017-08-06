@@ -23,6 +23,33 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - UICollectionView BMDragCellCollectionViewRect
+
+/**
+ 内部工具
+ */
+@interface UICollectionView (BMDragCellCollectionViewRect)
+
+/**
+ 获取一组的rect
+ - (CGRect)rectForSection:(NSInteger)section;
+ 
+ @param section 组
+ @return Rect
+ */
+- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section;
+
+/**
+ 获取 indexPath的Cell 的Rect
+ - (CGRect)rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+ 
+ @param indexPath indexPath
+ @return Rect
+ */
+- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
 @class BMDragCellCollectionView;
 
 #pragma mark - BMDragCollectionViewDataSource
