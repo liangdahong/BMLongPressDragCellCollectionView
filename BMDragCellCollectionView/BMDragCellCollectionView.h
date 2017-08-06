@@ -37,7 +37,7 @@
  @param section 组
  @return Rect
  */
-- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section;
+- (CGRect)bm_rectForSection:(NSInteger)section;
 
 /**
  获取 indexPath的Cell 的Rect
@@ -46,7 +46,7 @@
  @param indexPath indexPath
  @return Rect
  */
-- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CGRect)bm_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

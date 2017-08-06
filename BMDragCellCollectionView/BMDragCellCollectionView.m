@@ -27,13 +27,13 @@
 
 @implementation UICollectionView (BMRect)
 
-- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section {
+- (CGRect)bm_rectForSection:(NSInteger)section {
     NSInteger sectionNum = [self.dataSource collectionView:self numberOfItemsInSection:section];
     if (sectionNum <= 0) {
         return CGRectZero;
     } else {
-        CGRect firstRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
-        CGRect lastRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
+        CGRect firstRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+        CGRect lastRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
         if (((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal) {
             return CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame));
         } else {
@@ -42,7 +42,7 @@
     }
 }
 
-- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGRect)bm_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [self layoutAttributesForItemAtIndexPath:indexPath].frame;
 }
 
@@ -478,7 +478,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 NSInteger section = -1;
                 NSInteger sec = [self.dataSource numberOfSectionsInCollectionView:self];
                 for (NSInteger i = 0; i < sec; i++) {
-                    if (CGRectContainsPoint([self BMDragCellCollectionView_rectForSection:i], point)) {
+                    if (CGRectContainsPoint([self bm_rectForSection:i], point)) {
                         section = i;
                         break;
                     }
