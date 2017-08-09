@@ -31,15 +31,12 @@
     NSInteger sectionNum = [self.dataSource collectionView:self numberOfItemsInSection:section];
     if (sectionNum <= 0) {
         return CGRectZero;
-    } else {
-        CGRect firstRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
-        CGRect lastRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
-        if (((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal) {
-            return CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame));
-        } else {
-            return CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
-        }
     }
+    CGRect firstRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+    CGRect lastRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
+    return ((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal ?
+    CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame)) :
+    CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
 }
 
 - (CGRect)bm_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -141,7 +138,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     return _longGesture;
 }
 
-// iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug,重写此方法是为了外面的使用者无法效果其值
+// iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug,重写此方法是为了外面的使用者无法修改其值
 - (void)setPrefetchingEnabled:(BOOL)prefetchingEnabled {
 }
 
@@ -535,7 +532,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             self.longGesture.enabled = YES;
         }
     });
-    
     _currentIndexPath = newIndexPath;
     
     // 操作
