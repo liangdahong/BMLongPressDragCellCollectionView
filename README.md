@@ -17,8 +17,8 @@
 > 正在编程Swift版，敬请关注 [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 
 ## 未来计划
-* [ ] [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
-* [ ] Demo及文档完善。
+* [x] [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
+* [x] Demo及文档完善。
 * [ ] `支付宝`拖拽效果实现。
 * [x] `今日头条`频道拖拽重排效果实现。
 * [ ] `腾讯新闻`频道拖拽重排效果实现。
