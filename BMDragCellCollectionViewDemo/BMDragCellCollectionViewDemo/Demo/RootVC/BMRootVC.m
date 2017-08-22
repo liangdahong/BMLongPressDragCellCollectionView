@@ -10,6 +10,7 @@
 #import "BMModel.h"
 #import "UITableViewCell+BMReusable.h"
 #import "BMTodayHeadlinesDragVC.h"
+#import "BMDragCellCollectionViewVC.h"
 
 @interface BMRootVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -27,11 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"BMDragCellCollectionView";
-    
     [self setUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }
 
@@ -56,16 +57,12 @@
                             [BMModel modelWithTitle:@"看荐（不足一屏）" selector:nil]
                             ],
                         @[
-                            [BMModel modelWithTitle:@"size相同，单组，垂直滚动" selector:nil],
-                            [BMModel modelWithTitle:@"size相同，单组，水平滚动" selector:nil],
-                            [BMModel modelWithTitle:@"size相同，多组，垂直滚动" selector:nil],
-                            [BMModel modelWithTitle:@"size相同，多组，垂直滚动" selector:nil]
+                            [BMModel modelWithTitle:@"size相同，单组" selector:@selector(etcSizeSingleWithModel:)],
+                            [BMModel modelWithTitle:@"size相同，多组" selector:@selector(etcSizeMultipleWithModel:)],
                             ],
                         @[
-                            [BMModel modelWithTitle:@"size不同，单组，垂直滚动" selector:nil],
-                            [BMModel modelWithTitle:@"size不同，单组，水平滚动" selector:nil],
-                            [BMModel modelWithTitle:@"size不同，多组，垂直滚动" selector:nil],
-                            [BMModel modelWithTitle:@"size不同，多组，垂直滚动" selector:nil]
+                            [BMModel modelWithTitle:@"size不同，单组" selector:@selector(noEtcSizeSingleWithModel:)],
+                            [BMModel modelWithTitle:@"size不同，多组" selector:@selector(noEtcSizeMultipleWithModel:)]
                             ]
                         ];
     }
@@ -98,7 +95,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     BMModel *model = self.modelArray[indexPath.section][indexPath.row];
     if (!model.selector) {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"正在编写中" message:nil preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Demo 未完成" message:nil preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [tableView deselectRowAtIndexPath:indexPath animated:YES];
         }]];
@@ -119,6 +116,10 @@
 
 #pragma mark - 私有方法
 
+#pragma mark - 支付宝
+
+#pragma mark - 今日头条
+
 - (void)todayHeadlinesDragMoreScreenWithModel:(BMModel *)mdoel {
     BMTodayHeadlinesDragVC *vc = [BMTodayHeadlinesDragVC new];
     vc.count = 30;
@@ -130,6 +131,34 @@
     vc.count = 10;
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+#pragma mark - 腾讯新闻
+
+#pragma mark - 看荐
+
+#pragma mark - size相同
+
+- (void)etcSizeSingleWithModel:(BMModel *)mdoel {
+    NSValue *sizeObj = [NSValue valueWithCGSize:CGSizeMake(arc4random_uniform(2) * 30 +50, arc4random_uniform(2) * 30 +50)];
+    [self pushWithGroup:1 sizeObj:sizeObj];
+}
+
+- (void)etcSizeMultipleWithModel:(BMModel *)mdoel {
+    NSValue *sizeObj = [NSValue valueWithCGSize:CGSizeMake(arc4random_uniform(2) * 30 +50, arc4random_uniform(2) * 30 +50)];
+    [self pushWithGroup:5 sizeObj:sizeObj];
+}
+
+#pragma mark - size不同
+
+- (void)noEtcSizeSingleWithModel:(BMModel *)mdoel {
+    [self pushWithGroup:1 sizeObj:nil];
+}
+
+- (void)noEtcSizeMultipleWithModel:(BMModel *)mdoel {
+    [self pushWithGroup:5 sizeObj:nil];
+}
+
+#pragma mark - size相同 size不同 的其他方法
 
 - (void)pushWithGroup:(int)group sizeObj:(NSValue *)sizeObj {
     NSMutableArray *dataSourceArray = [NSMutableArray array];
@@ -145,11 +174,35 @@
         }
         [dataSourceArray addObject:dataSource];
     }
+    [self pushVCWithArray:dataSourceArray];
 }
 
+- (void)pushVCWithArray:(NSArray *)array {
+    BMDragCellCollectionViewVC *vc = [BMDragCellCollectionViewVC new];
+    vc.dataSource = [array mutableCopy];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"请选择布局方向" message:nil preferredStyle:0];
+    [alert addAction:[UIAlertAction actionWithTitle:@"垂直方向" style:0 handler:^(UIAlertAction * _Nonnull action) {
+        vc.title = @"垂直方向";
+        vc.collectionViewScrollDirection = UICollectionViewScrollDirectionVertical;
+        [self.navigationController pushViewController:vc animated:YES];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"水平方向" style:0 handler:^(UIAlertAction * _Nonnull action) {
+        vc.title = @"水平方向";
+        vc.collectionViewScrollDirection = UICollectionViewScrollDirectionHorizontal;
+        [self.navigationController pushViewController:vc animated:YES];
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 - (void)setUI {
-    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Github地址" style:0 target:self action:@selector(githubClick)];
+}
+
+- (void)githubClick {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/asiosldh/BMDragCellCollectionView"]];
 }
 
 #pragma mark - 事件响应
