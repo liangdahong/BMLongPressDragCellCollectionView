@@ -11,6 +11,11 @@
 		314149DA1F2F670A001CA44B /* BMImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314149D81F2F670A001CA44B /* BMImageVC.xib */; };
 		314149DE1F2F6725001CA44B /* BMImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 314149DC1F2F6725001CA44B /* BMImageCell.m */; };
 		314149DF1F2F6725001CA44B /* BMImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314149DD1F2F6725001CA44B /* BMImageCell.xib */; };
+		319A390A1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A39011F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m */; };
+		319A390B1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319A39021F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib */; };
+		319A390C1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A39051F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m */; };
+		319A390D1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319A39061F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib */; };
+		319A390E1F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A39091F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.m */; };
 		31DA8F7A1F2C7EC0002D8B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8F781F2C7EC0002D8B3F /* Main.storyboard */; };
 		31DA8F7C1F2C7EC0002D8B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8F7B1F2C7EC0002D8B3F /* Assets.xcassets */; };
 		31DA8F7F1F2C7EC0002D8B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8F7D1F2C7EC0002D8B3F /* LaunchScreen.storyboard */; };
@@ -20,18 +25,9 @@
 		31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FA51F2C7EF6002D8B3F /* main.m */; };
 		31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */; };
 		31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */; };
-		31DA8FCF1F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */; };
-		31DA8FD01F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB31F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib */; };
-		31DA8FD11F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB51F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m */; };
-		31DA8FD21F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB61F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib */; };
 		31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */; };
 		31DA8FD41F2C7EF6002D8B3F /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */; };
 		31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */; };
-		31DA8FD61F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FBF1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m */; };
-		31DA8FD71F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FC01F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib */; };
-		31DA8FD81F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FC21F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m */; };
-		31DA8FD91F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FC41F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m */; };
-		31DA8FDA1F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FC51F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib */; };
 		31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */; };
 		31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */; };
 		31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE01F2C7F7D002D8B3F /* LICENSE */; };
@@ -75,6 +71,14 @@
 		314149DB1F2F6725001CA44B /* BMImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageCell.h; sourceTree = "<group>"; };
 		314149DC1F2F6725001CA44B /* BMImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageCell.m; sourceTree = "<group>"; };
 		314149DD1F2F6725001CA44B /* BMImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageCell.xib; sourceTree = "<group>"; };
+		319A39001F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
+		319A39011F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
+		319A39021F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
+		319A39041F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragVC.h; sourceTree = "<group>"; };
+		319A39051F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragVC.m; sourceTree = "<group>"; };
+		319A39061F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragVC.xib; sourceTree = "<group>"; };
+		319A39081F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragModel.h; sourceTree = "<group>"; };
+		319A39091F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragModel.m; sourceTree = "<group>"; };
 		31DA8F6C1F2C7EC0002D8B3F /* BMDragCellCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCellCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DA8F791F2C7EC0002D8B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31DA8F7B1F2C7EC0002D8B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,25 +96,11 @@
 		31DA8FAE1F2C7EF6002D8B3F /* BMAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayCell.h; sourceTree = "<group>"; };
 		31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayCell.m; sourceTree = "<group>"; };
 		31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
-		31DA8FB11F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderCollectionView.h; sourceTree = "<group>"; };
-		31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderCollectionView.m; sourceTree = "<group>"; };
-		31DA8FB31F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderCollectionView.xib; sourceTree = "<group>"; };
-		31DA8FB41F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayHeaderSelectView.h; sourceTree = "<group>"; };
-		31DA8FB51F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayHeaderSelectView.m; sourceTree = "<group>"; };
-		31DA8FB61F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayHeaderSelectView.xib; sourceTree = "<group>"; };
 		31DA8FB81F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
 		31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
 		31DA8FBA1F2C7EF6002D8B3F /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
 		31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
 		31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
-		31DA8FBE1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
-		31DA8FBF1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
-		31DA8FC01F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
-		31DA8FC11F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragModel.h; sourceTree = "<group>"; };
-		31DA8FC21F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragModel.m; sourceTree = "<group>"; };
-		31DA8FC31F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragVC.h; sourceTree = "<group>"; };
-		31DA8FC41F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragVC.m; sourceTree = "<group>"; };
-		31DA8FC51F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragVC.xib; sourceTree = "<group>"; };
 		31DA8FDD1F2C7F7D002D8B3F /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
 		31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
 		31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
@@ -173,6 +163,35 @@
 				314149DD1F2F6725001CA44B /* BMImageCell.xib */,
 			);
 			path = BMImageVC;
+			sourceTree = "<group>";
+		};
+		319A38FF1F4C8224005F0BC3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				319A39001F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.h */,
+				319A39011F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m */,
+				319A39021F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		319A39031F4C8224005F0BC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				319A39041F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.h */,
+				319A39051F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m */,
+				319A39061F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		319A39071F4C8224005F0BC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				319A39081F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.h */,
+				319A39091F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		31DA8F631F2C7EC0002D8B3F = {
@@ -296,12 +315,6 @@
 				31DA8FAE1F2C7EF6002D8B3F /* BMAlipayCell.h */,
 				31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */,
 				31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */,
-				31DA8FB11F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.h */,
-				31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */,
-				31DA8FB31F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib */,
-				31DA8FB41F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.h */,
-				31DA8FB51F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m */,
-				31DA8FB61F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,14 +334,9 @@
 		31DA8FBD1F2C7EF6002D8B3F /* BMTodayHeadlinesDrag */ = {
 			isa = PBXGroup;
 			children = (
-				31DA8FBE1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.h */,
-				31DA8FBF1F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m */,
-				31DA8FC01F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib */,
-				31DA8FC11F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.h */,
-				31DA8FC21F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m */,
-				31DA8FC31F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.h */,
-				31DA8FC41F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m */,
-				31DA8FC51F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib */,
+				319A38FF1F4C8224005F0BC3 /* Cell */,
+				319A39031F4C8224005F0BC3 /* Controller */,
+				319A39071F4C8224005F0BC3 /* Model */,
 			);
 			path = BMTodayHeadlinesDrag;
 			sourceTree = "<group>";
@@ -507,7 +515,6 @@
 			files = (
 				31DA8FEE1F2C7F7D002D8B3F /* 3.png in Resources */,
 				31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */,
-				31DA8FD01F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.xib in Resources */,
 				31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */,
 				31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */,
 				31DA8F7F1F2C7EC0002D8B3F /* LaunchScreen.storyboard in Resources */,
@@ -515,16 +522,15 @@
 				32759D691F4C22EE000CF873 /* BMRootVC.xib in Resources */,
 				31DA8FEC1F2C7F7D002D8B3F /* 1.gif in Resources */,
 				31DA8F7C1F2C7EC0002D8B3F /* Assets.xcassets in Resources */,
-				31DA8FD71F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.xib in Resources */,
 				31DA8FED1F2C7F7D002D8B3F /* 2.gif in Resources */,
 				31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */,
-				31DA8FDA1F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.xib in Resources */,
 				31DA8F7A1F2C7EC0002D8B3F /* Main.storyboard in Resources */,
 				32759D641F4C2277000CF873 /* BMAlipayVC.xib in Resources */,
-				31DA8FD21F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.xib in Resources */,
+				319A390D1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib in Resources */,
 				31DA8FEF1F2C7F7D002D8B3F /* 4.gif in Resources */,
 				314149DA1F2F670A001CA44B /* BMImageVC.xib in Resources */,
 				31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */,
+				319A390B1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,22 +557,20 @@
 			files = (
 				31DA8FD41F2C7EF6002D8B3F /* BMDragCollectionViewCell.m in Sources */,
 				32759D771F4C2D9A000CF873 /* XXNibConvention.m in Sources */,
-				31DA8FCF1F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m in Sources */,
-				31DA8FD61F2C7EF6002D8B3F /* BMTodayHeadlinesDragCell.m in Sources */,
 				31DA8FC91F2C7EF6002D8B3F /* AppDelegate.m in Sources */,
 				31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */,
 				31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */,
 				314149DE1F2F6725001CA44B /* BMImageCell.m in Sources */,
+				319A390C1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m in Sources */,
 				314149D91F2F670A001CA44B /* BMImageVC.m in Sources */,
 				31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */,
+				319A390A1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m in Sources */,
 				32759D7B1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m in Sources */,
 				31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */,
+				319A390E1F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.m in Sources */,
 				32759D6C1F4C233E000CF873 /* BMModel.m in Sources */,
-				31DA8FD91F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m in Sources */,
 				32759D761F4C2D9A000CF873 /* XXNibBridge.m in Sources */,
 				31DA8FEB1F2C7F7D002D8B3F /* README.md in Sources */,
-				31DA8FD81F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m in Sources */,
-				31DA8FD11F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m in Sources */,
 				32759D631F4C2277000CF873 /* BMAlipayVC.m in Sources */,
 				32759D681F4C22EE000CF873 /* BMRootVC.m in Sources */,
 			);

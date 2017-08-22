@@ -45,13 +45,11 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     {
-        self.title = @"今日头条-频道选择-正在完善中...";
         self.dragCellCollectionView.dragCellAlpha = 0.9;
         self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
         self.dragCellCollectionView.alwaysBounceVertical = YES;
         [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMTodayHeadlinesDragCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     }
-    
 }
 
 - (NSMutableArray<NSMutableArray<BMTodayHeadlinesDragModel *> *> *)dataSourceArray {

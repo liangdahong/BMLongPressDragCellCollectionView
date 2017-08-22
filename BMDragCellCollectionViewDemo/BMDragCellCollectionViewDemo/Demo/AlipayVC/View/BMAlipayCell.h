@@ -10,4 +10,6 @@
 
 @interface BMAlipayCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end

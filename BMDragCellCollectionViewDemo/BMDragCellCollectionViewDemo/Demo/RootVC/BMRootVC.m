@@ -11,6 +11,8 @@
 #import "UITableViewCell+BMReusable.h"
 #import "BMTodayHeadlinesDragVC.h"
 #import "BMDragCellCollectionViewVC.h"
+#import "BMAlipayVC.h"
+#import "BMImageVC.h"
 
 @interface BMRootVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -42,7 +44,7 @@
     if (!_modelArray) {
         _modelArray = @[
                         @[
-                            [BMModel modelWithTitle:@"支付宝" selector:nil]
+                            [BMModel modelWithTitle:@"支付宝" selector:@selector(alipayDragMoreScreenWithModel:)]
                             ],
                         @[
                             [BMModel modelWithTitle:@"今日头条（超过一屏）" selector:@selector(todayHeadlinesDragMoreScreenWithModel:)],
@@ -55,6 +57,9 @@
                         @[
                             [BMModel modelWithTitle:@"看荐（超过一屏）" selector:nil],
                             [BMModel modelWithTitle:@"看荐（不足一屏）" selector:nil]
+                            ],
+                        @[
+                            [BMModel modelWithTitle:@"QQ表情" selector:@selector(imageDragWithModel:)]
                             ],
                         @[
                             [BMModel modelWithTitle:@"size相同，单组" selector:@selector(etcSizeSingleWithModel:)],
@@ -118,6 +123,11 @@
 
 #pragma mark - 支付宝
 
+- (void)alipayDragMoreScreenWithModel:(BMModel *)mdoel {
+    BMAlipayVC *vc = [BMAlipayVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - 今日头条
 
 - (void)todayHeadlinesDragMoreScreenWithModel:(BMModel *)mdoel {
@@ -135,6 +145,13 @@
 #pragma mark - 腾讯新闻
 
 #pragma mark - 看荐
+
+#pragma mark - 表情
+
+- (void)imageDragWithModel:(BMModel *)mdoel {
+    BMImageVC *vc = [BMImageVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 #pragma mark - size相同
 

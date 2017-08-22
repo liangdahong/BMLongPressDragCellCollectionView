@@ -18,9 +18,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="功能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-ii-fEq">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-ii-fEq">
                         <rect key="frame" x="10" y="10" width="30" height="30"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -32,6 +33,10 @@
                 <constraint firstItem="7mU-ii-fEq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Gu8-Eo-z9O"/>
                 <constraint firstItem="7mU-ii-fEq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ufD-44-MUr"/>
             </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="7mU-ii-fEq" id="a4H-xG-NUZ"/>
+            </connections>
+            <point key="canvasLocation" x="-121" y="20"/>
         </collectionViewCell>
     </objects>
 </document>
