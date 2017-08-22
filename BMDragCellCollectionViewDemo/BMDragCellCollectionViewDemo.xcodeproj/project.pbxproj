@@ -188,8 +188,6 @@
 		31DA8F951F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8F941F2C7EC1002D8B3F /* BMDragCellCollectionViewDemoUITests.m */; };
 		31DA8FC91F2C7EF6002D8B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FA41F2C7EF6002D8B3F /* AppDelegate.m */; };
 		31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FA51F2C7EF6002D8B3F /* main.m */; };
-		31DA8FCB1F2C7EF6002D8B3F /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAA1F2C7EF6002D8B3F /* BMAlipayVC.m */; };
-		31DA8FCC1F2C7EF6002D8B3F /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FAB1F2C7EF6002D8B3F /* BMAlipayVC.xib */; };
 		31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */; };
 		31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */; };
 		31DA8FCF1F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB21F2C7EF6002D8B3F /* BMAlipayHeaderCollectionView.m */; };
@@ -216,6 +214,12 @@
 		31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE71F2C7F7D002D8B3F /* iTunesArtwork.png */; };
 		31DA8FF61F2C7FD8002D8B3F /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FF31F2C7FD8002D8B3F /* XXNibBridge.m */; };
 		31DA8FF71F2C7FD8002D8B3F /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FF51F2C7FD8002D8B3F /* XXNibConvention.m */; };
+		32759D631F4C2277000CF873 /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D611F4C2277000CF873 /* BMAlipayVC.m */; };
+		32759D641F4C2277000CF873 /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32759D621F4C2277000CF873 /* BMAlipayVC.xib */; };
+		32759D681F4C22EE000CF873 /* BMRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D661F4C22EE000CF873 /* BMRootVC.m */; };
+		32759D691F4C22EE000CF873 /* BMRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32759D671F4C22EE000CF873 /* BMRootVC.xib */; };
+		32759D6C1F4C233E000CF873 /* BMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D6B1F4C233E000CF873 /* BMModel.m */; };
+		32759D6F1F4C24DB000CF873 /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D6E1F4C24DB000CF873 /* UITableViewCell+BMReusable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -426,9 +430,6 @@
 		31DA8FA31F2C7EF6002D8B3F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31DA8FA41F2C7EF6002D8B3F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		31DA8FA51F2C7EF6002D8B3F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		31DA8FA91F2C7EF6002D8B3F /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
-		31DA8FAA1F2C7EF6002D8B3F /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
-		31DA8FAB1F2C7EF6002D8B3F /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
 		31DA8FAE1F2C7EF6002D8B3F /* BMAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayCell.h; sourceTree = "<group>"; };
 		31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayCell.m; sourceTree = "<group>"; };
 		31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
@@ -467,6 +468,16 @@
 		31DA8FF31F2C7FD8002D8B3F /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
 		31DA8FF41F2C7FD8002D8B3F /* XXNibConvention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibConvention.h; sourceTree = "<group>"; };
 		31DA8FF51F2C7FD8002D8B3F /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
+		32759D601F4C2277000CF873 /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
+		32759D611F4C2277000CF873 /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
+		32759D621F4C2277000CF873 /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
+		32759D651F4C22EE000CF873 /* BMRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootVC.h; sourceTree = "<group>"; };
+		32759D661F4C22EE000CF873 /* BMRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRootVC.m; sourceTree = "<group>"; };
+		32759D671F4C22EE000CF873 /* BMRootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMRootVC.xib; sourceTree = "<group>"; };
+		32759D6A1F4C233E000CF873 /* BMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMModel.h; sourceTree = "<group>"; };
+		32759D6B1F4C233E000CF873 /* BMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMModel.m; sourceTree = "<group>"; };
+		32759D6D1F4C24DB000CF873 /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
+		32759D6E1F4C24DB000CF873 /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -785,9 +796,9 @@
 		31DA8FA81F2C7EF6002D8B3F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				31DA8FA91F2C7EF6002D8B3F /* BMAlipayVC.h */,
-				31DA8FAA1F2C7EF6002D8B3F /* BMAlipayVC.m */,
-				31DA8FAB1F2C7EF6002D8B3F /* BMAlipayVC.xib */,
+				32759D601F4C2277000CF873 /* BMAlipayVC.h */,
+				32759D611F4C2277000CF873 /* BMAlipayVC.m */,
+				32759D621F4C2277000CF873 /* BMAlipayVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -845,8 +856,15 @@
 		31DA8FC61F2C7EF6002D8B3F /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
+				32759D6D1F4C24DB000CF873 /* UITableViewCell+BMReusable.h */,
+				32759D6E1F4C24DB000CF873 /* UITableViewCell+BMReusable.m */,
 				31DA8FC71F2C7EF6002D8B3F /* ViewController.h */,
 				31DA8FC81F2C7EF6002D8B3F /* ViewController.m */,
+				32759D651F4C22EE000CF873 /* BMRootVC.h */,
+				32759D661F4C22EE000CF873 /* BMRootVC.m */,
+				32759D671F4C22EE000CF873 /* BMRootVC.xib */,
+				32759D6A1F4C233E000CF873 /* BMModel.h */,
+				32759D6B1F4C233E000CF873 /* BMModel.m */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
@@ -1065,6 +1083,7 @@
 				31414AD41F2F68EB001CA44B /* 074@2x.png in Resources */,
 				31414AC71F2F68EB001CA44B /* 061@2x.png in Resources */,
 				31414AB81F2F68EB001CA44B /* 046@2x.png in Resources */,
+				32759D691F4C22EE000CF873 /* BMRootVC.xib in Resources */,
 				31414AE61F2F68EB001CA44B /* 092@2x.png in Resources */,
 				31414B1F1F2F68EC001CA44B /* 171@2x.png in Resources */,
 				31414ACB1F2F68EB001CA44B /* 065@2x.png in Resources */,
@@ -1161,6 +1180,7 @@
 				31414AA01F2F68EB001CA44B /* 022@2x.png in Resources */,
 				31414AF31F2F68EB001CA44B /* 105@2x.png in Resources */,
 				31414AD61F2F68EB001CA44B /* 076@2x.png in Resources */,
+				32759D641F4C2277000CF873 /* BMAlipayVC.xib in Resources */,
 				31414AE41F2F68EB001CA44B /* 090@2x.png in Resources */,
 				31414AE01F2F68EB001CA44B /* 086@2x.png in Resources */,
 				31414B091F2F68EB001CA44B /* 149@2x.png in Resources */,
@@ -1180,7 +1200,6 @@
 				31414AC11F2F68EB001CA44B /* 055@2x.png in Resources */,
 				31414AE91F2F68EB001CA44B /* 095@2x.png in Resources */,
 				31414B151F2F68EB001CA44B /* 161@2x.png in Resources */,
-				31DA8FCC1F2C7EF6002D8B3F /* BMAlipayVC.xib in Resources */,
 				31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */,
 				31414B291F2F68EC001CA44B /* 181@2x.png in Resources */,
 			);
@@ -1219,12 +1238,15 @@
 				31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */,
 				31DA8FF71F2C7FD8002D8B3F /* XXNibConvention.m in Sources */,
 				31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */,
+				32759D6F1F4C24DB000CF873 /* UITableViewCell+BMReusable.m in Sources */,
+				32759D6C1F4C233E000CF873 /* BMModel.m in Sources */,
 				31DA8FD91F2C7EF6002D8B3F /* BMTodayHeadlinesDragVC.m in Sources */,
-				31DA8FCB1F2C7EF6002D8B3F /* BMAlipayVC.m in Sources */,
 				31DA8FEB1F2C7F7D002D8B3F /* README.md in Sources */,
 				31DA8FD81F2C7EF6002D8B3F /* BMTodayHeadlinesDragModel.m in Sources */,
 				31DA8FF61F2C7FD8002D8B3F /* XXNibBridge.m in Sources */,
 				31DA8FD11F2C7EF6002D8B3F /* BMAlipayHeaderSelectView.m in Sources */,
+				32759D631F4C2277000CF873 /* BMAlipayVC.m in Sources */,
+				32759D681F4C22EE000CF873 /* BMRootVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
