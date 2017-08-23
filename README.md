@@ -26,38 +26,26 @@
 * [ ] 您认为有必要的也@我哈.
 
 ## 效果图 
-### 支付宝效果
 
 <p align="center">
 <img src="Resources/-1.gif" width="40%">
 </p>
 
-
-### 效果1
+<p align="center">
+<img src="Resources/4.gif" width="40%">
+</p>
 
 <p align="center">
 <img src="Resources/5.gif" width="40%">
 </p>
 
-
-### 效果2
 <p align="center">
 <img src="Resources/2.gif" width="40%">
 </p>
 
-### 效果3
-
 <p align="center">
 <img src="Resources/1.gif" width="40%">
 </p>
-
-### 效果4
-
-<p align="center">
-<img src="Resources/4.gif" width="40%">
-</p>
-
->基本实现了`头条`的频道重排功能，额外增加了当拖拽到边沿时自动滚动的功能。
 
 
 ### 视频演示
