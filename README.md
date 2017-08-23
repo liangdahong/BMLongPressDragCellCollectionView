@@ -19,7 +19,7 @@
 ## 未来计划
 * [x] [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 * [x] Demo及文档完善。
-* [ ] `支付宝`拖拽效果实现,资源来源于[http://www.iconfont.cn/](http://www.iconfont.cn/)感谢。
+* [x] `支付宝`拖拽效果实现,资源来源于[http://www.iconfont.cn/](http://www.iconfont.cn/)感谢。
 * [x] `今日头条`频道拖拽重排效果实现。
 * [ ] `腾讯新闻`频道拖拽重排效果实现。
 * [ ] `看荐`拖拽重排效果实现及优化。ps:`看荐`的拖拽重排发现一个bug，哈哈。
