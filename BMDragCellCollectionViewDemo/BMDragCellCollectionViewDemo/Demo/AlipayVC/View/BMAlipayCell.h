@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BMAlipayModel.h"
 
 @interface BMAlipayCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) BMAlipayModel *model; ///< model
 
 @end

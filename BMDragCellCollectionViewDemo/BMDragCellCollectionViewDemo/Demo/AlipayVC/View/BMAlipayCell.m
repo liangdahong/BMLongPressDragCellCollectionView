@@ -8,13 +8,29 @@
 
 #import "BMAlipayCell.h"
 
+@interface BMAlipayCell ()
+
+@property (weak, nonatomic) IBOutlet UIView *myBackgroundView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+@end
+
+
 @implementation BMAlipayCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.titleLabel.layer.cornerRadius = 10;
-    self.titleLabel.layer.masksToBounds = YES;
+    self.myBackgroundView.layer.cornerRadius = 10;
+    self.myBackgroundView.layer.masksToBounds = YES;
+}
 
+- (void)setModel:(BMAlipayModel *)model {
+    if (model == _model) {
+        return;
+    }
+    _model = model;
+    self.nameLabel.text = model.title;
+    self.iconImageView.image = [UIImage imageNamed:model.iconName];
 }
 
 @end

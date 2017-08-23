@@ -16,4 +16,5 @@
     model.selector = selector;
     return model;
 }
+
 @end

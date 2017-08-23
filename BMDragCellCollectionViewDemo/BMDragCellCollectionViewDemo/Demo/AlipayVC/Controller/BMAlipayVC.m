@@ -9,6 +9,7 @@
 #import "BMAlipayVC.h"
 #import "BMAlipayCell.h"
 #import "BMDragCellCollectionView.h"
+#import "BMAlipayModel.h"
 
 #define WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define HEIGHT [[UIScreen mainScreen] bounds].size.height
@@ -17,7 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet BMDragCellCollectionView *dragCellCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
-@property (strong, nonatomic) NSMutableArray <NSString*>*dataSourceArray;
+@property (strong, nonatomic) NSMutableArray <BMAlipayModel *>*dataSourceArray;
 
 @end
 
@@ -36,13 +37,24 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     }
 }
 
-- (NSMutableArray<NSString *> *)dataSourceArray {
+- (NSMutableArray<BMAlipayModel *> *)dataSourceArray {
     if (!_dataSourceArray) {
         _dataSourceArray = [@[] mutableCopy];
-        int arc = 11;
-        while (arc--) {
-            [_dataSourceArray addObject:[NSString stringWithFormat:@"功能%d", 9 - arc]];
-        }
+        
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]];
+
+        
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]];
+        
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"来分期" iconName:@"分期"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"商家服务" iconName:@"商家服务2"]];
+        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"ofo小黄车" iconName:@"ofo共享单车"]];
     }
     return _dataSourceArray;
 }
@@ -67,7 +79,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     BMAlipayCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    cell.titleLabel.text = self.dataSourceArray[indexPath.row];
+    cell.model = self.dataSourceArray[indexPath.row];
     return cell;
 }
 
@@ -78,4 +90,5 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
+
 @end

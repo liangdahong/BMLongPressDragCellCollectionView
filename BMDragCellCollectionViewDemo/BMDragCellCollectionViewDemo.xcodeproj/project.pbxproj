@@ -45,6 +45,18 @@
 		32759D761F4C2D9A000CF873 /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D731F4C2D9A000CF873 /* XXNibBridge.m */; };
 		32759D771F4C2D9A000CF873 /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D751F4C2D9A000CF873 /* XXNibConvention.m */; };
 		32759D7B1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D7A1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m */; };
+		32FD266F1F4D0366006E0742 /* 091共享单车 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26641F4D0366006E0742 /* 091共享单车 copy.png */; };
+		32FD26701F4D0366006E0742 /* 充值中心.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26651F4D0366006E0742 /* 充值中心.png */; };
+		32FD26711F4D0366006E0742 /* 滴滴出行.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26661F4D0366006E0742 /* 滴滴出行.png */; };
+		32FD26721F4D0366006E0742 /* 分期.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26671F4D0366006E0742 /* 分期.png */; };
+		32FD26731F4D0366006E0742 /* 花呗.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26681F4D0366006E0742 /* 花呗.png */; };
+		32FD26741F4D0366006E0742 /* 火车票.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26691F4D0366006E0742 /* 火车票.png */; };
+		32FD26751F4D0366006E0742 /* 商家服务2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266A1F4D0366006E0742 /* 商家服务2.png */; };
+		32FD26761F4D0366006E0742 /* 信用卡.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266B1F4D0366006E0742 /* 信用卡.png */; };
+		32FD26771F4D0366006E0742 /* 芝麻信用.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266C1F4D0366006E0742 /* 芝麻信用.png */; };
+		32FD26781F4D0366006E0742 /* 转账.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266D1F4D0366006E0742 /* 转账.png */; };
+		32FD26791F4D0366006E0742 /* ofo共享单车.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266E1F4D0366006E0742 /* ofo共享单车.png */; };
+		32FD267C1F4D037B006E0742 /* BMAlipayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD267B1F4D037B006E0742 /* BMAlipayModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +137,19 @@
 		32759D751F4C2D9A000CF873 /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
 		32759D791F4C2DC4000CF873 /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
 		32759D7A1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
+		32FD26641F4D0366006E0742 /* 091共享单车 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "091共享单车 copy.png"; sourceTree = "<group>"; };
+		32FD26651F4D0366006E0742 /* 充值中心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "充值中心.png"; sourceTree = "<group>"; };
+		32FD26661F4D0366006E0742 /* 滴滴出行.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滴滴出行.png"; sourceTree = "<group>"; };
+		32FD26671F4D0366006E0742 /* 分期.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分期.png"; sourceTree = "<group>"; };
+		32FD26681F4D0366006E0742 /* 花呗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "花呗.png"; sourceTree = "<group>"; };
+		32FD26691F4D0366006E0742 /* 火车票.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火车票.png"; sourceTree = "<group>"; };
+		32FD266A1F4D0366006E0742 /* 商家服务2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商家服务2.png"; sourceTree = "<group>"; };
+		32FD266B1F4D0366006E0742 /* 信用卡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "信用卡.png"; sourceTree = "<group>"; };
+		32FD266C1F4D0366006E0742 /* 芝麻信用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "芝麻信用.png"; sourceTree = "<group>"; };
+		32FD266D1F4D0366006E0742 /* 转账.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转账.png"; sourceTree = "<group>"; };
+		32FD266E1F4D0366006E0742 /* ofo共享单车.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ofo共享单车.png"; sourceTree = "<group>"; };
+		32FD267A1F4D037B006E0742 /* BMAlipayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMAlipayModel.h; path = BMDragCellCollectionViewDemo/Demo/RootVC/BMAlipayModel.h; sourceTree = SOURCE_ROOT; };
+		32FD267B1F4D037B006E0742 /* BMAlipayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMAlipayModel.m; path = BMDragCellCollectionViewDemo/Demo/RootVC/BMAlipayModel.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +330,8 @@
 		31DA8FAC1F2C7EF6002D8B3F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				32FD267A1F4D037B006E0742 /* BMAlipayModel.h */,
+				32FD267B1F4D037B006E0742 /* BMAlipayModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,6 +393,17 @@
 		31DA8FE21F2C7F7D002D8B3F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				32FD26641F4D0366006E0742 /* 091共享单车 copy.png */,
+				32FD26651F4D0366006E0742 /* 充值中心.png */,
+				32FD26661F4D0366006E0742 /* 滴滴出行.png */,
+				32FD26671F4D0366006E0742 /* 分期.png */,
+				32FD26681F4D0366006E0742 /* 花呗.png */,
+				32FD26691F4D0366006E0742 /* 火车票.png */,
+				32FD266A1F4D0366006E0742 /* 商家服务2.png */,
+				32FD266B1F4D0366006E0742 /* 信用卡.png */,
+				32FD266C1F4D0366006E0742 /* 芝麻信用.png */,
+				32FD266D1F4D0366006E0742 /* 转账.png */,
+				32FD266E1F4D0366006E0742 /* ofo共享单车.png */,
 				31DA8FE31F2C7F7D002D8B3F /* 1.gif */,
 				31DA8FE41F2C7F7D002D8B3F /* 2.gif */,
 				31DA8FE51F2C7F7D002D8B3F /* 3.png */,
@@ -516,18 +554,29 @@
 				31DA8FEE1F2C7F7D002D8B3F /* 3.png in Resources */,
 				31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */,
 				31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */,
+				32FD26741F4D0366006E0742 /* 火车票.png in Resources */,
+				32FD26771F4D0366006E0742 /* 芝麻信用.png in Resources */,
 				31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */,
 				31DA8F7F1F2C7EC0002D8B3F /* LaunchScreen.storyboard in Resources */,
 				314149DF1F2F6725001CA44B /* BMImageCell.xib in Resources */,
+				32FD266F1F4D0366006E0742 /* 091共享单车 copy.png in Resources */,
 				32759D691F4C22EE000CF873 /* BMRootVC.xib in Resources */,
 				31DA8FEC1F2C7F7D002D8B3F /* 1.gif in Resources */,
+				32FD26761F4D0366006E0742 /* 信用卡.png in Resources */,
 				31DA8F7C1F2C7EC0002D8B3F /* Assets.xcassets in Resources */,
+				32FD26711F4D0366006E0742 /* 滴滴出行.png in Resources */,
 				31DA8FED1F2C7F7D002D8B3F /* 2.gif in Resources */,
 				31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */,
 				31DA8F7A1F2C7EC0002D8B3F /* Main.storyboard in Resources */,
+				32FD26751F4D0366006E0742 /* 商家服务2.png in Resources */,
+				32FD26721F4D0366006E0742 /* 分期.png in Resources */,
+				32FD26781F4D0366006E0742 /* 转账.png in Resources */,
+				32FD26731F4D0366006E0742 /* 花呗.png in Resources */,
 				32759D641F4C2277000CF873 /* BMAlipayVC.xib in Resources */,
 				319A390D1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib in Resources */,
 				31DA8FEF1F2C7F7D002D8B3F /* 4.gif in Resources */,
+				32FD26701F4D0366006E0742 /* 充值中心.png in Resources */,
+				32FD26791F4D0366006E0742 /* ofo共享单车.png in Resources */,
 				314149DA1F2F670A001CA44B /* BMImageVC.xib in Resources */,
 				31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */,
 				319A390B1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib in Resources */,
@@ -564,6 +613,7 @@
 				319A390C1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m in Sources */,
 				314149D91F2F670A001CA44B /* BMImageVC.m in Sources */,
 				31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */,
+				32FD267C1F4D037B006E0742 /* BMAlipayModel.m in Sources */,
 				319A390A1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m in Sources */,
 				32759D7B1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m in Sources */,
 				31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */,
