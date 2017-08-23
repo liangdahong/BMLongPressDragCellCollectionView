@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		314149D91F2F670A001CA44B /* BMImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 314149D71F2F670A001CA44B /* BMImageVC.m */; };
-		314149DA1F2F670A001CA44B /* BMImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314149D81F2F670A001CA44B /* BMImageVC.xib */; };
-		314149DE1F2F6725001CA44B /* BMImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 314149DC1F2F6725001CA44B /* BMImageCell.m */; };
-		314149DF1F2F6725001CA44B /* BMImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314149DD1F2F6725001CA44B /* BMImageCell.xib */; };
 		319A390A1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A39011F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m */; };
 		319A390B1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319A39021F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib */; };
 		319A390C1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 319A39051F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m */; };
@@ -25,9 +21,6 @@
 		31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FA51F2C7EF6002D8B3F /* main.m */; };
 		31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */; };
 		31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */; };
-		31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */; };
-		31DA8FD41F2C7EF6002D8B3F /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */; };
-		31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */; };
 		31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */; };
 		31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */; };
 		31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE01F2C7F7D002D8B3F /* LICENSE */; };
@@ -39,12 +32,8 @@
 		31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE71F2C7F7D002D8B3F /* iTunesArtwork.png */; };
 		32759D631F4C2277000CF873 /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D611F4C2277000CF873 /* BMAlipayVC.m */; };
 		32759D641F4C2277000CF873 /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32759D621F4C2277000CF873 /* BMAlipayVC.xib */; };
-		32759D681F4C22EE000CF873 /* BMRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D661F4C22EE000CF873 /* BMRootVC.m */; };
-		32759D691F4C22EE000CF873 /* BMRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32759D671F4C22EE000CF873 /* BMRootVC.xib */; };
-		32759D6C1F4C233E000CF873 /* BMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D6B1F4C233E000CF873 /* BMModel.m */; };
 		32759D761F4C2D9A000CF873 /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D731F4C2D9A000CF873 /* XXNibBridge.m */; };
 		32759D771F4C2D9A000CF873 /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D751F4C2D9A000CF873 /* XXNibConvention.m */; };
-		32759D7B1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D7A1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m */; };
 		32FD266F1F4D0366006E0742 /* 091共享单车 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26641F4D0366006E0742 /* 091共享单车 copy.png */; };
 		32FD26701F4D0366006E0742 /* 充值中心.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26651F4D0366006E0742 /* 充值中心.png */; };
 		32FD26711F4D0366006E0742 /* 滴滴出行.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26661F4D0366006E0742 /* 滴滴出行.png */; };
@@ -56,7 +45,18 @@
 		32FD26771F4D0366006E0742 /* 芝麻信用.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266C1F4D0366006E0742 /* 芝麻信用.png */; };
 		32FD26781F4D0366006E0742 /* 转账.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266D1F4D0366006E0742 /* 转账.png */; };
 		32FD26791F4D0366006E0742 /* ofo共享单车.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD266E1F4D0366006E0742 /* ofo共享单车.png */; };
-		32FD267C1F4D037B006E0742 /* BMAlipayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD267B1F4D037B006E0742 /* BMAlipayModel.m */; };
+		32FD26841F4D099D006E0742 /* BMRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD267F1F4D099D006E0742 /* BMRootVC.m */; };
+		32FD26851F4D099D006E0742 /* BMRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26801F4D099D006E0742 /* BMRootVC.xib */; };
+		32FD26861F4D099D006E0742 /* BMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD26831F4D099D006E0742 /* BMModel.m */; };
+		32FD26891F4D09C6006E0742 /* BMAlipayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD26881F4D09C6006E0742 /* BMAlipayModel.m */; };
+		32FD26921F4D0A0E006E0742 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD268C1F4D0A0E006E0742 /* BMDragCellCollectionViewVC.m */; };
+		32FD26931F4D0A0E006E0742 /* BMDragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD26901F4D0A0E006E0742 /* BMDragCollectionViewCell.m */; };
+		32FD26941F4D0A0E006E0742 /* BMDragCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26911F4D0A0E006E0742 /* BMDragCollectionViewCell.xib */; };
+		32FD269E1F4D0A48006E0742 /* BMImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD26971F4D0A48006E0742 /* BMImageVC.m */; };
+		32FD269F1F4D0A48006E0742 /* BMImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26981F4D0A48006E0742 /* BMImageVC.xib */; };
+		32FD26A01F4D0A48006E0742 /* BMImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD269C1F4D0A48006E0742 /* BMImageCell.m */; };
+		32FD26A11F4D0A48006E0742 /* BMImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FD269D1F4D0A48006E0742 /* BMImageCell.xib */; };
+		32FD26A51F4D0A62006E0742 /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FD26A41F4D0A62006E0742 /* UITableViewCell+BMReusable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +77,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		314149D61F2F670A001CA44B /* BMImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageVC.h; sourceTree = "<group>"; };
-		314149D71F2F670A001CA44B /* BMImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageVC.m; sourceTree = "<group>"; };
-		314149D81F2F670A001CA44B /* BMImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageVC.xib; sourceTree = "<group>"; };
-		314149DB1F2F6725001CA44B /* BMImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageCell.h; sourceTree = "<group>"; };
-		314149DC1F2F6725001CA44B /* BMImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageCell.m; sourceTree = "<group>"; };
-		314149DD1F2F6725001CA44B /* BMImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageCell.xib; sourceTree = "<group>"; };
 		319A39001F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
 		319A39011F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
 		319A39021F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
@@ -108,11 +102,6 @@
 		31DA8FAE1F2C7EF6002D8B3F /* BMAlipayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayCell.h; sourceTree = "<group>"; };
 		31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayCell.m; sourceTree = "<group>"; };
 		31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
-		31DA8FB81F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
-		31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
-		31DA8FBA1F2C7EF6002D8B3F /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
-		31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
-		31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
 		31DA8FDD1F2C7F7D002D8B3F /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
 		31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
 		31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
@@ -126,17 +115,10 @@
 		32759D601F4C2277000CF873 /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
 		32759D611F4C2277000CF873 /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
 		32759D621F4C2277000CF873 /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
-		32759D651F4C22EE000CF873 /* BMRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootVC.h; sourceTree = "<group>"; };
-		32759D661F4C22EE000CF873 /* BMRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRootVC.m; sourceTree = "<group>"; };
-		32759D671F4C22EE000CF873 /* BMRootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMRootVC.xib; sourceTree = "<group>"; };
-		32759D6A1F4C233E000CF873 /* BMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMModel.h; sourceTree = "<group>"; };
-		32759D6B1F4C233E000CF873 /* BMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMModel.m; sourceTree = "<group>"; };
 		32759D721F4C2D9A000CF873 /* XXNibBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibBridge.h; sourceTree = "<group>"; };
 		32759D731F4C2D9A000CF873 /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
 		32759D741F4C2D9A000CF873 /* XXNibConvention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibConvention.h; sourceTree = "<group>"; };
 		32759D751F4C2D9A000CF873 /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
-		32759D791F4C2DC4000CF873 /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
-		32759D7A1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
 		32FD26641F4D0366006E0742 /* 091共享单车 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "091共享单车 copy.png"; sourceTree = "<group>"; };
 		32FD26651F4D0366006E0742 /* 充值中心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "充值中心.png"; sourceTree = "<group>"; };
 		32FD26661F4D0366006E0742 /* 滴滴出行.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滴滴出行.png"; sourceTree = "<group>"; };
@@ -148,8 +130,26 @@
 		32FD266C1F4D0366006E0742 /* 芝麻信用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "芝麻信用.png"; sourceTree = "<group>"; };
 		32FD266D1F4D0366006E0742 /* 转账.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转账.png"; sourceTree = "<group>"; };
 		32FD266E1F4D0366006E0742 /* ofo共享单车.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ofo共享单车.png"; sourceTree = "<group>"; };
-		32FD267A1F4D037B006E0742 /* BMAlipayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMAlipayModel.h; path = BMDragCellCollectionViewDemo/Demo/RootVC/BMAlipayModel.h; sourceTree = SOURCE_ROOT; };
-		32FD267B1F4D037B006E0742 /* BMAlipayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMAlipayModel.m; path = BMDragCellCollectionViewDemo/Demo/RootVC/BMAlipayModel.m; sourceTree = SOURCE_ROOT; };
+		32FD267E1F4D099D006E0742 /* BMRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootVC.h; sourceTree = "<group>"; };
+		32FD267F1F4D099D006E0742 /* BMRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRootVC.m; sourceTree = "<group>"; };
+		32FD26801F4D099D006E0742 /* BMRootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMRootVC.xib; sourceTree = "<group>"; };
+		32FD26821F4D099D006E0742 /* BMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMModel.h; sourceTree = "<group>"; };
+		32FD26831F4D099D006E0742 /* BMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMModel.m; sourceTree = "<group>"; };
+		32FD26871F4D09C6006E0742 /* BMAlipayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayModel.h; sourceTree = "<group>"; };
+		32FD26881F4D09C6006E0742 /* BMAlipayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayModel.m; sourceTree = "<group>"; };
+		32FD268B1F4D0A0E006E0742 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
+		32FD268C1F4D0A0E006E0742 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
+		32FD268F1F4D0A0E006E0742 /* BMDragCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCollectionViewCell.h; sourceTree = "<group>"; };
+		32FD26901F4D0A0E006E0742 /* BMDragCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCollectionViewCell.m; sourceTree = "<group>"; };
+		32FD26911F4D0A0E006E0742 /* BMDragCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMDragCollectionViewCell.xib; sourceTree = "<group>"; };
+		32FD26961F4D0A48006E0742 /* BMImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageVC.h; sourceTree = "<group>"; };
+		32FD26971F4D0A48006E0742 /* BMImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageVC.m; sourceTree = "<group>"; };
+		32FD26981F4D0A48006E0742 /* BMImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageVC.xib; sourceTree = "<group>"; };
+		32FD269B1F4D0A48006E0742 /* BMImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageCell.h; sourceTree = "<group>"; };
+		32FD269C1F4D0A48006E0742 /* BMImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageCell.m; sourceTree = "<group>"; };
+		32FD269D1F4D0A48006E0742 /* BMImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageCell.xib; sourceTree = "<group>"; };
+		32FD26A31F4D0A62006E0742 /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
+		32FD26A41F4D0A62006E0742 /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,12 +180,9 @@
 		314149D51F2F66FF001CA44B /* BMImageVC */ = {
 			isa = PBXGroup;
 			children = (
-				314149D61F2F670A001CA44B /* BMImageVC.h */,
-				314149D71F2F670A001CA44B /* BMImageVC.m */,
-				314149D81F2F670A001CA44B /* BMImageVC.xib */,
-				314149DB1F2F6725001CA44B /* BMImageCell.h */,
-				314149DC1F2F6725001CA44B /* BMImageCell.m */,
-				314149DD1F2F6725001CA44B /* BMImageCell.xib */,
+				32FD26951F4D0A48006E0742 /* Controller */,
+				32FD26991F4D0A48006E0742 /* Model */,
+				32FD269A1F4D0A48006E0742 /* View */,
 			);
 			path = BMImageVC;
 			sourceTree = "<group>";
@@ -330,8 +327,8 @@
 		31DA8FAC1F2C7EF6002D8B3F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				32FD267A1F4D037B006E0742 /* BMAlipayModel.h */,
-				32FD267B1F4D037B006E0742 /* BMAlipayModel.m */,
+				32FD26871F4D09C6006E0742 /* BMAlipayModel.h */,
+				32FD26881F4D09C6006E0742 /* BMAlipayModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,11 +346,9 @@
 		31DA8FB71F2C7EF6002D8B3F /* BaseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				31DA8FB81F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.h */,
-				31DA8FB91F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m */,
-				31DA8FBA1F2C7EF6002D8B3F /* BMDragCollectionViewCell.h */,
-				31DA8FBB1F2C7EF6002D8B3F /* BMDragCollectionViewCell.m */,
-				31DA8FBC1F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib */,
+				32FD268A1F4D0A0E006E0742 /* Controller */,
+				32FD268D1F4D0A0E006E0742 /* Model */,
+				32FD268E1F4D0A0E006E0742 /* View */,
 			);
 			path = BaseDemo;
 			sourceTree = "<group>";
@@ -371,11 +366,8 @@
 		31DA8FC61F2C7EF6002D8B3F /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
-				32759D651F4C22EE000CF873 /* BMRootVC.h */,
-				32759D661F4C22EE000CF873 /* BMRootVC.m */,
-				32759D671F4C22EE000CF873 /* BMRootVC.xib */,
-				32759D6A1F4C233E000CF873 /* BMModel.h */,
-				32759D6B1F4C233E000CF873 /* BMModel.m */,
+				32FD267D1F4D099D006E0742 /* Coltroller */,
+				32FD26811F4D099D006E0742 /* Model */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
@@ -436,10 +428,90 @@
 		32759D781F4C2DC4000CF873 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				32759D791F4C2DC4000CF873 /* UITableViewCell+BMReusable.h */,
-				32759D7A1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m */,
+				32FD26A21F4D0A62006E0742 /* UITableViewCell */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		32FD267D1F4D099D006E0742 /* Coltroller */ = {
+			isa = PBXGroup;
+			children = (
+				32FD267E1F4D099D006E0742 /* BMRootVC.h */,
+				32FD267F1F4D099D006E0742 /* BMRootVC.m */,
+				32FD26801F4D099D006E0742 /* BMRootVC.xib */,
+			);
+			path = Coltroller;
+			sourceTree = "<group>";
+		};
+		32FD26811F4D099D006E0742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32FD26821F4D099D006E0742 /* BMModel.h */,
+				32FD26831F4D099D006E0742 /* BMModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32FD268A1F4D0A0E006E0742 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32FD268B1F4D0A0E006E0742 /* BMDragCellCollectionViewVC.h */,
+				32FD268C1F4D0A0E006E0742 /* BMDragCellCollectionViewVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		32FD268D1F4D0A0E006E0742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32FD268E1F4D0A0E006E0742 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32FD268F1F4D0A0E006E0742 /* BMDragCollectionViewCell.h */,
+				32FD26901F4D0A0E006E0742 /* BMDragCollectionViewCell.m */,
+				32FD26911F4D0A0E006E0742 /* BMDragCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32FD26951F4D0A48006E0742 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32FD26961F4D0A48006E0742 /* BMImageVC.h */,
+				32FD26971F4D0A48006E0742 /* BMImageVC.m */,
+				32FD26981F4D0A48006E0742 /* BMImageVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		32FD26991F4D0A48006E0742 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32FD269A1F4D0A48006E0742 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32FD269B1F4D0A48006E0742 /* BMImageCell.h */,
+				32FD269C1F4D0A48006E0742 /* BMImageCell.m */,
+				32FD269D1F4D0A48006E0742 /* BMImageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32FD26A21F4D0A62006E0742 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				32FD26A31F4D0A62006E0742 /* UITableViewCell+BMReusable.h */,
+				32FD26A41F4D0A62006E0742 /* UITableViewCell+BMReusable.m */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,15 +625,15 @@
 			files = (
 				31DA8FEE1F2C7F7D002D8B3F /* 3.png in Resources */,
 				31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */,
+				32FD26A11F4D0A48006E0742 /* BMImageCell.xib in Resources */,
 				31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */,
+				32FD269F1F4D0A48006E0742 /* BMImageVC.xib in Resources */,
 				32FD26741F4D0366006E0742 /* 火车票.png in Resources */,
 				32FD26771F4D0366006E0742 /* 芝麻信用.png in Resources */,
-				31DA8FD51F2C7EF6002D8B3F /* BMDragCollectionViewCell.xib in Resources */,
 				31DA8F7F1F2C7EC0002D8B3F /* LaunchScreen.storyboard in Resources */,
-				314149DF1F2F6725001CA44B /* BMImageCell.xib in Resources */,
 				32FD266F1F4D0366006E0742 /* 091共享单车 copy.png in Resources */,
-				32759D691F4C22EE000CF873 /* BMRootVC.xib in Resources */,
 				31DA8FEC1F2C7F7D002D8B3F /* 1.gif in Resources */,
+				32FD26851F4D099D006E0742 /* BMRootVC.xib in Resources */,
 				32FD26761F4D0366006E0742 /* 信用卡.png in Resources */,
 				31DA8F7C1F2C7EC0002D8B3F /* Assets.xcassets in Resources */,
 				32FD26711F4D0366006E0742 /* 滴滴出行.png in Resources */,
@@ -576,8 +648,8 @@
 				319A390D1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.xib in Resources */,
 				31DA8FEF1F2C7F7D002D8B3F /* 4.gif in Resources */,
 				32FD26701F4D0366006E0742 /* 充值中心.png in Resources */,
+				32FD26941F4D0A0E006E0742 /* BMDragCollectionViewCell.xib in Resources */,
 				32FD26791F4D0366006E0742 /* ofo共享单车.png in Resources */,
-				314149DA1F2F670A001CA44B /* BMImageVC.xib in Resources */,
 				31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */,
 				319A390B1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.xib in Resources */,
 			);
@@ -604,25 +676,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31DA8FD41F2C7EF6002D8B3F /* BMDragCollectionViewCell.m in Sources */,
+				32FD26841F4D099D006E0742 /* BMRootVC.m in Sources */,
 				32759D771F4C2D9A000CF873 /* XXNibConvention.m in Sources */,
 				31DA8FC91F2C7EF6002D8B3F /* AppDelegate.m in Sources */,
+				32FD26A01F4D0A48006E0742 /* BMImageCell.m in Sources */,
+				32FD26921F4D0A0E006E0742 /* BMDragCellCollectionViewVC.m in Sources */,
+				32FD26861F4D099D006E0742 /* BMModel.m in Sources */,
 				31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */,
 				31DA8FCA1F2C7EF6002D8B3F /* main.m in Sources */,
-				314149DE1F2F6725001CA44B /* BMImageCell.m in Sources */,
+				32FD26931F4D0A0E006E0742 /* BMDragCollectionViewCell.m in Sources */,
+				32FD26A51F4D0A62006E0742 /* UITableViewCell+BMReusable.m in Sources */,
 				319A390C1F4C8224005F0BC3 /* BMTodayHeadlinesDragVC.m in Sources */,
-				314149D91F2F670A001CA44B /* BMImageVC.m in Sources */,
+				32FD26891F4D09C6006E0742 /* BMAlipayModel.m in Sources */,
 				31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */,
-				32FD267C1F4D037B006E0742 /* BMAlipayModel.m in Sources */,
+				32FD269E1F4D0A48006E0742 /* BMImageVC.m in Sources */,
 				319A390A1F4C8224005F0BC3 /* BMTodayHeadlinesDragCell.m in Sources */,
-				32759D7B1F4C2DC4000CF873 /* UITableViewCell+BMReusable.m in Sources */,
-				31DA8FD31F2C7EF6002D8B3F /* BMDragCellCollectionViewVC.m in Sources */,
 				319A390E1F4C8224005F0BC3 /* BMTodayHeadlinesDragModel.m in Sources */,
-				32759D6C1F4C233E000CF873 /* BMModel.m in Sources */,
 				32759D761F4C2D9A000CF873 /* XXNibBridge.m in Sources */,
 				31DA8FEB1F2C7F7D002D8B3F /* README.md in Sources */,
 				32759D631F4C2277000CF873 /* BMAlipayVC.m in Sources */,
-				32759D681F4C22EE000CF873 /* BMRootVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
