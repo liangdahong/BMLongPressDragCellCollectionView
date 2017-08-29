@@ -16,6 +16,9 @@
 > 
 > 正在编程Swift版，敬请关注 [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 
+## 声明
+> 此库在参考了[https://github.com/wazrx/XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)的基础上进行了一系列优化及丰富API，向前人致敬。
+
 ## 未来计划
 * [x] [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 * [x] Demo及文档完善。
