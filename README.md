@@ -188,7 +188,7 @@ collectionView.dataSource = self;
 - [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
 
 ## 期待
-- 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView)我。
+- 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView/issues)我。
 
 ## 版本历史
 ### v1.0.9
