@@ -70,29 +70,6 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 
 @dynamic delegate, dataSource;
 
-#pragma mark -
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    [self initConfiguration];
-}
-
-#pragma mark - init
-
-- (instancetype)init {
-    if (self = [super init]) {
-        [self initConfiguration];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        [self initConfiguration];
-    }
-    return self;
-}
-
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout {
     if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
         [self initConfiguration];
