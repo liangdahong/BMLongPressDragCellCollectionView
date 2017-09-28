@@ -70,7 +70,7 @@
 ### CocoaPods
 > 推荐使用 CocoaPods 安装,Cocoapods的使用请点这里[链接1](http://idhong.com/2016/10/26/cocoapods%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/)、[链接2](http://www.pluto-y.com/cocoapods-getting-stared/)、[链接3](http://blog.devtang.com/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/)
 
-1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView', '1.0.7'` [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
+1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView' [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
 2. 执行 `pod install` 或 `pod update`
 3. 使用的地方导入 `"BMDragCellCollectionView.h"`
 4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`
@@ -181,9 +181,6 @@ collectionView.dataSource = self;
 ```
 
 
-
-
-
 - 其他相关用法，详见[代码](https://github.com/asiosldh/BMDragCellCollectionView/blob/master/BMDragCellCollectionView/BMDragCellCollectionView.h)
 - [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
 
@@ -191,6 +188,7 @@ collectionView.dataSource = self;
 - 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView/issues)我。
 
 ## 版本历史
+### v1.1.0
 ### v1.0.9
 ### v1.0.8
 ### v1.0.7
