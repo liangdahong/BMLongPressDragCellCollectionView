@@ -319,16 +319,12 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }
     _currentIndexPath = index;
     self.oldPoint = [self cellForItemAtIndexPath:_currentIndexPath].center;
-    
     // 更新数据源
     [self _updateSourceData];
-    
     // 移动 会调用willMoveToIndexPath方法更新数据源
     [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
-
     // 设置移动后的起始indexPath
     _oldIndexPath = _currentIndexPath;
-
     // 为了防止在缓存池取出的Cell已隐藏,
     // 以后可以优化
     [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
@@ -377,8 +373,18 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             self.oldPoint = cell.center;
             
-            // 使用系统截图功能，得到cell的快照view
-            _snapedView = [cell snapshotViewAfterScreenUpdates:NO];
+            // 检测是否需要外部自定义创建拖拽view
+            if (_startDragGetDragViewBlock) {
+                _snapedView = _startDragGetDragViewBlock(indexPath);
+            } else {
+                // 使用系统截图功能，得到cell的快照view
+                _snapedView = [cell snapshotViewAfterScreenUpdates:NO];
+                // 让使用者对快照view做一些简单操作
+                if (_startDragSnapedViewBlock) {
+                    _startDragSnapedViewBlock(indexPath, _snapedView);
+                }
+            }
+
             // 设置frame
             _snapedView.frame = cell.frame;
             // 添加到 collectionView 不然无法显示
@@ -510,10 +516,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         }
     });
     _currentIndexPath = newIndexPath;
-    
     // 操作
     [self _updateSourceData];
-    
     // 移动 会调用willMoveToIndexPath方法更新数据源
     [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
     // 设置移动后的起始indexPath

@@ -23,33 +23,6 @@
 
 #import <UIKit/UIKit.h>
 
-#pragma mark - UICollectionView BMDragCellCollectionViewRect
-
-/**
- 内部工具
- */
-@interface UICollectionView (BMDragCellCollectionViewRect)
-
-/**
- 获取一组的rect
- - (CGRect)rectForSection:(NSInteger)section;
- 
- @param section 组
- @return Rect
- */
-- (CGRect)bm_rectForSection:(NSInteger)section;
-
-/**
- 获取 indexPath的Cell 的Rect
- - (CGRect)rectForRowAtIndexPath:(NSIndexPath *)indexPath;
- 
- @param indexPath indexPath
- @return Rect
- */
-- (CGRect)bm_rectForRowAtIndexPath:(NSIndexPath *)indexPath;
-
-@end
-
 @class BMDragCellCollectionView;
 
 #pragma mark - BMDragCollectionViewDataSource
@@ -203,6 +176,16 @@
  Drag and drop the Cell in drag move when the transparency The default is 1.0
  */
 @property (assign, nonatomic) CGFloat dragCellAlpha;
+
+/**
+ 开始拖拽时，向外面获取拖拽的View，如果没有就使用快照功能
+ */
+@property (copy, nonatomic) UIView * (^startDragGetDragViewBlock)(NSIndexPath *indexPath);
+
+/**
+ 当使用了快照时，让外面的使用者可以对拖拽的View做一些操作
+ */
+@property (copy, nonatomic) void (^startDragSnapedViewBlock)(NSIndexPath *indexPath, UIView *snapedView);
 
 /**
  移动到指定位置

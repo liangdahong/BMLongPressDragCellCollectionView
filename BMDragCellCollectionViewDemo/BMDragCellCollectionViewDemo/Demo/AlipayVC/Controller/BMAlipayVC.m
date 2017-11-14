@@ -34,6 +34,16 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
         self.dragCellCollectionView.alwaysBounceVertical = YES;
         [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMAlipayCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+        
+//        self.dragCellCollectionView.startDragSnapedViewBlock = ^(NSIndexPath *indexPath, UIView *snapedView) {
+//            snapedView.backgroundColor = [UIColor grayColor];
+//        };
+//        
+//        self.dragCellCollectionView.startDragGetDragViewBlock = ^UIView *(NSIndexPath *indexPath) {
+//            UIView *view = [UIView new];
+//            view.backgroundColor = [UIColor redColor];
+//            return view;
+//        };
     }
 }
 
