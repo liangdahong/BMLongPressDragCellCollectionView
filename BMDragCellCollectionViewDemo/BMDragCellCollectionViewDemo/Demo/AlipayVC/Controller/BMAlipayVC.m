@@ -99,7 +99,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     return self.dataSourceArray;
 }
 
-- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray {
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 

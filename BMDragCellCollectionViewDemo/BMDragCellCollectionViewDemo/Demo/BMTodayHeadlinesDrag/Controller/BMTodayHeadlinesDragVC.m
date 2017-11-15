@@ -151,16 +151,25 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     }
 }
     
+//- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+//    if (destinationIndexPath.section == 1 || sourceIndexPath.section == 1) {
+//        return NO;
+//    }
+//    if (destinationIndexPath.section == 0 && destinationIndexPath.item == 0) {
+//        return NO;
+//    }
+//    return YES;
+//}
+
 - (BOOL)dragCellCollectionViewShouldBeginExchange:(BMDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-    if (destinationIndexPath.section == 1 || sourceIndexPath.section == 1) {
-        return NO;
+    if (sourceIndexPath.section == destinationIndexPath.section) {
+        NSLog(@"===");
+        return YES;
     }
-    if (destinationIndexPath.section == 0 && destinationIndexPath.item == 0) {
-        return NO;
-    }
-    return YES;
+    NSLog(@"!!!===");
+    return NO;
 }
-    
+
 - (BOOL)dragCellCollectionViewShouldBeginMove:(BMDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
         return NO;
@@ -196,5 +205,8 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     }
     return YES;
 }
+
+
+
 
 @end

@@ -23,6 +23,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class BMDragCellCollectionView;
 
 #pragma mark - BMDragCollectionViewDataSource
@@ -42,7 +44,7 @@
  @param dragCellCollectionView dragCellCollectionView
  @return 返回数据源  return self.dataArray;
  */
-- (NSArray *)dataSourceWithDragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView;
+- (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView;
 
 @end
 
@@ -63,7 +65,7 @@
  @param dragCellCollectionView dragCellCollectionView
  @param newDataArray 新的数据源，必须保存。 self.dataArray = [newDataArray copy];
  */
-- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray;
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray;
 
 @optional
 
@@ -148,8 +150,8 @@
  */
 @interface BMDragCellCollectionView : UICollectionView
 
-@property (nonatomic, weak) id<BMDragCellCollectionViewDelegate> delegate; ///< 代理 delegate
-@property (nonatomic, weak) id<BMDragCollectionViewDataSource> dataSource; ///< 数据源代理 dataSource
+@property (nonatomic, weak, nullable) id<BMDragCellCollectionViewDelegate> delegate; ///< 代理 delegate
+@property (nonatomic, weak, nullable) id<BMDragCollectionViewDataSource> dataSource; ///< 数据源代理 dataSource
 
 /**
  长按触发时间，默认是0.5秒，建议根据实际情况设值
@@ -180,12 +182,12 @@
 /**
  开始拖拽时，向外面获取拖拽的View，如果没有就使用快照功能
  */
-@property (copy, nonatomic) UIView * (^startDragGetDragViewBlock)(NSIndexPath *indexPath);
+@property (copy, nonatomic, nullable) UIView * (^startDragGetDragViewBlock)(NSIndexPath * indexPath);
 
 /**
  当使用了快照时，让外面的使用者可以对拖拽的View做一些操作
  */
-@property (copy, nonatomic) void (^startDragSnapedViewBlock)(NSIndexPath *indexPath, UIView *snapedView);
+@property (copy, nonatomic, nullable) void (^startDragSnapedViewBlock)(NSIndexPath * indexPath, UIView *snapedView);
 
 /**
  移动到指定位置
@@ -197,3 +199,5 @@
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 
 @end
+
+NS_ASSUME_NONNULL_END
