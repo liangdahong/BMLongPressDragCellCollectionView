@@ -103,4 +103,14 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 
+//- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView dragView:(nonnull UIView *)dragView indexPath:(nonnull NSIndexPath *)indexPath {
+//    NSLog(@"snapedView");
+//    dragView.backgroundColor = [UIColor redColor];
+//}
+//
+//- (UIView *)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath {
+//    UIView *view = [UIView new];
+//    return view;
+//}
+
 @end

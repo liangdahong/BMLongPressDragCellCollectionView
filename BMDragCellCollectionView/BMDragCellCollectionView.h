@@ -140,6 +140,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath;
 
+/**
+ 开始拖拽时，向外面获取拖拽的View，如果没有就使用快照功能
+ */
+- (UIView *)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath;
+
+/**
+ 让外面的使用者对拖拽的View做一些操作
+ */
+- (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath;
+
 @end
 
 #pragma mark - BMDragCellCollectionView
@@ -177,24 +187,19 @@ NS_ASSUME_NONNULL_BEGIN
  拖拽的Cell在拖拽移动时的透明度 默认是： 1.0
  Drag and drop the Cell in drag move when the transparency The default is 1.0
  */
-@property (assign, nonatomic) CGFloat dragCellAlpha;
+@property (nonatomic, assign) CGFloat dragCellAlpha;
 
 /**
- 开始拖拽时，向外面获取拖拽的View，如果没有就使用快照功能
+ 拖拽View的背景颜色
  */
-@property (copy, nonatomic, nullable) UIView * (^startDragGetDragViewBlock)(NSIndexPath * indexPath);
-
-/**
- 当使用了快照时，让外面的使用者可以对拖拽的View做一些操作
- */
-@property (copy, nonatomic, nullable) void (^startDragSnapedViewBlock)(NSIndexPath * indexPath, UIView *snapedView);
+@property (nonatomic, strong, nullable) UIColor *dragSnapedViewBackgroundColor;
 
 /**
  移动到指定位置
  To move to the specified location
 
  @param indexPath 移动到的位置（内部只会处理当前正在拖拽的情况，会把拖拽的Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用
- ，如：今日头条）
+ ，如：今日头条Demo ）
  */
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 

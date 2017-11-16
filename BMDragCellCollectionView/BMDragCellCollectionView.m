@@ -27,19 +27,19 @@
 
 @implementation UICollectionView (BMRect)
 
-- (CGRect)bm_rectForSection:(NSInteger)section {
+- (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section {
     NSInteger sectionNum = [self.dataSource collectionView:self numberOfItemsInSection:section];
     if (sectionNum <= 0) {
         return CGRectZero;
     }
-    CGRect firstRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
-    CGRect lastRect = [self bm_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
+    CGRect firstRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+    CGRect lastRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
     return ((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal ?
     CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame)) :
     CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
 }
 
-- (CGRect)bm_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [self layoutAttributesForItemAtIndexPath:indexPath].frame;
 }
 
@@ -55,14 +55,14 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 
 @interface BMDragCellCollectionView ()
 
-@property (strong, nonatomic) UIView *snapedView;                        ///< 截图快照
-@property (strong, nonatomic) UILongPressGestureRecognizer *longGesture; ///< 长按手势
-@property (strong, nonatomic) CADisplayLink *edgeTimer;                  ///< 定时器
-@property (strong, nonatomic) NSIndexPath *oldIndexPath;                 ///< 旧的IndexPath
-@property (strong, nonatomic) NSIndexPath *currentIndexPath;             ///< 当前路径
-@property (assign, nonatomic) CGPoint oldPoint;                          ///< 旧的位置
-@property (assign, nonatomic) CGPoint lastPoint;                         ///< 最后的触摸点
-@property (assign, nonatomic) BOOL isEndDrag;                            ///< 是否正在拖动
+@property (nonatomic, strong, nullable) UIView *snapedView;                        ///< 截图快照
+@property (nonatomic, strong, nullable) UILongPressGestureRecognizer *longGesture; ///< 长按手势
+@property (nonatomic, strong, nullable) CADisplayLink *edgeTimer;                  ///< 定时器
+@property (nonatomic, strong, nullable) NSIndexPath *oldIndexPath;                 ///< 旧的IndexPath
+@property (nonatomic, strong, nullable) NSIndexPath *currentIndexPath;             ///< 当前路径
+@property (nonatomic, assign) CGPoint oldPoint;                                    ///< 旧的位置
+@property (nonatomic, assign) CGPoint lastPoint;                                   ///< 最后的触摸点
+@property (nonatomic, assign) BOOL isEndDrag;                                      ///< 是否正在拖动
 
 @end
 
@@ -107,6 +107,11 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     _dragZoomScale = dragZoomScale;
 }
 
+- (void)setDragSnapedViewBackgroundColor:(UIColor *)dragSnapedViewBackgroundColor {
+    _dragSnapedViewBackgroundColor = dragSnapedViewBackgroundColor;
+    _snapedView.backgroundColor = dragSnapedViewBackgroundColor;
+}
+
 - (UILongPressGestureRecognizer *)longGesture {
     if (!_longGesture) {
         _longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handlelongGesture:)];
@@ -135,7 +140,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }
 }
 
-- (UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
+- (__kindof UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [super dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     // 处理复用时的问题，为了保证显示的正确性
     if (_isEndDrag) {
@@ -146,7 +151,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     return cell;
 }
 
-- (NSIndexPath *)_getChangedIndexPath {
+- (nullable NSIndexPath *)_getChangedIndexPath {
     __block NSIndexPath *index = nil;
     CGPoint point = [self.longGesture locationInView:self];
     // 遍历拖拽的Cell的中心点在哪一个Cell里
@@ -373,23 +378,29 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             self.oldPoint = cell.center;
             
-            // 检测是否需要外部自定义创建拖拽view
-            if (_startDragGetDragViewBlock) {
-                _snapedView = _startDragGetDragViewBlock(indexPath);
-            } else {
+            // 是否外部提供拖拽View
+            if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView: startDragAtIndexPath:)]) {
+                _snapedView = [self.delegate dragCellCollectionView:self startDragAtIndexPath:indexPath];
+            }
+            if (!_snapedView) {
                 // 使用系统截图功能，得到cell的快照view
                 _snapedView = [cell snapshotViewAfterScreenUpdates:NO];
-                // 让使用者对快照view做一些简单操作
-                if (_startDragSnapedViewBlock) {
-                    _startDragSnapedViewBlock(indexPath, _snapedView);
-                }
+            }
+            
+            // 修改颜色
+            if (_dragSnapedViewBackgroundColor) {
+                _snapedView.backgroundColor = _dragSnapedViewBackgroundColor;
+            }
+            
+            // 让外面做一些特殊处理
+            if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView: dragView:indexPath:)]) {
+                [self.delegate dragCellCollectionView:self dragView:_snapedView indexPath:indexPath];
             }
 
             // 设置frame
             _snapedView.frame = cell.frame;
             // 添加到 collectionView 不然无法显示
             [self addSubview:_snapedView];
-
             //截图后隐藏当前cell
             cell.hidden = YES;
             
@@ -458,7 +469,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                     NSInteger section = -1;
                     NSInteger sec = [self.dataSource numberOfSectionsInCollectionView:self];
                     for (NSInteger i = 0; i < sec; i++) {
-                        if (CGRectContainsPoint([self bm_rectForSection:i], point)) {
+                        if (CGRectContainsPoint([self BMDragCellCollectionView_rectForSection:i], point)) {
                             section = i;
                             break;
                         }
