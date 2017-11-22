@@ -188,6 +188,7 @@ collectionView.dataSource = self;
 - 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView/issues)我。
 
 ## 版本历史
+- v1.1.4
 - v1.1.3
 - v1.1.2
 - v1.1.1
