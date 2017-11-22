@@ -377,9 +377,11 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             // 取出正在长按的cell
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             self.oldPoint = cell.center;
-
+            // 先置nil
+            if (_snapedView) {
+                _snapedView = nil;
+            }
             // 是否外部提供拖拽View
-            _snapedView = nil;
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView: startDragAtIndexPath:)]) {
                 _snapedView = [self.delegate dragCellCollectionView:self startDragAtIndexPath:indexPath];
             }
@@ -501,6 +503,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 } completion:^(BOOL finished) {
                     // 移除截图视图、显示隐藏的cell并开启交互
                     [_snapedView removeFromSuperview];
+                    _snapedView = nil;
                     cell.hidden = NO;
                     self.userInteractionEnabled = YES;
                     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewDidEndDrag:)]) {

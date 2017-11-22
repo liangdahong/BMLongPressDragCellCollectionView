@@ -123,7 +123,7 @@ NS_ASSUME_NONNULL_BEGIN
  End drag
 
  @param dragCellCollectionView dragCellCollectionView
- @param point 响应点击
+ @param point 响应点
  @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
  */
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
@@ -141,12 +141,23 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath;
 
 /**
- 开始拖拽时，向外面获取拖拽的View，如果没有就使用快照功能
+ 开始拖拽时，向外面获取拖拽的View，如果不实现就使用快照功能
+ Began to drag and drop, to obtain the drag and drop the View outside, if you don't realize is using the snapshot function
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param indexPath indexPath
+ @return dragView
  */
 - (UIView *)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath;
 
+
 /**
- 让外面的使用者对拖拽的View做一些操作
+ 让外面的使用者对拖拽的View做额外操作
+ To drag the View to do additional operations
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param dragView dragView
+ @param indexPath indexPath
  */
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath;
 
@@ -191,6 +202,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  拖拽View的背景颜色
+ Drag view backgroundColor
  */
 @property (nonatomic, strong, nullable) UIColor *dragSnapedViewBackgroundColor;
 
