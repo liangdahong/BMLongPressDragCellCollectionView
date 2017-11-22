@@ -14,7 +14,7 @@
 ## 写在前面
 > 最近公司准备做一个类似支付宝`UICollectionViewCell`拖拽重排的功能，`UICollectionViewCell`的任意拖拽排列，支付宝最新的版本已去掉了任意拖拽功能，而只是对常用功能进行拖拽重排，没有出现超出屏幕的情况。个人感觉应该更好，毕竟太多功能去拖拽重排对用户来说是一个特别大的工作量，只需把常用功能提即可。相应的功能点还是在对应的分组里，至于我们的需求暂时不怎么清楚，使用还是研究下任意拖拽吧。
 > 
-> 正在编程Swift版，敬请关注 [Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
+> 同款的[Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 
 ## 声明
 > 此库在[https://github.com/wazrx/XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)的基础上进行了一系列优化及丰富API，向前人致敬。
@@ -188,20 +188,20 @@ collectionView.dataSource = self;
 - 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView/issues)我。
 
 ## 版本历史
-### v1.1.3
-### v1.1.2
-### v1.1.1
-### v1.1.0
-### v1.0.9
-### v1.0.8
-### v1.0.7
-### v1.0.6
-### v1.0.5
-### v1.0.4
-### v1.0.3
-### v1.0.2
-### v1.0.1
-### v1.0.0 
+- v1.1.3
+- v1.1.2
+- v1.1.1
+- v1.1.0
+- v1.0.9
+- v1.0.8
+- v1.0.7
+- v1.0.6
+- v1.0.5
+- v1.0.4
+- v1.0.3
+- v1.0.2
+- v1.0.1
+- v1.0.0 
 
 ## MIT
 
