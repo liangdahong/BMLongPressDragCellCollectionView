@@ -377,8 +377,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             // 取出正在长按的cell
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             self.oldPoint = cell.center;
-            
+
             // 是否外部提供拖拽View
+            _snapedView = nil;
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView: startDragAtIndexPath:)]) {
                 _snapedView = [self.delegate dragCellCollectionView:self startDragAtIndexPath:indexPath];
             }
