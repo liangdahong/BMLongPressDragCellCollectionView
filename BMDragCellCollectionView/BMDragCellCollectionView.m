@@ -25,7 +25,7 @@
 
 #pragma mark - UICollectionView (BMDragCellCollectionViewRect)
 
-@implementation UICollectionView (BMRect)
+@implementation UICollectionView (BMDragCellCollectionView_BMRect)
 
 - (CGRect)BMDragCellCollectionView_rectForSection:(NSInteger)section {
     NSInteger sectionNum = [self.dataSource collectionView:self numberOfItemsInSection:section];
@@ -34,9 +34,11 @@
     }
     CGRect firstRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
     CGRect lastRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
-    return ((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal ?
-    CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame)) :
-    CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
+    if (((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+        return CGRectMake(CGRectGetMinX(firstRect), 0, CGRectGetMaxX(lastRect) - CGRectGetMinX(firstRect), CGRectGetHeight(self.frame));
+    } else {
+        return CGRectMake(0, CGRectGetMinY(firstRect), CGRectGetWidth(self.frame), CGRectGetMaxY(lastRect) - CGRectGetMidY(firstRect));
+    }
 }
 
 - (CGRect)BMDragCellCollectionView_rectForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,8 +57,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 
 @interface BMDragCellCollectionView ()
 
-@property (nonatomic, strong, nullable) UIView *snapedView;                        ///< 截图快照
 @property (nonatomic, strong, nullable) UILongPressGestureRecognizer *longGesture; ///< 长按手势
+@property (nonatomic, strong, nullable) UIView *snapedView;                        ///< 截图快照
 @property (nonatomic, strong, nullable) CADisplayLink *edgeTimer;                  ///< 定时器
 @property (nonatomic, strong, nullable) NSIndexPath *oldIndexPath;                 ///< 旧的IndexPath
 @property (nonatomic, strong, nullable) NSIndexPath *currentIndexPath;             ///< 当前路径
@@ -120,7 +122,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     return _longGesture;
 }
 
-// iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug,重写此方法是为了外面的使用者无法修改其值
+// iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug,重写此方法是为了让其无法修改
+// https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
+// https://sxgfxm.github.io/blog/2016/10/18/uicollectionview-ios10-new-features/
 - (void)setPrefetchingEnabled:(BOOL)prefetchingEnabled {
 }
 
@@ -145,9 +149,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // 处理复用时的问题，为了保证显示的正确性
     if (_isEndDrag) {
         cell.hidden = NO;
-        return cell;
+    } else {
+        cell.hidden = (self.oldIndexPath && self.oldIndexPath.item == indexPath.item && self.oldIndexPath.section == indexPath.section);
     }
-    cell.hidden = (self.oldIndexPath && self.oldIndexPath.item == indexPath.item && self.oldIndexPath.section == indexPath.section);
     return cell;
 }
 
@@ -201,14 +205,11 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 - (BMDragCellCollectionViewScrollDirection)_setScrollDirection {
     if (self.bounds.size.height + self.contentOffset.y - _snapedView.center.y < _snapedView.bounds.size.height / 2 && self.bounds.size.height + self.contentOffset.y < self.contentSize.height) {
         return BMDragCellCollectionViewScrollDirectionDown;
-    }
-    if (_snapedView.center.y - self.contentOffset.y < _snapedView.bounds.size.height / 2 && self.contentOffset.y > 0) {
+    } else if (_snapedView.center.y - self.contentOffset.y < _snapedView.bounds.size.height / 2 && self.contentOffset.y > 0) {
         return BMDragCellCollectionViewScrollDirectionUp;
-    }
-    if (self.bounds.size.width + self.contentOffset.x - _snapedView.center.x < _snapedView.bounds.size.width / 2 && self.bounds.size.width + self.contentOffset.x < self.contentSize.width) {
+    } else if (self.bounds.size.width + self.contentOffset.x - _snapedView.center.x < _snapedView.bounds.size.width / 2 && self.bounds.size.width + self.contentOffset.x < self.contentSize.width) {
         return BMDragCellCollectionViewScrollDirectionRight;
-    }
-    if (_snapedView.center.x - self.contentOffset.x < _snapedView.bounds.size.width / 2 && self.contentOffset.x > 0) {
+    } else if (_snapedView.center.x - self.contentOffset.x < _snapedView.bounds.size.width / 2 && self.contentOffset.x > 0) {
         return BMDragCellCollectionViewScrollDirectionLeft;
     }
     return BMDragCellCollectionViewScrollDirectionNone;
@@ -217,10 +218,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 // 处理UICollectionView数据源
 - (void)_updateSourceData {
     // 获取数据源
-    NSMutableArray *array = [[self.dataSource dataSourceWithDragCellCollectionView:self] mutableCopy];
-
+    NSMutableArray *array = [self.dataSource dataSourceWithDragCellCollectionView:self].mutableCopy;
     // ==========处理数据
-    BOOL dataTypeCheck = ([self numberOfSections] != 1 || ([self  numberOfSections] == 1 && [array[0] isKindOfClass:[NSArray class]]));
+    BOOL dataTypeCheck = ([self numberOfSections] != 1 || ([self  numberOfSections] == 1 && [array[0] isKindOfClass:NSArray.class]));
     if (dataTypeCheck) {
         for (int i = 0; i < array.count; i ++) {
             [array replaceObjectAtIndex:i withObject:[array[i] mutableCopy]];
