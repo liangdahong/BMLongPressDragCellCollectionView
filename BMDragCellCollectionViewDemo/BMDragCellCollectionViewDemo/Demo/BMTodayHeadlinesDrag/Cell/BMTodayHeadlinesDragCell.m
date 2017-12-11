@@ -29,4 +29,8 @@
     self.removeButton.layer.masksToBounds = YES;
 }
 
+- (IBAction)removeButtonClick {
+    !_block ? : _block(self);
+}
+
 @end

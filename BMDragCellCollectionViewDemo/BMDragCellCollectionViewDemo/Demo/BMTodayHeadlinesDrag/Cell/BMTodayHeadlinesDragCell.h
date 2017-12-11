@@ -10,9 +10,13 @@
 
 @class BMTodayHeadlinesDragModel;
 
+typedef void(^BMTodayHeadlinesDragCellBlock)(UICollectionViewCell *cell);
+
+
 @interface BMTodayHeadlinesDragCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *removeButton;
+@property (nonatomic, copy) BMTodayHeadlinesDragCellBlock block; ///< block
 
 @end

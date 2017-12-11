@@ -103,6 +103,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         cell.titleLabel.textColor = [UIColor blackColor];
         cell.titleLabel.text = [NSString stringWithFormat:@"＋ %@", todayHeadlinesDragModel.title];
     }
+    cell.block = ^(UICollectionViewCell *cell) {
+        [self collectionView:collectionView didSelectItemAtIndexPath:[collectionView indexPathForCell:cell]];
+    };
     return cell;
 }
 
