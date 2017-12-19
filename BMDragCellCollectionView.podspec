@@ -5,7 +5,7 @@ s.summary      = 'iOS UICollectionView UICollectionViewCell long press to drag t
 s.homepage     = 'https://github.com/asiosldh/BMDragCellCollectionView'
 s.license      = 'MIT'
 s.authors      = {'idhong' => 'asiosldh@163.com'}
-s.platform     = :ios, '6.0'
+s.platform     = :ios, '7.0'
 s.source       = {:git => 'https://github.com/asiosldh/BMDragCellCollectionView.git', :tag => s.version}
 s.source_files = 'BMDragCellCollectionView/**/*.{h,m}'
 s.requires_arc = true
