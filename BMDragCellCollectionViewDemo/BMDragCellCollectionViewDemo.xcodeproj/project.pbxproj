@@ -22,7 +22,6 @@
 		31DA8FCD1F2C7EF6002D8B3F /* BMAlipayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FAF1F2C7EF6002D8B3F /* BMAlipayCell.m */; };
 		31DA8FCE1F2C7EF6002D8B3F /* BMAlipayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */; };
 		31DA8FE81F2C7F7D002D8B3F /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */; };
-		31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */; };
 		31DA8FEA1F2C7F7D002D8B3F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE01F2C7F7D002D8B3F /* LICENSE */; };
 		31DA8FEB1F2C7F7D002D8B3F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 31DA8FE11F2C7F7D002D8B3F /* README.md */; };
 		31DA8FEC1F2C7F7D002D8B3F /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31DA8FE31F2C7F7D002D8B3F /* 1.gif */; };
@@ -34,6 +33,7 @@
 		32759D641F4C2277000CF873 /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32759D621F4C2277000CF873 /* BMAlipayVC.xib */; };
 		32759D761F4C2D9A000CF873 /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D731F4C2D9A000CF873 /* XXNibBridge.m */; };
 		32759D771F4C2D9A000CF873 /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 32759D751F4C2D9A000CF873 /* XXNibConvention.m */; };
+		3277C50C20930D3D00A2444B /* BMDragCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3277C50B20930D3D00A2444B /* BMDragCollectionView.podspec */; };
 		32FD266F1F4D0366006E0742 /* 091共享单车 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26641F4D0366006E0742 /* 091共享单车 copy.png */; };
 		32FD26701F4D0366006E0742 /* 充值中心.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26651F4D0366006E0742 /* 充值中心.png */; };
 		32FD26711F4D0366006E0742 /* 滴滴出行.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FD26661F4D0366006E0742 /* 滴滴出行.png */; };
@@ -104,7 +104,6 @@
 		31DA8FB01F2C7EF6002D8B3F /* BMAlipayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayCell.xib; sourceTree = "<group>"; };
 		31DA8FDD1F2C7F7D002D8B3F /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
 		31DA8FDE1F2C7F7D002D8B3F /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
-		31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCellCollectionView.podspec; path = ../BMDragCellCollectionView.podspec; sourceTree = "<group>"; };
 		31DA8FE01F2C7F7D002D8B3F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31DA8FE11F2C7F7D002D8B3F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		31DA8FE31F2C7F7D002D8B3F /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
@@ -119,6 +118,7 @@
 		32759D731F4C2D9A000CF873 /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
 		32759D741F4C2D9A000CF873 /* XXNibConvention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibConvention.h; sourceTree = "<group>"; };
 		32759D751F4C2D9A000CF873 /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
+		3277C50B20930D3D00A2444B /* BMDragCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BMDragCollectionView.podspec; path = ../BMDragCollectionView.podspec; sourceTree = "<group>"; };
 		32FD26641F4D0366006E0742 /* 091共享单车 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "091共享单车 copy.png"; sourceTree = "<group>"; };
 		32FD26651F4D0366006E0742 /* 充值中心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "充值中心.png"; sourceTree = "<group>"; };
 		32FD26661F4D0366006E0742 /* 滴滴出行.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "滴滴出行.png"; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		31DA8F631F2C7EC0002D8B3F = {
 			isa = PBXGroup;
 			children = (
-				31DA8FDF1F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec */,
+				3277C50B20930D3D00A2444B /* BMDragCollectionView.podspec */,
 				31DA8FE01F2C7F7D002D8B3F /* LICENSE */,
 				31DA8FE11F2C7F7D002D8B3F /* README.md */,
 				31DA8FE21F2C7F7D002D8B3F /* Resources */,
@@ -626,7 +626,7 @@
 				31DA8FEE1F2C7F7D002D8B3F /* 3.png in Resources */,
 				31DA8FF01F2C7F7D002D8B3F /* iTunesArtwork.png in Resources */,
 				32FD26A11F4D0A48006E0742 /* BMImageCell.xib in Resources */,
-				31DA8FE91F2C7F7D002D8B3F /* BMDragCellCollectionView.podspec in Resources */,
+				3277C50C20930D3D00A2444B /* BMDragCollectionView.podspec in Resources */,
 				32FD269F1F4D0A48006E0742 /* BMImageVC.xib in Resources */,
 				32FD26741F4D0366006E0742 /* 火车票.png in Resources */,
 				32FD26771F4D0366006E0742 /* 芝麻信用.png in Resources */,
