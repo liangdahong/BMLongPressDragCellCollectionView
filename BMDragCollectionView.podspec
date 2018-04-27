@@ -7,6 +7,6 @@ s.license      = 'MIT'
 s.authors      = {'liangdahong' => 'ios@liangdahong.com'}
 s.platform     = :ios, '7.0'
 s.source       = {:git => 'https://github.com/liangdahong/BMDragCellCollectionView.git', :tag => s.version}
-s.source_files = 'BMDragCellCollectionView/**/*.{h,m}'
+s.source_files = 'BMDragCollectionView/**/*.{h,m}'
 s.requires_arc = true
 end
