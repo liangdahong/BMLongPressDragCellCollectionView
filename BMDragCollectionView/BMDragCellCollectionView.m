@@ -424,6 +424,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             break;
         case UIGestureRecognizerStateChanged: {
             // 开启collectionView的边缘自动滚动检测
+            // https://github.com/liangdahong/BMDragCellCollectionView/issues/15
             if (!_edgeTimer) {
                 [self _setEdgeTimer];
             }
