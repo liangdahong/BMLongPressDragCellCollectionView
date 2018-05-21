@@ -343,6 +343,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     switch (longGesture.state) {
         case UIGestureRecognizerStateBegan: {
             self.userInteractionEnabled = NO;
+            
+            // 开始拖拽时
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:beganDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self beganDragAtPoint:point indexPath:indexPath];
             }
@@ -361,6 +363,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 });
                 break;
             }
+            
+            // 将要开始拖拽时，询问此位置的Cell是否可以拖拽
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewShouldBeginMove:indexPath:)]) {
                 if (![self.delegate dragCellCollectionViewShouldBeginMove:self indexPath:_oldIndexPath]) {
                     _oldIndexPath = nil;
@@ -416,11 +420,13 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 _snapedView.center = CGPointMake(currentPoint.x, currentPoint.y);
                 _snapedView.alpha = _dragCellAlpha;
             }];
-            // 开启collectionView的边缘自动滚动检测
-            [self _setEdgeTimer];
         }
             break;
         case UIGestureRecognizerStateChanged: {
+            // 开启collectionView的边缘自动滚动检测
+            if (!_edgeTimer) {
+                [self _setEdgeTimer];
+            }
 
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self changedDragAtPoint:point indexPath:indexPath];
