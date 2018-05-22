@@ -1,22 +1,19 @@
-<p align="center">
-<img src="Resources/iTunesArtwork.png" width="20%">
-</p>
 
-[![BMDragCellCollectionView](https://img.shields.io/badge/Team-BMDragCellCollectionView-brightgreen.svg?style=flat)](https://github.com/asiosldh/BMDragCellCollectionView "BMDragCellCollectionView name")
-
-[![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
+[![Version](https://img.shields.io/cocoapods/v/BMDragCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCollectionView) 
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 [![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/) 
-[![Weibo](https://img.shields.io/badge/Sina微博-@梁大红-yellow.svg?style=flat)](http://weibo.com/liangdahong) 
 [![GitHub stars](https://img.shields.io/github/stars/liangdahong/BMDragCellCollectionView.svg)](https://github.com/liangdahong/BMDragCellCollectionView/stargazers)
+
+---
 
 ## 写在前面
 > 最近公司准备做一个类似支付宝`UICollectionViewCell`拖拽重排的功能，`UICollectionViewCell`的任意拖拽排列，支付宝最新的版本已去掉了任意拖拽功能，而只是对常用功能进行拖拽重排，没有出现超出屏幕的情况。个人感觉应该更好，毕竟太多功能去拖拽重排对用户来说是一个特别大的工作量，只需把常用功能提即可。相应的功能点还是在对应的分组里，至于我们的需求暂时不怎么清楚，使用还是研究下任意拖拽吧。
-> 
+
 > 同款的[Swift版本](https://github.com/asiosldh/BMDragCellCollectionViewSwift)。
 
 ## 声明
+
 > 此库在[https://github.com/wazrx/XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)的基础上进行了一系列优化及丰富API，向前人致敬。
 
 ## 未来计划
@@ -55,31 +52,14 @@
 [在线视频演示](http://v.youku.com/v_show/id_XMjkxNTM2MjIyNA==.html?spm=a2hzp.8244740.0.0)
 
 ## 须知
->`BMDragCellCollectionView ` 基于 `Xcode 8.2.1 , iOS 6+ ARC `，请使用最新正式版来编译`BMDragCellCollectionView `,旧版本的`Xcode `有效，但不保证会出现一些兼容性问题。
+>`BMDragCellCollectionView ` 基于 `Xcode 8.2.1 , iOS 7+ ARC `，请使用最新正式版来编译`BMDragCellCollectionView `,旧版本的`Xcode `有效，但不保证会出现一些兼容性问题。
 
->开源不易，来个[star](https://github.com/asiosldh/BMDragCellCollectionView)鼓励下吧
-
-## Demo运行 
-
-1. `cd BMDragCellCollectionView/BMDragCellCollectionViewDemo` 
-
-2. `open BMDragCellCollectionViewDemo.xcodeproj`
+>开源不易，来个[star](https://github.com/liangdahong/BMDragCellCollectionView)鼓励下吧
 
 
 ## 集成
-### CocoaPods
-> 推荐使用 CocoaPods 安装,Cocoapods的使用请点这里[链接1](http://idhong.com/2016/10/26/cocoapods%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/)、[链接2](http://www.pluto-y.com/cocoapods-getting-stared/)、[链接3](http://blog.devtang.com/2014/05/25/use-cocoapod-to-manage-ios-lib-dependency/)
-
-1. 在 `Podfile ` 中添加 `pod 'BMDragCellCollectionView' [![Version](https://img.shields.io/cocoapods/v/BMDragCellCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCellCollectionView) 
-2. 执行 `pod install` 或 `pod update`
-3. 使用的地方导入 `"BMDragCellCollectionView.h"`
-4. 如果无法找到 `BMDragCellCollectionView `可用 `pod setup`或 `rm ~/Library/Caches/CocoaPods/search_index.json` 在 `pod search BMDragCellCollectionView`
-
-### 手动安装
-
-1. 通过 `Clone ` 或者 `download ` 下载`BMDragCellCollectionView ` 文件夹内的所有内容。
-2. 将 BMDragCellCollectionView 内的源文件添加(拖放)到你的工程。
-3. 导入 `"BMDragCellCollectionView.h"`
+- 支持 `CocoaPods` `强力推荐` 
+- 手动安装
 
 ## 基本使用
 - 在需要使用长按拖拽`UICollectionView `的地方使用`BMDragCellCollectionView`代替，用法和`UICollectionView`一样。
@@ -180,31 +160,13 @@ collectionView.dataSource = self;
 - (BOOL)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath;
 ```
 
-
-- 其他相关用法，详见[代码](https://github.com/asiosldh/BMDragCellCollectionView/blob/master/BMDragCellCollectionView/BMDragCellCollectionView.h)
-- [cocoapods在线文档](http://cocoadocs.org/docsets/BMDragCellCollectionView/1.0.0/)
-
 ## 期待
-- 如果在使用过程中遇到BUG，希望您能[Issues](https://github.com/asiosldh/BMDragCellCollectionView/issues)我。
+- [欢迎 Issues](https://github.com/liangdahong/BMDragCellCollectionView/issues)
 
-## 版本历史
-- v1.1.4
-- v1.1.3
-- v1.1.2
-- v1.1.1
-- v1.1.0
-- v1.0.9
-- v1.0.8
-- v1.0.7
-- v1.0.6
-- v1.0.5
-- v1.0.4
-- v1.0.3
-- v1.0.2
-- v1.0.1
-- v1.0.0 
+## 版本
+- v2.0.2
+- v2.0.1
+- v2.0.0
 
 ## MIT
-
-`BMDragCellCollectionView `使用 MIT 许可证，详情可见 [LICENSE](LICENSE) 文件
 
