@@ -64,7 +64,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 @property (nonatomic, strong, nullable) NSIndexPath *currentIndexPath;             ///< 当前路径
 @property (nonatomic, assign) CGPoint oldPoint;                                    ///< 旧的位置
 @property (nonatomic, assign) CGPoint lastPoint;                                   ///< 最后的触摸点
-@property (nonatomic, assign) BOOL isEndDrag;                                      ///< 是否正在拖动
+@property (nonatomic, assign) BOOL isEndDrag;                                      ///< 是否已经停止拖动
+@property (nonatomic, assign) BOOL banReload;                                      ///< 禁止刷新
 
 @end
 
@@ -144,6 +145,60 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }
 }
 
+- (void)reloadData {
+    if (!self.banReload) {
+        [super reloadData];
+    }
+}
+
+- (void)insertSections:(NSIndexSet *)sections {
+    if (!self.banReload) {
+        [super insertSections:sections];
+    }
+}
+
+- (void)deleteSections:(NSIndexSet *)sections {
+    if (!self.banReload) {
+        [super deleteSections:sections];
+    }
+}
+
+- (void)reloadSections:(NSIndexSet *)sections {
+    if (!self.banReload) {
+        [super reloadSections:sections];
+    }
+}
+
+- (void)moveSection:(NSInteger)section toSection:(NSInteger)newSection {
+    if (!self.banReload) {
+        [super moveSection:section toSection:newSection];
+    }
+}
+
+- (void)insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    if (!self.banReload) {
+        [super insertItemsAtIndexPaths:indexPaths];
+    }
+}
+
+- (void)deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    if (!self.banReload) {
+        [super deleteItemsAtIndexPaths:indexPaths];
+    }
+}
+
+- (void)reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    if (!self.banReload) {
+        [super reloadItemsAtIndexPaths:indexPaths];
+    }
+}
+
+- (void)moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
+    if (!self.banReload) {
+        [super moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
+    }
+}
+
 - (__kindof UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [super dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     // 处理复用时的问题，为了保证显示的正确性
@@ -172,7 +227,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         }
         return index;
     }
-
+    
     // 获取最应该交换的Cell
     __block CGFloat width = MAXFLOAT;
     __weak typeof(self) weakSelf = self;
@@ -244,9 +299,12 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         [orignalSection removeObject:orignalSection[_oldIndexPath.item]];
     }
     // ==========处理数据
-
     // 更新外面的数据源
+    // 这里会触发外面的使用者修改数据源，但外面的使用者可以会在此调用 reloadData 相关方法，使用在此方法返回时做一个拦截
+    // https://github.com/liangdahong/BMDragCellCollectionView/issues/14
+    self.banReload = YES;
     [self.delegate dragCellCollectionView:self newDataArrayAfterMove:array];
+    self.banReload = NO;
 }
 
 - (void)_setEdgeTimer{
@@ -298,16 +356,16 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     if (scrollDirection == BMDragCellCollectionViewScrollDirectionNone) {
         return;
     }
-
+    
     // 如果Cell 拖拽到了边沿时
     // 截图视图位置移动
     [UIView animateWithDuration:0.1 animations:^{
         _snapedView.center = _lastPoint;
     }];
-
+    
     // 获取应该交换的Cell的位置
     NSIndexPath *index = [self _getChangedIndexPath];
-
+    
     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
         [self.delegate dragCellCollectionView:self changedDragAtPoint:_lastPoint indexPath:index];
     }
@@ -403,7 +461,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView: dragView:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self dragView:_snapedView indexPath:indexPath];
             }
-
+            
             // 设置frame
             _snapedView.frame = cell.frame;
             // 添加到 collectionView 不然无法显示
@@ -428,7 +486,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (!_edgeTimer) {
                 [self _setEdgeTimer];
             }
-
+            
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self changedDragAtPoint:point indexPath:indexPath];
             }
@@ -452,7 +510,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                     break;
                 }
             }
-
+            
             _currentIndexPath = index;
             self.oldPoint = [self cellForItemAtIndexPath:_currentIndexPath].center;
             
@@ -548,7 +606,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     
     UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
     cell.hidden = YES;
-
+    
     //结束动画过程中停止交互，防止出问题
     self.userInteractionEnabled = NO;
     // 结束拖拽了

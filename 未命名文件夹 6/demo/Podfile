@@ -1,4 +1,0 @@
-target 'demo' do
-    pod 'SDWebImage', '~> 4.3.3'
-end
-

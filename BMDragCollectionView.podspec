@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'BMDragCollectionView'
-s.version      = '2.0.1'
+s.version      = '2.0.2'
 s.summary      = 'iOS UICollectionView UICollectionViewCell long press to drag the rearrangement framework, iOS7+'
 s.homepage     = 'https://github.com/liangdahong/BMDragCellCollectionView'
 s.license      = 'MIT'
