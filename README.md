@@ -30,26 +30,16 @@
 
 ## 效果图 
 
-<p align="center">
-<img src="Resources/-1.gif" width="40%">
+<p>
+<img src="Resources/-1.gif" width="30%" align="left">
+<img src="Resources/4.gif" width="30%" align="center">
+<img src="Resources/5.gif" width="30%" align="right">
 </p>
 
-<p align="center">
-<img src="Resources/4.gif" width="40%">
+<p>
+<img src="Resources/2.gif" width="30%" align="left">
+<img src="Resources/1.gif" width="30%" align="center">
 </p>
-
-<p align="center">
-<img src="Resources/5.gif" width="40%">
-</p>
-
-<p align="center">
-<img src="Resources/2.gif" width="40%">
-</p>
-
-<p align="center">
-<img src="Resources/1.gif" width="40%">
-</p>
-
 
 ### 视频演示
 [在线视频演示](http://v.youku.com/v_show/id_XMjkxNTM2MjIyNA==.html?spm=a2hzp.8244740.0.0)
