@@ -296,7 +296,10 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         NSMutableArray *orignalSection = array[_oldIndexPath.section];
         NSMutableArray *currentSection = array[_currentIndexPath.section];
         [currentSection insertObject:orignalSection[_oldIndexPath.item] atIndex:_currentIndexPath.item];
-        [orignalSection removeObject:orignalSection[_oldIndexPath.item]];
+        // https://github.com/liangdahong/BMDragCellCollectionView/issues/16
+        // 这里之前删除指定对象会有问题，如果数据源中的对象为 [字符串 而且是一样的时候, 因为 OC 中对字符串的内存做了特殊处理 ]，会把相同的字符串全部删除导致崩溃
+        // [orignalSection removeObject:orignalSection[_oldIndexPath.item]];
+        [orignalSection removeObjectAtIndex:_oldIndexPath.item];
     }
     // ==========处理数据
     // 更新外面的数据源
