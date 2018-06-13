@@ -4,11 +4,9 @@
 <img src="Gif/logo.png" width="30%" align="left">
 </p>
 
-[![Version](https://img.shields.io/cocoapods/v/BMDragCollectionView.svg?style=flat)](http://cocoapods.org/pods/BMDragCollectionView) 
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg) 
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 [![Support](https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/) 
-[![GitHub stars](https://img.shields.io/github/stars/liangdahong/BMDragCellCollectionView.svg)](https://github.com/liangdahong/BMDragCellCollectionView/stargazers)
 
 ---
 
