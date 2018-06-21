@@ -48,10 +48,15 @@
 - 手动安装
 
 ## 使用
+
 - 请查看 Demo 和 API 说明
 
 ## 期待
+
 - [欢迎 Issues](https://github.com/liangdahong/BMDragCellCollectionView/issues)
+- [欢迎 PR](https://github.com/liangdahong/BMDragCellCollectionView/pulls)
+
 
 ## MIT
 
+- 欢迎 fork 🍴 和 star ⭐️
