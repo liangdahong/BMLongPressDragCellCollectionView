@@ -57,6 +57,6 @@
 - [欢迎 PR](https://github.com/liangdahong/BMDragCellCollectionView/pulls)
 
 
-## MIT
+## MIT  📄
 
 - 欢迎 Fork 🍴 和 Star ⭐️
