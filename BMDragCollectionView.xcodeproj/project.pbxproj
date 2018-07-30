@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320D0DC8210EE05F008B86E1 /* BMDragCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 320D0DC7210EE05E008B86E1 /* BMDragCollectionView.podspec */; };
 		3214859320D110BC002F7CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3214859220D110BC002F7CBD /* Assets.xcassets */; };
 		3214859620D110BC002F7CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3214859420D110BC002F7CBD /* LaunchScreen.storyboard */; };
 		321485A120D110BC002F7CBD /* BMDragCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321485A020D110BC002F7CBD /* BMDragCollectionViewTests.m */; };
@@ -240,6 +241,7 @@
 
 /* Begin PBXFileReference section */
 		0C2E0CD2D04C336DEAADECD9 /* Pods-BMDragCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCollectionView/Pods-BMDragCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		320D0DC7210EE05E008B86E1 /* BMDragCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BMDragCollectionView.podspec; sourceTree = "<group>"; };
 		3214858320D110BC002F7CBD /* BMDragCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3214859220D110BC002F7CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3214859520D110BC002F7CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 		3214857A20D110BC002F7CBD = {
 			isa = PBXGroup;
 			children = (
+				320D0DC7210EE05E008B86E1 /* BMDragCollectionView.podspec */,
 				32E0FDAA210EDCC500B44549 /* BMDragCellCollectionView */,
 				3214858520D110BC002F7CBD /* BMDragCollectionView */,
 				3214859F20D110BC002F7CBD /* BMDragCollectionViewTests */,
@@ -1290,6 +1293,7 @@
 				329F919B20D118BC007EF667 /* 039@2x.png in Resources */,
 				329F921920D118BC007EF667 /* 187@2x.png in Resources */,
 				329F920020D118BC007EF667 /* 162@2x.png in Resources */,
+				320D0DC8210EE05F008B86E1 /* BMDragCollectionView.podspec in Resources */,
 				329F91B720D118BC007EF667 /* 067@2x.png in Resources */,
 				329F917920D118BC007EF667 /* 005@2x.png in Resources */,
 				329F921720D118BC007EF667 /* 185@2x.png in Resources */,
