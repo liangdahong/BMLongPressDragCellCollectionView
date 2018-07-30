@@ -1,7 +1,7 @@
 //
 //  BMDragCellCollectionView.m
 //
-//  Copyright © 2017年 https://github.com/asiosldh/BMDragCellCollectionViewSwift/ All rights reserved.
+//  Copyright © 2017年 https://github.com/liangdahong/BMDragCellCollectionView/ All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal

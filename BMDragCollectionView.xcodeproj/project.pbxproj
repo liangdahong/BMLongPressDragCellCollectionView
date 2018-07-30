@@ -37,9 +37,6 @@
 		32534C6520D1118100498592 /* BMRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534C3220D1118000498592 /* BMRootVC.m */; };
 		32534C6620D1118100498592 /* BMRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32534C3320D1118000498592 /* BMRootVC.xib */; };
 		32534C6720D1118100498592 /* BMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534C3620D1118000498592 /* BMModel.m */; };
-		329F8D6C20D116A1007EF667 /* BMDragCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 329F8D6920D116A1007EF667 /* BMDragCollectionView.podspec */; };
-		329F8D6D20D116A1007EF667 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 329F8D6A20D116A1007EF667 /* LICENSE */; };
-		329F8D6E20D116A1007EF667 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 329F8D6B20D116A1007EF667 /* README.md */; };
 		329F8F7020D1175E007EF667 /* 091共享单车 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F8D7020D1175D007EF667 /* 091共享单车 copy.png */; };
 		329F8F7120D1175E007EF667 /* ofo共享单车.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F8D7120D1175D007EF667 /* ofo共享单车.png */; };
 		329F8F7220D1175E007EF667 /* 信用卡.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F8D7220D1175D007EF667 /* 信用卡.png */; };
@@ -221,12 +218,6 @@
 		329F921C20D118BC007EF667 /* 190@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F917220D118BC007EF667 /* 190@2x.png */; };
 		329F921D20D118BC007EF667 /* 191@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F917320D118BC007EF667 /* 191@2x.png */; };
 		329F921E20D118BC007EF667 /* 192@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F917420D118BC007EF667 /* 192@2x.png */; };
-		329F922520D119D4007EF667 /* -1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 329F922020D119D4007EF667 /* -1.gif */; };
-		329F922620D119D4007EF667 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 329F922120D119D4007EF667 /* 1.gif */; };
-		329F922720D119D4007EF667 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 329F922220D119D4007EF667 /* 2.gif */; };
-		329F922820D119D4007EF667 /* 4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 329F922320D119D4007EF667 /* 4.gif */; };
-		329F922920D119D4007EF667 /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 329F922420D119D4007EF667 /* 5.gif */; };
-		329F922D20D11B2D007EF667 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F922C20D11B2D007EF667 /* logo.png */; };
 		56146779274FBDCCE4058B1C /* libPods-BMDragCollectionView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED96215E882A8FE23EC2B38D /* libPods-BMDragCollectionView.a */; };
 /* End PBXBuildFile section */
 
@@ -302,9 +293,6 @@
 		32534C3320D1118000498592 /* BMRootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMRootVC.xib; sourceTree = "<group>"; };
 		32534C3520D1118000498592 /* BMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMModel.h; sourceTree = "<group>"; };
 		32534C3620D1118000498592 /* BMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMModel.m; sourceTree = "<group>"; };
-		329F8D6920D116A1007EF667 /* BMDragCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BMDragCollectionView.podspec; sourceTree = SOURCE_ROOT; };
-		329F8D6A20D116A1007EF667 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		329F8D6B20D116A1007EF667 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		329F8D7020D1175D007EF667 /* 091共享单车 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "091共享单车 copy.png"; sourceTree = "<group>"; };
 		329F8D7120D1175D007EF667 /* ofo共享单车.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ofo共享单车.png"; sourceTree = "<group>"; };
 		329F8D7220D1175D007EF667 /* 信用卡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "信用卡.png"; sourceTree = "<group>"; };
@@ -486,12 +474,6 @@
 		329F917220D118BC007EF667 /* 190@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "190@2x.png"; sourceTree = "<group>"; };
 		329F917320D118BC007EF667 /* 191@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "191@2x.png"; sourceTree = "<group>"; };
 		329F917420D118BC007EF667 /* 192@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "192@2x.png"; sourceTree = "<group>"; };
-		329F922020D119D4007EF667 /* -1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "-1.gif"; sourceTree = "<group>"; };
-		329F922120D119D4007EF667 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
-		329F922220D119D4007EF667 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
-		329F922320D119D4007EF667 /* 4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4.gif; sourceTree = "<group>"; };
-		329F922420D119D4007EF667 /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5.gif; sourceTree = "<group>"; };
-		329F922C20D11B2D007EF667 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		42B86274651ED28BD8DC86ED /* libPods-BMDragCollectionViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCollectionViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54601475BCE13E0A28406F6A /* libPods-BMDragCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB897C3EEE04741F36F255C8 /* Pods-BMDragCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCollectionView/Pods-BMDragCollectionView.release.xcconfig"; sourceTree = "<group>"; };
@@ -559,10 +541,6 @@
 		3214858520D110BC002F7CBD /* BMDragCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				329F921F20D119D4007EF667 /* Gif */,
-				329F8D6920D116A1007EF667 /* BMDragCollectionView.podspec */,
-				329F8D6A20D116A1007EF667 /* LICENSE */,
-				329F8D6B20D116A1007EF667 /* README.md */,
 				32534BF420D1118000498592 /* BMDragCollectionView */,
 				32534C0120D1118000498592 /* Demo */,
 				3214859220D110BC002F7CBD /* Assets.xcassets */,
@@ -1020,19 +998,6 @@
 			path = QQ;
 			sourceTree = "<group>";
 		};
-		329F921F20D119D4007EF667 /* Gif */ = {
-			isa = PBXGroup;
-			children = (
-				329F922C20D11B2D007EF667 /* logo.png */,
-				329F922020D119D4007EF667 /* -1.gif */,
-				329F922120D119D4007EF667 /* 1.gif */,
-				329F922220D119D4007EF667 /* 2.gif */,
-				329F922320D119D4007EF667 /* 4.gif */,
-				329F922420D119D4007EF667 /* 5.gif */,
-			);
-			path = Gif;
-			sourceTree = SOURCE_ROOT;
-		};
 		58C7F9FE6C0FA1E4695F762C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1185,7 +1150,6 @@
 				329F91F920D118BC007EF667 /* 155@2x.png in Resources */,
 				3214859620D110BC002F7CBD /* LaunchScreen.storyboard in Resources */,
 				329F918720D118BC007EF667 /* 019@2x.png in Resources */,
-				329F922820D119D4007EF667 /* 4.gif in Resources */,
 				329F91F220D118BC007EF667 /* 148@2x.png in Resources */,
 				329F920D20D118BC007EF667 /* 175@2x.png in Resources */,
 				329F921C20D118BC007EF667 /* 190@2x.png in Resources */,
@@ -1218,8 +1182,6 @@
 				329F919620D118BC007EF667 /* 034@2x.png in Resources */,
 				329F91BB20D118BC007EF667 /* 071@2x.png in Resources */,
 				329F917B20D118BC007EF667 /* 007@2x.png in Resources */,
-				329F922720D119D4007EF667 /* 2.gif in Resources */,
-				329F922520D119D4007EF667 /* -1.gif in Resources */,
 				329F91D020D118BC007EF667 /* 092@2x.png in Resources */,
 				329F920220D118BC007EF667 /* 164@2x.png in Resources */,
 				329F8F7220D1175E007EF667 /* 信用卡.png in Resources */,
@@ -1227,7 +1189,6 @@
 				329F91DC20D118BC007EF667 /* 104@2x.png in Resources */,
 				329F920F20D118BC007EF667 /* 177@2x.png in Resources */,
 				329F91CB20D118BC007EF667 /* 087@2x.png in Resources */,
-				329F922920D119D4007EF667 /* 5.gif in Resources */,
 				329F919920D118BC007EF667 /* 037@2x.png in Resources */,
 				329F91C120D118BC007EF667 /* 077@2x.png in Resources */,
 				3214859320D110BC002F7CBD /* Assets.xcassets in Resources */,
@@ -1256,7 +1217,6 @@
 				329F91D520D118BC007EF667 /* 097@2x.png in Resources */,
 				329F918620D118BC007EF667 /* 018@2x.png in Resources */,
 				329F919520D118BC007EF667 /* 033@2x.png in Resources */,
-				329F8D6C20D116A1007EF667 /* BMDragCollectionView.podspec in Resources */,
 				329F91D120D118BC007EF667 /* 093@2x.png in Resources */,
 				329F91E120D118BC007EF667 /* 109@2x.png in Resources */,
 				329F917D20D118BC007EF667 /* 009@2x.png in Resources */,
@@ -1268,7 +1228,6 @@
 				329F91C620D118BC007EF667 /* 082@2x.png in Resources */,
 				329F91E620D118BC007EF667 /* 118@2x.png in Resources */,
 				329F917C20D118BC007EF667 /* 008@2x.png in Resources */,
-				329F922D20D11B2D007EF667 /* logo.png in Resources */,
 				329F920520D118BC007EF667 /* 167@2x.png in Resources */,
 				329F917520D118BC007EF667 /* 001@2x.png in Resources */,
 				329F921220D118BC007EF667 /* 180@2x.png in Resources */,
@@ -1286,7 +1245,6 @@
 				329F91B320D118BC007EF667 /* 063@2x.png in Resources */,
 				329F91E520D118BC007EF667 /* 117@2x.png in Resources */,
 				329F920920D118BC007EF667 /* 171@2x.png in Resources */,
-				329F922620D119D4007EF667 /* 1.gif in Resources */,
 				329F918B20D118BC007EF667 /* 023@2x.png in Resources */,
 				32534C5B20D1118100498592 /* BMImageVC.xib in Resources */,
 				329F91A220D118BC007EF667 /* 046@2x.png in Resources */,
@@ -1298,7 +1256,6 @@
 				329F8F7920D1175E007EF667 /* 花呗.png in Resources */,
 				329F920620D118BC007EF667 /* 168@2x.png in Resources */,
 				329F91A720D118BC007EF667 /* 051@2x.png in Resources */,
-				329F8D6D20D116A1007EF667 /* LICENSE in Resources */,
 				329F91DA20D118BC007EF667 /* 102@2x.png in Resources */,
 				329F918A20D118BC007EF667 /* 022@2x.png in Resources */,
 				329F91BE20D118BC007EF667 /* 074@2x.png in Resources */,
@@ -1336,7 +1293,6 @@
 				329F917920D118BC007EF667 /* 005@2x.png in Resources */,
 				329F921720D118BC007EF667 /* 185@2x.png in Resources */,
 				329F91B820D118BC007EF667 /* 068@2x.png in Resources */,
-				329F8D6E20D116A1007EF667 /* README.md in Resources */,
 				329F91CE20D118BC007EF667 /* 090@2x.png in Resources */,
 				329F91A920D118BC007EF667 /* 053@2x.png in Resources */,
 				329F918820D118BC007EF667 /* 020@2x.png in Resources */,
