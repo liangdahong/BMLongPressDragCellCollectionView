@@ -13,7 +13,6 @@
 		321485AC20D110BC002F7CBD /* BMDragCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321485AB20D110BC002F7CBD /* BMDragCollectionViewUITests.m */; };
 		32534C4C20D1118100498592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534BF220D1118000498592 /* AppDelegate.m */; };
 		32534C4D20D1118100498592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534BF320D1118000498592 /* main.m */; };
-		32534C4E20D1118100498592 /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534BF620D1118000498592 /* BMDragCellCollectionView.m */; };
 		32534C5120D1118100498592 /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534C0020D1118000498592 /* UITableViewCell+BMReusable.m */; };
 		32534C5220D1118100498592 /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32534C0520D1118000498592 /* BMAlipayVC.m */; };
 		32534C5320D1118100498592 /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32534C0620D1118000498592 /* BMAlipayVC.xib */; };
@@ -218,6 +217,7 @@
 		329F921C20D118BC007EF667 /* 190@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F917220D118BC007EF667 /* 190@2x.png */; };
 		329F921D20D118BC007EF667 /* 191@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F917320D118BC007EF667 /* 191@2x.png */; };
 		329F921E20D118BC007EF667 /* 192@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329F917420D118BC007EF667 /* 192@2x.png */; };
+		32E0FDAD210EDCC500B44549 /* BMDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E0FDAC210EDCC500B44549 /* BMDragCellCollectionView.m */; };
 		56146779274FBDCCE4058B1C /* libPods-BMDragCollectionView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED96215E882A8FE23EC2B38D /* libPods-BMDragCollectionView.a */; };
 /* End PBXBuildFile section */
 
@@ -253,8 +253,6 @@
 		32534BF120D1118000498592 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32534BF220D1118000498592 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32534BF320D1118000498592 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32534BF520D1118000498592 /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
-		32534BF620D1118000498592 /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
 		32534BFF20D1118000498592 /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
 		32534C0020D1118000498592 /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
 		32534C0420D1118000498592 /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
@@ -474,6 +472,8 @@
 		329F917220D118BC007EF667 /* 190@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "190@2x.png"; sourceTree = "<group>"; };
 		329F917320D118BC007EF667 /* 191@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "191@2x.png"; sourceTree = "<group>"; };
 		329F917420D118BC007EF667 /* 192@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "192@2x.png"; sourceTree = "<group>"; };
+		32E0FDAB210EDCC500B44549 /* BMDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionView.h; sourceTree = "<group>"; };
+		32E0FDAC210EDCC500B44549 /* BMDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionView.m; sourceTree = "<group>"; };
 		42B86274651ED28BD8DC86ED /* libPods-BMDragCollectionViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCollectionViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54601475BCE13E0A28406F6A /* libPods-BMDragCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMDragCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB897C3EEE04741F36F255C8 /* Pods-BMDragCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCollectionView/Pods-BMDragCollectionView.release.xcconfig"; sourceTree = "<group>"; };
@@ -519,6 +519,7 @@
 		3214857A20D110BC002F7CBD = {
 			isa = PBXGroup;
 			children = (
+				32E0FDAA210EDCC500B44549 /* BMDragCellCollectionView */,
 				3214858520D110BC002F7CBD /* BMDragCollectionView */,
 				3214859F20D110BC002F7CBD /* BMDragCollectionViewTests */,
 				321485AA20D110BC002F7CBD /* BMDragCollectionViewUITests */,
@@ -541,7 +542,6 @@
 		3214858520D110BC002F7CBD /* BMDragCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				32534BF420D1118000498592 /* BMDragCollectionView */,
 				32534C0120D1118000498592 /* Demo */,
 				3214859220D110BC002F7CBD /* Assets.xcassets */,
 				3214859420D110BC002F7CBD /* LaunchScreen.storyboard */,
@@ -584,15 +584,6 @@
 				32534BF320D1118000498592 /* main.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		32534BF420D1118000498592 /* BMDragCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				32534BF520D1118000498592 /* BMDragCellCollectionView.h */,
-				32534BF620D1118000498592 /* BMDragCellCollectionView.m */,
-			);
-			path = BMDragCollectionView;
 			sourceTree = "<group>";
 		};
 		32534BFD20D1118000498592 /* Category */ = {
@@ -998,6 +989,16 @@
 			path = QQ;
 			sourceTree = "<group>";
 		};
+		32E0FDAA210EDCC500B44549 /* BMDragCellCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				32E0FDAB210EDCC500B44549 /* BMDragCellCollectionView.h */,
+				32E0FDAC210EDCC500B44549 /* BMDragCellCollectionView.m */,
+			);
+			name = BMDragCellCollectionView;
+			path = Sources/BMDragCellCollectionView;
+			sourceTree = "<group>";
+		};
 		58C7F9FE6C0FA1E4695F762C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1361,12 +1362,12 @@
 				32534C5420D1118100498592 /* BMAlipayModel.m in Sources */,
 				32534C5720D1118100498592 /* BMDragCellCollectionViewVC.m in Sources */,
 				32534C6120D1118100498592 /* BMTodayHeadlinesDragVC.m in Sources */,
-				32534C4E20D1118100498592 /* BMDragCellCollectionView.m in Sources */,
 				32534C5820D1118100498592 /* BMDragCollectionViewCell.m in Sources */,
 				32534C5120D1118100498592 /* UITableViewCell+BMReusable.m in Sources */,
 				32534C6720D1118100498592 /* BMModel.m in Sources */,
 				32534C6020D1118100498592 /* BMSearchHistoryFlowLayout.m in Sources */,
 				32534C6320D1118100498592 /* UICollectionView+BMTemplateLayoutCell.m in Sources */,
+				32E0FDAD210EDCC500B44549 /* BMDragCellCollectionView.m in Sources */,
 				32534C5E20D1118100498592 /* BMTodayHeadlinesDragCell.m in Sources */,
 				32534C6420D1118100498592 /* BMTodayHeadlinesDragModel.m in Sources */,
 				32534C4C20D1118100498592 /* AppDelegate.m in Sources */,
