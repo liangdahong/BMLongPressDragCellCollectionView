@@ -20,7 +20,7 @@
 </p>
 
 
-- This is a iOS UICollectionView UICollectionViewCell drag again arrangement framework Swift Version.
+- This is a iOS UICollectionView UICollectionViewCell drag again arrangement framework.
 
 ## License 📄
 
