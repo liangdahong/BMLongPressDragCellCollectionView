@@ -7,7 +7,6 @@
 //
 
 
-
 #import <UIKit/UIKit.h>
 #import "UICollectionView+BMTemplateLayoutCell.h"
 #import "BMAlipay2HeaderView.h"
