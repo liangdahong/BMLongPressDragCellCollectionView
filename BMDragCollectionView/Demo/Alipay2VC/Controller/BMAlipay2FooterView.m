@@ -10,6 +10,5 @@
 
 @implementation BMAlipay2FooterView
 //
-//
 
 @end
