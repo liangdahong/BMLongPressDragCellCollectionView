@@ -10,8 +10,4 @@
 
 @implementation BMAlipay2FooterView
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
-
 @end
