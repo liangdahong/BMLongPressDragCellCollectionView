@@ -34,7 +34,6 @@
     // Initialization code
     // Initialization code
     // Initialization code
-    // Initialization code
 }
 
 @end
