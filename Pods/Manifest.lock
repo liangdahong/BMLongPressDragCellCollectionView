@@ -1,0 +1,16 @@
+PODS:
+  - XXNibBridge (2.3.1)
+
+DEPENDENCIES:
+  - XXNibBridge (~> 2.3.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - XXNibBridge
+
+SPEC CHECKSUMS:
+  XXNibBridge: addb780e6db076eb2c61716aa60b176a6799b80f
+
+PODFILE CHECKSUM: 6b730972f262d0b100b9c6440fb919a7c8d75549
+
+COCOAPODS: 1.5.0
