@@ -306,7 +306,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }
     // ==========处理数据
     // 更新外面的数据源
-    // 这里会触发外面的使用者修改数据源，但外面的使用者可以会在此调用 reloadData 相关方法，使用在此方法返回时做一个拦截
+    // 这里会触发外面的使用者修改数据源，但外面的使用者可以会在此调用 reloadData 相关方法，所以做了拦截操作
     // https://github.com/liangdahong/BMDragCellCollectionView/issues/14
     self.banReload = YES;
     [self.delegate dragCellCollectionView:self newDataArrayAfterMove:array];
@@ -366,7 +366,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // 如果Cell 拖拽到了边沿时
     // 截图视图位置移动
     [UIView animateWithDuration:0.1 animations:^{
-        _snapedView.center = _lastPoint;
+        self.snapedView.center = self.lastPoint;
     }];
     
     // 获取应该交换的Cell的位置
@@ -421,7 +421,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (_oldIndexPath == nil) {
                 self.longGesture.enabled = NO;
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    if (_canDrag) {
+                    if (self.canDrag) {
                         self.longGesture.enabled = YES;
                     }
                 });
@@ -434,7 +434,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                     _oldIndexPath = nil;
                     self.longGesture.enabled = NO;
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                        if (_canDrag) {
+                        if (self.canDrag) {
                             self.longGesture.enabled = YES;
                         }
                     });
@@ -480,9 +480,9 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             
             // 动画放大和移动到触摸点下面
             [UIView animateWithDuration:0.25 animations:^{
-                _snapedView.transform = CGAffineTransformMakeScale(_dragZoomScale, _dragZoomScale);
-                _snapedView.center = CGPointMake(currentPoint.x, currentPoint.y);
-                _snapedView.alpha = _dragCellAlpha;
+                self.snapedView.transform = CGAffineTransformMakeScale(self.dragZoomScale, self.dragZoomScale);
+                self.snapedView.center = CGPointMake(currentPoint.x, currentPoint.y);
+                self.snapedView.alpha = self.dragCellAlpha;
             }];
         }
             break;
@@ -492,7 +492,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             if (!_edgeTimer) {
                 [self _setEdgeTimer];
             }
-
+            
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
                 [self.delegate dragCellCollectionView:self changedDragAtPoint:point indexPath:indexPath];
             }
@@ -500,7 +500,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             _lastPoint = point;
             // 截图视图位置移动
             [UIView animateWithDuration:0.1 animations:^{
-                _snapedView.center = _lastPoint;
+                self.snapedView.center = self.lastPoint;
             }];
             
             NSIndexPath *index = [self _getChangedIndexPath];
@@ -560,16 +560,16 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 // 给截图视图一个动画移动到隐藏cell的新位置
                 [UIView animateWithDuration:0.25 animations:^{
                     if (!cell) {
-                        _snapedView.center = _oldPoint;
+                        self.snapedView.center = self.oldPoint;
                     } else {
-                        _snapedView.center = cell.center;
+                        self.snapedView.center = cell.center;
                     }
-                    _snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
-                    _snapedView.alpha = 1.0;
+                    self.snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
+                    self.snapedView.alpha = 1.0;
                 } completion:^(BOOL finished) {
                     // 移除截图视图、显示隐藏的cell并开启交互
-                    [_snapedView removeFromSuperview];
-                    _snapedView = nil;
+                    [self.snapedView removeFromSuperview];
+                    self.snapedView = nil;
                     cell.hidden = NO;
                     self.userInteractionEnabled = YES;
                     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewDidEndDrag:)]) {
@@ -592,7 +592,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     self.isEndDrag = YES;
     self.longGesture.enabled = NO;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (_canDrag) {
+        if (self.canDrag) {
             self.longGesture.enabled = YES;
         }
     });
@@ -604,7 +604,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // 设置移动后的起始indexPath
     _oldIndexPath = newIndexPath;
     [self reloadItemsAtIndexPaths:@[newIndexPath]];
-
+    
     UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
     cell.hidden = YES;
     
@@ -615,15 +615,15 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // 给截图视图一个动画移动到隐藏cell的新位置
     [UIView animateWithDuration:0.25 animations:^{
         if (!cell) {
-            _snapedView.center = _oldPoint;
+            self.snapedView.center = self.oldPoint;
         } else {
-            _snapedView.center = cell.center;
+            self.snapedView.center = cell.center;
         }
-        _snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
-        _snapedView.alpha = 1.0;
+        self.snapedView.transform = CGAffineTransformMakeScale(1.0f, 1.0f);
+        self.snapedView.alpha = 1.0;
     } completion:^(BOOL finished) {
         // 移除截图视图、显示隐藏的cell并开启交互
-        [_snapedView removeFromSuperview];
+        [self.snapedView removeFromSuperview];
         cell.hidden = NO;
         self.userInteractionEnabled = YES;
         if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewDidEndDrag:)]) {
@@ -636,3 +636,5 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 }
 
 @end
+
+
