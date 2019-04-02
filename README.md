@@ -9,10 +9,6 @@
         <img src="https://img.shields.io/badge/language-Objective--C-orange.svg">
     </a>
     
-<a href="LICENSE">
-        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license">
-    </a>
-
 <a href="#">
         <img src="https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat">
     </a>
