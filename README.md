@@ -24,4 +24,4 @@
 
 ## License 📄
 
-- [MIT license](LICENSE).
+- [996 license](LICENSE).
