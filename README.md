@@ -20,4 +20,6 @@
 
 ## License 📄
 
+- [已加入 996 战队](https://github.com/996icu/996.ICU)
+
 - [996 license](LICENSE).
