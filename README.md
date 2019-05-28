@@ -30,3 +30,8 @@
 - This is a iOS UICollectionView UICollectionViewCell drag again arrangement framework Objective-C Version.
 - [Swift Version](https://github.com/liangdahong/BMDragCellCollectionView-Swift).
 
+
+## 使用
+
+- 请直接将 `BMDragCellCollectionView` 文件夹中的内容拖拽到项目中即可，目前不支持 `pod` 的方式。
+
