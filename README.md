@@ -36,5 +36,5 @@
 
 ## 使用
 
-- 请直接将 `BMDragCellCollectionView` 文件夹中的内容拖拽到项目中即可，目前不支持 `pod` 的方式。
+- 请直接将 `Sources/BMDragCellCollectionView` 文件夹中的内容拖拽到项目中即可，目前不支持 `pod` 的方式。
 
