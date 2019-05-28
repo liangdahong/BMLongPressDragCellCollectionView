@@ -1,6 +1,6 @@
 //    996 License https://github.com/996icu/996.ICU/blob/master/LICENSE
 //
-//    Copyright (c) https://github.com/liangdahong
+//    Copyright (c) https://github.com/liangdahong/BMDragCellCollectionView
 //
 
 #import <UIKit/UIKit.h>
