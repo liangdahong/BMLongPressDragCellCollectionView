@@ -208,7 +208,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }];
     // 找到而且不是当前的Cell就返回此 index
     if (index) {
-        if ((index.item == self.oldIndexPath.item) && (index.row == self.oldIndexPath.row)) {
+        if ((index.item == self.oldIndexPath.item) && (index.item == self.oldIndexPath.item)) {
             return nil;
         }
         return index;
@@ -235,7 +235,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     if (!index) {
         return nil;
     }
-    if ((index.item == self.oldIndexPath.item) && (index.row == self.oldIndexPath.row)) {
+    if ((index.item == self.oldIndexPath.item) && (index.item == self.oldIndexPath.item)) {
         // 最近的就是隐藏的Cell时,return nil
         return nil;
     }
