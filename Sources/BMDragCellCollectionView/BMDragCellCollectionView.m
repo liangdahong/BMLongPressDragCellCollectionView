@@ -619,5 +619,3 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 }
 
 @end
-
-

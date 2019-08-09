@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0517D64622FD6A960093CA08 /* BMAlipay2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0517D64422FD6A960093CA08 /* BMAlipay2VC.m */; };
+		0517D64722FD6A960093CA08 /* BMAlipay2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0517D64522FD6A960093CA08 /* BMAlipay2VC.xib */; };
 		3214859320D110BC002F7CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3214859220D110BC002F7CBD /* Assets.xcassets */; };
 		3214859620D110BC002F7CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3214859420D110BC002F7CBD /* LaunchScreen.storyboard */; };
 		321485A120D110BC002F7CBD /* BMDragCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321485A020D110BC002F7CBD /* BMDragCollectionViewTests.m */; };
@@ -239,6 +241,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0517D64322FD6A960093CA08 /* BMAlipay2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2VC.h; sourceTree = "<group>"; };
+		0517D64422FD6A960093CA08 /* BMAlipay2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2VC.m; sourceTree = "<group>"; };
+		0517D64522FD6A960093CA08 /* BMAlipay2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2VC.xib; sourceTree = "<group>"; };
 		0C2E0CD2D04C336DEAADECD9 /* Pods-BMDragCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCollectionView/Pods-BMDragCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		3214858320D110BC002F7CBD /* BMDragCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3214859220D110BC002F7CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -506,6 +511,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0517D64122FD6A960093CA08 /* Alipay2VC */ = {
+			isa = PBXGroup;
+			children = (
+				0517D64222FD6A960093CA08 /* Controller */,
+			);
+			path = Alipay2VC;
+			sourceTree = "<group>";
+		};
+		0517D64222FD6A960093CA08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0517D64322FD6A960093CA08 /* BMAlipay2VC.h */,
+				0517D64422FD6A960093CA08 /* BMAlipay2VC.m */,
+				0517D64522FD6A960093CA08 /* BMAlipay2VC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		069A02B7AD34A1BA00EC594F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +630,7 @@
 			isa = PBXGroup;
 			children = (
 				32861EC220D1165100366270 /* Resources */,
+				0517D64122FD6A960093CA08 /* Alipay2VC */,
 				32534BF020D1118000498592 /* AppDelegate */,
 				32534BFD20D1118000498592 /* Category */,
 				32534C0220D1118000498592 /* AlipayVC */,
@@ -1304,6 +1328,7 @@
 				32534C6220D1118100498592 /* BMTodayHeadlinesDragVC.xib in Resources */,
 				329F91E720D118BC007EF667 /* 119@2x.png in Resources */,
 				329F91BC20D118BC007EF667 /* 072@2x.png in Resources */,
+				0517D64722FD6A960093CA08 /* BMAlipay2VC.xib in Resources */,
 				329F91A120D118BC007EF667 /* 045@2x.png in Resources */,
 				329F91D420D118BC007EF667 /* 096@2x.png in Resources */,
 				329F91C920D118BC007EF667 /* 085@2x.png in Resources */,
@@ -1367,6 +1392,7 @@
 				32534C6720D1118100498592 /* BMModel.m in Sources */,
 				32534C6020D1118100498592 /* BMSearchHistoryFlowLayout.m in Sources */,
 				32534C6320D1118100498592 /* UICollectionView+BMTemplateLayoutCell.m in Sources */,
+				0517D64622FD6A960093CA08 /* BMAlipay2VC.m in Sources */,
 				32E0FDAD210EDCC500B44549 /* BMDragCellCollectionView.m in Sources */,
 				32534C5E20D1118100498592 /* BMTodayHeadlinesDragCell.m in Sources */,
 				32534C6420D1118100498592 /* BMTodayHeadlinesDragModel.m in Sources */,

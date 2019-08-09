@@ -1,5 +1,5 @@
 //
-//  BMRootVC.h
+//  BMAlipayVC.h
 //  BMDragCellCollectionViewDemo
 //
 //  Created by ___liangdahong on 2017/8/22.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BMAlipay2VC.h"
 
-@interface BMRootVC : UIViewController
+@interface BMAlipay2VC : UIViewController
 
 @end

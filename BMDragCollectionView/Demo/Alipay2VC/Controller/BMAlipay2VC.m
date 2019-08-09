@@ -6,7 +6,7 @@
 //  Copyright © 2017年 https://liangdahong.com All rights reserved.
 //
 
-#import "BMAlipayVC.h"
+#import "BMAlipay2VC.h"
 #import "BMAlipayCell.h"
 #import "BMDragCellCollectionView.h"
 #import "BMAlipayModel.h"
@@ -14,17 +14,17 @@
 #define WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-@interface BMAlipayVC () <BMDragCellCollectionViewDelegate, BMDragCollectionViewDataSource>
+@interface BMAlipay2VC () <BMDragCellCollectionViewDelegate, BMDragCollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet BMDragCellCollectionView *dragCellCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
-@property (strong, nonatomic) NSMutableArray <BMAlipayModel *>*dataSourceArray;
+@property (strong, nonatomic) NSMutableArray <NSArray <BMAlipayModel *>*>*dataSourceArray;
 
 @end
 
 static NSString *reuseIdentifier = @"reuseIdentifier";
 
-@implementation BMAlipayVC
+@implementation BMAlipay2VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,23 +37,32 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     }
 }
 
-- (NSMutableArray<BMAlipayModel *> *)dataSourceArray {
+- (NSMutableArray<NSArray <BMAlipayModel *>*> *)dataSourceArray {
     if (!_dataSourceArray) {
         _dataSourceArray = [@[] mutableCopy];
+
+        [_dataSourceArray addObject:@[
+                                     [BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"],
+                                     [BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"],
+                                     [BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"],
+                                     [BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]
+                                     ]];
+
         
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"],
+                                      [BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"],
+                                      [BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"],
+                                      [BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]
+                                      ]];
         
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]];
         
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"来分期" iconName:@"分期"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"商家服务" iconName:@"商家服务2"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"ofo小黄车" iconName:@"ofo共享单车"]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期" iconName:@"分期"],
+                                      [BMAlipayModel modelWithTitle:@"商家服务" iconName:@"商家服务2"],
+                                      [BMAlipayModel modelWithTitle:@"ofo小黄车" iconName:@"ofo共享单车"],
+                                      ]];
+        
     }
     return _dataSourceArray;
 }
@@ -72,8 +81,12 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     return _collectionViewFlowLayout;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return self.dataSourceArray.count;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.dataSourceArray[section].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,7 +94,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(BMAlipayCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    cell.model = self.dataSourceArray[indexPath.row];
+    cell.model = self.dataSourceArray[indexPath.section][indexPath.item];
 }
 
 - (NSArray *)dataSourceWithDragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView {
@@ -90,6 +103,14 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (void)dragCellCollectionView:(BMDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    return CGSizeZero;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeZero;
 }
 
 @end

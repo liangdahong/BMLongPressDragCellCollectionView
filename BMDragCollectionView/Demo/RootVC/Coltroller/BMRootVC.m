@@ -43,7 +43,8 @@
     if (!_modelArray) {
         _modelArray = @[
                         @[
-                            [BMModel modelWithTitle:@"支付宝" selector:@selector(alipayDragMoreScreenWithModel:)]
+                            [BMModel modelWithTitle:@"支付宝" selector:@selector(alipayDragMoreScreenWithModel:)],
+                            [BMModel modelWithTitle:@"支付宝2" selector:@selector(alipayDragMoreScreenWithModel2:)],
                             ],
                         @[
                             [BMModel modelWithTitle:@"今日头条（超过一屏）" selector:@selector(todayHeadlinesDragMoreScreenWithModel:)],
@@ -127,6 +128,10 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)alipayDragMoreScreenWithModel2:(BMModel *)mdoel {
+    BMAlipay2VC *vc = [BMAlipay2VC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark - 今日头条
 
 - (void)todayHeadlinesDragMoreScreenWithModel:(BMModel *)mdoel {
