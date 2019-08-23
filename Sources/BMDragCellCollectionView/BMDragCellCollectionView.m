@@ -14,6 +14,7 @@
     if (sectionNum <= 0) return CGRectZero;
     CGRect firstRect = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
     CGRect lastRect  = [self BMDragCellCollectionView_rectForRowAtIndexPath:[NSIndexPath indexPathForItem:sectionNum-1 inSection:section]];
+    
     if (((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal) {
         return CGRectMake(CGRectGetMinX(firstRect),
                           0.0f,
