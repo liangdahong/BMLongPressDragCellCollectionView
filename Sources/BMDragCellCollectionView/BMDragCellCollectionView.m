@@ -113,6 +113,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
 // https://sxgfxm.github.io/blog/2016/10/18/uicollectionview-ios10-new-features
 - (void)setPrefetchingEnabled:(BOOL)prefetchingEnabled {
+    [super setPrefetchingEnabled:NO];
 }
 
 #pragma mark - 私有方法
@@ -127,7 +128,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
     // https://sxgfxm.github.io/blog/2016/10/18/uicollectionview-ios10-new-features
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0) {
-        super.prefetchingEnabled = NO;
+        self.prefetchingEnabled = NO;
     }
 }
 
@@ -244,15 +245,24 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
 
 // 处理临界点问题
 - (BMDragCellCollectionViewScrollDirection)_setScrollDirection {
-    if (self.bounds.size.height + self.contentOffset.y - _snapedView.center.y < _snapedView.bounds.size.height / 2 && self.bounds.size.height + self.contentOffset.y < self.contentSize.height) {
+
+    if (((self.bounds.size.height + self.contentOffset.y - _snapedView.center.y) < (_snapedView.bounds.size.height / 2))
+        && ((self.bounds.size.height + self.contentOffset.y) < self.contentSize.height)) {
         return BMDragCellCollectionViewScrollDirectionDown;
-    } else if (_snapedView.center.y - self.contentOffset.y < _snapedView.bounds.size.height / 2 && self.contentOffset.y > 0) {
+        
+    } else if (((_snapedView.center.y - self.contentOffset.y) < (_snapedView.bounds.size.height / 2))
+               && self.contentOffset.y > 0) {
         return BMDragCellCollectionViewScrollDirectionUp;
-    } else if (self.bounds.size.width + self.contentOffset.x - _snapedView.center.x < _snapedView.bounds.size.width / 2 && self.bounds.size.width + self.contentOffset.x < self.contentSize.width) {
+        
+    } else if (((self.bounds.size.width + self.contentOffset.x) - (_snapedView.center.x)) < (_snapedView.bounds.size.width / 2)
+               && (self.bounds.size.width + self.contentOffset.x) < self.contentSize.width) {
         return BMDragCellCollectionViewScrollDirectionRight;
-    } else if (_snapedView.center.x - self.contentOffset.x < _snapedView.bounds.size.width / 2 && self.contentOffset.x > 0) {
+        
+    } else if (((_snapedView.center.x - self.contentOffset.x) < (_snapedView.bounds.size.width) / 2)
+               && self.contentOffset.x > 0) {
         return BMDragCellCollectionViewScrollDirectionLeft;
     }
+    
     return BMDragCellCollectionViewScrollDirectionNone;
 }
 
@@ -269,15 +279,18 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }
     if (_currentIndexPath.section == _oldIndexPath.section) {
         NSMutableArray *orignalSection = dataTypeCheck ? (NSMutableArray *)array[_oldIndexPath.section] : (NSMutableArray *)array;
+        
         if (_currentIndexPath.item > _oldIndexPath.item) {
             for (NSUInteger i = _oldIndexPath.item; i < _currentIndexPath.item ; i ++) {
                 [orignalSection exchangeObjectAtIndex:i withObjectAtIndex:i + 1];
             }
+            
         } else {
             for (NSUInteger i = _oldIndexPath.item; i > _currentIndexPath.item ; i --) {
                 [orignalSection exchangeObjectAtIndex:i withObjectAtIndex:i - 1];
             }
         }
+        
     } else {
         NSMutableArray *orignalSection = array[_oldIndexPath.section];
         NSMutableArray *currentSection = array[_currentIndexPath.section];
