@@ -28,7 +28,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     {
         self.dragCellCollectionView.dragCellAlpha = 0.9;
         self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
@@ -43,26 +43,51 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
         [_dataSourceArray addObject:@[
                                      [BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"],
-                                     [BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"],
-                                     [BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"],
-                                     [BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]
+//                                     [BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"],
+//                                     [BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"],
+//                                     [BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"],
+//                                     [BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]
                                      ]];
+//
+//        [_dataSourceArray addObject:@[
+//                                      [BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"],
+//                                      [BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"],
+//                                      [BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"],
+//                                      [BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]
+//                                      ]];
+//
+        
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期1" iconName:@"分期"],
+                                      [BMAlipayModel modelWithTitle:@"来分期2" iconName:@"分期"],
+                                      [BMAlipayModel modelWithTitle:@"来分期3" iconName:@"分期"],
 
-        
-        [_dataSourceArray addObject:@[
-                                      [BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"],
-                                      [BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"],
-                                      [BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"],
-                                      [BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]
                                       ]];
-        
-        
         [_dataSourceArray addObject:@[
-                                      [BMAlipayModel modelWithTitle:@"来分期" iconName:@"分期"],
-                                      [BMAlipayModel modelWithTitle:@"商家服务" iconName:@"商家服务2"],
-                                      [BMAlipayModel modelWithTitle:@"ofo小黄车" iconName:@"ofo共享单车"],
+                                      [BMAlipayModel modelWithTitle:@"来分期4" iconName:@"分期"],
+                                      [BMAlipayModel modelWithTitle:@"来分期5" iconName:@"分期"],
                                       ]];
-        
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期6" iconName:@"分期"],
+                                      ]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期7" iconName:@"分期"],
+                                      ]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期8" iconName:@"分期"],
+                                      ]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期9" iconName:@"分期"],
+                                      ]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期10" iconName:@"分期"],
+                                      ]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期11" iconName:@"分期"],
+                                      ]];
+        [_dataSourceArray addObject:@[
+                                      [BMAlipayModel modelWithTitle:@"来分期12" iconName:@"分期"],
+                                      ]];
     }
     return _dataSourceArray;
 }
@@ -106,11 +131,19 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
-    return CGSizeZero;
+    return CGSizeMake(100, 50);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
-    return CGSizeZero;
+    return CGSizeMake(100, 50);
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    if (kind == UICollectionElementKindSectionHeader) {
+        return [BMAlipay2HeaderView bm_collectionReusableViewWithCollectionReusableView:collectionView isHeader:YES forIndexPath:indexPath];
+    } else {
+        return [BMAlipay2FooterView bm_collectionReusableViewWithCollectionReusableView:collectionView isHeader:NO forIndexPath:indexPath];
+    }
 }
 
 @end

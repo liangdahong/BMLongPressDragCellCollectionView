@@ -192,15 +192,66 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     // 处理复用时的问题，为了保证显示的正确性
     if (_isEndDrag) {
         cell.hidden = NO;
+        
     } else {
-        cell.hidden = (self.oldIndexPath && self.oldIndexPath.item == indexPath.item && self.oldIndexPath.section == indexPath.section);
+        cell.hidden = (self.oldIndexPath
+                       && self.oldIndexPath.item == indexPath.item
+                       && self.oldIndexPath.section == indexPath.section);
     }
     return cell;
+}
+
+- (nullable NSIndexPath *)_getChangedNullIndexPath {
+    __block NSIndexPath *index = nil;
+    CGPoint point = [self.longGesture locationInView:self];
+    
+    NSInteger number = self.numberOfSections;
+    while (number--) {
+        NSInteger row = [self.dataSource collectionView:self numberOfItemsInSection:number];
+        if (row == 0) {
+            CGRect headerFrame = [self layoutAttributesForSupplementaryElementOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:number]].frame;
+            CGRect footerFrame = [self layoutAttributesForSupplementaryElementOfKind:UICollectionElementKindSectionFooter atIndexPath:[NSIndexPath indexPathForItem:0 inSection:number]].frame;
+            CGRect frame = CGRectZero;
+            if (((UICollectionViewFlowLayout *)self.collectionViewLayout).scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+                // 水平方向
+                frame = CGRectMake(CGRectGetMinX(headerFrame),
+                                   CGRectGetMinY(headerFrame),
+                                   CGRectGetMaxX(footerFrame) - CGRectGetMidX(headerFrame),
+                                   CGRectGetWidth(footerFrame));
+                
+                if (frame.size.width < 10) {
+                    frame.size.width = 10;
+                    frame.size.height = CGRectGetHeight(self.frame);
+                    frame.origin.x -= 5;
+                }
+                
+            } else {
+                // 上下方向
+                frame = CGRectMake(CGRectGetMinX(headerFrame),
+                                   CGRectGetMinY(headerFrame),
+                                   CGRectGetWidth(footerFrame),
+                                   CGRectGetMaxY(footerFrame) - CGRectGetMidY(headerFrame));
+                
+                if (frame.size.height < 10) {
+                    frame.size.height = 10;
+                    frame.size.width = CGRectGetWidth(self.frame);
+                    frame.origin.y -= 5;
+                }
+            }
+            
+            if (CGRectContainsPoint(frame, point)) {
+                NSLog(@"在空的组内 %u", arc4random());
+                return [NSIndexPath indexPathForItem:0 inSection:number];
+            }
+        }
+    }
+    return index;
 }
 
 - (nullable NSIndexPath *)_getChangedIndexPath {
     __block NSIndexPath *index = nil;
     CGPoint point = [self.longGesture locationInView:self];
+
     // 遍历拖拽的Cell的中心点在哪一个Cell里
     [[self visibleCells] enumerateObjectsUsingBlock:^(__kindof UICollectionViewCell * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (CGRectContainsPoint(obj.frame, point)) {
@@ -210,7 +261,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }];
     // 找到而且不是当前的Cell就返回此 index
     if (index) {
-        if ((index.item == self.oldIndexPath.item) && (index.item == self.oldIndexPath.item)) {
+        if ((index.section == self.oldIndexPath.section) && (index.item == self.oldIndexPath.item)) {
             return nil;
         }
         return index;
@@ -237,7 +288,7 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     if (!index) {
         return nil;
     }
-    if ((index.item == self.oldIndexPath.item) && (index.item == self.oldIndexPath.item)) {
+    if ((index.section == self.oldIndexPath.section) && (index.item == self.oldIndexPath.item)) {
         // 最近的就是隐藏的Cell时,return nil
         return nil;
     }
@@ -384,16 +435,30 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
         }
     }
     _currentIndexPath = index;
-    self.oldPoint = [self cellForItemAtIndexPath:_currentIndexPath].center;
-    // 更新数据源
-    [self _updateSourceData];
-    // 移动 会调用willMoveToIndexPath方法更新数据源
-    [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
-    // 设置移动后的起始indexPath
-    _oldIndexPath = _currentIndexPath;
-    // 为了防止在缓存池取出的Cell已隐藏,
-    // 以后可以优化
-    [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
+
+    UICollectionViewCell *cell1 = [self cellForItemAtIndexPath:_currentIndexPath];
+    if (cell1) {
+        self.oldPoint = cell1.center;
+        // 更新数据源
+        [self _updateSourceData];
+        // 移动 会调用willMoveToIndexPath方法更新数据源
+        [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
+        // 设置移动后的起始indexPath
+        _oldIndexPath = _currentIndexPath;
+        // 为了防止在缓存池取出的Cell已隐藏,
+        // 以后可以优化
+        [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
+        
+    } else {
+        // 操作
+        [self _updateSourceData];
+        // 移动 会调用willMoveToIndexPath方法更新数据源
+        [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
+        self.oldPoint = [self cellForItemAtIndexPath:_currentIndexPath].center;
+        // 设置移动后的起始indexPath
+        _oldIndexPath = _currentIndexPath;
+        [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
+    }
 }
 
 #pragma mark - 事件响应
@@ -500,7 +565,17 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
                 self.snapedView.center = self.lastPoint;
             }];
             
-            NSIndexPath *index = [self _getChangedIndexPath];
+            NSIndexPath *index1 = [self _getChangedNullIndexPath];
+            NSIndexPath *index = nil;
+            
+            if (index1) {
+                index = index1;
+                
+            } else {
+                index = [self _getChangedIndexPath];
+            }
+
+            
             // 没有取到或者距离隐藏的最近时就返回
             if (!index) {
                 break;
@@ -512,18 +587,32 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
             }
             
             _currentIndexPath = index;
-            self.oldPoint = [self cellForItemAtIndexPath:_currentIndexPath].center;
-            
-            // 操作
-            [self _updateSourceData];
-            
-            // 移动 会调用willMoveToIndexPath方法更新数据源
-            [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
-            // 设置移动后的起始indexPath
-            _oldIndexPath = _currentIndexPath;
-            [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
+            UICollectionViewCell *cell1 = [self cellForItemAtIndexPath:_currentIndexPath];
+
+            if (!index1) {
+                self.oldPoint = cell1.center;
+                // 操作
+                [self _updateSourceData];
+                
+                // 移动 会调用willMoveToIndexPath方法更新数据源
+                [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
+                // 设置移动后的起始indexPath
+                _oldIndexPath = _currentIndexPath;
+                [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
+                
+            } else {
+                // 操作
+                [self _updateSourceData];
+                // 移动 会调用willMoveToIndexPath方法更新数据源
+                [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
+                self.oldPoint = [self cellForItemAtIndexPath:_currentIndexPath].center;
+                // 设置移动后的起始indexPath
+                _oldIndexPath = _currentIndexPath;
+                [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
+            }
             break;
         }
+            
             break;
         default: {
             self.userInteractionEnabled = YES;

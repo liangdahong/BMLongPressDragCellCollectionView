@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0517D64622FD6A960093CA08 /* BMAlipay2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0517D64422FD6A960093CA08 /* BMAlipay2VC.m */; };
 		0517D64722FD6A960093CA08 /* BMAlipay2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0517D64522FD6A960093CA08 /* BMAlipay2VC.xib */; };
+		05688B37231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05688B32231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.m */; };
+		05688B38231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05688B34231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.m */; };
+		05688B39231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05688B36231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.m */; };
+		05688B4023191149006F2BD7 /* BMAlipay2HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05688B3E23191149006F2BD7 /* BMAlipay2HeaderView.m */; };
+		05688B4123191149006F2BD7 /* BMAlipay2HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05688B3F23191149006F2BD7 /* BMAlipay2HeaderView.xib */; };
+		05688B452319115C006F2BD7 /* BMAlipay2FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05688B432319115C006F2BD7 /* BMAlipay2FooterView.m */; };
+		05688B462319115C006F2BD7 /* BMAlipay2FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05688B442319115C006F2BD7 /* BMAlipay2FooterView.xib */; };
 		3214859320D110BC002F7CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3214859220D110BC002F7CBD /* Assets.xcassets */; };
 		3214859620D110BC002F7CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3214859420D110BC002F7CBD /* LaunchScreen.storyboard */; };
 		321485A120D110BC002F7CBD /* BMDragCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 321485A020D110BC002F7CBD /* BMDragCollectionViewTests.m */; };
@@ -244,6 +251,18 @@
 		0517D64322FD6A960093CA08 /* BMAlipay2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2VC.h; sourceTree = "<group>"; };
 		0517D64422FD6A960093CA08 /* BMAlipay2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2VC.m; sourceTree = "<group>"; };
 		0517D64522FD6A960093CA08 /* BMAlipay2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2VC.xib; sourceTree = "<group>"; };
+		05688B31231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLeftCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		05688B32231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLeftCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		05688B33231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+BMTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		05688B34231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+BMTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		05688B35231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+BMTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		05688B36231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+BMTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		05688B3D23191149006F2BD7 /* BMAlipay2HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAlipay2HeaderView.h; sourceTree = "<group>"; };
+		05688B3E23191149006F2BD7 /* BMAlipay2HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2HeaderView.m; sourceTree = "<group>"; };
+		05688B3F23191149006F2BD7 /* BMAlipay2HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMAlipay2HeaderView.xib; sourceTree = "<group>"; };
+		05688B422319115C006F2BD7 /* BMAlipay2FooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMAlipay2FooterView.h; sourceTree = "<group>"; };
+		05688B432319115C006F2BD7 /* BMAlipay2FooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2FooterView.m; sourceTree = "<group>"; };
+		05688B442319115C006F2BD7 /* BMAlipay2FooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMAlipay2FooterView.xib; sourceTree = "<group>"; };
 		0C2E0CD2D04C336DEAADECD9 /* Pods-BMDragCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDragCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDragCollectionView/Pods-BMDragCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		3214858320D110BC002F7CBD /* BMDragCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDragCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3214859220D110BC002F7CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -525,8 +544,27 @@
 				0517D64322FD6A960093CA08 /* BMAlipay2VC.h */,
 				0517D64422FD6A960093CA08 /* BMAlipay2VC.m */,
 				0517D64522FD6A960093CA08 /* BMAlipay2VC.xib */,
+				05688B3D23191149006F2BD7 /* BMAlipay2HeaderView.h */,
+				05688B3E23191149006F2BD7 /* BMAlipay2HeaderView.m */,
+				05688B3F23191149006F2BD7 /* BMAlipay2HeaderView.xib */,
+				05688B422319115C006F2BD7 /* BMAlipay2FooterView.h */,
+				05688B432319115C006F2BD7 /* BMAlipay2FooterView.m */,
+				05688B442319115C006F2BD7 /* BMAlipay2FooterView.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		05688B30231910FF006F2BD7 /* BMTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				05688B31231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.h */,
+				05688B32231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.m */,
+				05688B33231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.h */,
+				05688B34231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.m */,
+				05688B35231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.h */,
+				05688B36231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.m */,
+			);
+			path = BMTemplateLayoutCell;
 			sourceTree = "<group>";
 		};
 		069A02B7AD34A1BA00EC594F /* Frameworks */ = {
@@ -565,6 +603,7 @@
 		3214858520D110BC002F7CBD /* BMDragCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				05688B30231910FF006F2BD7 /* BMTemplateLayoutCell */,
 				32534C0120D1118000498592 /* Demo */,
 				3214859220D110BC002F7CBD /* Assets.xcassets */,
 				3214859420D110BC002F7CBD /* LaunchScreen.storyboard */,
@@ -1181,6 +1220,7 @@
 				329F918E20D118BC007EF667 /* 026@2x.png in Resources */,
 				329F91DF20D118BC007EF667 /* 107@2x.png in Resources */,
 				329F921320D118BC007EF667 /* 181@2x.png in Resources */,
+				05688B4123191149006F2BD7 /* BMAlipay2HeaderView.xib in Resources */,
 				329F91B020D118BC007EF667 /* 060@2x.png in Resources */,
 				329F921120D118BC007EF667 /* 179@2x.png in Resources */,
 				32534C5920D1118100498592 /* BMDragCollectionViewCell.xib in Resources */,
@@ -1282,6 +1322,7 @@
 				329F920620D118BC007EF667 /* 168@2x.png in Resources */,
 				329F91A720D118BC007EF667 /* 051@2x.png in Resources */,
 				329F91DA20D118BC007EF667 /* 102@2x.png in Resources */,
+				05688B462319115C006F2BD7 /* BMAlipay2FooterView.xib in Resources */,
 				329F918A20D118BC007EF667 /* 022@2x.png in Resources */,
 				329F91BE20D118BC007EF667 /* 074@2x.png in Resources */,
 				329F91D220D118BC007EF667 /* 094@2x.png in Resources */,
@@ -1383,10 +1424,14 @@
 				32534C4D20D1118100498592 /* main.m in Sources */,
 				32534C5A20D1118100498592 /* BMImageVC.m in Sources */,
 				32534C5520D1118100498592 /* BMAlipayCell.m in Sources */,
+				05688B37231910FF006F2BD7 /* BMLeftCollectionViewFlowLayout.m in Sources */,
+				05688B4023191149006F2BD7 /* BMAlipay2HeaderView.m in Sources */,
 				32534C5220D1118100498592 /* BMAlipayVC.m in Sources */,
+				05688B39231910FF006F2BD7 /* UITableView+BMTemplateLayoutCell.m in Sources */,
 				32534C5420D1118100498592 /* BMAlipayModel.m in Sources */,
 				32534C5720D1118100498592 /* BMDragCellCollectionViewVC.m in Sources */,
 				32534C6120D1118100498592 /* BMTodayHeadlinesDragVC.m in Sources */,
+				05688B452319115C006F2BD7 /* BMAlipay2FooterView.m in Sources */,
 				32534C5820D1118100498592 /* BMDragCollectionViewCell.m in Sources */,
 				32534C5120D1118100498592 /* UITableViewCell+BMReusable.m in Sources */,
 				32534C6720D1118100498592 /* BMModel.m in Sources */,
@@ -1397,6 +1442,7 @@
 				32534C5E20D1118100498592 /* BMTodayHeadlinesDragCell.m in Sources */,
 				32534C6420D1118100498592 /* BMTodayHeadlinesDragModel.m in Sources */,
 				32534C4C20D1118100498592 /* AppDelegate.m in Sources */,
+				05688B38231910FF006F2BD7 /* UICollectionView+BMTemplateLayoutCell.m in Sources */,
 				32534C6520D1118100498592 /* BMRootVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
