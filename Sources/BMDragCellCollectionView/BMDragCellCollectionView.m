@@ -418,8 +418,17 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     }];
     
     // 获取应该交换的Cell的位置
-    NSIndexPath *index = [self _getChangedIndexPath];
+    NSIndexPath *index1 = [self _getChangedNullIndexPath];
+    NSIndexPath *index = nil;
     
+    if (index1) {
+        index = index1;
+        
+    } else {
+        index = [self _getChangedIndexPath];
+    }
+
+
     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
         [self.delegate dragCellCollectionView:self changedDragAtPoint:_lastPoint indexPath:index];
     }
@@ -437,7 +446,8 @@ typedef NS_ENUM(NSUInteger, BMDragCellCollectionViewScrollDirection) {
     _currentIndexPath = index;
 
     UICollectionViewCell *cell1 = [self cellForItemAtIndexPath:_currentIndexPath];
-    if (cell1) {
+    
+    if (!index1) {
         self.oldPoint = cell1.center;
         // 更新数据源
         [self _updateSourceData];
