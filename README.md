@@ -31,10 +31,7 @@
 
 </p>
 
-
-- This is a iOS UICollectionView UICollectionViewCell drag again arrangement framework Objective-C Version.
-- [Swift Version](https://github.com/liangdahong/BMDragCellCollectionView-Swift).
-
+- This is a iOS UICollectionView UICollectionViewCell drag again arrangement framework.
 
 ## 使用
 
