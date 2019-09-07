@@ -9,5 +9,19 @@
 #import "BMAlipay2FooterView.h"
 
 @implementation BMAlipay2FooterView
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 @end
