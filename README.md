@@ -8,7 +8,6 @@
 
 
 <p/>
-
 <p align="center">
 
 <a href="#">
@@ -29,5 +28,6 @@
 
 ## 使用
 
-- 请直接将 `Sources/BMDragCellCollectionView` 文件夹中的内容拖拽到项目中即可，暂时删除了 `pod` 。
+- 请直接将 `Sources/BMLongPressDragCellCollectionView` 文件夹中的内容拖拽到项目中即可，暂时删除了 `pod` 。
+
 
