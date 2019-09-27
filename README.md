@@ -49,6 +49,6 @@ pod install
 Third, include BMLongPressDragCellCollectionView wherever you need it with:
 
 ```objective-c
-#import "BMLongPressDragCellCollectionView"
+#import "BMLongPressDragCellCollectionView.h"
 ```
 
