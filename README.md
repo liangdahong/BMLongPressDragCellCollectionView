@@ -1,13 +1,14 @@
+# BMLongPressDragCellCollectionView
 
-## 介绍
+## Demonstration
 
 <p align="center">
     <img  width="30%" src="1.gif"/>
     <img  width="30%" src="2.gif"/>
     <img  width="30%" src="3.gif"/>
-
-
 <p/>
+
+
 <p align="center">
 
 <a href="#">
@@ -24,10 +25,30 @@
 
 </p>
 
-- This is a iOS UICollectionView UICollectionViewCell drag again arrangement framework.
 
-## 使用
+## Introduction
 
-- 请直接将 `Sources/BMLongPressDragCellCollectionView` 文件夹中的内容拖拽到项目中即可，暂时删除了 `pod` 。
+- This is a iOS UICollectionView UICollectionViewCell long press drag  again arrangement framework.
 
+##  CocoaPods
+
+CocoaPods is the recommended way to add BMLongPressDragCellCollectionView to your project.
+
+First, add a pod entry for BMLongPressDragCellCollectionView to your Podfile.
+
+```ruby
+pod 'BMLongPressDragCellCollectionView'
+```
+
+Second, install BMLongPressDragCellCollectionView into your project:
+
+```ruby
+pod install
+```
+
+Third, include BMLongPressDragCellCollectionView wherever you need it with:
+
+```objective-c
+#import "BMLongPressDragCellCollectionView"
+```
 
