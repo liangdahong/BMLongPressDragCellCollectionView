@@ -32,21 +32,13 @@
 
 ##  CocoaPods
 
-CocoaPods is the recommended way to add BMLongPressDragCellCollectionView to your project.
-
-First, add a pod entry for BMLongPressDragCellCollectionView to your Podfile.
-
 ```ruby
 pod 'BMLongPressDragCellCollectionView'
 ```
 
-Second, install BMLongPressDragCellCollectionView into your project:
-
 ```ruby
 pod install
 ```
-
-Third, include BMLongPressDragCellCollectionView wherever you need it with:
 
 ```objective-c
 #import "BMLongPressDragCellCollectionView.h"
