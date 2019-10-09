@@ -20,10 +20,12 @@
 ​    </a>
 ​    
 <a href="#">
-​        <img src="https://img.shields.io/badge/support-iOS%207%2B%20-blue.svg?style=flat">
+​        <img src="https://img.shields.io/cocoapods/v/BMLongPressDragCellCollectionView.svg">
 ​    </a>
 
 </p>
+
+
 
 
 ## Introduction
