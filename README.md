@@ -26,8 +26,6 @@
 </p>
 
 
-
-
 ## Introduction
 
 - This is a iOS UICollectionView UICollectionViewCell long press drag  again arrangement framework.
