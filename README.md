@@ -11,6 +11,12 @@
 
 <p align="center">
 
+​    
+​    <a href="#">
+​    ​        <img src="https://img.shields.io/cocoapods/v/BMLongPressDragCellCollectionView.svg">
+​    ​        ​    </a>
+​    ​        ​    ​    
+​    ​        ​    ​    
 <a href="#">
 ​        <img src="https://img.shields.io/badge/platform-iOS-red.svg">
 ​    </a>
@@ -18,10 +24,11 @@
 <a href="#">
 ​        <img src="https://img.shields.io/badge/language-Objective--C-orange.svg">
 ​    </a>
-​    
-<a href="#">
-​        <img src="https://img.shields.io/cocoapods/v/BMLongPressDragCellCollectionView.svg">
-​    </a>
+
+​    <a href="#">
+​    ​    ​     <img src="https://img.shields.io/badge/licenses-MIT-red.svg">
+​    ​    ​     ​    ​</a>
+​    ​    ​     ​    ​​    ​        ​    ​  
 
 </p>
 
