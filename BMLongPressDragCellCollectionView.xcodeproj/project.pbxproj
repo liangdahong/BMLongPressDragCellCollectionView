@@ -249,6 +249,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055EED71235081D600AAA671 /* BMLongPressDragCellCollectionViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDelegate.h; sourceTree = "<group>"; };
+		055EED722350821500AAA671 /* BMLongPressDragCellCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDataSource.h; sourceTree = "<group>"; };
 		05F593B4233DA5D0001FB011 /* BMLongPressDragCellCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMLongPressDragCellCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F593BE233DA5D0001FB011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05F593C0233DA5D1001FB011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -572,6 +574,8 @@
 			children = (
 				05F593EB233DA614001FB011 /* BMLongPressDragCellCollectionView.h */,
 				05F593EC233DA614001FB011 /* BMLongPressDragCellCollectionView.m */,
+				055EED71235081D600AAA671 /* BMLongPressDragCellCollectionViewDelegate.h */,
+				055EED722350821500AAA671 /* BMLongPressDragCellCollectionViewDataSource.h */,
 			);
 			path = BMLongPressDragCellCollectionView;
 			sourceTree = "<group>";

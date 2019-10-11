@@ -145,9 +145,9 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     // iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
     // https://sxgfxm.github.io/blog/2016/10/18/uicollectionview-ios10-new-features
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0) {
+    if (@available(iOS 10.0, *)) {
         self.prefetchingEnabled = NO;
-    }
+    } 
 }
 
 - (void)reloadData {
