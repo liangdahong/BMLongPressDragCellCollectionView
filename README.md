@@ -32,6 +32,11 @@
 </p>
 
 
+### ⭐️ Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/liangdahong/BMLongPressDragCellCollectionView.svg)](https://starchart.cc/liangdahong/BMLongPressDragCellCollectionView)
+
+
 ## Introduction
 
 - This is a iOS UICollectionView UICollectionViewCell long press drag  again arrangement framework.
