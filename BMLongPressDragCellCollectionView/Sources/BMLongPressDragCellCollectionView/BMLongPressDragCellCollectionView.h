@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat dragCellAlpha;
 
 /**
-拖拽速度 建议设置，默认为 8，建议设置 5 到 15 之间。
+拖拽速度  默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间。
 */
 @property (nonatomic, assign) CGFloat dragSpeed;
 

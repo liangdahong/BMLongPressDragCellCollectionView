@@ -989,8 +989,8 @@
 		05F594E0233DA615001FB011 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				05F594E1233DA615001FB011 /* AppDelegate.h */,
 				05F594E2233DA615001FB011 /* main.m */,
+				05F594E1233DA615001FB011 /* AppDelegate.h */,
 				05F594E3233DA615001FB011 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
@@ -1032,8 +1032,8 @@
 		05F594F0233DA615001FB011 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */,
 				05F594F2233DA615001FB011 /* BMDragCellCollectionViewVC.h */,
+				05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
