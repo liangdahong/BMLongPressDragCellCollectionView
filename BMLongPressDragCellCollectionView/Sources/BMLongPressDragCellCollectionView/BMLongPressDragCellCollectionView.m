@@ -148,7 +148,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     _minimumPressDuration = .5f;
     _dragZoomScale = 1.2f;
     _dragCellAlpha = 1.0f;
-    _dragSpeed = 15.0f;
+    _dragSpeed = 8.0f;
     [self addGestureRecognizer:self.longGesture];
     // iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
