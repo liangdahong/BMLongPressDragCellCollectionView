@@ -13,14 +13,11 @@
 <a href="#"><img src="https://img.shields.io/badge/platform-iOS-red.svg"></a>
 <a href="#"><img src="https://img.shields.io/badge/language-Objective--C-orange.svg"></a>
 <a href="#"><img src="https://img.shields.io/badge/licenses-MIT-red.svg"></a>
-
 </p>
-
 
 ### ⭐️ Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/liangdahong/BMLongPressDragCellCollectionView.svg)](https://starchart.cc/liangdahong/BMLongPressDragCellCollectionView)
-
 
 ## Introduction
 

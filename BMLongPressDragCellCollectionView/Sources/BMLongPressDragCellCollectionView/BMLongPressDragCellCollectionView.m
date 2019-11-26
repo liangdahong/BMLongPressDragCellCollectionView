@@ -114,6 +114,13 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     _dragZoomScale = dragZoomScale;
 }
 
+- (void)setDragSpeed:(CGFloat)dragSpeed {
+    if (dragSpeed < 0) {
+        _dragSpeed = 8.0f;
+    }
+    _dragSpeed = dragSpeed;
+}
+
 - (void)setDragSnapedViewBackgroundColor:(UIColor *)dragSnapedViewBackgroundColor {
     _dragSnapedViewBackgroundColor = dragSnapedViewBackgroundColor;
     _snapedView.backgroundColor = dragSnapedViewBackgroundColor;
@@ -140,7 +147,8 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     _canDrag = YES;
     _minimumPressDuration = .5f;
     _dragZoomScale = 1.2f;
-    _dragCellAlpha = 1.0;
+    _dragCellAlpha = 1.0f;
+    _dragSpeed = 15.0f;
     [self addGestureRecognizer:self.longGesture];
     // iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
@@ -397,27 +405,27 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     switch (scrollDirection) {
         case BMLongPressDragCellCollectionViewScrollDirectionLeft:{
             //这里的动画必须设为NO
-            [self setContentOffset:CGPointMake(self.contentOffset.x - 4, self.contentOffset.y) animated:NO];
-            _snapedView.center = CGPointMake(_snapedView.center.x - 4, _snapedView.center.y);
-            _lastPoint.x -= 4;
+            [self setContentOffset:CGPointMake(self.contentOffset.x - _dragSpeed, self.contentOffset.y) animated:NO];
+            _snapedView.center = CGPointMake(_snapedView.center.x - _dragSpeed, _snapedView.center.y);
+            _lastPoint.x -= _dragSpeed;
         }
             break;
         case BMLongPressDragCellCollectionViewScrollDirectionRight:{
-            [self setContentOffset:CGPointMake(self.contentOffset.x + 4, self.contentOffset.y) animated:NO];
-            _snapedView.center = CGPointMake(_snapedView.center.x + 4, _snapedView.center.y);
-            _lastPoint.x += 4;
+            [self setContentOffset:CGPointMake(self.contentOffset.x + _dragSpeed, self.contentOffset.y) animated:NO];
+            _snapedView.center = CGPointMake(_snapedView.center.x + _dragSpeed, _snapedView.center.y);
+            _lastPoint.x += _dragSpeed;
         }
             break;
         case BMLongPressDragCellCollectionViewScrollDirectionUp:{
-            [self setContentOffset:CGPointMake(self.contentOffset.x, self.contentOffset.y - 4) animated:NO];
-            _snapedView.center = CGPointMake(_snapedView.center.x, _snapedView.center.y - 4);
-            _lastPoint.y -= 4;
+            [self setContentOffset:CGPointMake(self.contentOffset.x, self.contentOffset.y - _dragSpeed) animated:NO];
+            _snapedView.center = CGPointMake(_snapedView.center.x, _snapedView.center.y - _dragSpeed);
+            _lastPoint.y -= _dragSpeed;
         }
             break;
         case BMLongPressDragCellCollectionViewScrollDirectionDown:{
-            [self setContentOffset:CGPointMake(self.contentOffset.x, self.contentOffset.y + 4) animated:NO];
-            _snapedView.center = CGPointMake(_snapedView.center.x, _snapedView.center.y + 4);
-            _lastPoint.y += 4;
+            [self setContentOffset:CGPointMake(self.contentOffset.x, self.contentOffset.y + _dragSpeed) animated:NO];
+            _snapedView.center = CGPointMake(_snapedView.center.x, _snapedView.center.y + _dragSpeed);
+            _lastPoint.y += _dragSpeed;
         }
             break;
         default:

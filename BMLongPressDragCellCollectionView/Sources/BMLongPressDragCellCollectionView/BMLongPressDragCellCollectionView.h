@@ -62,6 +62,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat dragCellAlpha;
 
 /**
+拖拽速度 建议设置，默认为 8，建议设置 5 到 15 之间。
+*/
+@property (nonatomic, assign) CGFloat dragSpeed;
+
+/**
  拖拽View的背景颜色
  Drag view backgroundColor
  */
