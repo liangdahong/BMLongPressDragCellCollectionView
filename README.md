@@ -39,4 +39,5 @@ pod install
 
 ## License    
 
+
 BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
