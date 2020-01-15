@@ -77,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
  To move to the specified location
 
  @param indexPath 移动到的位置（内部只会处理当前正在拖拽的情况，会把拖拽的Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用
- ，如：今日头条Demo ）
+ ，如：今日头条）
  */
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 

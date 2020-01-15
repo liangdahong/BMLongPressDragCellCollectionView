@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05402A2023CF093E00B1DE21 /* BMAlipay2FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05402A1523CF093E00B1DE21 /* BMAlipay2FooterView.m */; };
+		05402A2123CF093E00B1DE21 /* BMAlipay2FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05402A1623CF093E00B1DE21 /* BMAlipay2FooterView.xib */; };
+		05402A2223CF093E00B1DE21 /* BMAlipay2HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05402A1923CF093E00B1DE21 /* BMAlipay2HeaderView.m */; };
+		05402A2323CF093E00B1DE21 /* BMAlipay2HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05402A1A23CF093E00B1DE21 /* BMAlipay2HeaderView.xib */; };
+		05402A2423CF093E00B1DE21 /* BMAlipay2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05402A1E23CF093E00B1DE21 /* BMAlipay2VC.m */; };
+		05402A2523CF093E00B1DE21 /* BMAlipay2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05402A1F23CF093E00B1DE21 /* BMAlipay2VC.xib */; };
 		05F593BF233DA5D0001FB011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F593BD233DA5D0001FB011 /* Main.storyboard */; };
 		05F593C1233DA5D1001FB011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F593C0233DA5D1001FB011 /* Assets.xcassets */; };
 		05F593C4233DA5D1001FB011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F593C2233DA5D1001FB011 /* LaunchScreen.storyboard */; };
@@ -217,12 +223,6 @@
 		05F595C3233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594DF233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m */; };
 		05F595C4233DA615001FB011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594E2233DA615001FB011 /* main.m */; };
 		05F595C5233DA615001FB011 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594E3233DA615001FB011 /* AppDelegate.m */; };
-		05F595C6233DA615001FB011 /* BMAlipay2FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594E7233DA615001FB011 /* BMAlipay2FooterView.xib */; };
-		05F595C7233DA615001FB011 /* BMAlipay2HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594E8233DA615001FB011 /* BMAlipay2HeaderView.m */; };
-		05F595C8233DA615001FB011 /* BMAlipay2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594E9233DA615001FB011 /* BMAlipay2VC.xib */; };
-		05F595C9233DA615001FB011 /* BMAlipay2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594EB233DA615001FB011 /* BMAlipay2VC.m */; };
-		05F595CA233DA615001FB011 /* BMAlipay2HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594EC233DA615001FB011 /* BMAlipay2HeaderView.xib */; };
-		05F595CB233DA615001FB011 /* BMAlipay2FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594EE233DA615001FB011 /* BMAlipay2FooterView.m */; };
 		05F595CC233DA615001FB011 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */; };
 		05F595CD233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594F4233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m */; };
 		05F595CE233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594F5233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib */; };
@@ -249,6 +249,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05402A1423CF093E00B1DE21 /* BMAlipay2FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2FooterView.h; sourceTree = "<group>"; };
+		05402A1523CF093E00B1DE21 /* BMAlipay2FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2FooterView.m; sourceTree = "<group>"; };
+		05402A1623CF093E00B1DE21 /* BMAlipay2FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2FooterView.xib; sourceTree = "<group>"; };
+		05402A1823CF093E00B1DE21 /* BMAlipay2HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2HeaderView.h; sourceTree = "<group>"; };
+		05402A1923CF093E00B1DE21 /* BMAlipay2HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2HeaderView.m; sourceTree = "<group>"; };
+		05402A1A23CF093E00B1DE21 /* BMAlipay2HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2HeaderView.xib; sourceTree = "<group>"; };
+		05402A1D23CF093E00B1DE21 /* BMAlipay2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2VC.h; sourceTree = "<group>"; };
+		05402A1E23CF093E00B1DE21 /* BMAlipay2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2VC.m; sourceTree = "<group>"; };
+		05402A1F23CF093E00B1DE21 /* BMAlipay2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2VC.xib; sourceTree = "<group>"; };
 		055EED71235081D600AAA671 /* BMLongPressDragCellCollectionViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDelegate.h; sourceTree = "<group>"; };
 		055EED722350821500AAA671 /* BMLongPressDragCellCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDataSource.h; sourceTree = "<group>"; };
 		05F593B4233DA5D0001FB011 /* BMLongPressDragCellCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMLongPressDragCellCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -483,15 +492,6 @@
 		05F594E1233DA615001FB011 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05F594E2233DA615001FB011 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05F594E3233DA615001FB011 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05F594E6233DA615001FB011 /* BMAlipay2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2VC.h; sourceTree = "<group>"; };
-		05F594E7233DA615001FB011 /* BMAlipay2FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2FooterView.xib; sourceTree = "<group>"; };
-		05F594E8233DA615001FB011 /* BMAlipay2HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2HeaderView.m; sourceTree = "<group>"; };
-		05F594E9233DA615001FB011 /* BMAlipay2VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2VC.xib; sourceTree = "<group>"; };
-		05F594EA233DA615001FB011 /* BMAlipay2FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2FooterView.h; sourceTree = "<group>"; };
-		05F594EB233DA615001FB011 /* BMAlipay2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2VC.m; sourceTree = "<group>"; };
-		05F594EC233DA615001FB011 /* BMAlipay2HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2HeaderView.xib; sourceTree = "<group>"; };
-		05F594ED233DA615001FB011 /* BMAlipay2HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2HeaderView.h; sourceTree = "<group>"; };
-		05F594EE233DA615001FB011 /* BMAlipay2FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2FooterView.m; sourceTree = "<group>"; };
 		05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
 		05F594F2233DA615001FB011 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
 		05F594F4233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLongPressDragCellCollectionViewCell.m; sourceTree = "<group>"; };
@@ -527,6 +527,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05402A1223CF093E00B1DE21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05402A1323CF093E00B1DE21 /* BMAlipay2FooterView */,
+				05402A1723CF093E00B1DE21 /* BMAlipay2HeaderView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05402A1323CF093E00B1DE21 /* BMAlipay2FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				05402A1423CF093E00B1DE21 /* BMAlipay2FooterView.h */,
+				05402A1523CF093E00B1DE21 /* BMAlipay2FooterView.m */,
+				05402A1623CF093E00B1DE21 /* BMAlipay2FooterView.xib */,
+			);
+			path = BMAlipay2FooterView;
+			sourceTree = "<group>";
+		};
+		05402A1723CF093E00B1DE21 /* BMAlipay2HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				05402A1823CF093E00B1DE21 /* BMAlipay2HeaderView.h */,
+				05402A1923CF093E00B1DE21 /* BMAlipay2HeaderView.m */,
+				05402A1A23CF093E00B1DE21 /* BMAlipay2HeaderView.xib */,
+			);
+			path = BMAlipay2HeaderView;
+			sourceTree = "<group>";
+		};
+		05402A1B23CF093E00B1DE21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05402A1C23CF093E00B1DE21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05402A1D23CF093E00B1DE21 /* BMAlipay2VC.h */,
+				05402A1E23CF093E00B1DE21 /* BMAlipay2VC.m */,
+				05402A1F23CF093E00B1DE21 /* BMAlipay2VC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		05F593AB233DA5D0001FB011 = {
 			isa = PBXGroup;
 			children = (
@@ -999,25 +1045,11 @@
 		05F594E4233DA615001FB011 /* Alipay2VC */ = {
 			isa = PBXGroup;
 			children = (
-				05F594E5233DA615001FB011 /* Controller */,
+				05402A1C23CF093E00B1DE21 /* Controller */,
+				05402A1B23CF093E00B1DE21 /* Model */,
+				05402A1223CF093E00B1DE21 /* View */,
 			);
 			path = Alipay2VC;
-			sourceTree = "<group>";
-		};
-		05F594E5233DA615001FB011 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				05F594E6233DA615001FB011 /* BMAlipay2VC.h */,
-				05F594E7233DA615001FB011 /* BMAlipay2FooterView.xib */,
-				05F594E8233DA615001FB011 /* BMAlipay2HeaderView.m */,
-				05F594E9233DA615001FB011 /* BMAlipay2VC.xib */,
-				05F594EA233DA615001FB011 /* BMAlipay2FooterView.h */,
-				05F594EB233DA615001FB011 /* BMAlipay2VC.m */,
-				05F594EC233DA615001FB011 /* BMAlipay2HeaderView.xib */,
-				05F594ED233DA615001FB011 /* BMAlipay2HeaderView.h */,
-				05F594EE233DA615001FB011 /* BMAlipay2FooterView.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		05F594EF233DA615001FB011 /* BaseDemo */ = {
@@ -1202,7 +1234,6 @@
 				05F595A3233DA615001FB011 /* 103@2x.png in Resources */,
 				05F59529233DA615001FB011 /* 179@2x.png in Resources */,
 				05F595AB233DA615001FB011 /* 139@2x.png in Resources */,
-				05F595C6233DA615001FB011 /* BMAlipay2FooterView.xib in Resources */,
 				05F5951D233DA615001FB011 /* 153@2x.png in Resources */,
 				05F59568233DA615001FB011 /* 176@2x.png in Resources */,
 				05F5959E233DA615001FB011 /* 172@2x.png in Resources */,
@@ -1272,6 +1303,7 @@
 				05F59548233DA615001FB011 /* 092@2x.png in Resources */,
 				05F593BF233DA5D0001FB011 /* Main.storyboard in Resources */,
 				05F5952D233DA615001FB011 /* 143@2x.png in Resources */,
+				05402A2523CF093E00B1DE21 /* BMAlipay2VC.xib in Resources */,
 				05F59561233DA615001FB011 /* 164@2x.png in Resources */,
 				05F595AE233DA615001FB011 /* 027@2x.png in Resources */,
 				05F59514233DA615001FB011 /* 169@2x.png in Resources */,
@@ -1323,6 +1355,7 @@
 				05F59556233DA615001FB011 /* 073@2x.png in Resources */,
 				05F5958F233DA615001FB011 /* 062@2x.png in Resources */,
 				05F5958E233DA615001FB011 /* 162@2x.png in Resources */,
+				05402A2123CF093E00B1DE21 /* BMAlipay2FooterView.xib in Resources */,
 				05F5957F233DA615001FB011 /* 174@2x.png in Resources */,
 				05F5956B233DA615001FB011 /* 015@2x.png in Resources */,
 				05F59570233DA615001FB011 /* 189@2x.png in Resources */,
@@ -1334,12 +1367,11 @@
 				05F5955D233DA615001FB011 /* 023@2x.png in Resources */,
 				05F595D3233DA62F001FB011 /* README.md in Resources */,
 				05F5953D233DA615001FB011 /* 063@2x.png in Resources */,
+				05402A2323CF093E00B1DE21 /* BMAlipay2HeaderView.xib in Resources */,
 				05F5956C233DA615001FB011 /* 115@2x.png in Resources */,
 				05F5952A233DA615001FB011 /* 051@2x.png in Resources */,
 				05F59530233DA615001FB011 /* 094@2x.png in Resources */,
 				05F59536233DA615001FB011 /* 159@2x.png in Resources */,
-				05F595CA233DA615001FB011 /* BMAlipay2HeaderView.xib in Resources */,
-				05F595C8233DA615001FB011 /* BMAlipay2VC.xib in Resources */,
 				05F59500233DA615001FB011 /* 分期.png in Resources */,
 				05F5950D233DA615001FB011 /* 006@2x.png in Resources */,
 				05F59565233DA615001FB011 /* 107@2x.png in Resources */,
@@ -1378,20 +1410,20 @@
 				05F595B5233DA615001FB011 /* BMSearchHistoryFlowLayout.m in Sources */,
 				05F594F7233DA615001FB011 /* BMLongPressDragCellCollectionView.m in Sources */,
 				05F595BF233DA615001FB011 /* BMAlipayCell.m in Sources */,
-				05F595C7233DA615001FB011 /* BMAlipay2HeaderView.m in Sources */,
+				05402A2223CF093E00B1DE21 /* BMAlipay2HeaderView.m in Sources */,
 				05F595BA233DA615001FB011 /* BMTodayHeadlinesDragCell.m in Sources */,
-				05F595CB233DA615001FB011 /* BMAlipay2FooterView.m in Sources */,
 				05F595C3233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */,
+				05402A2023CF093E00B1DE21 /* BMAlipay2FooterView.m in Sources */,
 				05F595CD233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m in Sources */,
 				05F595B3233DA615001FB011 /* BMRootVC.m in Sources */,
 				05F595BE233DA615001FB011 /* BMAlipayModel.m in Sources */,
 				05F595CC233DA615001FB011 /* BMDragCellCollectionViewVC.m in Sources */,
 				05F595C2233DA615001FB011 /* UICollectionReusableView+BMAutomaticRegister.m in Sources */,
 				05F594F9233DA615001FB011 /* BMImageVC.m in Sources */,
-				05F595C9233DA615001FB011 /* BMAlipay2VC.m in Sources */,
 				05F595B2233DA615001FB011 /* BMModel.m in Sources */,
 				05F594FC233DA615001FB011 /* BMImageCell.m in Sources */,
 				05F594F8233DA615001FB011 /* UITableViewCell+BMReusable.m in Sources */,
+				05402A2423CF093E00B1DE21 /* BMAlipay2VC.m in Sources */,
 				05F595B7233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.m in Sources */,
 				05F595BB233DA615001FB011 /* BMTodayHeadlinesDragModel.m in Sources */,
 				05F595B6233DA615001FB011 /* BMTodayHeadlinesDragVC.m in Sources */,
@@ -1568,7 +1600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG78JT6CG8;
 				INFOPLIST_FILE = "$(SRCROOT)/BMLongPressDragCellCollectionView/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1586,7 +1618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG78JT6CG8;
 				INFOPLIST_FILE = "$(SRCROOT)/BMLongPressDragCellCollectionView/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
