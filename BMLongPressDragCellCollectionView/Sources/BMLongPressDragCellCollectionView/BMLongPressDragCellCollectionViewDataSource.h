@@ -26,20 +26,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class BMLongPressDragCellCollectionView;
 
-/**
- BMLongPressDragCellCollectionViewDataSource 协议
- BMLongPressDragCellCollectionViewDataSource protocol
- */
+/// BMLongPressDragCellCollectionViewDataSource protocol
 @protocol BMLongPressDragCellCollectionViewDataSource <UICollectionViewDataSource>
 
 @required
 
 /**
- 获取数据源（内部会做合适的更新数据源处理，必须实现）
- Access to data sources (internal will make the appropriate update feed processing, must be implemented)
+ 获取数据源，内部会在合适的时候获取最新的数据源，必须实现
  
  @param dragCellCollectionView dragCellCollectionView
- @return 返回数据源  return self.dataArray;
+ @return 最新的数据源
+ 
+ - (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+    return self.dataArray;
+ }
  */
 - (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView;
 

@@ -981,8 +981,8 @@
 			isa = PBXGroup;
 			children = (
 				05F594CD233DA615001FB011 /* BMAlipayVC.h */,
-				05F594CE233DA615001FB011 /* BMAlipayVC.xib */,
 				05F594CF233DA615001FB011 /* BMAlipayVC.m */,
+				05F594CE233DA615001FB011 /* BMAlipayVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

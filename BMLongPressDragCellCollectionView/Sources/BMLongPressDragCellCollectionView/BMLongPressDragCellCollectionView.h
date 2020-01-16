@@ -28,59 +28,31 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- 可以长按拖拽Cell的UICollectionView
- UICollectionView can grow by drag and drop the Cell
- */
+/// 可以长按拖拽 Cell 的 UICollectionView
 @interface BMLongPressDragCellCollectionView : UICollectionView
 
-@property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDelegate> delegate; ///< 代理 delegate
-@property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDataSource> dataSource; ///< 数据源代理 dataSource
+/// 代理 delegate
+@property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDelegate> delegate;
 
-/**
- 长按触发时间，默认是0.5秒，建议根据实际情况设值
- To the triggering time long, the default is 0.5 seconds, set value Suggestions according to the actual situation
- */
+/// 数据源代理 dataSource
+@property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDataSource> dataSource;
+
+/// 长按触发拖拽所需时间，默认是 0.5 秒
 @property (nonatomic, assign) NSTimeInterval minimumPressDuration;
-
-/**
- 是否可以拖拽 默认为YES,
- If you can drag the default to YES,
- 
- 如果设置为NO，BMLongPressDragCellCollectionView 将失去长按拖拽功能和UICollectionView一样
- */
+/// 是否可以拖拽 默认为 YES
 @property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
-
-/**
- 长按拖拽时Cell缩放比例 默认是：1.2
- Long by drag and drop the Cell scaling default is: 1.2
- */
+///  长按拖拽时拖拽中的的 Cell 缩放比例，默认是 1.2
 @property (nonatomic, assign) CGFloat dragZoomScale;
-
-/**
- 拖拽的Cell在拖拽移动时的透明度 默认是： 1.0
- Drag and drop the Cell in drag move when the transparency The default is 1.0
- */
+/// 拖拽的 Cell 在拖拽移动时的透明度 默认是： 1.0 不透明
 @property (nonatomic, assign) CGFloat dragCellAlpha;
-
-/**
-拖拽速度  默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间。
-*/
+/// 拖拽速度  默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间
 @property (nonatomic, assign) CGFloat dragSpeed;
-
-/**
- 拖拽View的背景颜色
- Drag view backgroundColor
- */
+/// 拖拽 View 的背景颜色,建议不要设置，默认和拖拽的 Cell 一样
 @property (nonatomic, strong, nullable) UIColor *dragSnapedViewBackgroundColor;
 
-/**
- 移动到指定位置
- To move to the specified location
-
- @param indexPath 移动到的位置（内部只会处理当前正在拖拽的情况，会把拖拽的Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用
- ，如：今日头条）
- */
+/// 移动到指定位置
+/// @param indexPath 移动到的位置
+/// 内部只会处理当前正在拖拽的情况，会把拖拽的Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -26,20 +26,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class BMLongPressDragCellCollectionView;
 
-/**
- BMLongPressDragCellCollectionViewDelegate 协议
- BMLongPressDragCellCollectionViewDelegate protocol
- */
+/// BMLongPressDragCellCollectionViewDelegate protocol
 @protocol BMLongPressDragCellCollectionViewDelegate <UICollectionViewDelegateFlowLayout>
 
 @required
 
 /**
- 动画和移动完成时（这里会返回更新后的数据源，请在此代理保存数据源，必须实现）
- Animation and movement is complete (here will return the updated data sources, please agent here to save the data source, must be implemented)
+ Cell 有任何交换时调用
  
  @param dragCellCollectionView dragCellCollectionView
- @param newDataArray 新的数据源，必须保存。 self.dataArray = [newDataArray copy];
+ @param newDataArray 最新的数据源，需要使用者保存，在拖拽的时候 Cell 已经移动，需保存最新的数据源
+ 
+ - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
+    self.dataArray = [newDataArray copy];
+ }
  */
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray;
 
@@ -47,11 +47,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  将要开始拖拽时，询问此位置的Cell是否可以拖拽
- Will begin to drag and drop, asking whether the location of the Cell can drag and drop
  
  @param dragCellCollectionView dragCellCollectionView
  @param indexPath indexPath
- @return YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
+ @return YES: 正常拖拽和移动 NO:此 Cell 不可拖拽，如：增加按钮等。
  */
 - (BOOL)dragCellCollectionViewShouldBeginMove:(BMLongPressDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath;
 
