@@ -5,6 +5,7 @@ echo "请确保已打 Tag"
 #echo "验证文件"
 #pod lib lint
 echo "start pod trunk push"
+#pod trunk push BMLongPressDragCellCollectionView.podspec --allow-warnings --verbose
 pod trunk push BMLongPressDragCellCollectionView.podspec --allow-warnings
 echo "end"
 
