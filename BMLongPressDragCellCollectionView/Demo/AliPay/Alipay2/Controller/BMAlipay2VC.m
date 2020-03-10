@@ -44,19 +44,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
         [_dataSourceArray addObject:@[
                                      [BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"],
-//                                     [BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"],
-//                                     [BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"],
-//                                     [BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"],
-//                                     [BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]
                                      ]];
-//
-//        [_dataSourceArray addObject:@[
-//                                      [BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"],
-//                                      [BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"],
-//                                      [BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"],
-//                                      [BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]
-//                                      ]];
-//
         
         [_dataSourceArray addObject:@[
                                       [BMAlipayModel modelWithTitle:@"来分期1" iconName:@"分期"],

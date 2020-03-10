@@ -217,7 +217,6 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     // 处理复用时的问题，为了保证显示的正确性
     if (_isEndDrag) {
         cell.hidden = NO;
-        
     } else {
         cell.hidden = (self.oldIndexPath
                        && self.oldIndexPath.item == indexPath.item
@@ -229,11 +228,11 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 - (nullable NSIndexPath *)_getChangedNullIndexPath {
     __block NSIndexPath *index = nil;
     CGPoint point = [self.longGesture locationInView:self];
-    
     NSInteger number = self.numberOfSections;
     while (number--) {
         NSInteger row = [self.dataSource collectionView:self numberOfItemsInSection:number];
         if (row == 0) {
+            // 如果这组是空的
             CGRect headerFrame = [self layoutAttributesForSupplementaryElementOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:number]].frame;
             CGRect footerFrame = [self layoutAttributesForSupplementaryElementOfKind:UICollectionElementKindSectionFooter atIndexPath:[NSIndexPath indexPathForItem:0 inSection:number]].frame;
             CGRect frame = CGRectZero;
@@ -245,19 +244,21 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                                    CGRectGetWidth(footerFrame));
                 
                 if (frame.size.width < 10) {
+                    // 如果这组的d宽度小于 10，就设置一个默认值 10，主要是为了判断触摸点缩放在这组内。
                     frame.size.width = 10;
                     frame.size.height = CGRectGetHeight(self.frame);
                     frame.origin.x -= 5;
                 }
                 
             } else {
-                // 上下方向
+                // 垂直方向
                 frame = CGRectMake(CGRectGetMinX(headerFrame),
                                    CGRectGetMinY(headerFrame),
                                    CGRectGetWidth(footerFrame),
                                    CGRectGetMaxY(footerFrame) - CGRectGetMidY(headerFrame));
                 
                 if (frame.size.height < 10) {
+                    // 如果这组的高度小于 10，就设置一个默认值 10，主要是为了判断触摸点缩放在这组内。
                     frame.size.height = 10;
                     frame.size.width = CGRectGetWidth(self.frame);
                     frame.origin.y -= 5;
@@ -265,7 +266,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             }
             
             if (CGRectContainsPoint(frame, point)) {
-                NSLog(@"在空的组内 %u", arc4random());
+                // 触摸点 在空的组内
                 return [NSIndexPath indexPathForItem:0 inSection:number];
             }
         }
@@ -274,6 +275,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 }
 
 - (nullable NSIndexPath *)_getChangedIndexPath {
+    
     __block NSIndexPath *index = nil;
     CGPoint point = [self.longGesture locationInView:self];
 
@@ -351,11 +353,13 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     BOOL dataTypeCheck = ([self numberOfSections] != 1 || ([self  numberOfSections] == 1 && [array[0] isKindOfClass:NSArray.class]));
     if (dataTypeCheck) {
         for (int i = 0; i < array.count; i ++) {
+            // 如果是嵌套数组 就把数组里面的数组换为 NSMutableArray。
             [array replaceObjectAtIndex:i withObject:[array[i] mutableCopy]];
         }
     }
     if (_currentIndexPath.section == _oldIndexPath.section) {
-        NSMutableArray *orignalSection = dataTypeCheck ? (NSMutableArray *)array[_oldIndexPath.section] : (NSMutableArray *)array;
+
+        NSMutableArray *orignalSection = dataTypeCheck ? array[_oldIndexPath.section] : array;
         
         if (_currentIndexPath.item > _oldIndexPath.item) {
             for (NSUInteger i = _oldIndexPath.item; i < _currentIndexPath.item ; i ++) {
@@ -448,11 +452,9 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     
     if (index1) {
         index = index1;
-        
     } else {
         index = [self _getChangedIndexPath];
     }
-
 
     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:indexPath:)]) {
         [self.delegate dragCellCollectionView:self changedDragAtPoint:_lastPoint indexPath:index];
@@ -514,7 +516,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             // 判断手势落点位置是否在Item上
             _oldIndexPath = indexPath;
             
-            // 没有按在cell 上就 break
+            // 没有按在 cell 上就 break
             if (_oldIndexPath == nil) {
                 self.longGesture.enabled = NO;
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -605,11 +607,9 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             
             if (index1) {
                 index = index1;
-                
             } else {
                 index = [self _getChangedIndexPath];
             }
-
             
             // 没有取到或者距离隐藏的最近时就返回
             if (!index) {
