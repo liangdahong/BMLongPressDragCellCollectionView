@@ -14,7 +14,6 @@
 		05402A2423CF093E00B1DE21 /* BMAlipay2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05402A1E23CF093E00B1DE21 /* BMAlipay2VC.m */; };
 		05402A2523CF093E00B1DE21 /* BMAlipay2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05402A1F23CF093E00B1DE21 /* BMAlipay2VC.xib */; };
 		05402A2723CF0C2800B1DE21 /* pod.sh in Resources */ = {isa = PBXBuildFile; fileRef = 05402A2623CF0C2700B1DE21 /* pod.sh */; };
-		05F593BF233DA5D0001FB011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F593BD233DA5D0001FB011 /* Main.storyboard */; };
 		05F593C1233DA5D1001FB011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F593C0233DA5D1001FB011 /* Assets.xcassets */; };
 		05F593C4233DA5D1001FB011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F593C2233DA5D1001FB011 /* LaunchScreen.storyboard */; };
 		05F594F7233DA615001FB011 /* BMLongPressDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F593EC233DA614001FB011 /* BMLongPressDragCellCollectionView.m */; };
@@ -261,7 +260,6 @@
 		055EED71235081D600AAA671 /* BMLongPressDragCellCollectionViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDelegate.h; sourceTree = "<group>"; };
 		055EED722350821500AAA671 /* BMLongPressDragCellCollectionViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDataSource.h; sourceTree = "<group>"; };
 		05F593B4233DA5D0001FB011 /* BMLongPressDragCellCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMLongPressDragCellCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		05F593BE233DA5D0001FB011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05F593C0233DA5D1001FB011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05F593C3233DA5D1001FB011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F593C5233DA5D1001FB011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -603,13 +601,12 @@
 		05F593B6233DA5D0001FB011 /* BMLongPressDragCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				05F594E0233DA615001FB011 /* AppDelegate */,
+				05F593ED233DA614001FB011 /* Demo */,
 				05F593EE233DA614001FB011 /* Category */,
 				05F593FB233DA614001FB011 /* Resources */,
 				05F594D7233DA615001FB011 /* Lib */,
-				05F594E0233DA615001FB011 /* AppDelegate */,
 				05F593E9233DA614001FB011 /* Sources */,
-				05F593ED233DA614001FB011 /* Demo */,
-				05F593BD233DA5D0001FB011 /* Main.storyboard */,
 				05F593C0233DA5D1001FB011 /* Assets.xcassets */,
 				05F593C2233DA5D1001FB011 /* LaunchScreen.storyboard */,
 				05F593C5233DA5D1001FB011 /* Info.plist */,
@@ -1303,7 +1300,6 @@
 				05F593C1233DA5D1001FB011 /* Assets.xcassets in Resources */,
 				05F59519233DA615001FB011 /* 022@2x.png in Resources */,
 				05F59548233DA615001FB011 /* 092@2x.png in Resources */,
-				05F593BF233DA5D0001FB011 /* Main.storyboard in Resources */,
 				05F5952D233DA615001FB011 /* 143@2x.png in Resources */,
 				05402A2523CF093E00B1DE21 /* BMAlipay2VC.xib in Resources */,
 				05F59561233DA615001FB011 /* 164@2x.png in Resources */,
@@ -1462,14 +1458,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05F593BD233DA5D0001FB011 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05F593BE233DA5D0001FB011 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05F593C2233DA5D1001FB011 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
