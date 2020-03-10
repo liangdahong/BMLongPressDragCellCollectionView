@@ -153,27 +153,10 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         [collectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:secArray0.count-1 inSection:0]];
     }
 }
-    
-//- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-//    if (destinationIndexPath.section == 1 || sourceIndexPath.section == 1) {
-//        return NO;
-//    }
-//    if (destinationIndexPath.section == 0 && destinationIndexPath.item == 0) {
-//        return NO;
-//    }
-//    return YES;
-//}
 
-- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-    if (sourceIndexPath.section == destinationIndexPath.section) {
-        NSLog(@"===");
-        return YES;
-    }
-    NSLog(@"!!!===");
-    return NO;
-}
 
 - (BOOL)dragCellCollectionViewShouldBeginMove:(BMLongPressDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath {
+    //  将要开始拖拽时，询问此位置的 Cell 是否能拖拽
     if (indexPath.section == 1) {
         return NO;
     }
@@ -183,33 +166,27 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     return YES;
 }
 
-- (void)dragCellCollectionViewDidEndDrag:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
-    NSLog(@"dragCellCollectionViewDidEndDrag");
-}
-
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView beganDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
-    NSLog(@"beganDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
-}
-
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    //  cell 将要交换时，询问是否能交换
     
-    NSLog(@"changedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
-}
-
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
-    NSLog(@"endedDragAtPoint %@   - %@", NSStringFromCGPoint(point), indexPath);
-}
-
-- (BOOL)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAutomaticOperationAtPoint:(CGPoint)point section:(NSInteger)section indexPath:(NSIndexPath *)indexPath {
-    if (section == 1) {
-        // 如果拖到了第一组松开就移动 而且内部不自动处理
-        [dragCellCollectionView dragMoveItemToIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
+    // 如果就要被交换的是 第一组第一个 或者  第二组
+    // 就不交换
+    if ((destinationIndexPath.item == 0 && destinationIndexPath.section == 0)
+        || destinationIndexPath.section == 1) {
         return NO;
     }
     return YES;
 }
 
-
-
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath {
+    //  结束拖拽时
+    if (indexPath.section == 1) {
+        // 在结束拖拽时 如果在第二组，就自动移动 cell。
+        // 移动到第二组 的第一个位置
+        [dragCellCollectionView dragMoveItemToIndexPath:[NSIndexPath indexPathForItem:0 inSection:1]];
+        // 移动到指定组
+        // [dragCellCollectionView dragMoveItemToIndexPath:[NSIndexPath indexPathForItem:[self collectionView:dragCellCollectionView numberOfItemsInSection:1] inSection:1]];
+    }
+}
 
 @end

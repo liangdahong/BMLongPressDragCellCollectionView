@@ -26,7 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class BMLongPressDragCellCollectionView;
 
-/// BMLongPressDragCellCollectionViewDataSource protocol
 @protocol BMLongPressDragCellCollectionViewDataSource <UICollectionViewDataSource>
 
 @required
