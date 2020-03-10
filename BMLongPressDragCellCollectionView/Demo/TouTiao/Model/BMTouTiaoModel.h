@@ -1,5 +1,5 @@
 //
-//  BMTodayHeadlinesDragModel.h
+//  BMTouTiaoModel.h
 //  TodayHeadlinesDrag
 //
 //  Created by __liangdahong on 2017/7/23.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BMTodayHeadlinesDragModel : NSObject
+@interface BMTouTiaoModel : NSObject
     
 @property (copy, nonatomic) NSString *title;
 

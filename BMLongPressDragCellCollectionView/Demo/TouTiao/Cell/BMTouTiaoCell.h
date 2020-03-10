@@ -1,5 +1,5 @@
 //
-//  BMTodayHeadlinesDragCell.h
+//  BMTouTiaoCell.h
 //  TodayHeadlinesDrag
 //
 //  Created by __liangdahong on 2017/7/23.
@@ -8,15 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class BMTodayHeadlinesDragModel;
+@class BMTouTiaoModel;
 
-typedef void(^BMTodayHeadlinesDragCellBlock)(UICollectionViewCell *cell);
+typedef void(^BMTouTiaoCellBlock)(UICollectionViewCell *cell);
 
-
-@interface BMTodayHeadlinesDragCell : UICollectionViewCell
+@interface BMTouTiaoCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *removeButton;
-@property (nonatomic, copy) BMTodayHeadlinesDragCellBlock block; ///< block
+@property (nonatomic, copy) BMTouTiaoCellBlock block; ///< block
 
 @end

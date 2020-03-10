@@ -1,22 +1,22 @@
 
 //
-//  BMTodayHeadlinesDragCell.m
+//  BMTouTiaoCell.m
 //  TodayHeadlinesDrag
 //
 //  Created by __liangdahong on 2017/7/23.
 //  Copyright © 2017年 https://liangdahong.com All rights reserved.
 //
 
-#import "BMTodayHeadlinesDragCell.h"
-#import "BMTodayHeadlinesDragModel.h"
+#import "BMTouTiaoCell.h"
+#import "BMTouTiaoModel.h"
 
-@interface BMTodayHeadlinesDragCell ()
+@interface BMTouTiaoCell ()
 
 @property (weak, nonatomic) IBOutlet UIView *mybackgroundView;
 
 @end
 
-@implementation BMTodayHeadlinesDragCell
+@implementation BMTouTiaoCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

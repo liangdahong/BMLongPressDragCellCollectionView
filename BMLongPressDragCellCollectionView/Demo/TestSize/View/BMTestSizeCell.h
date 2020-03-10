@@ -1,5 +1,5 @@
 //
-//  BMLongPressDragCellCollectionViewCell.h
+//  BMTestSizeCell.h
 //  BMLongPressDragCellCollectionViewDemo
 //
 //  Created by __liangdahong on 2017/7/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BMLongPressDragCellCollectionViewCell : UICollectionViewCell
+@interface BMTestSizeCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 

@@ -7,14 +7,14 @@
 //  Copyright © 2017年 https://liangdahong.com All rights reserved.
 //
 
-#import "BMDragCellCollectionViewVC.h"
-#import "BMLongPressDragCellCollectionViewCell.h"
+#import "BMTestSizeVC.h"
+#import "BMTestSizeCell.h"
 #import "BMLongPressDragCellCollectionView.h"
 
 #define WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-@interface BMDragCellCollectionViewVC () <UICollectionViewDelegateFlowLayout,BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
+@interface BMTestSizeVC () <UICollectionViewDelegateFlowLayout,BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
 
 @property (nonatomic, strong) BMLongPressDragCellCollectionView *collectionView; // collectionView
 @property (strong, nonatomic) NSMutableArray *dataSourceArray;
@@ -23,7 +23,7 @@
 
 static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 
-@implementation BMDragCellCollectionViewVC
+@implementation BMTestSizeVC
 
 #pragma mark - 生命周期
 
@@ -52,7 +52,7 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
         } else {
             _collectionView.alwaysBounceHorizontal = YES;
         }
-        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMLongPressDragCellCollectionViewCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMTestSizeCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
         _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     return _collectionView;
@@ -69,7 +69,7 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    BMLongPressDragCellCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    BMTestSizeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     cell.label.text = _dataSource[indexPath.section][indexPath.item][@"title"];
     cell.label.backgroundColor = _dataSource[indexPath.section][indexPath.item][@"color"];
     return cell;

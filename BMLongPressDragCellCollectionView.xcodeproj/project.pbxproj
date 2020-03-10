@@ -19,8 +19,8 @@
 		05F593C4233DA5D1001FB011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F593C2233DA5D1001FB011 /* LaunchScreen.storyboard */; };
 		05F594F7233DA615001FB011 /* BMLongPressDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F593EC233DA614001FB011 /* BMLongPressDragCellCollectionView.m */; };
 		05F594F8233DA615001FB011 /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F593F1233DA614001FB011 /* UITableViewCell+BMReusable.m */; };
-		05F594F9233DA615001FB011 /* BMImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F593F4233DA614001FB011 /* BMImageVC.m */; };
-		05F594FA233DA615001FB011 /* BMImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F593F5233DA614001FB011 /* BMImageVC.xib */; };
+		05F594F9233DA615001FB011 /* BMQQImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F593F4233DA614001FB011 /* BMQQImageVC.m */; };
+		05F594FA233DA615001FB011 /* BMQQImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F593F5233DA614001FB011 /* BMQQImageVC.xib */; };
 		05F594FB233DA615001FB011 /* BMImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F593F8233DA614001FB011 /* BMImageCell.xib */; };
 		05F594FC233DA615001FB011 /* BMImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F593F9233DA614001FB011 /* BMImageCell.m */; };
 		05F594FD233DA615001FB011 /* 充值中心.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F593FD233DA614001FB011 /* 充值中心.png */; };
@@ -207,13 +207,11 @@
 		05F595B2233DA615001FB011 /* BMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594B5233DA615001FB011 /* BMModel.m */; };
 		05F595B3233DA615001FB011 /* BMRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594B9233DA615001FB011 /* BMRootVC.m */; };
 		05F595B4233DA615001FB011 /* BMRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594BA233DA615001FB011 /* BMRootVC.xib */; };
-		05F595B5233DA615001FB011 /* BMSearchHistoryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594BF233DA615001FB011 /* BMSearchHistoryFlowLayout.m */; };
-		05F595B6233DA615001FB011 /* BMTodayHeadlinesDragVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C0233DA615001FB011 /* BMTodayHeadlinesDragVC.m */; };
-		05F595B7233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C1233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.m */; };
-		05F595B8233DA615001FB011 /* BMTodayHeadlinesDragVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594C2233DA615001FB011 /* BMTodayHeadlinesDragVC.xib */; };
-		05F595B9233DA615001FB011 /* BMTodayHeadlinesDragCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594C5233DA615001FB011 /* BMTodayHeadlinesDragCell.xib */; };
-		05F595BA233DA615001FB011 /* BMTodayHeadlinesDragCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C7233DA615001FB011 /* BMTodayHeadlinesDragCell.m */; };
-		05F595BB233DA615001FB011 /* BMTodayHeadlinesDragModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C9233DA615001FB011 /* BMTodayHeadlinesDragModel.m */; };
+		05F595B6233DA615001FB011 /* BMTouTiaoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C0233DA615001FB011 /* BMTouTiaoVC.m */; };
+		05F595B8233DA615001FB011 /* BMTouTiaoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594C2233DA615001FB011 /* BMTouTiaoVC.xib */; };
+		05F595B9233DA615001FB011 /* BMTouTiaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594C5233DA615001FB011 /* BMTouTiaoCell.xib */; };
+		05F595BA233DA615001FB011 /* BMTouTiaoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C7233DA615001FB011 /* BMTouTiaoCell.m */; };
+		05F595BB233DA615001FB011 /* BMTouTiaoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594C9233DA615001FB011 /* BMTouTiaoModel.m */; };
 		05F595BC233DA615001FB011 /* BMAlipayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594CE233DA615001FB011 /* BMAlipayVC.xib */; };
 		05F595BD233DA615001FB011 /* BMAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594CF233DA615001FB011 /* BMAlipayVC.m */; };
 		05F595BE233DA615001FB011 /* BMAlipayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594D2233DA615001FB011 /* BMAlipayModel.m */; };
@@ -224,9 +222,9 @@
 		05F595C3233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594DF233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m */; };
 		05F595C4233DA615001FB011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594E2233DA615001FB011 /* main.m */; };
 		05F595C5233DA615001FB011 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594E3233DA615001FB011 /* AppDelegate.m */; };
-		05F595CC233DA615001FB011 /* BMDragCellCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */; };
-		05F595CD233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594F4233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m */; };
-		05F595CE233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594F5233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib */; };
+		05F595CC233DA615001FB011 /* BMTestSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594F1233DA615001FB011 /* BMTestSizeVC.m */; };
+		05F595CD233DA615001FB011 /* BMTestSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F594F4233DA615001FB011 /* BMTestSizeCell.m */; };
+		05F595CE233DA615001FB011 /* BMTestSizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F594F5233DA615001FB011 /* BMTestSizeCell.xib */; };
 		05F595D2233DA62F001FB011 /* BMLongPressDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05F595CF233DA62F001FB011 /* BMLongPressDragCellCollectionView.podspec */; };
 		05F595D3233DA62F001FB011 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 05F595D0233DA62F001FB011 /* README.md */; };
 		05F595D4233DA62F001FB011 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05F595D1233DA62F001FB011 /* LICENSE */; };
@@ -273,9 +271,9 @@
 		05F593EC233DA614001FB011 /* BMLongPressDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLongPressDragCellCollectionView.m; sourceTree = "<group>"; };
 		05F593F0233DA614001FB011 /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
 		05F593F1233DA614001FB011 /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
-		05F593F4233DA614001FB011 /* BMImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageVC.m; sourceTree = "<group>"; };
-		05F593F5233DA614001FB011 /* BMImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageVC.xib; sourceTree = "<group>"; };
-		05F593F6233DA614001FB011 /* BMImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageVC.h; sourceTree = "<group>"; };
+		05F593F4233DA614001FB011 /* BMQQImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMQQImageVC.m; sourceTree = "<group>"; };
+		05F593F5233DA614001FB011 /* BMQQImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMQQImageVC.xib; sourceTree = "<group>"; };
+		05F593F6233DA614001FB011 /* BMQQImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMQQImageVC.h; sourceTree = "<group>"; };
 		05F593F8233DA614001FB011 /* BMImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMImageCell.xib; sourceTree = "<group>"; };
 		05F593F9233DA614001FB011 /* BMImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMImageCell.m; sourceTree = "<group>"; };
 		05F593FA233DA614001FB011 /* BMImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageCell.h; sourceTree = "<group>"; };
@@ -465,18 +463,14 @@
 		05F594B8233DA615001FB011 /* BMRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootVC.h; sourceTree = "<group>"; };
 		05F594B9233DA615001FB011 /* BMRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRootVC.m; sourceTree = "<group>"; };
 		05F594BA233DA615001FB011 /* BMRootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMRootVC.xib; sourceTree = "<group>"; };
-		05F594BD233DA615001FB011 /* BMTodayHeadlinesDragVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragVC.h; sourceTree = "<group>"; };
-		05F594BE233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+BMTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		05F594BF233DA615001FB011 /* BMSearchHistoryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSearchHistoryFlowLayout.m; sourceTree = "<group>"; };
-		05F594C0233DA615001FB011 /* BMTodayHeadlinesDragVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragVC.m; sourceTree = "<group>"; };
-		05F594C1233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+BMTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		05F594C2233DA615001FB011 /* BMTodayHeadlinesDragVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragVC.xib; sourceTree = "<group>"; };
-		05F594C3233DA615001FB011 /* BMSearchHistoryFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSearchHistoryFlowLayout.h; sourceTree = "<group>"; };
-		05F594C5233DA615001FB011 /* BMTodayHeadlinesDragCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTodayHeadlinesDragCell.xib; sourceTree = "<group>"; };
-		05F594C6233DA615001FB011 /* BMTodayHeadlinesDragCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragCell.h; sourceTree = "<group>"; };
-		05F594C7233DA615001FB011 /* BMTodayHeadlinesDragCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragCell.m; sourceTree = "<group>"; };
-		05F594C9233DA615001FB011 /* BMTodayHeadlinesDragModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTodayHeadlinesDragModel.m; sourceTree = "<group>"; };
-		05F594CA233DA615001FB011 /* BMTodayHeadlinesDragModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTodayHeadlinesDragModel.h; sourceTree = "<group>"; };
+		05F594BD233DA615001FB011 /* BMTouTiaoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTouTiaoVC.h; sourceTree = "<group>"; };
+		05F594C0233DA615001FB011 /* BMTouTiaoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTouTiaoVC.m; sourceTree = "<group>"; };
+		05F594C2233DA615001FB011 /* BMTouTiaoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTouTiaoVC.xib; sourceTree = "<group>"; };
+		05F594C5233DA615001FB011 /* BMTouTiaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTouTiaoCell.xib; sourceTree = "<group>"; };
+		05F594C6233DA615001FB011 /* BMTouTiaoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTouTiaoCell.h; sourceTree = "<group>"; };
+		05F594C7233DA615001FB011 /* BMTouTiaoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTouTiaoCell.m; sourceTree = "<group>"; };
+		05F594C9233DA615001FB011 /* BMTouTiaoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTouTiaoModel.m; sourceTree = "<group>"; };
+		05F594CA233DA615001FB011 /* BMTouTiaoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTouTiaoModel.h; sourceTree = "<group>"; };
 		05F594CD233DA615001FB011 /* BMAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipayVC.h; sourceTree = "<group>"; };
 		05F594CE233DA615001FB011 /* BMAlipayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipayVC.xib; sourceTree = "<group>"; };
 		05F594CF233DA615001FB011 /* BMAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipayVC.m; sourceTree = "<group>"; };
@@ -494,11 +488,11 @@
 		05F594E1233DA615001FB011 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05F594E2233DA615001FB011 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05F594E3233DA615001FB011 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMDragCellCollectionViewVC.m; sourceTree = "<group>"; };
-		05F594F2233DA615001FB011 /* BMDragCellCollectionViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMDragCellCollectionViewVC.h; sourceTree = "<group>"; };
-		05F594F4233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLongPressDragCellCollectionViewCell.m; sourceTree = "<group>"; };
-		05F594F5233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMLongPressDragCellCollectionViewCell.xib; sourceTree = "<group>"; };
-		05F594F6233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewCell.h; sourceTree = "<group>"; };
+		05F594F1233DA615001FB011 /* BMTestSizeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestSizeVC.m; sourceTree = "<group>"; };
+		05F594F2233DA615001FB011 /* BMTestSizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestSizeVC.h; sourceTree = "<group>"; };
+		05F594F4233DA615001FB011 /* BMTestSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTestSizeCell.m; sourceTree = "<group>"; };
+		05F594F5233DA615001FB011 /* BMTestSizeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTestSizeCell.xib; sourceTree = "<group>"; };
+		05F594F6233DA615001FB011 /* BMTestSizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTestSizeCell.h; sourceTree = "<group>"; };
 		05F595CF233DA62F001FB011 /* BMLongPressDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BMLongPressDragCellCollectionView.podspec; sourceTree = "<group>"; };
 		05F595D0233DA62F001FB011 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05F595D1233DA62F001FB011 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -609,6 +603,10 @@
 		05F593B6233DA5D0001FB011 /* BMLongPressDragCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				05F593EE233DA614001FB011 /* Category */,
+				05F593FB233DA614001FB011 /* Resources */,
+				05F594D7233DA615001FB011 /* Lib */,
+				05F594E0233DA615001FB011 /* AppDelegate */,
 				05F593E9233DA614001FB011 /* Sources */,
 				05F593ED233DA614001FB011 /* Demo */,
 				05F593BD233DA5D0001FB011 /* Main.storyboard */,
@@ -641,15 +639,11 @@
 		05F593ED233DA614001FB011 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				05F594B3233DA615001FB011 /* Home */,
 				055AE09B241722D500D25D76 /* AliPay */,
-				05F593EE233DA614001FB011 /* Category */,
-				05F593F2233DA614001FB011 /* BMImageVC */,
-				05F593FB233DA614001FB011 /* Resources */,
-				05F594B3233DA615001FB011 /* RootVC */,
-				05F594BB233DA615001FB011 /* BMTodayHeadlinesDrag */,
-				05F594D7233DA615001FB011 /* Lib */,
-				05F594E0233DA615001FB011 /* AppDelegate */,
-				05F594EF233DA615001FB011 /* BaseDemo */,
+				05F593F2233DA614001FB011 /* QQ */,
+				05F594BB233DA615001FB011 /* TouTiao */,
+				05F594EF233DA615001FB011 /* TestSize */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -671,21 +665,21 @@
 			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
-		05F593F2233DA614001FB011 /* BMImageVC */ = {
+		05F593F2233DA614001FB011 /* QQ */ = {
 			isa = PBXGroup;
 			children = (
 				05F593F3233DA614001FB011 /* Controller */,
 				05F593F7233DA614001FB011 /* View */,
 			);
-			path = BMImageVC;
+			path = QQ;
 			sourceTree = "<group>";
 		};
 		05F593F3233DA614001FB011 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05F593F4233DA614001FB011 /* BMImageVC.m */,
-				05F593F5233DA614001FB011 /* BMImageVC.xib */,
-				05F593F6233DA614001FB011 /* BMImageVC.h */,
+				05F593F6233DA614001FB011 /* BMQQImageVC.h */,
+				05F593F4233DA614001FB011 /* BMQQImageVC.m */,
+				05F593F5233DA614001FB011 /* BMQQImageVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -904,13 +898,13 @@
 			path = QQ;
 			sourceTree = "<group>";
 		};
-		05F594B3233DA615001FB011 /* RootVC */ = {
+		05F594B3233DA615001FB011 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				05F594B4233DA615001FB011 /* Model */,
 				05F594B7233DA615001FB011 /* Coltroller */,
 			);
-			path = RootVC;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		05F594B4233DA615001FB011 /* Model */ = {
@@ -932,26 +926,22 @@
 			path = Coltroller;
 			sourceTree = "<group>";
 		};
-		05F594BB233DA615001FB011 /* BMTodayHeadlinesDrag */ = {
+		05F594BB233DA615001FB011 /* TouTiao */ = {
 			isa = PBXGroup;
 			children = (
 				05F594BC233DA615001FB011 /* Controller */,
 				05F594C4233DA615001FB011 /* Cell */,
 				05F594C8233DA615001FB011 /* Model */,
 			);
-			path = BMTodayHeadlinesDrag;
+			path = TouTiao;
 			sourceTree = "<group>";
 		};
 		05F594BC233DA615001FB011 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05F594BD233DA615001FB011 /* BMTodayHeadlinesDragVC.h */,
-				05F594BE233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.h */,
-				05F594BF233DA615001FB011 /* BMSearchHistoryFlowLayout.m */,
-				05F594C0233DA615001FB011 /* BMTodayHeadlinesDragVC.m */,
-				05F594C1233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.m */,
-				05F594C2233DA615001FB011 /* BMTodayHeadlinesDragVC.xib */,
-				05F594C3233DA615001FB011 /* BMSearchHistoryFlowLayout.h */,
+				05F594BD233DA615001FB011 /* BMTouTiaoVC.h */,
+				05F594C0233DA615001FB011 /* BMTouTiaoVC.m */,
+				05F594C2233DA615001FB011 /* BMTouTiaoVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -959,9 +949,9 @@
 		05F594C4233DA615001FB011 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				05F594C5233DA615001FB011 /* BMTodayHeadlinesDragCell.xib */,
-				05F594C6233DA615001FB011 /* BMTodayHeadlinesDragCell.h */,
-				05F594C7233DA615001FB011 /* BMTodayHeadlinesDragCell.m */,
+				05F594C5233DA615001FB011 /* BMTouTiaoCell.xib */,
+				05F594C6233DA615001FB011 /* BMTouTiaoCell.h */,
+				05F594C7233DA615001FB011 /* BMTouTiaoCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -969,8 +959,8 @@
 		05F594C8233DA615001FB011 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				05F594C9233DA615001FB011 /* BMTodayHeadlinesDragModel.m */,
-				05F594CA233DA615001FB011 /* BMTodayHeadlinesDragModel.h */,
+				05F594C9233DA615001FB011 /* BMTouTiaoModel.m */,
+				05F594CA233DA615001FB011 /* BMTouTiaoModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1063,20 +1053,20 @@
 			path = Alipay2;
 			sourceTree = "<group>";
 		};
-		05F594EF233DA615001FB011 /* BaseDemo */ = {
+		05F594EF233DA615001FB011 /* TestSize */ = {
 			isa = PBXGroup;
 			children = (
 				05F594F0233DA615001FB011 /* Controller */,
 				05F594F3233DA615001FB011 /* View */,
 			);
-			path = BaseDemo;
+			path = TestSize;
 			sourceTree = "<group>";
 		};
 		05F594F0233DA615001FB011 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				05F594F2233DA615001FB011 /* BMDragCellCollectionViewVC.h */,
-				05F594F1233DA615001FB011 /* BMDragCellCollectionViewVC.m */,
+				05F594F2233DA615001FB011 /* BMTestSizeVC.h */,
+				05F594F1233DA615001FB011 /* BMTestSizeVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1084,9 +1074,9 @@
 		05F594F3233DA615001FB011 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				05F594F6233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.h */,
-				05F594F4233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m */,
-				05F594F5233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib */,
+				05F594F6233DA615001FB011 /* BMTestSizeCell.h */,
+				05F594F4233DA615001FB011 /* BMTestSizeCell.m */,
+				05F594F5233DA615001FB011 /* BMTestSizeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1207,7 +1197,7 @@
 				05F59531233DA615001FB011 /* 098@2x.png in Resources */,
 				05F595A9233DA615001FB011 /* 048@2x.png in Resources */,
 				05F5951A233DA615001FB011 /* 041@2x.png in Resources */,
-				05F595B9233DA615001FB011 /* BMTodayHeadlinesDragCell.xib in Resources */,
+				05F595B9233DA615001FB011 /* BMTouTiaoCell.xib in Resources */,
 				05F59562233DA615001FB011 /* 064@2x.png in Resources */,
 				05F59525233DA615001FB011 /* 167@2x.png in Resources */,
 				05F59579233DA615001FB011 /* 021@2x.png in Resources */,
@@ -1276,7 +1266,7 @@
 				05F5950F233DA615001FB011 /* 018@2x.png in Resources */,
 				05F595A2233DA615001FB011 /* 060@2x.png in Resources */,
 				05F5953C233DA615001FB011 /* 036@2x.png in Resources */,
-				05F594FA233DA615001FB011 /* BMImageVC.xib in Resources */,
+				05F594FA233DA615001FB011 /* BMQQImageVC.xib in Resources */,
 				05F595BC233DA615001FB011 /* BMAlipayVC.xib in Resources */,
 				05F59533233DA615001FB011 /* 186@2x.png in Resources */,
 				05F59547233DA615001FB011 /* 192@2x.png in Resources */,
@@ -1296,7 +1286,7 @@
 				05F595B4233DA615001FB011 /* BMRootVC.xib in Resources */,
 				05F594FD233DA615001FB011 /* 充值中心.png in Resources */,
 				05F595A1233DA615001FB011 /* 160@2x.png in Resources */,
-				05F595CE233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.xib in Resources */,
+				05F595CE233DA615001FB011 /* BMTestSizeCell.xib in Resources */,
 				05F594FE233DA615001FB011 /* 花呗.png in Resources */,
 				05F595C0233DA615001FB011 /* BMAlipayCell.xib in Resources */,
 				05F59511233DA615001FB011 /* 065@2x.png in Resources */,
@@ -1345,7 +1335,7 @@
 				05F59550233DA615001FB011 /* 026@2x.png in Resources */,
 				05F5950A233DA615001FB011 /* 096@2x.png in Resources */,
 				05F59595233DA615001FB011 /* 158@2x.png in Resources */,
-				05F595B8233DA615001FB011 /* BMTodayHeadlinesDragVC.xib in Resources */,
+				05F595B8233DA615001FB011 /* BMTouTiaoVC.xib in Resources */,
 				05F5959D233DA615001FB011 /* 072@2x.png in Resources */,
 				05F59593233DA615001FB011 /* 025@2x.png in Resources */,
 				05F59596233DA615001FB011 /* 046@2x.png in Resources */,
@@ -1419,26 +1409,24 @@
 			files = (
 				05F595C5233DA615001FB011 /* AppDelegate.m in Sources */,
 				05F595C1233DA615001FB011 /* UICollectionView+BMDynamicLayout.m in Sources */,
-				05F595B5233DA615001FB011 /* BMSearchHistoryFlowLayout.m in Sources */,
 				05F594F7233DA615001FB011 /* BMLongPressDragCellCollectionView.m in Sources */,
 				05F595BF233DA615001FB011 /* BMAlipayCell.m in Sources */,
 				05402A2223CF093E00B1DE21 /* BMAlipay2HeaderView.m in Sources */,
-				05F595BA233DA615001FB011 /* BMTodayHeadlinesDragCell.m in Sources */,
+				05F595BA233DA615001FB011 /* BMTouTiaoCell.m in Sources */,
 				05F595C3233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */,
 				05402A2023CF093E00B1DE21 /* BMAlipay2FooterView.m in Sources */,
-				05F595CD233DA615001FB011 /* BMLongPressDragCellCollectionViewCell.m in Sources */,
+				05F595CD233DA615001FB011 /* BMTestSizeCell.m in Sources */,
 				05F595B3233DA615001FB011 /* BMRootVC.m in Sources */,
 				05F595BE233DA615001FB011 /* BMAlipayModel.m in Sources */,
-				05F595CC233DA615001FB011 /* BMDragCellCollectionViewVC.m in Sources */,
+				05F595CC233DA615001FB011 /* BMTestSizeVC.m in Sources */,
 				05F595C2233DA615001FB011 /* UICollectionReusableView+BMAutomaticRegister.m in Sources */,
-				05F594F9233DA615001FB011 /* BMImageVC.m in Sources */,
+				05F594F9233DA615001FB011 /* BMQQImageVC.m in Sources */,
 				05F595B2233DA615001FB011 /* BMModel.m in Sources */,
 				05F594FC233DA615001FB011 /* BMImageCell.m in Sources */,
 				05F594F8233DA615001FB011 /* UITableViewCell+BMReusable.m in Sources */,
 				05402A2423CF093E00B1DE21 /* BMAlipay2VC.m in Sources */,
-				05F595B7233DA615001FB011 /* UICollectionView+BMTemplateLayoutCell.m in Sources */,
-				05F595BB233DA615001FB011 /* BMTodayHeadlinesDragModel.m in Sources */,
-				05F595B6233DA615001FB011 /* BMTodayHeadlinesDragVC.m in Sources */,
+				05F595BB233DA615001FB011 /* BMTouTiaoModel.m in Sources */,
+				05F595B6233DA615001FB011 /* BMTouTiaoVC.m in Sources */,
 				05F595C4233DA615001FB011 /* main.m in Sources */,
 				05F595BD233DA615001FB011 /* BMAlipayVC.m in Sources */,
 			);

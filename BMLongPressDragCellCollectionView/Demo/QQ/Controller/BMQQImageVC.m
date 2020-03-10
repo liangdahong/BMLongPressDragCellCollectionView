@@ -1,16 +1,16 @@
 //
-//  BMImageVC.m
+//  BMQQImageVC.m
 //  BMLongPressDragCellCollectionViewDemo
 //
 //  Created by __liangdahong on 2017/7/31.
 //  Copyright © 2017年 https://liangdahong.com All rights reserved.
 //
 
-#import "BMImageVC.h"
+#import "BMQQImageVC.h"
 #import "BMLongPressDragCellCollectionView.h"
 #import "BMImageCell.h"
 
-@interface BMImageVC () <BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
+@interface BMQQImageVC () <BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet BMLongPressDragCellCollectionView *imageCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
@@ -20,7 +20,7 @@
 
 static NSString *imageIdentifier = @"imageIdentifier";
 
-@implementation BMImageVC
+@implementation BMQQImageVC
 
 - (UICollectionViewFlowLayout *)collectionViewFlowLayout {
     if (!_collectionViewFlowLayout) {
@@ -38,12 +38,10 @@ static NSString *imageIdentifier = @"imageIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    {
-        self.imageCollectionView.dragCellAlpha = 0.9;
-        self.imageCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
-        self.imageCollectionView.alwaysBounceVertical = YES;
-        [self.imageCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMImageCell.class) bundle:nil] forCellWithReuseIdentifier:imageIdentifier];
-    }
+    self.imageCollectionView.dragCellAlpha = 0.9;
+    self.imageCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
+    self.imageCollectionView.alwaysBounceVertical = YES;
+    [self.imageCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMImageCell.class) bundle:nil] forCellWithReuseIdentifier:imageIdentifier];
 }
 
 - (NSMutableArray<NSDictionary *> *)dataSourceArray {

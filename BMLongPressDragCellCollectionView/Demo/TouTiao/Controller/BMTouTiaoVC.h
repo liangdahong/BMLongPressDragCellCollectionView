@@ -1,5 +1,5 @@
 //
-//  BMTodayHeadlinesDragVC.h
+//  BMTouTiaoVC.h
 //  TodayHeadlinesDrag
 //
 //  Created by __liangdahong on 2017/7/23.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BMTodayHeadlinesDragVC : UIViewController
+@interface BMTouTiaoVC : UIViewController
 
 @property (assign, nonatomic) int count; ///< count
 

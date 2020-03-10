@@ -9,10 +9,10 @@
 #import "BMRootVC.h"
 #import "BMModel.h"
 #import "UITableViewCell+BMReusable.h"
-#import "BMTodayHeadlinesDragVC.h"
-#import "BMDragCellCollectionViewVC.h"
+#import "BMTouTiaoVC.h"
+#import "BMTestSizeVC.h"
 #import "BMAlipayVC.h"
-#import "BMImageVC.h"
+#import "BMQQImageVC.h"
 
 @interface BMRootVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -22,8 +22,6 @@
 @end
 
 @implementation BMRootVC
-
-#pragma mark -
 
 #pragma mark - 生命周期
 
@@ -44,7 +42,7 @@
         _modelArray = @[
                         @[
                             [BMModel modelWithTitle:@"支付宝" selector:@selector(alipayDragMoreScreenWithModel:)],
-                            [BMModel modelWithTitle:@"支付宝2" selector:@selector(alipayDragMoreScreenWithModel2:)],
+                            [BMModel modelWithTitle:@"支付宝 (多组)" selector:@selector(alipayDragMoreScreenWithModel2:)],
                             ],
                         @[
                             [BMModel modelWithTitle:@"今日头条（超过一屏）" selector:@selector(todayHeadlinesDragMoreScreenWithModel:)],
@@ -136,13 +134,13 @@
 #pragma mark - 今日头条
 
 - (void)todayHeadlinesDragMoreScreenWithModel:(BMModel *)mdoel {
-    BMTodayHeadlinesDragVC *vc = [BMTodayHeadlinesDragVC new];
+    BMTouTiaoVC *vc = [BMTouTiaoVC new];
     vc.count = 30;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)todayHeadlinesDragWithModel:(BMModel *)mdoel {
-    BMTodayHeadlinesDragVC *vc = [BMTodayHeadlinesDragVC new];
+    BMTouTiaoVC *vc = [BMTouTiaoVC new];
     vc.count = 10;
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -154,7 +152,7 @@
 #pragma mark - 表情
 
 - (void)imageDragWithModel:(BMModel *)mdoel {
-    BMImageVC *vc = [BMImageVC new];
+    BMQQImageVC *vc = [BMQQImageVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -200,7 +198,7 @@
 }
 
 - (void)pushVCWithArray:(NSArray *)array {
-    BMDragCellCollectionViewVC *vc = [BMDragCellCollectionViewVC new];
+    BMTestSizeVC *vc = [BMTestSizeVC new];
     vc.dataSource = [array mutableCopy];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"请选择布局方向" message:nil preferredStyle:0];
     [alert addAction:[UIAlertAction actionWithTitle:@"垂直方向" style:0 handler:^(UIAlertAction * _Nonnull action) {

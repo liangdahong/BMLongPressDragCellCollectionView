@@ -1,5 +1,5 @@
 //
-//  BMImageVC.h
+//  BMQQImageVC.h
 //  BMLongPressDragCellCollectionViewDemo
 //
 //  Created by __liangdahong on 2017/7/31.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BMImageVC : UIViewController
+@interface BMQQImageVC : UIViewController
 
 @end

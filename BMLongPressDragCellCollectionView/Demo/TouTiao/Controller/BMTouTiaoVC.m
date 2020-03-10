@@ -1,30 +1,30 @@
 //
-//  BMTodayHeadlinesDragVC.m
+//  BMTouTiaoVC.m
 //  TodayHeadlinesDrag
 //
 //  Created by __liangdahong on 2017/7/23.
 //  Copyright © 2017年 https://liangdahong.com All rights reserved.
 //
 
-#import "BMTodayHeadlinesDragVC.h"
+#import "BMTouTiaoVC.h"
 #import "BMLongPressDragCellCollectionView.h"
-#import "BMTodayHeadlinesDragModel.h"
-#import "BMTodayHeadlinesDragCell.h"
+#import "BMTouTiaoModel.h"
+#import "BMTouTiaoCell.h"
 
 #define WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-@interface BMTodayHeadlinesDragVC () <BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
+@interface BMTouTiaoVC () <BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet BMLongPressDragCellCollectionView *dragCellCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
-@property (strong, nonatomic) NSMutableArray <NSMutableArray <BMTodayHeadlinesDragModel *>*>*dataSourceArray;
+@property (strong, nonatomic) NSMutableArray <NSMutableArray <BMTouTiaoModel *>*>*dataSourceArray;
 
 @end
 
 static NSString *reuseIdentifier = @"reuseIdentifier";
 
-@implementation BMTodayHeadlinesDragVC
+@implementation BMTouTiaoVC
 
 
 - (UICollectionViewFlowLayout *)collectionViewFlowLayout {
@@ -48,11 +48,11 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         self.dragCellCollectionView.dragCellAlpha = 0.9;
         self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
         self.dragCellCollectionView.alwaysBounceVertical = YES;
-        [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMTodayHeadlinesDragCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+        [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMTouTiaoCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     }
 }
 
-- (NSMutableArray<NSMutableArray<BMTodayHeadlinesDragModel *> *> *)dataSourceArray {
+- (NSMutableArray<NSMutableArray<BMTouTiaoModel *> *> *)dataSourceArray {
     if (!_dataSourceArray) {
         _dataSourceArray = [@[] mutableCopy];
         int sec = 2;
@@ -63,7 +63,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
                 row = self.count;
             }
             while (row--) {
-                BMTodayHeadlinesDragModel *obj = [BMTodayHeadlinesDragModel new];
+                BMTouTiaoModel *obj = [BMTouTiaoModel new];
                 if (arc4random_uniform(6) == 1) {
                     obj.title = [NSString stringWithFormat:@"类%d(%d%d)", arc4random_uniform(300), sec, row];
                 } else {
@@ -86,8 +86,8 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    BMTodayHeadlinesDragCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+    BMTouTiaoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    BMTouTiaoModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
     if (indexPath.section == 0) {
         if (indexPath.item == 0) {
             cell.removeButton.hidden = YES;
@@ -124,9 +124,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
     if (indexPath.section == 0) {
         // 删除操作
-        BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+        BMTouTiaoModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
 
-        BMTodayHeadlinesDragCell *cell = (BMTodayHeadlinesDragCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        BMTouTiaoCell *cell = (BMTouTiaoCell *)[collectionView cellForItemAtIndexPath:indexPath];
         cell.removeButton.hidden = YES;
         cell.titleLabel.text = [NSString stringWithFormat:@"＋ %@", todayHeadlinesDragModel.title];
         NSMutableArray *secArray0 = self.dataSourceArray[indexPath.section];
@@ -138,9 +138,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
         [collectionView moveItemAtIndexPath:indexPath toIndexPath:[NSIndexPath indexPathForItem:secArray1.count-1 inSection:1]];
     } else {
         // 添加操作
-        BMTodayHeadlinesDragModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
+        BMTouTiaoModel *todayHeadlinesDragModel = self.dataSourceArray[indexPath.section][indexPath.row];
 
-        BMTodayHeadlinesDragCell *cell = (BMTodayHeadlinesDragCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        BMTouTiaoCell *cell = (BMTouTiaoCell *)[collectionView cellForItemAtIndexPath:indexPath];
         cell.removeButton.hidden = NO;
         cell.titleLabel.text = todayHeadlinesDragModel.title;
         

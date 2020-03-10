@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BMDragCellCollectionViewVC : UIViewController
+@interface BMTestSizeVC : UIViewController
 
 @property (strong, nonatomic) NSMutableArray *dataSource;
 @property (nonatomic, assign) UICollectionViewScrollDirection collectionViewScrollDirection;

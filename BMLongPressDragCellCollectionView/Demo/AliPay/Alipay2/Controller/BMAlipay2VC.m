@@ -29,13 +29,10 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    {
-        self.dragCellCollectionView.dragCellAlpha = 0.9;
-        self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
-        self.dragCellCollectionView.alwaysBounceVertical = YES;
-        [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMAlipayCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
-    }
+    self.dragCellCollectionView.dragCellAlpha = 0.9;
+    self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
+    self.dragCellCollectionView.alwaysBounceVertical = YES;
+    [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMAlipayCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
 - (NSMutableArray<NSArray <BMAlipayModel *>*> *)dataSourceArray {
