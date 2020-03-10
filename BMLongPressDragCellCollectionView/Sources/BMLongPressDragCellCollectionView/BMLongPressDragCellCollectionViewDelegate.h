@@ -26,13 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class BMLongPressDragCellCollectionView;
 
-/// BMLongPressDragCellCollectionViewDelegate protocol
 @protocol BMLongPressDragCellCollectionViewDelegate <UICollectionViewDelegateFlowLayout>
 
 @required
 
 /**
- Cell 有任何交换时调用
+ Cell 有交换时调用
  
  @param dragCellCollectionView dragCellCollectionView
  @param newDataArray 最新的数据源，需要使用者保存，在拖拽的时候 Cell 已经移动，需保存最新的数据源
@@ -46,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 /**
- 将要开始拖拽时，询问此位置的Cell是否可以拖拽
+ 将要开始拖拽时，询问此位置的Cell是否能拖拽
  
  @param dragCellCollectionView dragCellCollectionView
  @param indexPath indexPath
@@ -55,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)dragCellCollectionViewShouldBeginMove:(BMLongPressDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath;
 
 /**
- 将要交换时，询问是否可以交换
+ 将要交换时，询问是否能交换
  Will exchange, asked if they can exchange
  
  @param dragCellCollectionView dragCellCollectionView

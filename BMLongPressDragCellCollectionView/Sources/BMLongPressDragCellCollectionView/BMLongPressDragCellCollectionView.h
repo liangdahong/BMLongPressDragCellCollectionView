@@ -28,31 +28,39 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// 可以长按拖拽 Cell 的 UICollectionView
+/*
+ - (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+     return self.dataSourceArray;
+     // 此协议方法里返回数据源
+ }
+
+ - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
+     self.dataSourceArray = [newDataArray mutableCopy];
+     // 此协议方法里保存数据源
+ }
+ */
+/// 可以长按拖拽的 UICollectionView
 @interface BMLongPressDragCellCollectionView : UICollectionView
 
-/// 代理 delegate
 @property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDelegate> delegate;
-
-/// 数据源代理 dataSource
 @property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDataSource> dataSource;
 
-/// 长按触发拖拽所需时间，默认是 0.5 秒
+/// 长按触发拖拽所需时间，默认是 0.5 秒。
 @property (nonatomic, assign) NSTimeInterval minimumPressDuration;
-/// 是否可以拖拽 默认为 YES
+/// 是否可以拖拽 默认为 YES。
 @property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
-///  长按拖拽时拖拽中的的 Cell 缩放比例，默认是 1.2
+///  长按拖拽时拖拽中的的 Cell 缩放比例，默认是 1.2 倍。
 @property (nonatomic, assign) CGFloat dragZoomScale;
-/// 拖拽的 Cell 在拖拽移动时的透明度 默认是： 1.0 不透明
+/// 拖拽的 Cell 在拖拽移动时的透明度 默认是： 1.0 不透明。
 @property (nonatomic, assign) CGFloat dragCellAlpha;
-/// 拖拽速度  默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间
+/// 拖拽到 UICollectionView 边缘时 UICollectionView 的滚动速度  默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间。
 @property (nonatomic, assign) CGFloat dragSpeed;
-/// 拖拽 View 的背景颜色,建议不要设置，默认和拖拽的 Cell 一样
+/// 拖拽 View 的背景颜色，默认和被拖拽的 Cell 一样。
 @property (nonatomic, strong, nullable) UIColor *dragSnapedViewBackgroundColor;
 
 /// 移动到指定位置
 /// @param indexPath 移动到的位置
-/// 内部只会处理当前正在拖拽的情况，会把拖拽的Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用
+/// 内部只会处理当前正在拖拽的情况，会把拖拽的 Cell 移动到指定位置，建议在停止手势时或者认为适当的时候使用。
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 
 @end

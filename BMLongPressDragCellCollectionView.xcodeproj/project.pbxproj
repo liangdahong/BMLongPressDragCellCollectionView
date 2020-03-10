@@ -575,6 +575,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		055AE09B241722D500D25D76 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				05F594CB233DA615001FB011 /* Alipay1 */,
+				05F594E4233DA615001FB011 /* Alipay2 */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
 		05F593AB233DA5D0001FB011 = {
 			isa = PBXGroup;
 			children = (
@@ -632,15 +641,14 @@
 		05F593ED233DA614001FB011 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				055AE09B241722D500D25D76 /* AliPay */,
 				05F593EE233DA614001FB011 /* Category */,
 				05F593F2233DA614001FB011 /* BMImageVC */,
 				05F593FB233DA614001FB011 /* Resources */,
 				05F594B3233DA615001FB011 /* RootVC */,
 				05F594BB233DA615001FB011 /* BMTodayHeadlinesDrag */,
-				05F594CB233DA615001FB011 /* AlipayVC */,
 				05F594D7233DA615001FB011 /* Lib */,
 				05F594E0233DA615001FB011 /* AppDelegate */,
-				05F594E4233DA615001FB011 /* Alipay2VC */,
 				05F594EF233DA615001FB011 /* BaseDemo */,
 			);
 			path = Demo;
@@ -967,14 +975,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		05F594CB233DA615001FB011 /* AlipayVC */ = {
+		05F594CB233DA615001FB011 /* Alipay1 */ = {
 			isa = PBXGroup;
 			children = (
 				05F594CC233DA615001FB011 /* Controller */,
 				05F594D0233DA615001FB011 /* Model */,
 				05F594D3233DA615001FB011 /* View */,
 			);
-			path = AlipayVC;
+			path = Alipay1;
 			sourceTree = "<group>";
 		};
 		05F594CC233DA615001FB011 /* Controller */ = {
@@ -999,9 +1007,9 @@
 		05F594D3233DA615001FB011 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05F594D6233DA615001FB011 /* BMAlipayCell.h */,
 				05F594D4233DA615001FB011 /* BMAlipayCell.m */,
 				05F594D5233DA615001FB011 /* BMAlipayCell.xib */,
-				05F594D6233DA615001FB011 /* BMAlipayCell.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1045,14 +1053,14 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		05F594E4233DA615001FB011 /* Alipay2VC */ = {
+		05F594E4233DA615001FB011 /* Alipay2 */ = {
 			isa = PBXGroup;
 			children = (
 				05402A1C23CF093E00B1DE21 /* Controller */,
 				05402A1B23CF093E00B1DE21 /* Model */,
 				05402A1223CF093E00B1DE21 /* View */,
 			);
-			path = Alipay2VC;
+			path = Alipay2;
 			sourceTree = "<group>";
 		};
 		05F594EF233DA615001FB011 /* BaseDemo */ = {
@@ -1604,7 +1612,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG78JT6CG8;
 				INFOPLIST_FILE = "$(SRCROOT)/BMLongPressDragCellCollectionView/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1622,7 +1630,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG78JT6CG8;
 				INFOPLIST_FILE = "$(SRCROOT)/BMLongPressDragCellCollectionView/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -28,10 +28,46 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dragCellCollectionView.dragCellAlpha = 0.9;
+    self.dragCellCollectionView.dragCellAlpha        = 0.9;
     self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
     self.dragCellCollectionView.alwaysBounceVertical = YES;
     [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMAlipayCell.class) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"配置" style:(UIBarButtonItemStylePlain) target:self action:@selector(settingClick)];
+}
+
+
+- (void)settingClick {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"配置" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"调整拖拽 cell 的缩放比例" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self dragZoomScale];
+    }]];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"拖拽的 Cell 在拖拽移动时的透明度例" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self dragCellAlpha];
+    }]];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
+
+- (void)dragZoomScale {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"调整拖拽 cell 的缩放比例" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [@[@"0.5", @"0.7", @"1.0", @"1.2", @"1.5", @"2.0", @"3.0", @"4.0",] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [alertVC addAction:[UIAlertAction actionWithTitle:obj style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            self.dragCellCollectionView.dragZoomScale = action.title.floatValue;
+        }]];
+    }];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
+
+- (void)dragCellAlpha {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"拖拽的 Cell 在拖拽移动时的透明度" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [@[@"0.4", @"0.5", @"0.6", @"0.7", @"1.0"] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [alertVC addAction:[UIAlertAction actionWithTitle:obj style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            self.dragCellCollectionView.dragCellAlpha = action.title.floatValue;
+        }]];
+    }];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertVC animated:YES completion:nil];
 }
 
 - (NSMutableArray<BMAlipayModel *> *)dataSourceArray {
@@ -81,6 +117,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     cell.model = self.dataSourceArray[indexPath.row];
 }
 
+// === BMLongPressDragCellCollectionView 的核心方法 ↓
 - (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataSourceArray;
 }
@@ -88,5 +125,6 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
+// === BMLongPressDragCellCollectionView 的核心方法 ↑
 
 @end
