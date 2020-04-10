@@ -1,6 +1,6 @@
 # BMLongPressDragCellCollectionView
 
-## 演示
+## 效果演示
 
 <p align="center">
     <img  width="30%" src="1.gif"/>
