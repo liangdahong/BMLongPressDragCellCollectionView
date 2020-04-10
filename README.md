@@ -16,11 +16,6 @@
 <a href="#"><img src="https://img.shields.io/badge/licenses-MIT-red.svg"></a>
 </p>
 
-
-### ⭐️ Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/liangdahong/BMLongPressDragCellCollectionView.svg)](https://starchart.cc/liangdahong/BMLongPressDragCellCollectionView)
-
 ## 介绍
 
 - 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，iOS8+，具体可查看代码。
@@ -41,4 +36,4 @@ pod install
 
 ## License    
 
-BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
+[BMLongPressDragCellCollectionView](https://github.com/liangdahong/BMLongPressDragCellCollectionView) is released under the [MIT license](LICENSE). See LICENSE for details.
