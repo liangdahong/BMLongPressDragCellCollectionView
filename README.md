@@ -18,18 +18,11 @@
 
 - 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，`iOS8+`，具体可查看代码。
 
-
 ##  CocoaPods 安装
 
 ```ruby
 pod 'BMLongPressDragCellCollectionView'
-```
-
-```ruby
 pod install
-```
-
-```objective-c
 #import "BMLongPressDragCellCollectionView.h"
 ```
 
@@ -108,5 +101,4 @@ pod install
 [https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight)
 
 ## License    
-
 BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
