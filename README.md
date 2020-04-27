@@ -1,5 +1,3 @@
-# BMLongPressDragCellCollectionView
-
 ## 效果演示
 
 <p align="center">
