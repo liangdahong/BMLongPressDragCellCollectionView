@@ -96,8 +96,8 @@ pod install
 如果要做一些自定义的操作可以通过设置 `BMLongPressDragCellCollectionView` 的相关属性或者实现一些特定的协议方法来处理，可查看 `BMLongPressDragCellCollectionView` 的头文件和 `BMLongPressDragCellCollectionViewDelegate` 与 `BMLongPressDragCellCollectionViewDataSource` 协议。
 
 ## 联系
-- 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [P R](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
-- 也可以加微信 `liangdahong2014` 交流和学习。
+- 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
+- 也可以加微信 `liangdahong2014` 交流和学习
 
 ## 感谢
 
