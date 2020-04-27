@@ -18,10 +18,10 @@
 
 ## 介绍
 
-- 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，支持 iOS7+，具体可查看代码。
+- 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，`iOS8+`，具体可查看代码。
 
 
-##  CocoaPods
+##  CocoaPods 安装
 
 ```ruby
 pod 'BMLongPressDragCellCollectionView'
@@ -34,6 +34,11 @@ pod install
 ```objective-c
 #import "BMLongPressDragCellCollectionView.h"
 ```
+
+##  手动安装
+
+- 下载项目 【clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git】
+-  将 `BMLongPressDragCellCollectionView/Sources/BMLongPressDragCellCollectionView`  文件夹下的全部内容拖拽到你的项目。
 
 ## 使用说明
 
