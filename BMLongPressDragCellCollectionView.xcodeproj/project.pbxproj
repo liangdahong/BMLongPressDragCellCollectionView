@@ -521,6 +521,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043CA9C02456BAF900FB9982 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				05F594B3233DA615001FB011 /* Home */,
+				055AE09B241722D500D25D76 /* AliPay */,
+				05F593F2233DA614001FB011 /* QQ */,
+				05F594BB233DA615001FB011 /* TouTiao */,
+				05F594EF233DA615001FB011 /* TestSize */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		05402A1223CF093E00B1DE21 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,12 +613,8 @@
 		05F593B6233DA5D0001FB011 /* BMLongPressDragCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				05F594E0233DA615001FB011 /* AppDelegate */,
-				05F593ED233DA614001FB011 /* Demo */,
-				05F593EE233DA614001FB011 /* Category */,
-				05F593FB233DA614001FB011 /* Resources */,
-				05F594D7233DA615001FB011 /* Lib */,
 				05F593E9233DA614001FB011 /* Sources */,
+				05F593ED233DA614001FB011 /* Demo */,
 				05F593C0233DA5D1001FB011 /* Assets.xcassets */,
 				05F593C2233DA5D1001FB011 /* LaunchScreen.storyboard */,
 				05F593C5233DA5D1001FB011 /* Info.plist */,
@@ -636,11 +644,11 @@
 		05F593ED233DA614001FB011 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				05F594B3233DA615001FB011 /* Home */,
-				055AE09B241722D500D25D76 /* AliPay */,
-				05F593F2233DA614001FB011 /* QQ */,
-				05F594BB233DA615001FB011 /* TouTiao */,
-				05F594EF233DA615001FB011 /* TestSize */,
+				05F594E0233DA615001FB011 /* AppDelegate */,
+				043CA9C02456BAF900FB9982 /* Classes */,
+				05F593EE233DA614001FB011 /* Category */,
+				05F593FB233DA614001FB011 /* Resources */,
+				05F594D7233DA615001FB011 /* Lib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";

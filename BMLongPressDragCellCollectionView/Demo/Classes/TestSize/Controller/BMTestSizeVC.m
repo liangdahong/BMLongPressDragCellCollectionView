@@ -14,7 +14,7 @@
 #define WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-@interface BMTestSizeVC () <UICollectionViewDelegateFlowLayout,BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
+@interface BMTestSizeVC () <BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource>
 
 @property (nonatomic, strong) BMLongPressDragCellCollectionView *collectionView; // collectionView
 @property (strong, nonatomic) NSMutableArray *dataSourceArray;
@@ -38,9 +38,11 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
     if (_collectionView == nil) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = self.collectionViewScrollDirection;
+
         _collectionView = [[BMLongPressDragCellCollectionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
+
         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         layout.minimumLineSpacing = arc4random_uniform(20)+1;
         layout.minimumInteritemSpacing = arc4random_uniform(20)+1;
