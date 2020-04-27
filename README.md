@@ -37,7 +37,7 @@ pod install
 
 ##  手动安装
 
-- 下载项目 【clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git】
+- 下载项目 【 `clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git` 】
 -  将 `BMLongPressDragCellCollectionView/Sources/BMLongPressDragCellCollectionView`  文件夹下的全部内容拖拽到你的项目。
 
 ## 使用说明
@@ -96,7 +96,7 @@ pod install
 如果要做一些自定义的操作可以通过设置 `BMLongPressDragCellCollectionView` 的相关属性或者实现一些特定的协议方法来处理，可查看 `BMLongPressDragCellCollectionView` 的头文件和 `BMLongPressDragCellCollectionViewDelegate` 与 `BMLongPressDragCellCollectionViewDataSource` 协议。
 
 ## 联系
-- 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
+- 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [P R](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
 - 也可以加微信 `liangdahong2014` 交流和学习。
 
 ## 感谢
