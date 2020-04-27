@@ -102,7 +102,7 @@ pod install
 
 ## 其他
 
-- 基于 [BMLongPressDragCellCollectionView](https://github.com/liangdahong/BMLongPressDragCellCollectionView) 实现的头条频道编辑效果。
+- https://github.com/liangdahong/ToutiaoDemo 基于 [BMLongPressDragCellCollectionView](https://github.com/liangdahong/BMLongPressDragCellCollectionView) 实现的头条频道编辑效果。
 
 ## License    
 BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
