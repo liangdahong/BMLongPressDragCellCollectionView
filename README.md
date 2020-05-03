@@ -15,7 +15,6 @@
 </p>
 
 ## 介绍
-
 - 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，`iOS8+`，具体可查看代码。
 
 ##  CocoaPods 安装
@@ -88,11 +87,9 @@ pod install
 - 也可以加微信 `liangdahong2014` 交流和学习
 
 ## 感谢
-
 - [BMLongPressDragCellCollectionView](https://github.com/liangdahong/BMLongPressDragCellCollectionView) 的核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)
 
 ## 相关推荐
-### UITableViewDynamicLayoutCacheHeight
 - 🖖高性能的自动计算采用 Autolayout 布局的 UITableViewCell 和 UITableViewHeaderFooterView 的高度，内部自动管理高度缓存。
 [https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight)
 
