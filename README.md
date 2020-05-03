@@ -87,7 +87,7 @@ pod install
 - 也可以加微信 `liangdahong2014` 交流和学习
 
 ## 感谢
-- [BMLongPressDragCellCollectionView](https://github.com/liangdahong/BMLongPressDragCellCollectionView) 的核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)
+- 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)，特别感谢。
 
 ## 相关推荐
 - 🖖高性能的自动计算采用 Autolayout 布局的 UITableViewCell 和 UITableViewHeaderFooterView 的高度，内部自动管理高度缓存。
