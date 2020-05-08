@@ -53,7 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat dragZoomScale;
 /// 拖拽的 Cell 在拖拽移动时的透明度 默认是： 1.0 不透明。
 @property (nonatomic, assign) CGFloat dragCellAlpha;
-/// 拖拽到 UICollectionView 边缘时 UICollectionView 的滚动速度  默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间。
+/// 拖拽到 UICollectionView 边缘时 UICollectionView 的滚动速度
+/// 默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间。
 @property (nonatomic, assign) CGFloat dragSpeed;
 /// 拖拽 View 的背景颜色，默认和被拖拽的 Cell 一样。
 @property (nonatomic, strong, nullable) UIColor *dragSnapedViewBackgroundColor;

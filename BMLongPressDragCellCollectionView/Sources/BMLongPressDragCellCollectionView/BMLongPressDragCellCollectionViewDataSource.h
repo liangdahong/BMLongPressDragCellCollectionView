@@ -35,8 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param dragCellCollectionView dragCellCollectionView
  @return 最新的数据源
- 
- - (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+
+  - (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataArray;
  }
  */

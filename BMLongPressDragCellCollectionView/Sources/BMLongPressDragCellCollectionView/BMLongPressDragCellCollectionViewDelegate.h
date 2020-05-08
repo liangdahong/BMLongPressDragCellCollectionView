@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param dragCellCollectionView dragCellCollectionView
  @param newDataArray 最新的数据源，需要使用者保存，在拖拽的时候 Cell 已经移动，需保存最新的数据源
- 
+
  - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
     self.dataArray = [newDataArray copy];
  }
@@ -55,58 +55,42 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  将要开始拖拽时，向外面获取需要拖拽的 View，如果不实现就内部自动处理。
- Began to drag and drop, to obtain the drag and drop the View outside, if you don't realize is using the snapshot function
- 
+
  @param dragCellCollectionView dragCellCollectionView
  @param indexPath indexPath
  @return dragView
  */
 - (UIView *)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath;
 
-/**
- 开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作
- 
- @param dragCellCollectionView dragCellCollectionView
- @param dragView dragView
- @param indexPath indexPath
- */
+/// 开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param dragView dragView
+/// @param indexPath indexPath
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath;
 
-/**
- 正在拖拽时
- 
- @param dragCellCollectionView dragCellCollectionView
- @param point 响应点击
- @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
- */
+/// 正在拖拽时
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param point 响应点
+/// @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
 
-/**
- cell 将要交换时，询问是否能交换
- 
- @param dragCellCollectionView dragCellCollectionView
- @param sourceIndexPath 原来的IndexPath
- @param destinationIndexPath 将要交换的IndexPath
- @return YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
- */
+/// cell 将要交换时，询问是否能交换
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param sourceIndexPath 原来的 IndexPath
+/// @param destinationIndexPath 将要交换的 IndexPath
+/// YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
 - (BOOL)dragCellCollectionViewShouldBeginExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
-/**
- cell 结束交换时
- 
- @param dragCellCollectionView dragCellCollectionView
- @param sourceIndexPath 原来的IndexPath
- @param destinationIndexPath 将要交换的IndexPath
- */
+/// 结束交换时
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param sourceIndexPath 原来的 IndexPath
+/// @param destinationIndexPath 将要交换的 IndexPath
 - (void)dragCellCollectionViewShouldEndExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
-/**
- 结束拖拽时
- 
- @param dragCellCollectionView dragCellCollectionView
- @param point 响应点
- @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
- */
+/// 结束拖拽时
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param point 响应点
+/// @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
 
 @end

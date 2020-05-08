@@ -52,24 +52,27 @@
 @end
 
 typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
-    BMLongPressDragCellCollectionViewScrollDirectionNone = 0,
-    BMLongPressDragCellCollectionViewScrollDirectionLeft,
-    BMLongPressDragCellCollectionViewScrollDirectionRight,
-    BMLongPressDragCellCollectionViewScrollDirectionUp,
-    BMLongPressDragCellCollectionViewScrollDirectionDown,
+    BMLongPressDragCellCollectionViewScrollDirectionNone  = 0,
+    BMLongPressDragCellCollectionViewScrollDirectionLeft  = 1,
+    BMLongPressDragCellCollectionViewScrollDirectionRight = 2,
+    BMLongPressDragCellCollectionViewScrollDirectionUp    = 3,
+    BMLongPressDragCellCollectionViewScrollDirectionDown  = 4,
 };
 
 @interface BMLongPressDragCellCollectionView ()
 
-@property (nonatomic, strong, nullable) UILongPressGestureRecognizer *longGesture; ///< 长按手势
-@property (nonatomic, strong, nullable) UIView *snapedView;                        ///< 截图快照
-@property (nonatomic, strong, nullable) CADisplayLink *edgeTimer;                  ///< 定时器
-@property (nonatomic, strong, nullable) NSIndexPath *oldIndexPath;                 ///< 旧的IndexPath
-@property (nonatomic, strong, nullable) NSIndexPath *currentIndexPath;             ///< 当前路径
-@property (nonatomic, assign) BOOL    isEndDrag;                                   ///< 是否已经停止拖动
-@property (nonatomic, assign) BOOL    banReload;                                   ///< 禁止刷新
-@property (nonatomic, assign) CGPoint oldPoint;                                    ///< 旧的位置
-@property (nonatomic, assign) CGPoint lastPoint;                                   ///< 最后的触摸点
+/// 长按手势
+@property (nonatomic, strong, nullable) UILongPressGestureRecognizer *longGesture;
+@property (nonatomic, strong, nullable) UIView *snapedView;       /// 截图快照
+@property (nonatomic, strong, nullable) CADisplayLink *edgeTimer; /// 定时器
+
+@property (nonatomic, strong, nullable) NSIndexPath *oldIndexPath;     /// 旧的IndexPath
+@property (nonatomic, strong, nullable) NSIndexPath *currentIndexPath; /// 当前路径
+
+@property (nonatomic, assign) BOOL    isEndDrag; /// 是否已经停止拖动
+@property (nonatomic, assign) BOOL    banReload; /// 禁止刷新
+@property (nonatomic, assign) CGPoint oldPoint;  /// 旧的位置
+@property (nonatomic, assign) CGPoint lastPoint; /// 最后的触摸点
 
 @end
 
@@ -487,7 +490,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
         [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
         
     } else {
-        // 操作
+        // 更新数据源
         [self _updateSourceData];
         // 移动 会调用willMoveToIndexPath方法更新数据源
         [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
@@ -506,13 +509,11 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 #pragma mark - 事件响应
 
 - (void)handlelongGesture:(UILongPressGestureRecognizer *)longGesture {
-        
     CGPoint point = [longGesture locationInView:self];
     NSIndexPath *indexPath = [self indexPathForItemAtPoint:point];
     switch (longGesture.state) {
         case UIGestureRecognizerStateBegan: {
             self.userInteractionEnabled = NO;
-            
             // 手势开始
             // 判断手势落点位置是否在Item上
             _oldIndexPath = indexPath;
@@ -546,7 +547,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             // 取出正在长按的cell
             UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
             self.oldPoint = cell.center;
-            // 先置nil
+            // 先置 nil
             if (_snapedView) {
                 _snapedView = nil;
             }
@@ -573,7 +574,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             _snapedView.frame = cell.frame;
             // 添加到 collectionView 不然无法显示
             [self addSubview:_snapedView];
-            //截图后隐藏当前cell
+            // 截图后隐藏当前cell
             cell.hidden = YES;
             
             // 获取当前触摸的中心点
@@ -613,7 +614,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                 index = [self _getChangedIndexPath];
             }
             
-            // 没有取到或者距离隐藏的最近时就返回
+            // 没有取到 || 距离隐藏的 Cell 最近时就返回
             if (!index) {
                 break;
             }
@@ -628,9 +629,8 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 
             if (!index1) {
                 self.oldPoint = cell1.center;
-                // 操作
+                // 更新数据源
                 [self _updateSourceData];
-                
                 // 移动 会调用willMoveToIndexPath方法更新数据源
                 [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
                 // 设置移动后的起始indexPath
@@ -638,7 +638,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                 [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
                 
             } else {
-                // 操作
+                // 更新数据源
                 [self _updateSourceData];
                 // 移动 会调用willMoveToIndexPath方法更新数据源
                 [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
@@ -706,7 +706,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     
     if (_oldIndexPath) {
         _currentIndexPath = newIndexPath;
-        // 操作
+        // 更新数据源
         [self _updateSourceData];
         // 移动 会调用willMoveToIndexPath方法更新数据源
         [self moveItemAtIndexPath:_oldIndexPath toIndexPath:_currentIndexPath];
@@ -717,7 +717,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
         UICollectionViewCell *cell = [self cellForItemAtIndexPath:_oldIndexPath];
         cell.hidden = YES;
         
-        //结束动画过程中停止交互，防止出问题
+        // 结束动画过程中停止交互，防止出问题
         self.userInteractionEnabled = NO;
         // 结束拖拽了
         self.isEndDrag = YES;
