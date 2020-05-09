@@ -94,7 +94,7 @@ pod install
 [https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight)
 
 ## 其他
-- https://github.com/liangdahong/ToutiaoDemo 基于本来框架实现的头条频道编辑效果。
+- https://github.com/liangdahong/ToutiaoDemo 基于本框架实现的头条频道编辑效果。
 
 ## License    
 BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
