@@ -84,7 +84,8 @@ pod install
 
 ## 联系
 - 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
-- 也可以加微信 `liangdahong2014` 交流和学习
+- 也可以添加如下的微信交流和学习
+- <img width="20%" src="Images/wx.jpg"/> 
 
 ## 感谢
 - 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)，特别感谢。
