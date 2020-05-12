@@ -70,9 +70,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 正在拖拽时
 /// @param dragCellCollectionView dragCellCollectionView
-/// @param point 响应点
-/// @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
+/// @param point 手指触摸点对于 collectionView 的位置
+/// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point;
 
 /// cell 将要交换时，询问是否能交换
 /// @param dragCellCollectionView dragCellCollectionView
@@ -89,9 +89,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 结束拖拽时
 /// @param dragCellCollectionView dragCellCollectionView
-/// @param point 响应点
-/// @param indexPath 响应的indexPath，如果为 nil 说明没有接触到任何 Cell
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point indexPath:(NSIndexPath *)indexPath;
+/// @param point 手指触摸点对于 collectionView 的位置
+/// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point;
 
 @end
 NS_ASSUME_NONNULL_END
