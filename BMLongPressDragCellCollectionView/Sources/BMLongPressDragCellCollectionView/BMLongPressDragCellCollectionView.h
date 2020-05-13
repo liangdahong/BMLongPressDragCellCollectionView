@@ -20,13 +20,11 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //    SOFTWARE.
 
-//    v3.0.6
+//    v3.0.7
 
 #import <UIKit/UIKit.h>
 #import "BMLongPressDragCellCollectionViewDelegate.h"
 #import "BMLongPressDragCellCollectionViewDataSource.h"
-
-NS_ASSUME_NONNULL_BEGIN
 
 /*
  - (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
@@ -39,25 +37,24 @@ NS_ASSUME_NONNULL_BEGIN
      // 此协议方法里保存数据源
  }
  */
-/// 可以长按拖拽的 UICollectionView
 @interface BMLongPressDragCellCollectionView : UICollectionView
 
-@property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDelegate> delegate;
-@property (nonatomic, weak, nullable) id<BMLongPressDragCellCollectionViewDataSource> dataSource;
+@property (nonatomic, weak) id<BMLongPressDragCellCollectionViewDelegate> delegate;
+@property (nonatomic, weak) id<BMLongPressDragCellCollectionViewDataSource> dataSource;
 
 /// 长按触发拖拽所需时间，默认是 0.5 秒。
 @property (nonatomic, assign) NSTimeInterval minimumPressDuration;
 /// 是否可以拖拽 默认为 YES。
-@property (nonatomic, assign, getter=isCanDrag) BOOL canDrag;
+@property (nonatomic, assign, getter=isCanDrag) IBInspectable BOOL canDrag;
 ///  长按拖拽时拖拽中的的 Cell 缩放比例，默认是 1.2 倍。
-@property (nonatomic, assign) CGFloat dragZoomScale;
+@property (nonatomic, assign) IBInspectable CGFloat dragZoomScale;
 /// 拖拽的 Cell 在拖拽移动时的透明度 默认是： 1.0 不透明。
-@property (nonatomic, assign) CGFloat dragCellAlpha;
+@property (nonatomic, assign) IBInspectable CGFloat dragCellAlpha;
 /// 拖拽到 UICollectionView 边缘时 UICollectionView 的滚动速度
 /// 默认为: 8.0f ，建议设置 5.0f 到 15.0f 之间。
-@property (nonatomic, assign) CGFloat dragSpeed;
+@property (nonatomic, assign) IBInspectable CGFloat dragSpeed;
 /// 拖拽 View 的背景颜色，默认和被拖拽的 Cell 一样。
-@property (nonatomic, strong, nullable) UIColor *dragSnapedViewBackgroundColor;
+@property (nonatomic, strong) IBInspectable UIColor *dragSnapedViewBackgroundColor;
 
 /// 移动到指定位置
 /// @param indexPath 移动到的位置
@@ -65,5 +62,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)dragMoveItemToIndexPath:(NSIndexPath *)indexPath;
 
 @end
-
-NS_ASSUME_NONNULL_END

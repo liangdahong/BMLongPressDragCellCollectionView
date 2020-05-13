@@ -35,7 +35,6 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"配置" style:(UIBarButtonItemStylePlain) target:self action:@selector(settingClick)];
 }
 
-
 - (void)settingClick {
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"配置" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     [alertVC addAction:[UIAlertAction actionWithTitle:@"调整拖拽 cell 的缩放比例" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
