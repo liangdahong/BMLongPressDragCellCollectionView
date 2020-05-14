@@ -4,6 +4,7 @@
     <img  width="30%" src="Images/1.gif"/>
     <img  width="30%" src="Images/2.gif"/>
     <img  width="30%" src="Images/3.gif"/>
+    <img  width="30%" src="https://github.com/liangdahong/ToutiaoDemo/raw/master/Images/001.gif"/>
 <p/>
 
 <p align="center">
