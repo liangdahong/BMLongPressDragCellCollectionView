@@ -2,9 +2,9 @@
 
 <p align="center">
     <img  width="22%" src="Images/1.gif"/>
-    <img  width="22%" src="Images/2.gif"/>
     <img  width="22%" src="Images/3.gif"/>
-    <img  width="22%" src="https://github.com/liangdahong/ToutiaoDemo/raw/master/Images/001.gif">
+    <img  width="22%" src="Images/Toutiao.gif">
+    <img  width="22%" src="Images/2.gif"/>
 <p/>
 
 <p align="center">

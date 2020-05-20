@@ -1,0 +1,45 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BMLongPressDragCellCollectionView (3.0.8)
+  - SVProgressHUD (2.2.2)
+  - WMPageController (2.3.0)
+
+DEPENDENCIES:
+  - BlocksKit (= 2.2.5)
+  - BMLongPressDragCellCollectionView (from `../../`)
+  - SVProgressHUD (= 2.2.2)
+  - WMPageController (= 2.3.0)
+
+SPEC REPOS:
+  trunk:
+    - BlocksKit
+    - SVProgressHUD
+    - WMPageController
+
+EXTERNAL SOURCES:
+  BMLongPressDragCellCollectionView:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  BMLongPressDragCellCollectionView: 4be5ef220b0c1dfaf90ff47bb4db02ff5bdf6d60
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  WMPageController: 9f219bb8912a1a1f51af11fde61e2682a7b7e7f2
+
+PODFILE CHECKSUM: 58e03bddadf09efbbf9ab258bb03de1e1861756c
+
+COCOAPODS: 1.8.3
