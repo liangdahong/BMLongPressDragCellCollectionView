@@ -136,57 +136,39 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 }
 
 - (void)reloadData {
-    if (!self.banReload) {
-        [super reloadData];
-    }
+    self.banReload ? : [super reloadData];
 }
 
 - (void)insertSections:(NSIndexSet *)sections {
-    if (!self.banReload) {
-        [super insertSections:sections];
-    }
+    self.banReload ? : [super insertSections:sections];
 }
 
 - (void)deleteSections:(NSIndexSet *)sections {
-    if (!self.banReload) {
-        [super deleteSections:sections];
-    }
+    self.banReload ? : [super deleteSections:sections];
 }
 
 - (void)reloadSections:(NSIndexSet *)sections {
-    if (!self.banReload) {
-        [super reloadSections:sections];
-    }
+    self.banReload ? : [super reloadSections:sections];
 }
 
 - (void)moveSection:(NSInteger)section toSection:(NSInteger)newSection {
-    if (!self.banReload) {
-        [super moveSection:section toSection:newSection];
-    }
+    self.banReload ? : [super moveSection:section toSection:newSection];
 }
 
 - (void)insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    if (!self.banReload) {
-        [super insertItemsAtIndexPaths:indexPaths];
-    }
+    self.banReload ? : [super insertItemsAtIndexPaths:indexPaths];
 }
 
 - (void)deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    if (!self.banReload) {
-        [super deleteItemsAtIndexPaths:indexPaths];
-    }
+    self.banReload ? : [super deleteItemsAtIndexPaths:indexPaths];
 }
 
 - (void)reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    if (!self.banReload) {
-        [super reloadItemsAtIndexPaths:indexPaths];
-    }
+    self.banReload ? : [super reloadItemsAtIndexPaths:indexPaths];
 }
 
 - (void)moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
-    if (!self.banReload) {
-        [super moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
-    }
+    self.banReload ? : [super moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
 }
 
 - (__kindof UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
@@ -299,7 +281,6 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 
 // 处理临界点问题
 - (BMLongPressDragCellCollectionViewScrollDirection)_setScrollDirection {
-
     if (((self.bounds.size.height + self.contentOffset.y - _snapedView.center.y) < (_snapedView.bounds.size.height / 2))
         && ((self.bounds.size.height + self.contentOffset.y) < self.contentSize.height)) {
         return BMLongPressDragCellCollectionViewScrollDirectionDown;
@@ -320,7 +301,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     return BMLongPressDragCellCollectionViewScrollDirectionNone;
 }
 
-// 处理UICollectionView数据源
+// 处理 UICollectionView 数据源
 - (void)_updateSourceData {
     // 获取数据源
     NSMutableArray *array = [self.dataSource dataSourceWithDragCellCollectionView:self].mutableCopy;
@@ -381,6 +362,11 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 
 - (void)_edgeScroll {
     BMLongPressDragCellCollectionViewScrollDirection scrollDirection = [self _setScrollDirection];
+
+    if (BMLongPressDragCellCollectionViewScrollDirectionNone == scrollDirection) {
+        return;
+    }
+
     switch (scrollDirection) {
         case BMLongPressDragCellCollectionViewScrollDirectionLeft:{
             // 这里的动画必须设为 NO
@@ -410,11 +396,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
         default:
             break;
     }
-    
-    if (scrollDirection == BMLongPressDragCellCollectionViewScrollDirectionNone) {
-        return;
-    }
-    
+
     // 如果Cell 拖拽到了边沿时
     // 截图视图位置移动
     [UIView animateWithDuration:0.1 animations:^{
@@ -424,12 +406,8 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     // 获取应该交换的 Cell 的位置
     NSIndexPath *index1 = [self _getChangedNullIndexPath];
     NSIndexPath *index = nil;
-    
-    if (index1) {
-        index = index1;
-    } else {
-        index = [self _getChangedIndexPath];
-    }
+
+    index = index1 ? : [self _getChangedIndexPath];
 
     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:changedDragAtPoint:)]) {
         [self.delegate dragCellCollectionView:self changedDragAtPoint:_lastPoint];

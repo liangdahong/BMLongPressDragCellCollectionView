@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
     return self.dataArray;
  }
  */
-- (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView;
+- (nullable NSArray *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView;
 
 @end
 

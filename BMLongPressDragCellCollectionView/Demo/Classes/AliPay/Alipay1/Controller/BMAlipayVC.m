@@ -18,7 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet BMLongPressDragCellCollectionView *dragCellCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
-@property (strong, nonatomic) NSMutableArray <BMAlipayModel *>*dataSourceArray;
+@property (strong, nonatomic) NSMutableArray <BMAlipayModel *> *dataSourceArray;
 
 @end
 
@@ -156,7 +156,10 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
  @return dragView
  */
 //- (UIView *)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath {
-//
+//    UIView *view = UIView.new;
+//    view.backgroundColor = UIColor.yellowColor;
+//    view.frame = CGRectMake(0, 0, 100, 100);
+//    return view;
 //}
 
 /// 开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作
@@ -164,7 +167,9 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 /// @param dragView dragView
 /// @param indexPath indexPath
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath {
-    NSLog(@"开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作");
+    NSLog(@"开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作 %@", dragView);
+//    dragView.layer.cornerRadius  = 100;
+//    dragView.layer.masksToBounds = YES;
 }
 
 /// 正在拖拽时
@@ -192,6 +197,5 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point {
     NSLog(@"结束拖拽时");
 }
-
 
 @end

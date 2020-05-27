@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
     self.dataArray = [newDataArray copy];
  }
  */
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray;
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray;
 
 @optional
 
@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param indexPath indexPath
  @return YES: 正常拖拽和移动 NO:此 Cell 不可拖拽，如：增加按钮等。
  */
-- (BOOL)dragCellCollectionViewShouldBeginMove:(BMLongPressDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath;
+- (BOOL)dragCellCollectionViewShouldBeginMove:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath;
 
 /**
  将要开始拖拽时，向外面获取需要拖拽的 View，如果不实现就内部自动处理。
@@ -60,38 +60,39 @@ NS_ASSUME_NONNULL_BEGIN
  @param indexPath indexPath
  @return dragView
  */
-- (UIView *)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath;
+- (UIView *)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath;
 
 /// 开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作
 /// @param dragCellCollectionView dragCellCollectionView
 /// @param dragView dragView
 /// @param indexPath indexPath
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath;
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath;
 
 /// 正在拖拽时
 /// @param dragCellCollectionView dragCellCollectionView
 /// @param point 手指触摸点对于 collectionView 的位置
 /// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point;
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point;
 
 /// cell 将要交换时，询问是否能交换
 /// @param dragCellCollectionView dragCellCollectionView
 /// @param sourceIndexPath 原来的 IndexPath
 /// @param destinationIndexPath 将要交换的 IndexPath
 /// YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
-- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
+- (BOOL)dragCellCollectionViewShouldBeginExchange:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 /// 结束交换时
 /// @param dragCellCollectionView dragCellCollectionView
 /// @param sourceIndexPath 原来的 IndexPath
 /// @param destinationIndexPath 被交换的 IndexPath
-- (void)dragCellCollectionViewShouldEndExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
+- (void)dragCellCollectionViewShouldEndExchange:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 /// 结束拖拽时
 /// @param dragCellCollectionView dragCellCollectionView
 /// @param point 手指触摸点对于 collectionView 的位置
 /// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point;
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point;
 
 @end
+
 NS_ASSUME_NONNULL_END
