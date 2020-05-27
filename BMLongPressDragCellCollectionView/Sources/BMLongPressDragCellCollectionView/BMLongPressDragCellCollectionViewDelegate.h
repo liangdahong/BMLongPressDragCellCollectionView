@@ -84,7 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 结束交换时
 /// @param dragCellCollectionView dragCellCollectionView
 /// @param sourceIndexPath 原来的 IndexPath
-/// @param destinationIndexPath 将要交换的 IndexPath
+/// @param destinationIndexPath 被交换的 IndexPath
 - (void)dragCellCollectionViewShouldEndExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
 /// 结束拖拽时

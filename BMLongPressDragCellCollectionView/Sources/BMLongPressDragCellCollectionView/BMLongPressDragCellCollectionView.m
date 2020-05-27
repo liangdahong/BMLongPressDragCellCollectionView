@@ -448,7 +448,9 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     _currentIndexPath = index;
 
     UICollectionViewCell *cell1 = [self cellForItemAtIndexPath:_currentIndexPath];
-    
+
+    NSIndexPath *sourceIndexPath = _oldIndexPath;
+    NSIndexPath *toIndexPath = _currentIndexPath;
     if (!index1) {
         self.oldPoint = cell1.center;
         // 更新数据源
@@ -472,9 +474,9 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
         [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
     }
 
-    // 交换结束
+    // 交换结束时
     if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewShouldEndExchange:sourceIndexPath:toIndexPath:)]) {
-        [self.delegate dragCellCollectionViewShouldEndExchange:self sourceIndexPath:_oldIndexPath toIndexPath:index];
+        [self.delegate dragCellCollectionViewShouldEndExchange:self sourceIndexPath:sourceIndexPath toIndexPath:toIndexPath];
     }
 }
 
@@ -596,6 +598,8 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             _currentIndexPath = index;
             UICollectionViewCell *cell1 = [self cellForItemAtIndexPath:_currentIndexPath];
 
+            NSIndexPath *sourceIndexPath = _oldIndexPath;
+            NSIndexPath *toIndexPath = _currentIndexPath;
             if (!index1) {
                 self.oldPoint = cell1.center;
                 // 更新数据源
@@ -616,6 +620,12 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                 _oldIndexPath = _currentIndexPath;
                 [self reloadItemsAtIndexPaths:@[_oldIndexPath]];
             }
+
+            // 交换结束时
+            if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewShouldEndExchange:sourceIndexPath:toIndexPath:)]) {
+                [self.delegate dragCellCollectionViewShouldEndExchange:self sourceIndexPath:sourceIndexPath toIndexPath:toIndexPath];
+            }
+
             break;
         }
             break;

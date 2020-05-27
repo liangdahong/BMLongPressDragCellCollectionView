@@ -117,6 +117,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 }
 
 // === BMLongPressDragCellCollectionView 的核心方法 ↓
+
 - (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataSourceArray;
 }
@@ -124,6 +125,73 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
+
 // === BMLongPressDragCellCollectionView 的核心方法 ↑
+
+- (void)dragCellCollectionViewShouldEndExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    NSLog(@"结束交换时:（%ld %ld） -> ( %ld %ld)",
+          sourceIndexPath.section,
+          sourceIndexPath.item,
+          destinationIndexPath.section,
+          destinationIndexPath.item);
+}
+
+/**
+ 将要开始拖拽时，询问此位置的 Cell 是否能拖拽
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param indexPath indexPath
+ @return YES: 正常拖拽和移动 NO:此 Cell 不可拖拽，如：增加按钮等。
+ */
+- (BOOL)dragCellCollectionViewShouldBeginMove:(BMLongPressDragCellCollectionView *)dragCellCollectionView indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"将要开始拖拽时，询问此位置的 Cell 是否能拖拽");
+    return YES;
+}
+
+/**
+ 将要开始拖拽时，向外面获取需要拖拽的 View，如果不实现就内部自动处理。
+
+ @param dragCellCollectionView dragCellCollectionView
+ @param indexPath indexPath
+ @return dragView
+ */
+//- (UIView *)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView startDragAtIndexPath:(NSIndexPath *)indexPath {
+//
+//}
+
+/// 开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param dragView dragView
+/// @param indexPath indexPath
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView dragView:(UIView *)dragView indexPath:(NSIndexPath *)indexPath {
+    NSLog(@"开始拖拽时，让外面的使用者可以对拖拽的 View 做额外操作");
+}
+
+/// 正在拖拽时
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param point 手指触摸点对于 collectionView 的位置
+/// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView changedDragAtPoint:(CGPoint)point {
+    NSLog(@"正在拖拽时");
+}
+
+/// cell 将要交换时，询问是否能交换
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param sourceIndexPath 原来的 IndexPath
+/// @param destinationIndexPath 将要交换的 IndexPath
+/// YES: 正常拖拽和移动 NO:此Cell不可拖拽，如：增加按钮等。
+- (BOOL)dragCellCollectionViewShouldBeginExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    NSLog(@"将要交换时，询问是否能交换");
+    return YES;
+}
+
+/// 结束拖拽时
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param point 手指触摸点对于 collectionView 的位置
+/// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point {
+    NSLog(@"结束拖拽时");
+}
+
 
 @end

@@ -116,6 +116,14 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 
+- (void)dragCellCollectionViewShouldEndExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    NSLog(@"结束交换时:（%ld %ld） -> ( %ld %ld)",
+          sourceIndexPath.section,
+          sourceIndexPath.item,
+          destinationIndexPath.section,
+          destinationIndexPath.item);
+}
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
     return CGSizeMake(100, 50);
 }

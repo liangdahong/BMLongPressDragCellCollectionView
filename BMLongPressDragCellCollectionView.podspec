@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'BMLongPressDragCellCollectionView'
-s.version      = '3.0.8'
+s.version      = '3.0.9'
 s.summary      = '🎉 iOS UICollectionView UICollectionViewCell long press to drag the reorder framework.'
 s.homepage     = 'https://github.com/liangdahong/BMLongPressDragCellCollectionView'
 s.license      = 'MIT'

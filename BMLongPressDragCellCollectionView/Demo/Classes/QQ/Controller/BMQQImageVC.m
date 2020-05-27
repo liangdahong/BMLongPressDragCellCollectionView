@@ -82,4 +82,12 @@ static NSString *imageIdentifier = @"imageIdentifier";
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 
+- (void)dragCellCollectionViewShouldEndExchange:(BMLongPressDragCellCollectionView *)dragCellCollectionView sourceIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
+    NSLog(@"结束交换时:（%ld %ld） -> ( %ld %ld)",
+          sourceIndexPath.section,
+          sourceIndexPath.item,
+          destinationIndexPath.section,
+          destinationIndexPath.item);
+}
+
 @end
