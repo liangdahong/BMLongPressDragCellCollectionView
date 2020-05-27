@@ -20,7 +20,9 @@
 //    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //    SOFTWARE.
 
-//    v3.0.8
+////////////////////
+////// v3.1.0 //////
+////////////////////
 
 #import <UIKit/UIKit.h>
 #import "BMLongPressDragCellCollectionViewDelegate.h"
