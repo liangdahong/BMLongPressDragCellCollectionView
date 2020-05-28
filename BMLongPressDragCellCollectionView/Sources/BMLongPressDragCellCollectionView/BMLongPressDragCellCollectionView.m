@@ -85,15 +85,15 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 }
 
 - (void)setDragZoomScale:(CGFloat)dragZoomScale {
-    if (dragZoomScale < 0) {
-        dragZoomScale = 0.01;
+    if (dragZoomScale < 0.0) {
+        dragZoomScale = 1.2;
     }
     _dragZoomScale = dragZoomScale;
 }
 
 - (void)setDragSpeed:(CGFloat)dragSpeed {
-    if (dragSpeed < 0) {
-        dragSpeed = 8.0f;
+    if (dragSpeed < 0.0) {
+        dragSpeed = 8.0;
     }
     _dragSpeed = dragSpeed;
 }
@@ -121,18 +121,18 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 #pragma mark - 私有方法
 
 - (void)initConfiguration {
-    _canDrag = YES;
-    _minimumPressDuration = .5f;
-    _dragZoomScale = 1.2f;
-    _dragCellAlpha = 1.0f;
-    _dragSpeed = 8.0f;
+    _canDrag              = YES;
+    _minimumPressDuration = 0.5;
+    _dragZoomScale = 1.2;
+    _dragCellAlpha = 1.0;
+    _dragSpeed     = 8.0;
     [self addGestureRecognizer:self.longGesture];
-    // iOS 10 新特性 对UICollectionView做了优化，但是这里如果使用了会导致bug
+    // iOS 10 新特性 对 UICollectionView 做了优化，但是这里如果使用了会导致bug
     // https://developer.apple.com/documentation/uikit/uicollectionview/1771771-prefetchingenabled
     // https://sxgfxm.github.io/blog/2016/10/18/uicollectionview-ios10-new-features
     if (@available(iOS 10.0, *)) {
         self.prefetchingEnabled = NO;
-    } 
+    }
 }
 
 - (void)reloadData {
@@ -208,7 +208,6 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                     frame.size.height = CGRectGetHeight(self.frame);
                     frame.origin.x -= 5;
                 }
-                
             } else {
                 // 垂直方向
                 frame = CGRectMake(CGRectGetMinX(headerFrame),
@@ -219,13 +218,13 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                 if (frame.size.height < 10) {
                     // 如果这组的高度小于 10，就设置一个默认值 10，主要是为了判断触摸点缩放在这组内。
                     frame.size.height = 10;
-                    frame.size.width = CGRectGetWidth(self.frame);
-                    frame.origin.y -= 5;
+                    frame.size.width  = CGRectGetWidth(self.frame);
+                    frame.origin.y    -= 5;
                 }
             }
             
             if (CGRectContainsPoint(frame, point)) {
-                // 触摸点 在空的组内
+                // 触摸点在空的组内
                 return [NSIndexPath indexPathForItem:0 inSection:number];
             }
         }
