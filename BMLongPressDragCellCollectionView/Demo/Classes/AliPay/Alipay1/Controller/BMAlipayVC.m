@@ -198,4 +198,8 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     NSLog(@"结束拖拽时");
 }
 
+- (void)dealloc {
+    NSLog(@"BMAlipayVC dealloc");
+}
+
 @end

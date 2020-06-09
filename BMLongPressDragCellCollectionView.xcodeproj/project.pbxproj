@@ -227,6 +227,9 @@
 		05F595D2233DA62F001FB011 /* BMLongPressDragCellCollectionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 05F595CF233DA62F001FB011 /* BMLongPressDragCellCollectionView.podspec */; };
 		05F595D3233DA62F001FB011 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 05F595D0233DA62F001FB011 /* README.md */; };
 		05F595D4233DA62F001FB011 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05F595D1233DA62F001FB011 /* LICENSE */; };
+		D287589D56D939CD6D8BA9A5 /* libPods-BMLongPressDragCellCollectionView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8992C5EB0E40E6D7A639A49 /* libPods-BMLongPressDragCellCollectionView.a */; };
+		E83EA6B6147A27CCFEBA246A /* libPods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2890EE1C4A2B644C264A3638 /* libPods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.a */; };
+		FEBED5914D96CE956BA049B7 /* libPods-BMLongPressDragCellCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BC1333A7BA716A9694D067 /* libPods-BMLongPressDragCellCollectionViewTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -494,6 +497,15 @@
 		05F595CF233DA62F001FB011 /* BMLongPressDragCellCollectionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BMLongPressDragCellCollectionView.podspec; sourceTree = "<group>"; };
 		05F595D0233DA62F001FB011 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05F595D1233DA62F001FB011 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0FAB4E38790C149EC15FA82B /* Pods-BMLongPressDragCellCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView.release.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView/Pods-BMLongPressDragCellCollectionView.release.xcconfig"; sourceTree = "<group>"; };
+		1566DD5EA3840D0268C34C09 /* Pods-BMLongPressDragCellCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView.debug.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView/Pods-BMLongPressDragCellCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		16BC1333A7BA716A9694D067 /* libPods-BMLongPressDragCellCollectionViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMLongPressDragCellCollectionViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2890EE1C4A2B644C264A3638 /* libPods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9E9C882A8A9CA6E299BDF6 /* Pods-BMLongPressDragCellCollectionViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionViewTests.debug.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionViewTests/Pods-BMLongPressDragCellCollectionViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43703A04B54B3AF6ABE67158 /* Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.release.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		572E0E37B640A3A7E642B06C /* Pods-BMLongPressDragCellCollectionViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionViewTests.release.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionViewTests/Pods-BMLongPressDragCellCollectionViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DC983A61F170F65369E5061 /* Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8992C5EB0E40E6D7A639A49 /* libPods-BMLongPressDragCellCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMLongPressDragCellCollectionView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,6 +513,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D287589D56D939CD6D8BA9A5 /* libPods-BMLongPressDragCellCollectionView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +521,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEBED5914D96CE956BA049B7 /* libPods-BMLongPressDragCellCollectionViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +529,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E83EA6B6147A27CCFEBA246A /* libPods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +612,8 @@
 				05402A2623CF0C2700B1DE21 /* pod.sh */,
 				05F593B6233DA5D0001FB011 /* BMLongPressDragCellCollectionView */,
 				05F593B5233DA5D0001FB011 /* Products */,
+				782574FE73B343ABE3B53D3D /* Pods */,
+				7F4F43C05FB67521FD1090E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1012,27 +1029,19 @@
 		05F594D7233DA615001FB011 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				05F594D8233DA615001FB011 /* Sources */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		05F594D8233DA615001FB011 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
 				05F594D9233DA615001FB011 /* UICollectionView-BMDynamicLayout */,
 			);
-			path = Sources;
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		05F594D9233DA615001FB011 /* UICollectionView-BMDynamicLayout */ = {
 			isa = PBXGroup;
 			children = (
-				05F594DA233DA615001FB011 /* UICollectionView+BMDynamicLayout.m */,
 				05F594DB233DA615001FB011 /* UICollectionReusableView+BMAutomaticRegister.m */,
-				05F594DC233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.h */,
-				05F594DD233DA615001FB011 /* UICollectionView+BMDynamicLayout.h */,
 				05F594DE233DA615001FB011 /* UICollectionReusableView+BMAutomaticRegister.h */,
+				05F594DD233DA615001FB011 /* UICollectionView+BMDynamicLayout.h */,
+				05F594DA233DA615001FB011 /* UICollectionView+BMDynamicLayout.m */,
+				05F594DC233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.h */,
 				05F594DF233DA615001FB011 /* UICollectionViewCell+BMAutomaticRegister.m */,
 			);
 			path = "UICollectionView-BMDynamicLayout";
@@ -1086,6 +1095,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		782574FE73B343ABE3B53D3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1566DD5EA3840D0268C34C09 /* Pods-BMLongPressDragCellCollectionView.debug.xcconfig */,
+				0FAB4E38790C149EC15FA82B /* Pods-BMLongPressDragCellCollectionView.release.xcconfig */,
+				8DC983A61F170F65369E5061 /* Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.debug.xcconfig */,
+				43703A04B54B3AF6ABE67158 /* Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.release.xcconfig */,
+				2E9E9C882A8A9CA6E299BDF6 /* Pods-BMLongPressDragCellCollectionViewTests.debug.xcconfig */,
+				572E0E37B640A3A7E642B06C /* Pods-BMLongPressDragCellCollectionViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F4F43C05FB67521FD1090E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8992C5EB0E40E6D7A639A49 /* libPods-BMLongPressDragCellCollectionView.a */,
+				2890EE1C4A2B644C264A3638 /* libPods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.a */,
+				16BC1333A7BA716A9694D067 /* libPods-BMLongPressDragCellCollectionViewTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1093,6 +1125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05F593E0233DA5D1001FB011 /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionView" */;
 			buildPhases = (
+				AE76D0DD7B2AC1B88F167CCD /* [CP] Check Pods Manifest.lock */,
 				05F593B0233DA5D0001FB011 /* Sources */,
 				05F593B1233DA5D0001FB011 /* Frameworks */,
 				05F593B2233DA5D0001FB011 /* Resources */,
@@ -1110,6 +1143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05F593E3233DA5D1001FB011 /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionViewTests" */;
 			buildPhases = (
+				BBE445F3AF7BB72A7AA351FB /* [CP] Check Pods Manifest.lock */,
 				05F593C8233DA5D1001FB011 /* Sources */,
 				05F593C9233DA5D1001FB011 /* Frameworks */,
 				05F593CA233DA5D1001FB011 /* Resources */,
@@ -1128,6 +1162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05F593E6233DA5D1001FB011 /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionViewUITests" */;
 			buildPhases = (
+				3D960C20A0779EB6DE8FC6C2 /* [CP] Check Pods Manifest.lock */,
 				05F593D3233DA5D1001FB011 /* Sources */,
 				05F593D4233DA5D1001FB011 /* Frameworks */,
 				05F593D5233DA5D1001FB011 /* Resources */,
@@ -1406,6 +1441,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D960C20A0779EB6DE8FC6C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE76D0DD7B2AC1B88F167CCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMLongPressDragCellCollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBE445F3AF7BB72A7AA351FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMLongPressDragCellCollectionViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05F593B0233DA5D0001FB011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1591,6 +1695,7 @@
 		};
 		05F593E1233DA5D1001FB011 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1566DD5EA3840D0268C34C09 /* Pods-BMLongPressDragCellCollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1609,6 +1714,7 @@
 		};
 		05F593E2233DA5D1001FB011 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FAB4E38790C149EC15FA82B /* Pods-BMLongPressDragCellCollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1627,6 +1733,7 @@
 		};
 		05F593E4233DA5D1001FB011 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E9E9C882A8A9CA6E299BDF6 /* Pods-BMLongPressDragCellCollectionViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1646,6 +1753,7 @@
 		};
 		05F593E5233DA5D1001FB011 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572E0E37B640A3A7E642B06C /* Pods-BMLongPressDragCellCollectionViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1665,6 +1773,7 @@
 		};
 		05F593E7233DA5D1001FB011 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC983A61F170F65369E5061 /* Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG78JT6CG8;
@@ -1683,6 +1792,7 @@
 		};
 		05F593E8233DA5D1001FB011 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43703A04B54B3AF6ABE67158 /* Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG78JT6CG8;

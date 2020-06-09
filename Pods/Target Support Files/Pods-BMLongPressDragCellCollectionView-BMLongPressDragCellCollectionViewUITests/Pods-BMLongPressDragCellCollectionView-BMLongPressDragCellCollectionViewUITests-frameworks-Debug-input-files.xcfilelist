@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AMLeaksFinder/AMLeaksFinder.framework
+${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework
