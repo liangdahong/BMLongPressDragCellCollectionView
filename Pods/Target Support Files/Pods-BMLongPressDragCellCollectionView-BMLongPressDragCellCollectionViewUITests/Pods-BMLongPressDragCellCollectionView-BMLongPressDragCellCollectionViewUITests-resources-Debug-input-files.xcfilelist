@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-resources.sh
 ${PODS_ROOT}/AMLeaksFinder/Sources/UI/AMMemoryLeakView.xib
+${PODS_ROOT}/AMLeaksFinder/Sources/AMLeaksFinder.bundle

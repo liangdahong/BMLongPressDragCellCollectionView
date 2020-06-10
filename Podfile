@@ -1,6 +1,6 @@
-platform :ios, '9.0'
-target 'BMLongPressDragCellCollectionView' do  
-#  pod 'AMLeaksFinder', '1.2.1',  :configurations => ['Debug']
+target 'BMLongPressDragCellCollectionView' do
+
+  #  pod 'AMLeaksFinder', '1.2.2',  :configurations => ['Debug']
 #  pod 'FBRetainCycleDetector',  :configurations => ['Debug']
 
   target 'BMLongPressDragCellCollectionViewTests' do

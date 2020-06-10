@@ -98,6 +98,7 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/AMLeaksFinder/Sources/UI/AMMemoryLeakView.xib"
+  install_resource "${PODS_ROOT}/AMLeaksFinder/Sources/AMLeaksFinder.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

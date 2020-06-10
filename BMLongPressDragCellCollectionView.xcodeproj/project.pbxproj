@@ -1129,6 +1129,7 @@
 				05F593B0233DA5D0001FB011 /* Sources */,
 				05F593B1233DA5D0001FB011 /* Frameworks */,
 				05F593B2233DA5D0001FB011 /* Resources */,
+				FD57F0AA6C66146ACC39F75D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1166,6 +1167,7 @@
 				05F593D3233DA5D1001FB011 /* Sources */,
 				05F593D4233DA5D1001FB011 /* Frameworks */,
 				05F593D5233DA5D1001FB011 /* Resources */,
+				360F622474C8851407F5B8D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1442,6 +1444,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		360F622474C8851407F5B8D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests/Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D960C20A0779EB6DE8FC6C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1506,6 +1525,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD57F0AA6C66146ACC39F75D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView/Pods-BMLongPressDragCellCollectionView-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView/Pods-BMLongPressDragCellCollectionView-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView/Pods-BMLongPressDragCellCollectionView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
