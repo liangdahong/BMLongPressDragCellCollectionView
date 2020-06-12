@@ -1,2 +1,0 @@
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMLeaksFinder.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework

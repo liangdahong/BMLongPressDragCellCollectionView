@@ -1,0 +1,16 @@
+PODS:
+  - BMLongPressDragCellCollectionView (3.1.0)
+
+DEPENDENCIES:
+  - BMLongPressDragCellCollectionView (from `../`)
+
+EXTERNAL SOURCES:
+  BMLongPressDragCellCollectionView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BMLongPressDragCellCollectionView: 2ade8b6d3ca9f9453c8e7a9c49bc1afa03191b2c
+
+PODFILE CHECKSUM: 3d39d8afef19da7452fece006ffd983386dbc85c
+
+COCOAPODS: 1.8.3

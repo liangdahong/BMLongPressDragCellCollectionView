@@ -1,6 +1,0 @@
-framework module Pods_BMLongPressDragCellCollectionView_BMLongPressDragCellCollectionViewUITests {
-  umbrella header "Pods-BMLongPressDragCellCollectionView-BMLongPressDragCellCollectionViewUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

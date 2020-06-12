@@ -1,1 +1,0 @@
-../../../AMLeaksFinder/Sources/UI/AMDragViewLabel.h
