@@ -1,0 +1,16 @@
+//
+//  BMLongPressDragCellCollectionViewVC.h
+//  BMLongPressDragCellCollectionViewDemo
+//
+//  Created by __liangdahong on 2017/7/21.
+//  Copyright © 2017年 https://liangdahong.com All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface BMTestSizeVC : UIViewController
+
+@property (strong, nonatomic) NSMutableArray *dataSource;
+@property (nonatomic, assign) UICollectionViewScrollDirection collectionViewScrollDirection;
+
+@end
