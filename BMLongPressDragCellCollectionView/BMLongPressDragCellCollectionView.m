@@ -136,39 +136,66 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 }
 
 - (void)reloadData {
-    self.banReload ? : [super reloadData];
+    if (_banReload) {
+        return;
+    }
+    [super reloadData];
 }
 
 - (void)insertSections:(NSIndexSet *)sections {
-    self.banReload ? : [super insertSections:sections];
+    if (_banReload) {
+        return;
+    }
+    [super insertSections:sections];
 }
 
 - (void)deleteSections:(NSIndexSet *)sections {
-    self.banReload ? : [super deleteSections:sections];
+    if (_banReload) {
+        return;
+    }
+    [super deleteSections:sections];
 }
 
 - (void)reloadSections:(NSIndexSet *)sections {
-    self.banReload ? : [super reloadSections:sections];
+    if (_banReload) {
+        return;
+    }
+    [super reloadSections:sections];
 }
 
 - (void)moveSection:(NSInteger)section toSection:(NSInteger)newSection {
-    self.banReload ? : [super moveSection:section toSection:newSection];
+    if (_banReload) {
+        return;
+    }
+    [super moveSection:section toSection:newSection];
 }
 
 - (void)insertItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    self.banReload ? : [super insertItemsAtIndexPaths:indexPaths];
+    if (_banReload) {
+        return;
+    }
+    [super insertItemsAtIndexPaths:indexPaths];
 }
 
 - (void)deleteItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    self.banReload ? : [super deleteItemsAtIndexPaths:indexPaths];
+   if (_banReload) {
+       return;
+   }
+    [super deleteItemsAtIndexPaths:indexPaths];
 }
 
 - (void)reloadItemsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
-    self.banReload ? : [super reloadItemsAtIndexPaths:indexPaths];
+    if (_banReload) {
+        return;
+    }
+    [super reloadItemsAtIndexPaths:indexPaths];
 }
 
 - (void)moveItemAtIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath {
-    self.banReload ? : [super moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
+    if (_banReload) {
+        return;
+    }
+    [super moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
 }
 
 - (__kindof UICollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath {
