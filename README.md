@@ -64,17 +64,17 @@ pod install
 
 ## 图文演示
 ### 在 `Xib`或者 `StoryBoard` 中使用
-<img  width="50%" src="Images/xib01.png"/>
-<img  width="50%" src="Images/xib02.png"/>
-<img  width="50%" src="Images/xib03.png"/>
+<img  width="80%" src="Images/xib01.png"/>
+<img  width="80%" src="Images/xib02.png"/>
+<img  width="80%" src="Images/xib03.png"/>
 <img  width="15%" src="Images/xib04.png"/>
 
 - 在 `Xib`或者 `StoryBoard` 中只需要上面的 `3 步`就可以让你的 `UICollectionView` 完美支持拖拽重排了。
 
 ### 使用纯代码实现
-<img  width="50%" src="Images/code01.png"/>
-<img  width="50%" src="Images/code02.png"/>
-<img  width="50%" src="Images/code03.png"/>
+<img  width="80%" src="Images/code01.png"/>
+<img  width="80%" src="Images/code02.png"/>
+<img  width="80%" src="Images/code03.png"/>
 <img  width="15%" src="Images/code04.png"/>
 
 - 在纯代码实现中只需要上面的 `3 步` 就可以让你的 `UICollectionView` 完美支持拖拽重排了。
