@@ -85,7 +85,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 }
 
 - (void)setDragZoomScale:(CGFloat)dragZoomScale {
-    if (dragZoomScale < 0.0) {
+    if (dragZoomScale < 0.1) {
         dragZoomScale = 1.2;
     }
     _dragZoomScale = dragZoomScale;
