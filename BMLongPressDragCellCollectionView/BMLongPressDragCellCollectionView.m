@@ -202,11 +202,11 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                                    CGRectGetMaxX(footerFrame) - CGRectGetMidX(headerFrame),
                                    CGRectGetWidth(footerFrame));
                 
-                if (frame.size.width < 10) {
-                    // 如果这组的d宽度小于 10，就设置一个默认值 10，主要是为了判断触摸点缩放在这组内。
-                    frame.size.width = 10;
+                if (frame.size.width < 10.0) {
+                    // 如果这组的宽度小于 10.0，就设置一个默认值 10.0，主要是为了判断触摸点缩放在这组内。
+                    frame.size.width  = 10.0;
                     frame.size.height = CGRectGetHeight(self.frame);
-                    frame.origin.x -= 5;
+                    frame.origin.x    -= 5.0;
                 }
             } else {
                 // 垂直方向
@@ -215,11 +215,11 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                                    CGRectGetWidth(footerFrame),
                                    CGRectGetMaxY(footerFrame) - CGRectGetMidY(headerFrame));
                 
-                if (frame.size.height < 10) {
-                    // 如果这组的高度小于 10，就设置一个默认值 10，主要是为了判断触摸点缩放在这组内。
-                    frame.size.height = 10;
+                if (frame.size.height < 10.0) {
+                    // 如果这组的高度小于 10.0，就设置一个默认值 10.0，主要是为了判断触摸点缩放在这组内。
+                    frame.size.height = 10.0;
                     frame.size.width  = CGRectGetWidth(self.frame);
-                    frame.origin.y    -= 5;
+                    frame.origin.y    -= 5.0;
                 }
             }
             
