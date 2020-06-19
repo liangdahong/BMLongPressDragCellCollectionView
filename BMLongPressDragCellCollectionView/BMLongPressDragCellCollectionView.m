@@ -92,7 +92,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 }
 
 - (void)setDragSpeed:(CGFloat)dragSpeed {
-    if (dragSpeed < 0.0) {
+    if (dragSpeed < 0.5) {
         dragSpeed = 8.0;
     }
     _dragSpeed = dragSpeed;

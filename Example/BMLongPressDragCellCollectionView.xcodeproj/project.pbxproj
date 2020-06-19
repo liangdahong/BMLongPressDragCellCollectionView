@@ -220,8 +220,6 @@
 		0529D8CA2493795400EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7ED2493795300EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m */; };
 		0529D8CB2493795400EA22B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F02493795300EA22B9 /* main.m */; };
 		0529D8CC2493795400EA22B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F12493795300EA22B9 /* AppDelegate.m */; };
-		0529D8CD2493795400EA22B9 /* BMLongPressDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F52493795400EA22B9 /* BMLongPressDragCellCollectionView.m */; };
-		32B7737B437426FD0433CF8A /* Pods_BMLongPressDragCellCollectionView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1F5D80ADB1688F6735CF51 /* Pods_BMLongPressDragCellCollectionView_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -232,8 +230,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6F5BB3AC66964D0C91AABF13 /* Pods_BMLongPressDragCellCollectionView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776E903B5544366E7DFDA50D /* Pods_BMLongPressDragCellCollectionView_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		DDB924274D8C88F7F2DD3E1C /* libPods-BMLongPressDragCellCollectionView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 595D9ED883F3454F8489990C /* libPods-BMLongPressDragCellCollectionView_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -481,14 +479,8 @@
 		0529D7EF2493795300EA22B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0529D7F02493795300EA22B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0529D7F12493795300EA22B9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0529D7F42493795400EA22B9 /* BMLongPressDragCellCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDelegate.h; sourceTree = "<group>"; };
-		0529D7F52493795400EA22B9 /* BMLongPressDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMLongPressDragCellCollectionView.m; sourceTree = "<group>"; };
-		0529D7F62493795400EA22B9 /* BMLongPressDragCellCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionViewDataSource.h; sourceTree = "<group>"; };
-		0529D7F72493795400EA22B9 /* BMLongPressDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMLongPressDragCellCollectionView.h; sourceTree = "<group>"; };
 		0B37DCBFE09F579DD1374FB7 /* BMLongPressDragCellCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BMLongPressDragCellCollectionView.podspec; path = ../BMLongPressDragCellCollectionView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4E1F5D80ADB1688F6735CF51 /* Pods_BMLongPressDragCellCollectionView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMLongPressDragCellCollectionView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53BCAA85BA0233A79EEE9E26 /* Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests/Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		571AE0716C9B483EBA61174B /* Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests/Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		595D9ED883F3454F8489990C /* libPods-BMLongPressDragCellCollectionView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMLongPressDragCellCollectionView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* 拖拽重排.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "拖拽重排.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -505,7 +497,6 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6A24FA3F018E7D4748EC4BDD /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		776E903B5544366E7DFDA50D /* Pods_BMLongPressDragCellCollectionView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMLongPressDragCellCollectionView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3995AAC36521396FE5A6A58 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0B3D81170FE7EEE1209AA88 /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig"; path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F03EB7DA6628A2476EBEA655 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -519,7 +510,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				6F5BB3AC66964D0C91AABF13 /* Pods_BMLongPressDragCellCollectionView_Example.framework in Frameworks */,
+				DDB924274D8C88F7F2DD3E1C /* libPods-BMLongPressDragCellCollectionView_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +521,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				32B7737B437426FD0433CF8A /* Pods_BMLongPressDragCellCollectionView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,25 +1047,6 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		0529D7F22493795400EA22B9 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				0529D7F32493795400EA22B9 /* BMLongPressDragCellCollectionView */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		0529D7F32493795400EA22B9 /* BMLongPressDragCellCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				0529D7F42493795400EA22B9 /* BMLongPressDragCellCollectionViewDelegate.h */,
-				0529D7F52493795400EA22B9 /* BMLongPressDragCellCollectionView.m */,
-				0529D7F62493795400EA22B9 /* BMLongPressDragCellCollectionViewDataSource.h */,
-				0529D7F72493795400EA22B9 /* BMLongPressDragCellCollectionView.h */,
-			);
-			path = BMLongPressDragCellCollectionView;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -1104,8 +1075,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				776E903B5544366E7DFDA50D /* Pods_BMLongPressDragCellCollectionView_Example.framework */,
-				4E1F5D80ADB1688F6735CF51 /* Pods_BMLongPressDragCellCollectionView_Tests.framework */,
+				595D9ED883F3454F8489990C /* libPods-BMLongPressDragCellCollectionView_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1114,7 +1084,6 @@
 			isa = PBXGroup;
 			children = (
 				0529D6E52493795300EA22B9 /* Demo */,
-				0529D7F22493795400EA22B9 /* Sources */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -1168,8 +1137,6 @@
 			children = (
 				6A24FA3F018E7D4748EC4BDD /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */,
 				C0B3D81170FE7EEE1209AA88 /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */,
-				53BCAA85BA0233A79EEE9E26 /* Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig */,
-				571AE0716C9B483EBA61174B /* Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1185,7 +1152,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				307410D7B4891FB2C1F078DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1200,7 +1166,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionView_Tests" */;
 			buildPhases = (
-				0873942B187666B542A50B37 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -1222,7 +1187,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BM;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "ios@liangdahong.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -1468,28 +1433,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0873942B187666B542A50B37 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BMLongPressDragCellCollectionView_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		22D8A980E41A3C920E23C3BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1512,24 +1455,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		307410D7B4891FB2C1F078DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMLongPressDragCellCollectionView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1550,7 +1475,6 @@
 				0529D7FD2493795400EA22B9 /* BMTestSizeCell.m in Sources */,
 				0529D7FA2493795400EA22B9 /* BMRootVC.m in Sources */,
 				0529D8CA2493795400EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */,
-				0529D8CD2493795400EA22B9 /* BMLongPressDragCellCollectionView.m in Sources */,
 				0529D80D2493795400EA22B9 /* BMTouTiaoCell.m in Sources */,
 				0529D8072493795400EA22B9 /* BMAlipay2FooterView.m in Sources */,
 				0529D7F92493795400EA22B9 /* BMModel.m in Sources */,
@@ -1612,23 +1536,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1652,22 +1590,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1723,7 +1675,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53BCAA85BA0233A79EEE9E26 /* Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1748,7 +1699,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 571AE0716C9B483EBA61174B /* Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

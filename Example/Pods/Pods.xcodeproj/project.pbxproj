@@ -7,30 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2193662EB659B9A4D01B24B9F615AA5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		47D722FA173514418FAB89C844C8AAFE /* BMLongPressDragCellCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE413C4D55C89A32D145A0BB45B7ADC1 /* BMLongPressDragCellCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		714B1A9B054D89CB705ACFE3BA8C5830 /* Pods-BMLongPressDragCellCollectionView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B84E66C09F9E705807E20544584B2A61 /* Pods-BMLongPressDragCellCollectionView_Tests-dummy.m */; };
-		7265BF97130E50B9BC0B382FF5CD3FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		781E8B733BB2AC081B10571ADB55A65C /* BMLongPressDragCellCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 248FD76516225C1B0F59E129C4707F3B /* BMLongPressDragCellCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D1C330DA570769C5E7BB5ED98F277DF /* BMLongPressDragCellCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83541DD61C78CFA57BFFF98E0BDA3677 /* BMLongPressDragCellCollectionView-dummy.m */; };
-		81F370D1B4E7C6F27839DFDC1ABD64EB /* BMLongPressDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDEDE34C243CDD29AE50E32D27F765 /* BMLongPressDragCellCollectionView.m */; };
-		89928BB4E1BB508D929B82C5E0CEA794 /* BMLongPressDragCellCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 59078EC6DDA29EB8F3ED18A8F2A2D177 /* BMLongPressDragCellCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D3D5433588F52F8F1F3C8DB8223A012 /* Pods-BMLongPressDragCellCollectionView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC572415F4733FC8D117A89C327F06DC /* Pods-BMLongPressDragCellCollectionView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A42765674E7342127274F69D1EC7B5A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C0ED655BB954F6BF7B4D4A2878BC5563 /* Pods-BMLongPressDragCellCollectionView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A61D7FD802305407AEA0832798935E /* Pods-BMLongPressDragCellCollectionView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E81921B84A2BAEA39589F3D171B617F3 /* BMLongPressDragCellCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF186E25C57FCCF82ACDA4EC116524D /* BMLongPressDragCellCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB36F61BBFCFD028D3EF8849D980A78D /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DD37D2ED480D63FA8CA046823BD25F /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m */; };
+		54381E038BCEAEC6A526743E814D2AE9 /* BMLongPressDragCellCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6902A4C0D8B3D1B51F5C29817249339F /* BMLongPressDragCellCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD14756FAF0303B176C1DA6B25478D62 /* BMLongPressDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A321C74E3898CC5FE9BA710156923FC3 /* BMLongPressDragCellCollectionView.m */; };
+		D17B53A226367815A61D32CFD3ABDC98 /* BMLongPressDragCellCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E726457D66DF039CC9FB37428D96A560 /* BMLongPressDragCellCollectionView-dummy.m */; };
+		F012623CD763CF97BA1EF2B9D2681D80 /* BMLongPressDragCellCollectionViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 520611436D2C9AF802E1ED2B16B693BE /* BMLongPressDragCellCollectionViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7E9660C87AEF3FFE329D6F126EF9E55 /* BMLongPressDragCellCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D51F9118E79946CB9995FF8525DB05 /* BMLongPressDragCellCollectionView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8E742501641DB42B53A1457933DFADA /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F6BE53DE4EFE06AB0ED1B8794153C /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		409C5C9C5BEA451C2DFBB204A950F6C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 59D9678D1D08F1AD0A1E31E1DA0632C4;
-			remoteInfo = "Pods-BMLongPressDragCellCollectionView_Example";
-		};
-		E7A9220C288A013E9B13A2C6F5CABF03 /* PBXContainerItemProxy */ = {
+		241A93E655F5E05823061556D8A1ED37 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -40,115 +26,103 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		033B4E426EB3015D50FBD793058BFDF2 /* Pods-BMLongPressDragCellCollectionView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BMLongPressDragCellCollectionView_Example.modulemap"; sourceTree = "<group>"; };
-		0456AB441F3680074247F348EE7AF86C /* Pods-BMLongPressDragCellCollectionView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BMLongPressDragCellCollectionView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		071951C89B971D10FBB3AE80D5F6DC4A /* Pods-BMLongPressDragCellCollectionView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMLongPressDragCellCollectionView_Tests-Info.plist"; sourceTree = "<group>"; };
-		11F24FDA02B12F162FA7E922667832AC /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1A798272B3FF30E3ACE3AD5AD2FADD60 /* Pods-BMLongPressDragCellCollectionView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMLongPressDragCellCollectionView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A81CCE4EFD56DDEC3A598D03D85168B /* Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		248FD76516225C1B0F59E129C4707F3B /* BMLongPressDragCellCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMLongPressDragCellCollectionView-umbrella.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3478DDB967356AC8B72FD056B2E40087 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3526F03F766AE39C566E4F7D59BA0DC0 /* Pods-BMLongPressDragCellCollectionView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMLongPressDragCellCollectionView_Example-Info.plist"; sourceTree = "<group>"; };
-		3BC34FC9EDE2C2994065AA116A849622 /* Pods_BMLongPressDragCellCollectionView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BMLongPressDragCellCollectionView_Example.framework; path = "Pods-BMLongPressDragCellCollectionView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4535793B1D6FBD91B1CFA294C1F5B27E /* BMLongPressDragCellCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMLongPressDragCellCollectionView-prefix.pch"; sourceTree = "<group>"; };
-		51A6D5617ADE0F65F721C91B33667715 /* BMLongPressDragCellCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BMLongPressDragCellCollectionView.framework; path = BMLongPressDragCellCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59078EC6DDA29EB8F3ED18A8F2A2D177 /* BMLongPressDragCellCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMLongPressDragCellCollectionViewDataSource.h; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionViewDataSource.h; sourceTree = "<group>"; };
-		6B4323DC38F27FDF6CD7D66503B2E8A6 /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6BE8D62787937330F3447415D5F4EEC8 /* BMLongPressDragCellCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BMLongPressDragCellCollectionView-Info.plist"; sourceTree = "<group>"; };
-		77F1437F0E11D51D4F621B410E513E99 /* BMLongPressDragCellCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMLongPressDragCellCollectionView.debug.xcconfig; sourceTree = "<group>"; };
-		78112C22E76CC700C513146EE37D08C9 /* BMLongPressDragCellCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMLongPressDragCellCollectionView.release.xcconfig; sourceTree = "<group>"; };
-		7CF186E25C57FCCF82ACDA4EC116524D /* BMLongPressDragCellCollectionViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMLongPressDragCellCollectionViewDelegate.h; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionViewDelegate.h; sourceTree = "<group>"; };
-		83541DD61C78CFA57BFFF98E0BDA3677 /* BMLongPressDragCellCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMLongPressDragCellCollectionView-dummy.m"; sourceTree = "<group>"; };
-		88A61D7FD802305407AEA0832798935E /* Pods-BMLongPressDragCellCollectionView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BMLongPressDragCellCollectionView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8A916F04B9EBE290612E990C011EF8E2 /* Pods-BMLongPressDragCellCollectionView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BMLongPressDragCellCollectionView_Tests.modulemap"; sourceTree = "<group>"; };
-		9569792CE0D57B1A69AAC9488A5C9F7A /* Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		987D4F5B01AE880ACBC27440771EFB1D /* BMLongPressDragCellCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BMLongPressDragCellCollectionView.modulemap; sourceTree = "<group>"; };
-		9BD743F57A6D17E830FAD31895AAB93F /* Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4DD37D2ED480D63FA8CA046823BD25F /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BMLongPressDragCellCollectionView_Example-dummy.m"; sourceTree = "<group>"; };
-		A94E8F9A27CC9E7EC944F4B9CE40C91E /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		ADB1435D61A70BE5FB4EE737C54FCC53 /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B84E66C09F9E705807E20544584B2A61 /* Pods-BMLongPressDragCellCollectionView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BMLongPressDragCellCollectionView_Tests-dummy.m"; sourceTree = "<group>"; };
-		BDCE85A15F0964B9B433CBBDCF55A744 /* BMLongPressDragCellCollectionView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BMLongPressDragCellCollectionView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE413C4D55C89A32D145A0BB45B7ADC1 /* BMLongPressDragCellCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMLongPressDragCellCollectionView.h; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.h; sourceTree = "<group>"; };
-		C503C83435EA2B06AF55B48B0A4105EF /* Pods_BMLongPressDragCellCollectionView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BMLongPressDragCellCollectionView_Tests.framework; path = "Pods-BMLongPressDragCellCollectionView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE71A0EF001C1B58F9C247551366BF7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		DC572415F4733FC8D117A89C327F06DC /* Pods-BMLongPressDragCellCollectionView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BMLongPressDragCellCollectionView_Example-umbrella.h"; sourceTree = "<group>"; };
-		FDFDEDE34C243CDD29AE50E32D27F765 /* BMLongPressDragCellCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BMLongPressDragCellCollectionView.m; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.m; sourceTree = "<group>"; };
+		0C16FB8C62E75C947F81AD09632D3FA4 /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3380316A8F8D0B06E4AFE553312C5F47 /* BMLongPressDragCellCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMLongPressDragCellCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		3B621D124486CF54B50643B2F3A663AB /* BMLongPressDragCellCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMLongPressDragCellCollectionView.debug.xcconfig; sourceTree = "<group>"; };
+		3BC34FC9EDE2C2994065AA116A849622 /* libPods-BMLongPressDragCellCollectionView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMLongPressDragCellCollectionView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB16A6DFB04D22CA058577927D5282E /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		51A6D5617ADE0F65F721C91B33667715 /* libBMLongPressDragCellCollectionView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBMLongPressDragCellCollectionView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		520611436D2C9AF802E1ED2B16B693BE /* BMLongPressDragCellCollectionViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMLongPressDragCellCollectionViewDelegate.h; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionViewDelegate.h; sourceTree = "<group>"; };
+		5C73A08BF65C6522FAC96E2C873B06CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6902A4C0D8B3D1B51F5C29817249339F /* BMLongPressDragCellCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMLongPressDragCellCollectionViewDataSource.h; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionViewDataSource.h; sourceTree = "<group>"; };
+		6E37A3735AF566F7B970CC0F78A13E6A /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		739F6BE53DE4EFE06AB0ED1B8794153C /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BMLongPressDragCellCollectionView_Example-dummy.m"; sourceTree = "<group>"; };
+		87D51F9118E79946CB9995FF8525DB05 /* BMLongPressDragCellCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMLongPressDragCellCollectionView.h; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.h; sourceTree = "<group>"; };
+		914A51D16D86C76C90482696D0289A43 /* BMLongPressDragCellCollectionView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BMLongPressDragCellCollectionView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		940EC53507718407F4DDF9D33E2864EC /* BMLongPressDragCellCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMLongPressDragCellCollectionView.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A05A7F2A13CA11CD204F45BA55459369 /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A321C74E3898CC5FE9BA710156923FC3 /* BMLongPressDragCellCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BMLongPressDragCellCollectionView.m; path = BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.m; sourceTree = "<group>"; };
+		AEF3D4B3B2DACFB4869A9349CE4AC87B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E726457D66DF039CC9FB37428D96A560 /* BMLongPressDragCellCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMLongPressDragCellCollectionView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83FCAD396767DF4881798AE6ECDC20D7 /* Frameworks */ = {
+		04D5508EF94F318BBB78C1BA86C502B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42765674E7342127274F69D1EC7B5A8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DF9530616691E28A82FD07F03F03C59 /* Frameworks */ = {
+		CFEAC87E6D63F13AF471936243F0E5CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7265BF97130E50B9BC0B382FF5CD3FEB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3FDA538D115A11E6465B31B739BDECA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2193662EB659B9A4D01B24B9F615AA5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2BA80A277EF051FAD8F5EE596544BC40 /* Pod */ = {
+		158E5AABBE21871B23C0C1CE39F39A1A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BDCE85A15F0964B9B433CBBDCF55A744 /* BMLongPressDragCellCollectionView.podspec */,
-				3478DDB967356AC8B72FD056B2E40087 /* LICENSE */,
-				CE71A0EF001C1B58F9C247551366BF7F /* README.md */,
+				E726457D66DF039CC9FB37428D96A560 /* BMLongPressDragCellCollectionView-dummy.m */,
+				3380316A8F8D0B06E4AFE553312C5F47 /* BMLongPressDragCellCollectionView-prefix.pch */,
+				3B621D124486CF54B50643B2F3A663AB /* BMLongPressDragCellCollectionView.debug.xcconfig */,
+				940EC53507718407F4DDF9D33E2864EC /* BMLongPressDragCellCollectionView.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BMLongPressDragCellCollectionView";
+			sourceTree = "<group>";
+		};
+		6CF48026BCD2E2FBC9E1F3667EF13251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51A6D5617ADE0F65F721C91B33667715 /* libBMLongPressDragCellCollectionView.a */,
+				3BC34FC9EDE2C2994065AA116A849622 /* libPods-BMLongPressDragCellCollectionView_Example.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		71B65B872E39A9F58DD15B77C774DB32 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F5C4D21C4319F3164CF52415F77033CF /* BMLongPressDragCellCollectionView */,
+				D54BB10C4B0903D3B9E22347F3E12028 /* BMLongPressDragCellCollectionView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7C0AD872013A28F54BCC59C89D273FBE /* Products */ = {
+		8671D2BD4A291BC69D95B43DC61E8DB4 /* Pods-BMLongPressDragCellCollectionView_Example */ = {
 			isa = PBXGroup;
 			children = (
-				51A6D5617ADE0F65F721C91B33667715 /* BMLongPressDragCellCollectionView.framework */,
-				3BC34FC9EDE2C2994065AA116A849622 /* Pods_BMLongPressDragCellCollectionView_Example.framework */,
-				C503C83435EA2B06AF55B48B0A4105EF /* Pods_BMLongPressDragCellCollectionView_Tests.framework */,
+				6E37A3735AF566F7B970CC0F78A13E6A /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.markdown */,
+				0C16FB8C62E75C947F81AD09632D3FA4 /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.plist */,
+				739F6BE53DE4EFE06AB0ED1B8794153C /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m */,
+				3DB16A6DFB04D22CA058577927D5282E /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */,
+				A05A7F2A13CA11CD204F45BA55459369 /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-BMLongPressDragCellCollectionView_Example";
+			path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example";
 			sourceTree = "<group>";
 		};
-		8DF3C35BB55DC88F7832AAE4A95BE255 /* Targets Support Files */ = {
+		9B36F4EFBDA1B545FD859DF7544BF1E8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E5EFFC4C0A584626EE87CACF378EF14B /* Pods-BMLongPressDragCellCollectionView_Example */,
-				E017ED834606955F55118FCFA45F64AE /* Pods-BMLongPressDragCellCollectionView_Tests */,
+				8671D2BD4A291BC69D95B43DC61E8DB4 /* Pods-BMLongPressDragCellCollectionView_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		CF09BDF0A92303763F7A822171B36118 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				914A51D16D86C76C90482696D0289A43 /* BMLongPressDragCellCollectionView.podspec */,
+				5C73A08BF65C6522FAC96E2C873B06CC /* LICENSE */,
+				AEF3D4B3B2DACFB4869A9349CE4AC87B /* README.md */,
 			);
-			name = iOS;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -156,109 +130,50 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				71B65B872E39A9F58DD15B77C774DB32 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7C0AD872013A28F54BCC59C89D273FBE /* Products */,
-				8DF3C35BB55DC88F7832AAE4A95BE255 /* Targets Support Files */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				6CF48026BCD2E2FBC9E1F3667EF13251 /* Products */,
+				9B36F4EFBDA1B545FD859DF7544BF1E8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D54BB10C4B0903D3B9E22347F3E12028 /* BMLongPressDragCellCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E017ED834606955F55118FCFA45F64AE /* Pods-BMLongPressDragCellCollectionView_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8A916F04B9EBE290612E990C011EF8E2 /* Pods-BMLongPressDragCellCollectionView_Tests.modulemap */,
-				0456AB441F3680074247F348EE7AF86C /* Pods-BMLongPressDragCellCollectionView_Tests-acknowledgements.markdown */,
-				1A798272B3FF30E3ACE3AD5AD2FADD60 /* Pods-BMLongPressDragCellCollectionView_Tests-acknowledgements.plist */,
-				B84E66C09F9E705807E20544584B2A61 /* Pods-BMLongPressDragCellCollectionView_Tests-dummy.m */,
-				071951C89B971D10FBB3AE80D5F6DC4A /* Pods-BMLongPressDragCellCollectionView_Tests-Info.plist */,
-				88A61D7FD802305407AEA0832798935E /* Pods-BMLongPressDragCellCollectionView_Tests-umbrella.h */,
-				9BD743F57A6D17E830FAD31895AAB93F /* Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig */,
-				9569792CE0D57B1A69AAC9488A5C9F7A /* Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig */,
-			);
-			name = "Pods-BMLongPressDragCellCollectionView_Tests";
-			path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests";
-			sourceTree = "<group>";
-		};
-		E5650EF62B31A60E844E1E359BB7732A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				987D4F5B01AE880ACBC27440771EFB1D /* BMLongPressDragCellCollectionView.modulemap */,
-				83541DD61C78CFA57BFFF98E0BDA3677 /* BMLongPressDragCellCollectionView-dummy.m */,
-				6BE8D62787937330F3447415D5F4EEC8 /* BMLongPressDragCellCollectionView-Info.plist */,
-				4535793B1D6FBD91B1CFA294C1F5B27E /* BMLongPressDragCellCollectionView-prefix.pch */,
-				248FD76516225C1B0F59E129C4707F3B /* BMLongPressDragCellCollectionView-umbrella.h */,
-				77F1437F0E11D51D4F621B410E513E99 /* BMLongPressDragCellCollectionView.debug.xcconfig */,
-				78112C22E76CC700C513146EE37D08C9 /* BMLongPressDragCellCollectionView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BMLongPressDragCellCollectionView";
-			sourceTree = "<group>";
-		};
-		E5EFFC4C0A584626EE87CACF378EF14B /* Pods-BMLongPressDragCellCollectionView_Example */ = {
-			isa = PBXGroup;
-			children = (
-				033B4E426EB3015D50FBD793058BFDF2 /* Pods-BMLongPressDragCellCollectionView_Example.modulemap */,
-				11F24FDA02B12F162FA7E922667832AC /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.markdown */,
-				6B4323DC38F27FDF6CD7D66503B2E8A6 /* Pods-BMLongPressDragCellCollectionView_Example-acknowledgements.plist */,
-				A4DD37D2ED480D63FA8CA046823BD25F /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m */,
-				1A81CCE4EFD56DDEC3A598D03D85168B /* Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh */,
-				3526F03F766AE39C566E4F7D59BA0DC0 /* Pods-BMLongPressDragCellCollectionView_Example-Info.plist */,
-				DC572415F4733FC8D117A89C327F06DC /* Pods-BMLongPressDragCellCollectionView_Example-umbrella.h */,
-				ADB1435D61A70BE5FB4EE737C54FCC53 /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */,
-				A94E8F9A27CC9E7EC944F4B9CE40C91E /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */,
-			);
-			name = "Pods-BMLongPressDragCellCollectionView_Example";
-			path = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example";
-			sourceTree = "<group>";
-		};
-		F5C4D21C4319F3164CF52415F77033CF /* BMLongPressDragCellCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				BE413C4D55C89A32D145A0BB45B7ADC1 /* BMLongPressDragCellCollectionView.h */,
-				FDFDEDE34C243CDD29AE50E32D27F765 /* BMLongPressDragCellCollectionView.m */,
-				59078EC6DDA29EB8F3ED18A8F2A2D177 /* BMLongPressDragCellCollectionViewDataSource.h */,
-				7CF186E25C57FCCF82ACDA4EC116524D /* BMLongPressDragCellCollectionViewDelegate.h */,
-				2BA80A277EF051FAD8F5EE596544BC40 /* Pod */,
-				E5650EF62B31A60E844E1E359BB7732A /* Support Files */,
+				87D51F9118E79946CB9995FF8525DB05 /* BMLongPressDragCellCollectionView.h */,
+				A321C74E3898CC5FE9BA710156923FC3 /* BMLongPressDragCellCollectionView.m */,
+				6902A4C0D8B3D1B51F5C29817249339F /* BMLongPressDragCellCollectionViewDataSource.h */,
+				520611436D2C9AF802E1ED2B16B693BE /* BMLongPressDragCellCollectionViewDelegate.h */,
+				CF09BDF0A92303763F7A822171B36118 /* Pod */,
+				158E5AABBE21871B23C0C1CE39F39A1A /* Support Files */,
 			);
 			name = BMLongPressDragCellCollectionView;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3F7CCA09F47DBD4C41FC897848155BDF /* Headers */ = {
+		199E213BAB39810B9F36B0DD07C469E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781E8B733BB2AC081B10571ADB55A65C /* BMLongPressDragCellCollectionView-umbrella.h in Headers */,
-				47D722FA173514418FAB89C844C8AAFE /* BMLongPressDragCellCollectionView.h in Headers */,
-				89928BB4E1BB508D929B82C5E0CEA794 /* BMLongPressDragCellCollectionViewDataSource.h in Headers */,
-				E81921B84A2BAEA39589F3D171B617F3 /* BMLongPressDragCellCollectionViewDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DAF99714EA36A3CC0EA9AC5EDE549C1 /* Headers */ = {
+		60C6C5D59532281C20E80A622CA0BB25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ED655BB954F6BF7B4D4A2878BC5563 /* Pods-BMLongPressDragCellCollectionView_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDD33621250FC079FEA841F9338AE099 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D3D5433588F52F8F1F3C8DB8223A012 /* Pods-BMLongPressDragCellCollectionView_Example-umbrella.h in Headers */,
+				F7E9660C87AEF3FFE329D6F126EF9E55 /* BMLongPressDragCellCollectionView.h in Headers */,
+				54381E038BCEAEC6A526743E814D2AE9 /* BMLongPressDragCellCollectionViewDataSource.h in Headers */,
+				F012623CD763CF97BA1EF2B9D2681D80 /* BMLongPressDragCellCollectionViewDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +182,11 @@
 /* Begin PBXNativeTarget section */
 		3FD07AEB878F628C64F0C81135D00776 /* BMLongPressDragCellCollectionView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 821E351C1268592E923F4F2715B8049E /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionView" */;
+			buildConfigurationList = F2552F11A3AC9F8B554018A8363C7B37 /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionView" */;
 			buildPhases = (
-				3F7CCA09F47DBD4C41FC897848155BDF /* Headers */,
-				74DA9049A92F547B4CBC30B57A075066 /* Sources */,
-				83FCAD396767DF4881798AE6ECDC20D7 /* Frameworks */,
-				6E50D85F16F5C951738F8E24A8C425BE /* Resources */,
+				60C6C5D59532281C20E80A622CA0BB25 /* Headers */,
+				0D61832EE0F8D960FBF3142A79335A2F /* Sources */,
+				CFEAC87E6D63F13AF471936243F0E5CB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,46 +194,26 @@
 			);
 			name = BMLongPressDragCellCollectionView;
 			productName = BMLongPressDragCellCollectionView;
-			productReference = 51A6D5617ADE0F65F721C91B33667715 /* BMLongPressDragCellCollectionView.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 51A6D5617ADE0F65F721C91B33667715 /* libBMLongPressDragCellCollectionView.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		59D9678D1D08F1AD0A1E31E1DA0632C4 /* Pods-BMLongPressDragCellCollectionView_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E808F01167B4E204D8E0992848B2925 /* Build configuration list for PBXNativeTarget "Pods-BMLongPressDragCellCollectionView_Example" */;
+			buildConfigurationList = 68EA57D442F2736D7A96D6DA6AF5775E /* Build configuration list for PBXNativeTarget "Pods-BMLongPressDragCellCollectionView_Example" */;
 			buildPhases = (
-				EDD33621250FC079FEA841F9338AE099 /* Headers */,
-				6921940516DF4C10CA91EC94C71758FD /* Sources */,
-				8DF9530616691E28A82FD07F03F03C59 /* Frameworks */,
-				DC66B26EBA37BEE237D3402DAD093FC6 /* Resources */,
+				199E213BAB39810B9F36B0DD07C469E9 /* Headers */,
+				EE497C5AA343AD2C78E9FB3CE0684731 /* Sources */,
+				04D5508EF94F318BBB78C1BA86C502B2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38A6563A6D2397C56E37E74914B809D7 /* PBXTargetDependency */,
+				A03F4AB4426C9B8F05FB7CB4AE7976CB /* PBXTargetDependency */,
 			);
 			name = "Pods-BMLongPressDragCellCollectionView_Example";
 			productName = "Pods-BMLongPressDragCellCollectionView_Example";
-			productReference = 3BC34FC9EDE2C2994065AA116A849622 /* Pods_BMLongPressDragCellCollectionView_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CCB084C4C778F8C9A3CBFBA528C8708B /* Pods-BMLongPressDragCellCollectionView_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F774A21B1EA75FDA4A2964AFA7118C75 /* Build configuration list for PBXNativeTarget "Pods-BMLongPressDragCellCollectionView_Tests" */;
-			buildPhases = (
-				4DAF99714EA36A3CC0EA9AC5EDE549C1 /* Headers */,
-				2CAD36F411C4FC204E69EF8DB1758800 /* Sources */,
-				B3FDA538D115A11E6465B31B739BDECA /* Frameworks */,
-				08F60503D4757DE4F3325AB2E539F093 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA4C6E360C8C6601B948D6ED0577C309 /* PBXTargetDependency */,
-			);
-			name = "Pods-BMLongPressDragCellCollectionView_Tests";
-			productName = "Pods-BMLongPressDragCellCollectionView_Tests";
-			productReference = C503C83435EA2B06AF55B48B0A4105EF /* Pods_BMLongPressDragCellCollectionView_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 3BC34FC9EDE2C2994065AA116A849622 /* libPods-BMLongPressDragCellCollectionView_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -328,7 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1150;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,184 +233,94 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7C0AD872013A28F54BCC59C89D273FBE /* Products */;
+			productRefGroup = 6CF48026BCD2E2FBC9E1F3667EF13251 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3FD07AEB878F628C64F0C81135D00776 /* BMLongPressDragCellCollectionView */,
 				59D9678D1D08F1AD0A1E31E1DA0632C4 /* Pods-BMLongPressDragCellCollectionView_Example */,
-				CCB084C4C778F8C9A3CBFBA528C8708B /* Pods-BMLongPressDragCellCollectionView_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		08F60503D4757DE4F3325AB2E539F093 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E50D85F16F5C951738F8E24A8C425BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC66B26EBA37BEE237D3402DAD093FC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2CAD36F411C4FC204E69EF8DB1758800 /* Sources */ = {
+		0D61832EE0F8D960FBF3142A79335A2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				714B1A9B054D89CB705ACFE3BA8C5830 /* Pods-BMLongPressDragCellCollectionView_Tests-dummy.m in Sources */,
+				D17B53A226367815A61D32CFD3ABDC98 /* BMLongPressDragCellCollectionView-dummy.m in Sources */,
+				AD14756FAF0303B176C1DA6B25478D62 /* BMLongPressDragCellCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6921940516DF4C10CA91EC94C71758FD /* Sources */ = {
+		EE497C5AA343AD2C78E9FB3CE0684731 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB36F61BBFCFD028D3EF8849D980A78D /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		74DA9049A92F547B4CBC30B57A075066 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D1C330DA570769C5E7BB5ED98F277DF /* BMLongPressDragCellCollectionView-dummy.m in Sources */,
-				81F370D1B4E7C6F27839DFDC1ABD64EB /* BMLongPressDragCellCollectionView.m in Sources */,
+				F8E742501641DB42B53A1457933DFADA /* Pods-BMLongPressDragCellCollectionView_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38A6563A6D2397C56E37E74914B809D7 /* PBXTargetDependency */ = {
+		A03F4AB4426C9B8F05FB7CB4AE7976CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMLongPressDragCellCollectionView;
 			target = 3FD07AEB878F628C64F0C81135D00776 /* BMLongPressDragCellCollectionView */;
-			targetProxy = E7A9220C288A013E9B13A2C6F5CABF03 /* PBXContainerItemProxy */;
-		};
-		AA4C6E360C8C6601B948D6ED0577C309 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-BMLongPressDragCellCollectionView_Example";
-			target = 59D9678D1D08F1AD0A1E31E1DA0632C4 /* Pods-BMLongPressDragCellCollectionView_Example */;
-			targetProxy = 409C5C9C5BEA451C2DFBB204A950F6C1 /* PBXContainerItemProxy */;
+			targetProxy = 241A93E655F5E05823061556D8A1ED37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B488A39A97D46835FF48E85A3D83939 /* Release */ = {
+		016C963DD951F6E874C07DCAB4A2B78E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9569792CE0D57B1A69AAC9488A5C9F7A /* Pods-BMLongPressDragCellCollectionView_Tests.release.xcconfig */;
+			baseConfigurationReference = 3B621D124486CF54B50643B2F3A663AB /* BMLongPressDragCellCollectionView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests/Pods-BMLongPressDragCellCollectionView_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests/Pods-BMLongPressDragCellCollectionView_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BMLongPressDragCellCollectionView;
+				PRODUCT_NAME = BMLongPressDragCellCollectionView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		386FCCDA620261167F6488C67DA25C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940EC53507718407F4DDF9D33E2864EC /* BMLongPressDragCellCollectionView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = BMLongPressDragCellCollectionView;
+				PRODUCT_NAME = BMLongPressDragCellCollectionView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		2FF23269F730841FB7EC519C0CC9A7C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADB1435D61A70BE5FB4EE737C54FCC53 /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		46C460CEF1EE33FC2D62413F872AEE51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BD743F57A6D17E830FAD31895AAB93F /* Pods-BMLongPressDragCellCollectionView_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests/Pods-BMLongPressDragCellCollectionView_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Tests/Pods-BMLongPressDragCellCollectionView_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -571,44 +375,54 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		5F16815D475EEE521F0467D5013E76B5 /* Release */ = {
+		4FB116A9B1002F597738E981CC8B22C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78112C22E76CC700C513146EE37D08C9 /* BMLongPressDragCellCollectionView.release.xcconfig */;
+			baseConfigurationReference = A05A7F2A13CA11CD204F45BA55459369 /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.modulemap";
-				PRODUCT_MODULE_NAME = BMLongPressDragCellCollectionView;
-				PRODUCT_NAME = BMLongPressDragCellCollectionView;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		6749FCC1D5717300471F118A9027A6F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB16A6DFB04D22CA058577927D5282E /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -674,71 +488,6 @@
 			};
 			name = Debug;
 		};
-		97549494DE5B756BFCB00DEA32EFCA3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A94E8F9A27CC9E7EC944F4B9CE40C91E /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C29EC3DE819C6C7C6CF76EF969FD6A37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77F1437F0E11D51D4F621B410E513E99 /* BMLongPressDragCellCollectionView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.modulemap";
-				PRODUCT_MODULE_NAME = BMLongPressDragCellCollectionView;
-				PRODUCT_NAME = BMLongPressDragCellCollectionView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,29 +500,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E808F01167B4E204D8E0992848B2925 /* Build configuration list for PBXNativeTarget "Pods-BMLongPressDragCellCollectionView_Example" */ = {
+		68EA57D442F2736D7A96D6DA6AF5775E /* Build configuration list for PBXNativeTarget "Pods-BMLongPressDragCellCollectionView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FF23269F730841FB7EC519C0CC9A7C4 /* Debug */,
-				97549494DE5B756BFCB00DEA32EFCA3F /* Release */,
+				6749FCC1D5717300471F118A9027A6F7 /* Debug */,
+				4FB116A9B1002F597738E981CC8B22C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		821E351C1268592E923F4F2715B8049E /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionView" */ = {
+		F2552F11A3AC9F8B554018A8363C7B37 /* Build configuration list for PBXNativeTarget "BMLongPressDragCellCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C29EC3DE819C6C7C6CF76EF969FD6A37 /* Debug */,
-				5F16815D475EEE521F0467D5013E76B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F774A21B1EA75FDA4A2964AFA7118C75 /* Build configuration list for PBXNativeTarget "Pods-BMLongPressDragCellCollectionView_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				46C460CEF1EE33FC2D62413F872AEE51 /* Debug */,
-				0B488A39A97D46835FF48E85A3D83939 /* Release */,
+				016C963DD951F6E874C07DCAB4A2B78E /* Debug */,
+				386FCCDA620261167F6488C67DA25C82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
