@@ -16,6 +16,7 @@
 </p>
 
 ## 介绍
+
 - 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，`iOS8+`，具体可查看代码。
 
 ##  CocoaPods 安装
@@ -27,12 +28,10 @@ pod install
 ```
 
 ##  手动安装
-
-- 下载项目 【 `clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git` 】
+- 下载项目 「 `clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git` 」
 -  将 `BMLongPressDragCellCollectionView/Sources/BMLongPressDragCellCollectionView`  文件夹下的全部内容拖拽到你的项目。
 
 ## 使用说明
-
 1. `BMLongPressDragCellCollectionView` 是继自 `UICollectionView` ，其使用方式和 `UICollectionView` 一致，只需要把 `UICollectionView` 修改为 `BMLongPressDragCellCollectionView` 即可【支持 Xib，StoryBoard】。
 2. 原来的 `UICollectionViewDataSource` 换为 B`MLongPressDragCellCollectionViewDataSource` 
 3. 原来的 `UICollectionViewDelegateFlowLayout` 换为 `BMLongPressDragCellCollectionViewDelegate`。
@@ -41,6 +40,7 @@ pod install
 ```
 - (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView;
 ```
+
 如下：
 
 ```
@@ -64,18 +64,18 @@ pod install
 
 ## 图文演示
 ### 在 `Xib`或者 `StoryBoard` 中使用
-<img  width="50%" src="Images/xib01.png"/>
-<img  width="50%" src="Images/xib02.png"/>
-<img  width="50%" src="Images/xib03.png"/>
-<img  width="50%" src="Images/xib04.png"/>
+<img  width="80%" src="Images/xib01.png"/>
+<img  width="80%" src="Images/xib02.png"/>
+<img  width="80%" src="Images/xib03.png"/>
+<img  width="15%" src="Images/xib04.png"/>
 
 - 在 `Xib`或者 `StoryBoard` 中只需要上面的 `3 步`就可以让你的 `UICollectionView` 完美支持拖拽重排了。
 
 ### 使用纯代码实现
-<img  width="50%" src="Images/code01.png"/>
-<img  width="50%" src="Images/code02.png"/>
-<img  width="50%" src="Images/code03.png"/>
-<img  width="50%" src="Images/code04.png"/>
+<img  width="80%" src="Images/code01.png"/>
+<img  width="80%" src="Images/code02.png"/>
+<img  width="80%" src="Images/code03.png"/>
+<img  width="15%" src="Images/code04.png"/>
 
 - 在纯代码实现中只需要上面的 `3 步` 就可以让你的 `UICollectionView` 完美支持拖拽重排了。
 
@@ -89,9 +89,11 @@ pod install
 - <img width="20%" src="Images/wx.jpg"/> 
 
 ## 感谢
+
 - 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)，特别感谢。
 
 ## 相关推荐
+
 - 🖖高性能的自动计算采用 Autolayout 布局的 UITableViewCell 和 UITableViewHeaderFooterView 的高度，内部自动管理高度缓存。
 [https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight)
 
