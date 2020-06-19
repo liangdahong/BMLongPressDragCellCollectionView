@@ -73,7 +73,6 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     BMTestSizeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     cell.label.text = _dataSource[indexPath.section][indexPath.item][@"title"];
-    cell.label.backgroundColor = _dataSource[indexPath.section][indexPath.item][@"color"];
     return cell;
 }
 

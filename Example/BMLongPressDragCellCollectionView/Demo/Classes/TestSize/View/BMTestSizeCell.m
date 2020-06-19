@@ -11,4 +11,11 @@
 
 @implementation BMTestSizeCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.label.textAlignment = NSTextAlignmentCenter;
+    self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.333];
+    self.layer.cornerRadius = 10;
+}
+
 @end
