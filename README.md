@@ -42,6 +42,7 @@ pod install
 ```
 - (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView;
 ```
+
 如下：
 
 ```
