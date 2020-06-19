@@ -696,8 +696,8 @@
 			isa = PBXGroup;
 			children = (
 				0529D70A2493795300EA22B9 /* BMAlipay2VC.h */,
-				0529D70B2493795300EA22B9 /* BMAlipay2VC.xib */,
 				0529D70C2493795300EA22B9 /* BMAlipay2VC.m */,
+				0529D70B2493795300EA22B9 /* BMAlipay2VC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -805,8 +805,8 @@
 		0529D7262493795300EA22B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0529D7272493795300EA22B9 /* BMQQImageVC.m */,
 				0529D7282493795300EA22B9 /* BMQQImageVC.h */,
+				0529D7272493795300EA22B9 /* BMQQImageVC.m */,
 				0529D7292493795300EA22B9 /* BMQQImageVC.xib */,
 			);
 			path = Controller;
@@ -815,9 +815,9 @@
 		0529D72A2493795300EA22B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0529D72B2493795300EA22B9 /* BMImageCell.xib */,
-				0529D72C2493795300EA22B9 /* BMImageCell.m */,
 				0529D72D2493795300EA22B9 /* BMImageCell.h */,
+				0529D72C2493795300EA22B9 /* BMImageCell.m */,
+				0529D72B2493795300EA22B9 /* BMImageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

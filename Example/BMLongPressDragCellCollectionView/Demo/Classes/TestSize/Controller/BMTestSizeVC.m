@@ -44,11 +44,13 @@ static NSString *reuseIdentifier = @"forCellWithReuseIdentifier";
         _collectionView.dataSource = self;
 
         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        layout.minimumLineSpacing = arc4random_uniform(20)+1;
-        layout.minimumInteritemSpacing = arc4random_uniform(20)+1;
+        layout.minimumLineSpacing        = arc4random_uniform(20)+1;
+        layout.minimumInteritemSpacing   = arc4random_uniform(20)+1;
+        
         if (self.dataSource.count > 1) {
             layout.headerReferenceSize = CGSizeMake(100, 100);
         }
+        
         if (self.collectionViewScrollDirection == UICollectionViewScrollDirectionVertical) {
             _collectionView.alwaysBounceVertical = YES;
         } else {
