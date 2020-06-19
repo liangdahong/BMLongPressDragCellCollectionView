@@ -7,7 +7,5 @@ target 'BMLongPressDragCellCollectionView_Example' do
 
   target 'BMLongPressDragCellCollectionView_Tests' do
     inherit! :search_paths
-
-    
   end
 end

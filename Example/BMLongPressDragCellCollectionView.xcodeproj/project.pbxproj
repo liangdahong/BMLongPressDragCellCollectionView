@@ -1691,8 +1691,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Prefix.pch";
 				INFOPLIST_FILE = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Info.plist";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liangdahong.BMDragCellCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangdahong.dragCell;
 				PRODUCT_NAME = "拖拽重排";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				SWIFT_VERSION = 4.0;
@@ -1710,8 +1711,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Prefix.pch";
 				INFOPLIST_FILE = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Info.plist";
+				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.liangdahong.BMDragCellCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangdahong.dragCell;
 				PRODUCT_NAME = "拖拽重排";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				SWIFT_VERSION = 4.0;
