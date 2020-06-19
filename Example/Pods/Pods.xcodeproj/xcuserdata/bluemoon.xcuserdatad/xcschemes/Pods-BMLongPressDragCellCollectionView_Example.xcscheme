@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1150"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "59D9678D1D08F1AD0A1E31E1DA0632C4"
-               BuildableName = "libPods-BMLongPressDragCellCollectionView_Example.a"
+               BuildableName = "Pods_BMLongPressDragCellCollectionView_Example.framework"
                BlueprintName = "Pods-BMLongPressDragCellCollectionView_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
