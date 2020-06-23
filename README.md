@@ -2,7 +2,7 @@
     <img  width="22%" src="Images/1.gif"/>
     <img  width="22%" src="Images/2.gif"/>
     <img  width="22%" src="Images/3.gif">
-    <img  width="22.5%" src="Images/4.gif"/>
+    <img  width="22%" src="Images/4.gif"/>
 <p/>
 
 <p align="center">
