@@ -28,7 +28,7 @@ pod install
 
 ##  手动安装
 - 下载项目 「 `clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git` 」
--  将 `BMLongPressDragCellCollectionView/Sources/BMLongPressDragCellCollectionView`  文件夹下的全部内容拖拽到你的项目。
+-  将 `BMLongPressDragCellCollectionView`  文件夹下的全部内容拖拽到你的项目。
 
 ## 使用说明
 1. `BMLongPressDragCellCollectionView` 是继自 `UICollectionView` ，其使用方式和 `UICollectionView` 一致，只需要把 `UICollectionView` 修改为 `BMLongPressDragCellCollectionView` 即可【支持 Xib，StoryBoard】。
