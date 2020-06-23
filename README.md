@@ -1,5 +1,3 @@
-## 效果演示
-
 <p align="center">
     <img  width="22%" src="Images/1.gif"/>
     <img  width="22%" src="Images/2.gif"/>
@@ -11,6 +9,7 @@
 <a href="https://en.wikipedia.org/wiki/IOS"><img src="https://img.shields.io/badge/platform-iOS-red.svg"></a>
 <a href="https://en.wikipedia.org/wiki/IOS_8"><img src="https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat"></a>
 <a href="https://github.com/liangdahong/BMLongPressDragCellCollectionView/releases"><img src="https://img.shields.io/cocoapods/v/BMLongPressDragCellCollectionView.svg"></a>
+<a href="https://github.com/liangdahong/BMLongPressDragCellCollectionView/stargazers"><img src="https://img.shields.io/github/stars/liangdahong/BMLongPressDragCellCollectionView.svg"></a>
 <a href="https://en.wikipedia.org/wiki/Objective-C"><img src="https://img.shields.io/badge/language-Objective--C-orange.svg"></a>
 <a href="https://github.com/liangdahong/BMLongPressDragCellCollectionView/blob/master/LICENSE"><img src="https://img.shields.io/badge/licenses-MIT-red.svg"></a>
 </p>
