@@ -20,6 +20,22 @@
 
 @implementation BMHomeVC
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.menuHeight         = 44.0f;
+        self.progressWidth      = 40.0f;
+        self.progressHeight     = 05.0f;
+        self.titleSizeNormal    = 14.0f;
+        self.titleSizeSelected  = 14.0f;
+        self.menuViewStyle      = WMMenuViewStyleLine;
+        self.titleColorNormal   = [UIColor blackColor];
+        self.titleColorSelected = [UIColor redColor];
+        self.menuBGColor        = [UIColor whiteColor];
+        self.progressColor      = [UIColor redColor];
+    }
+    return self;
+}
+
 #pragma mark - Getters Setters
 
 - (NSMutableArray<NSMutableArray<BMChannelModel *> *> *)channelModelArray {
@@ -61,17 +77,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"今日头条";
-    self.menuHeight         = 44.0f;
-    self.progressWidth      = 40.0f;
-    self.progressHeight     =  1.0f;
-    self.titleSizeNormal    = 14.0f;
-    self.titleSizeSelected  = 14.0f;
-    self.menuViewStyle      = WMMenuViewStyleLine;
-    self.titleColorNormal   = [UIColor blackColor];
-    self.titleColorSelected = [UIColor redColor];
-    self.menuBGColor        = [UIColor whiteColor];
-    self.progressColor      = [UIColor blueColor];
-
     __weak typeof(self) weakSelf = self;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"去编辑" style:UIBarButtonItemStylePlain handler:^(id sender) {
         __strong typeof(weakSelf) self = weakSelf;
@@ -96,11 +101,11 @@
 }
 
 - (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index {
-    return  self.channelModelArray[0][index].title;
+    return self.channelModelArray[0][index].title;
 }
 
 - (UIViewController *)pageController:(WMPageController *)pageController viewControllerAtIndex:(NSInteger)index {
-    return  self.channelModelArray[0][index].clas.new;
+    return self.channelModelArray[0][index].clas.new;
 }
 
 @end

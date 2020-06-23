@@ -30,6 +30,13 @@ static NSString *kBMChannelEditCell = @"kBMChannelEditCell";
 
 @implementation BMChannelEditVC
 
+- (instancetype)init {
+    if (self = [super init]) {
+        _edit = YES;
+    }
+    return self;
+}
+
 - (UICollectionViewFlowLayout *)collectionViewFlowLayout {
     if (!_collectionViewFlowLayout) {
         _collectionViewFlowLayout = ({
@@ -52,7 +59,6 @@ static NSString *kBMChannelEditCell = @"kBMChannelEditCell";
     self.dragCellCollectionView.collectionViewLayout = self.collectionViewFlowLayout;
     self.dragCellCollectionView.alwaysBounceVertical = YES;
     [self.dragCellCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMChannelEditCell.class) bundle:nil] forCellWithReuseIdentifier:kBMChannelEditCell];
-    
     __weak typeof(self) weakSelf = self;
     self.editButtonItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"编辑" style:UIBarButtonItemStylePlain handler:^(id sender) {
         __strong typeof(weakSelf) self = weakSelf;
@@ -67,8 +73,8 @@ static NSString *kBMChannelEditCell = @"kBMChannelEditCell";
         [self.dragCellCollectionView reloadData];
     }];
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
-    self.dragCellCollectionView.canDrag = NO;
+    self.editButtonItem.title = @"退出编辑";
+    self.dragCellCollectionView.canDrag = YES;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] bk_initWithTitle:@"完成" style:UIBarButtonItemStylePlain handler:^(id sender) {
         __strong typeof(weakSelf) self = weakSelf;
         !self.editCompleteBlock ? : self.editCompleteBlock(self.channelModelArray);

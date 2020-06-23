@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04BB9494246AFEC600D1C909 /* UICollectionView+BMRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BB9492246AFEC500D1C909 /* UICollectionView+BMRect.m */; };
 		12AE4F46302427160E0990C5 /* libPods-ToutiaoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A747B13F4E9BB572648D6D /* libPods-ToutiaoDemo.a */; };
-		32F00B1C1FDE2B3D00174DB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F00B1A1FDE2B3D00174DB1 /* Main.storyboard */; };
 		32F00B1E1FDE2B3D00174DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F00B1D1FDE2B3D00174DB1 /* Assets.xcassets */; };
 		32F00B211FDE2B3D00174DB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F00B1F1FDE2B3D00174DB1 /* LaunchScreen.storyboard */; };
 		32F00B2C1FDE2B3D00174DB1 /* ToutiaoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F00B2B1FDE2B3D00174DB1 /* ToutiaoDemoTests.m */; };
@@ -50,7 +49,6 @@
 		12A747B13F4E9BB572648D6D /* libPods-ToutiaoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToutiaoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F68B8A364EB74967D6B1B4D /* libPods-ToutiaoDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToutiaoDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F00B0E1FDE2B3D00174DB1 /* 头条频道编辑.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "头条频道编辑.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32F00B1B1FDE2B3D00174DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32F00B1D1FDE2B3D00174DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32F00B201FDE2B3D00174DB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32F00B221FDE2B3D00174DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +114,7 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		04BB9497246B061600D1C909 /* Other */ = {
+		04BB9497246B061600D1C909 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				32F00B5D1FDE300900174DB1 /* Channel */,
@@ -124,7 +122,7 @@
 				32F00B511FDE2D8D00174DB1 /* Model */,
 				32F00B521FDE2D8D00174DB1 /* View */,
 			);
-			path = Other;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		04BB9498246B06FB00D1C909 /* Category */ = {
@@ -171,11 +169,9 @@
 		32F00B101FDE2B3D00174DB1 /* ToutiaoDemo */ = {
 			isa = PBXGroup;
 			children = (
-				32F00B481FDE2D5100174DB1 /* Classes */,
-				04BB9497246B061600D1C909 /* Other */,
 				32F00B441FDE2D5100174DB1 /* AppDelegate */,
+				32F00B481FDE2D5100174DB1 /* Classes */,
 				04BB9488246AF61300D1C909 /* Lib */,
-				32F00B1A1FDE2B3D00174DB1 /* Main.storyboard */,
 				32F00B1D1FDE2B3D00174DB1 /* Assets.xcassets */,
 				32F00B1F1FDE2B3D00174DB1 /* LaunchScreen.storyboard */,
 				32F00B221FDE2B3D00174DB1 /* Info.plist */,
@@ -222,6 +218,7 @@
 		32F00B481FDE2D5100174DB1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04BB9497246B061600D1C909 /* Home */,
 				32F00B4D1FDE2D8D00174DB1 /* Edit */,
 			);
 			path = Classes;
@@ -404,8 +401,8 @@
 				TargetAttributes = {
 					32F00B0D1FDE2B3D00174DB1 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = VG78JT6CG8;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = JURK72AKL4;
+						ProvisioningStyle = Manual;
 					};
 					32F00B261FDE2B3D00174DB1 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -453,7 +450,6 @@
 				32F00B5C1FDE2E2800174DB1 /* BMChannelEditVC.xib in Resources */,
 				32F00B651FDE301C00174DB1 /* BMChannelVC.xib in Resources */,
 				32F00B571FDE2DAC00174DB1 /* BMHomeVC.xib in Resources */,
-				32F00B1C1FDE2B3D00174DB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,14 +556,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		32F00B1A1FDE2B3D00174DB1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32F00B1B1FDE2B3D00174DB1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		32F00B1F1FDE2B3D00174DB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -676,12 +664,14 @@
 			baseConfigurationReference = 690760E63693C0475FC33B0C /* Pods-ToutiaoDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VG78JT6CG8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JURK72AKL4;
 				INFOPLIST_FILE = ToutiaoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.ToutiaoDemo;
 				PRODUCT_NAME = "头条频道编辑";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 			};
 			name = Debug;
 		};
@@ -690,12 +680,14 @@
 			baseConfigurationReference = CDECAC22908B37AF7FD2D670 /* Pods-ToutiaoDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VG78JT6CG8;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = JURK72AKL4;
 				INFOPLIST_FILE = ToutiaoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.idhong.ToutiaoDemo;
 				PRODUCT_NAME = "头条频道编辑";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 			};
 			name = Release;
 		};

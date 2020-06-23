@@ -7,7 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "BMHomeVC.h"
 
 @implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.backgroundColor = UIColor.whiteColor;
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:BMHomeVC.new];
+    return YES;
+}
 
 @end
