@@ -1,9 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BMLongPressDragCellCollectionView" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/WMPageController"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BMLongPressDragCellCollectionView" "${PODS_CONFIGURATION_BUILD_DIR}/BlocksKit" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/WMPageController"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"BMLongPressDragCellCollectionView" -l"BlocksKit" -l"SVProgressHUD" -l"WMPageController" -framework "CoreGraphics" -framework "Foundation" -framework "MessageUI" -framework "QuartzCore" -framework "UIKit"
-PODS_BUILD_DIR = ${BUILD_DIR}
-PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
-PODS_ROOT = ${SRCROOT}/Pods
-USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

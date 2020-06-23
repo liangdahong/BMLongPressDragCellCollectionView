@@ -90,6 +90,7 @@
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
         navigationController.navigationBar.hidden = NO;
         navigationController.navigationBar.translucent = NO;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
         [self.navigationController presentViewController:navigationController animated:YES completion:nil];
     }];
 }
