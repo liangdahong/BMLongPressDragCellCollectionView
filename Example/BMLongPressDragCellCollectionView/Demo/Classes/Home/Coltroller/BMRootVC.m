@@ -9,10 +9,10 @@
 #import "BMRootVC.h"
 #import "BMModel.h"
 #import "UITableViewCell+BMReusable.h"
-#import "BMTouTiaoVC.h"
 #import "BMTestSizeVC.h"
 #import "BMAlipayVC.h"
 #import "BMQQImageVC.h"
+#import "BMHomeVC.h"
 
 @interface BMRootVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -45,8 +45,7 @@
                             [BMModel modelWithTitle:@"支付宝 (多组)" selector:@selector(alipayDragMoreScreenWithModel2:)],
                             ],
                         @[
-                            [BMModel modelWithTitle:@"今日头条（超过一屏）" selector:@selector(todayHeadlinesDragMoreScreenWithModel:)],
-                            [BMModel modelWithTitle:@"今日头条（不足一屏）" selector:@selector(todayHeadlinesDragWithModel:)]
+                            [BMModel modelWithTitle:@"今日头条【频道】" selector:@selector(todayHeadlinesDragMoreScreenWithModel:)],
                           ],
                         
                         @[
@@ -60,14 +59,6 @@
                             [BMModel modelWithTitle:@"size不同，单组" selector:@selector(noEtcSizeSingleWithModel:)],
                             [BMModel modelWithTitle:@"size不同，多组" selector:@selector(noEtcSizeMultipleWithModel:)]
                             ],
-//                        @[
-//                            [BMModel modelWithTitle:@"腾讯新闻（超过一屏）未实现" selector:nil],
-//                            [BMModel modelWithTitle:@"腾讯新闻（不足一屏）未实现" selector:nil]
-//                            ],
-//                        @[
-//                            [BMModel modelWithTitle:@"看荐（超过一屏）未实现" selector:nil],
-//                            [BMModel modelWithTitle:@"看荐（不足一屏）未实现" selector:nil]
-//                            ],
                         ];
     }
     return _modelArray;
@@ -131,17 +122,11 @@
     BMAlipay2VC *vc = [BMAlipay2VC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 #pragma mark - 今日头条
 
 - (void)todayHeadlinesDragMoreScreenWithModel:(BMModel *)mdoel {
-    BMTouTiaoVC *vc = [BMTouTiaoVC new];
-    vc.count = 30;
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)todayHeadlinesDragWithModel:(BMModel *)mdoel {
-    BMTouTiaoVC *vc = [BMTouTiaoVC new];
-    vc.count = 10;
+    BMHomeVC *vc = [BMHomeVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

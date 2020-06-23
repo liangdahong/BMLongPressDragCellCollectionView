@@ -2,4 +2,9 @@ use_frameworks!
 platform :ios, '8.0'
 target 'BMLongPressDragCellCollectionView_Example' do
   pod 'BMLongPressDragCellCollectionView', :path => '../'
+  
+  pod 'WMPageController', '2.3.0'
+  pod 'BlocksKit', '2.2.5'
+  pod 'SVProgressHUD', '2.2.2'
+  pod 'Masonry'
 end

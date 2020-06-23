@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BMLongPressDragCellCollectionView"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BMLongPressDragCellCollectionView" "${PODS_CONFIGURATION_BUILD_DIR}/BlocksKit" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/WMPageController"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/BlocksKit/BlocksKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/WMPageController/WMPageController.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "BMLongPressDragCellCollectionView"
+OTHER_LDFLAGS = $(inherited) -framework "BMLongPressDragCellCollectionView" -framework "BlocksKit" -framework "CoreGraphics" -framework "Foundation" -framework "Masonry" -framework "MessageUI" -framework "QuartzCore" -framework "SVProgressHUD" -framework "UIKit" -framework "WMPageController"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

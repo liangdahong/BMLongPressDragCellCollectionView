@@ -25,11 +25,6 @@
 		0529D8072493795400EA22B9 /* BMAlipay2FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7122493795300EA22B9 /* BMAlipay2FooterView.m */; };
 		0529D8082493795400EA22B9 /* BMAlipay2HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7142493795300EA22B9 /* BMAlipay2HeaderView.m */; };
 		0529D8092493795400EA22B9 /* BMAlipay2HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0529D7152493795300EA22B9 /* BMAlipay2HeaderView.xib */; };
-		0529D80A2493795400EA22B9 /* BMTouTiaoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D71A2493795300EA22B9 /* BMTouTiaoVC.m */; };
-		0529D80B2493795400EA22B9 /* BMTouTiaoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0529D71C2493795300EA22B9 /* BMTouTiaoVC.xib */; };
-		0529D80C2493795400EA22B9 /* BMTouTiaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0529D7202493795300EA22B9 /* BMTouTiaoCell.xib */; };
-		0529D80D2493795400EA22B9 /* BMTouTiaoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7212493795300EA22B9 /* BMTouTiaoCell.m */; };
-		0529D80E2493795400EA22B9 /* BMTouTiaoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7232493795300EA22B9 /* BMTouTiaoModel.m */; };
 		0529D80F2493795400EA22B9 /* BMQQImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7272493795300EA22B9 /* BMQQImageVC.m */; };
 		0529D8102493795400EA22B9 /* BMQQImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0529D7292493795300EA22B9 /* BMQQImageVC.xib */; };
 		0529D8112493795400EA22B9 /* BMImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0529D72B2493795300EA22B9 /* BMImageCell.xib */; };
@@ -220,6 +215,16 @@
 		0529D8CA2493795400EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7ED2493795300EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m */; };
 		0529D8CB2493795400EA22B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F02493795300EA22B9 /* main.m */; };
 		0529D8CC2493795400EA22B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F12493795300EA22B9 /* AppDelegate.m */; };
+		05C4FEBD24A1EB0000260E73 /* BMChannelEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */; };
+		05C4FEBE24A1EB0000260E73 /* BMChannelEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */; };
+		05C4FEBF24A1EB0000260E73 /* BMChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEAA24A1EB0000260E73 /* BMChannelModel.m */; };
+		05C4FEC024A1EB0000260E73 /* BMChannelEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEAD24A1EB0000260E73 /* BMChannelEditCell.m */; };
+		05C4FEC124A1EB0000260E73 /* BMChannelEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C4FEAE24A1EB0000260E73 /* BMChannelEditCell.xib */; };
+		05C4FEC224A1EB0000260E73 /* BMChannelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEB324A1EB0000260E73 /* BMChannelVC.m */; };
+		05C4FEC324A1EB0000260E73 /* BMChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C4FEB424A1EB0000260E73 /* BMChannelVC.xib */; };
+		05C4FEC424A1EB0000260E73 /* BMHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEB724A1EB0000260E73 /* BMHomeVC.m */; };
+		05C4FEC524A1EB0000260E73 /* BMHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C4FEB824A1EB0000260E73 /* BMHomeVC.xib */; };
+		05C4FEC624A1EB0000260E73 /* UICollectionView+BMRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEBC24A1EB0000260E73 /* UICollectionView+BMRect.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -275,14 +280,6 @@
 		0529D7142493795300EA22B9 /* BMAlipay2HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMAlipay2HeaderView.m; sourceTree = "<group>"; };
 		0529D7152493795300EA22B9 /* BMAlipay2HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMAlipay2HeaderView.xib; sourceTree = "<group>"; };
 		0529D7162493795300EA22B9 /* BMAlipay2HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMAlipay2HeaderView.h; sourceTree = "<group>"; };
-		0529D71A2493795300EA22B9 /* BMTouTiaoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTouTiaoVC.m; sourceTree = "<group>"; };
-		0529D71C2493795300EA22B9 /* BMTouTiaoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTouTiaoVC.xib; sourceTree = "<group>"; };
-		0529D71D2493795300EA22B9 /* BMTouTiaoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTouTiaoVC.h; sourceTree = "<group>"; };
-		0529D71F2493795300EA22B9 /* BMTouTiaoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTouTiaoCell.h; sourceTree = "<group>"; };
-		0529D7202493795300EA22B9 /* BMTouTiaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMTouTiaoCell.xib; sourceTree = "<group>"; };
-		0529D7212493795300EA22B9 /* BMTouTiaoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTouTiaoCell.m; sourceTree = "<group>"; };
-		0529D7232493795300EA22B9 /* BMTouTiaoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMTouTiaoModel.m; sourceTree = "<group>"; };
-		0529D7242493795300EA22B9 /* BMTouTiaoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMTouTiaoModel.h; sourceTree = "<group>"; };
 		0529D7272493795300EA22B9 /* BMQQImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMQQImageVC.m; sourceTree = "<group>"; };
 		0529D7282493795300EA22B9 /* BMQQImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMQQImageVC.h; sourceTree = "<group>"; };
 		0529D7292493795300EA22B9 /* BMQQImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMQQImageVC.xib; sourceTree = "<group>"; };
@@ -479,6 +476,22 @@
 		0529D7EF2493795300EA22B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0529D7F02493795300EA22B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0529D7F12493795300EA22B9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05C4FEA524A1EB0000260E73 /* BMChannelEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChannelEditVC.h; sourceTree = "<group>"; };
+		05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChannelEditVC.m; sourceTree = "<group>"; };
+		05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMChannelEditVC.xib; sourceTree = "<group>"; };
+		05C4FEA924A1EB0000260E73 /* BMChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChannelModel.h; sourceTree = "<group>"; };
+		05C4FEAA24A1EB0000260E73 /* BMChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChannelModel.m; sourceTree = "<group>"; };
+		05C4FEAC24A1EB0000260E73 /* BMChannelEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChannelEditCell.h; sourceTree = "<group>"; };
+		05C4FEAD24A1EB0000260E73 /* BMChannelEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChannelEditCell.m; sourceTree = "<group>"; };
+		05C4FEAE24A1EB0000260E73 /* BMChannelEditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMChannelEditCell.xib; sourceTree = "<group>"; };
+		05C4FEB224A1EB0000260E73 /* BMChannelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChannelVC.h; sourceTree = "<group>"; };
+		05C4FEB324A1EB0000260E73 /* BMChannelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChannelVC.m; sourceTree = "<group>"; };
+		05C4FEB424A1EB0000260E73 /* BMChannelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMChannelVC.xib; sourceTree = "<group>"; };
+		05C4FEB624A1EB0000260E73 /* BMHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMHomeVC.h; sourceTree = "<group>"; };
+		05C4FEB724A1EB0000260E73 /* BMHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMHomeVC.m; sourceTree = "<group>"; };
+		05C4FEB824A1EB0000260E73 /* BMHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMHomeVC.xib; sourceTree = "<group>"; };
+		05C4FEBB24A1EB0000260E73 /* UICollectionView+BMRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+BMRect.h"; sourceTree = "<group>"; };
+		05C4FEBC24A1EB0000260E73 /* UICollectionView+BMRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+BMRect.m"; sourceTree = "<group>"; };
 		0B37DCBFE09F579DD1374FB7 /* BMLongPressDragCellCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BMLongPressDragCellCollectionView.podspec; path = ../BMLongPressDragCellCollectionView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* 拖拽重排.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "拖拽重排.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -560,9 +573,9 @@
 			isa = PBXGroup;
 			children = (
 				0529D6EB2493795300EA22B9 /* Home */,
+				05C4FEA224A1EB0000260E73 /* Toutiao */,
 				0529D6F32493795300EA22B9 /* TestSize */,
 				0529D6FB2493795300EA22B9 /* AliPay */,
-				0529D7172493795300EA22B9 /* TouTiao */,
 				0529D7252493795300EA22B9 /* QQ */,
 			);
 			path = Classes;
@@ -726,61 +739,6 @@
 				0529D7162493795300EA22B9 /* BMAlipay2HeaderView.h */,
 			);
 			path = BMAlipay2HeaderView;
-			sourceTree = "<group>";
-		};
-		0529D7172493795300EA22B9 /* TouTiao */ = {
-			isa = PBXGroup;
-			children = (
-				0529D7182493795300EA22B9 /* Controller */,
-				0529D71E2493795300EA22B9 /* Cell */,
-				0529D7222493795300EA22B9 /* Model */,
-			);
-			path = TouTiao;
-			sourceTree = "<group>";
-		};
-		0529D7182493795300EA22B9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				0529D7192493795300EA22B9 /* 未命名文件夹 2 */,
-				0529D71A2493795300EA22B9 /* BMTouTiaoVC.m */,
-				0529D71B2493795300EA22B9 /* 未命名文件夹 */,
-				0529D71C2493795300EA22B9 /* BMTouTiaoVC.xib */,
-				0529D71D2493795300EA22B9 /* BMTouTiaoVC.h */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		0529D7192493795300EA22B9 /* 未命名文件夹 2 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "未命名文件夹 2";
-			sourceTree = "<group>";
-		};
-		0529D71B2493795300EA22B9 /* 未命名文件夹 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "未命名文件夹";
-			sourceTree = "<group>";
-		};
-		0529D71E2493795300EA22B9 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				0529D71F2493795300EA22B9 /* BMTouTiaoCell.h */,
-				0529D7202493795300EA22B9 /* BMTouTiaoCell.xib */,
-				0529D7212493795300EA22B9 /* BMTouTiaoCell.m */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		0529D7222493795300EA22B9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0529D7232493795300EA22B9 /* BMTouTiaoModel.m */,
-				0529D7242493795300EA22B9 /* BMTouTiaoModel.h */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0529D7252493795300EA22B9 /* QQ */ = {
@@ -1047,6 +1005,109 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		05C4FEA224A1EB0000260E73 /* Toutiao */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEA324A1EB0000260E73 /* Edit */,
+				05C4FEAF24A1EB0000260E73 /* Home */,
+				05C4FEB924A1EB0000260E73 /* Lib */,
+			);
+			path = Toutiao;
+			sourceTree = "<group>";
+		};
+		05C4FEA324A1EB0000260E73 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEA424A1EB0000260E73 /* Controller */,
+				05C4FEA824A1EB0000260E73 /* Model */,
+				05C4FEAB24A1EB0000260E73 /* View */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		05C4FEA424A1EB0000260E73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEA524A1EB0000260E73 /* BMChannelEditVC.h */,
+				05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */,
+				05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05C4FEA824A1EB0000260E73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEA924A1EB0000260E73 /* BMChannelModel.h */,
+				05C4FEAA24A1EB0000260E73 /* BMChannelModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05C4FEAB24A1EB0000260E73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEAC24A1EB0000260E73 /* BMChannelEditCell.h */,
+				05C4FEAD24A1EB0000260E73 /* BMChannelEditCell.m */,
+				05C4FEAE24A1EB0000260E73 /* BMChannelEditCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05C4FEAF24A1EB0000260E73 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEB024A1EB0000260E73 /* Channel */,
+				05C4FEB524A1EB0000260E73 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		05C4FEB024A1EB0000260E73 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEB124A1EB0000260E73 /* Controller */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		05C4FEB124A1EB0000260E73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEB224A1EB0000260E73 /* BMChannelVC.h */,
+				05C4FEB324A1EB0000260E73 /* BMChannelVC.m */,
+				05C4FEB424A1EB0000260E73 /* BMChannelVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05C4FEB524A1EB0000260E73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEB624A1EB0000260E73 /* BMHomeVC.h */,
+				05C4FEB724A1EB0000260E73 /* BMHomeVC.m */,
+				05C4FEB824A1EB0000260E73 /* BMHomeVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05C4FEB924A1EB0000260E73 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEBA24A1EB0000260E73 /* Category */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		05C4FEBA24A1EB0000260E73 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				05C4FEBB24A1EB0000260E73 /* UICollectionView+BMRect.h */,
+				05C4FEBC24A1EB0000260E73 /* UICollectionView+BMRect.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -1241,6 +1302,7 @@
 				0529D8882493795400EA22B9 /* 095@2x.png in Resources */,
 				0529D84C2493795400EA22B9 /* 159@2x.png in Resources */,
 				0529D89B2493795400EA22B9 /* 005@2x.png in Resources */,
+				05C4FEC524A1EB0000260E73 /* BMHomeVC.xib in Resources */,
 				0529D8C52493795400EA22B9 /* 093@2x.png in Resources */,
 				0529D84B2493795400EA22B9 /* 047@2x.png in Resources */,
 				0529D8152493795400EA22B9 /* ofo共享单车.png in Resources */,
@@ -1265,7 +1327,6 @@
 				0529D8972493795400EA22B9 /* 109@2x.png in Resources */,
 				0529D86E2493795400EA22B9 /* 102@2x.png in Resources */,
 				0529D8592493795400EA22B9 /* 082@2x.png in Resources */,
-				0529D80B2493795400EA22B9 /* BMTouTiaoVC.xib in Resources */,
 				0529D85B2493795400EA22B9 /* 190@2x.png in Resources */,
 				0529D8212493795400EA22B9 /* 188@2x.png in Resources */,
 				0529D8A82493795400EA22B9 /* 170@2x.png in Resources */,
@@ -1279,7 +1340,6 @@
 				0529D8422493795400EA22B9 /* 032@2x.png in Resources */,
 				0529D84A2493795400EA22B9 /* 147@2x.png in Resources */,
 				0529D85D2493795400EA22B9 /* 192@2x.png in Resources */,
-				0529D80C2493795400EA22B9 /* BMTouTiaoCell.xib in Resources */,
 				0529D8652493795400EA22B9 /* 157@2x.png in Resources */,
 				0529D88C2493795400EA22B9 /* 033@2x.png in Resources */,
 				0529D8512493795400EA22B9 /* 028@2x.png in Resources */,
@@ -1294,6 +1354,7 @@
 				0529D8C42493795400EA22B9 /* 027@2x.png in Resources */,
 				0529D8572493795400EA22B9 /* 071@2x.png in Resources */,
 				0529D8612493795400EA22B9 /* 049@2x.png in Resources */,
+				05C4FEC124A1EB0000260E73 /* BMChannelEditCell.xib in Resources */,
 				0529D8B22493795400EA22B9 /* 054@2x.png in Resources */,
 				0529D8342493795400EA22B9 /* 108@2x.png in Resources */,
 				0529D82E2493795400EA22B9 /* 122@2x.png in Resources */,
@@ -1324,6 +1385,7 @@
 				0529D8162493795400EA22B9 /* 分期.png in Resources */,
 				0529D8A32493795400EA22B9 /* 001@2x.png in Resources */,
 				0529D8952493795400EA22B9 /* 174@2x.png in Resources */,
+				05C4FEBE24A1EB0000260E73 /* BMChannelEditVC.xib in Resources */,
 				0529D81C2493795400EA22B9 /* 转账.png in Resources */,
 				0529D8BE2493795400EA22B9 /* 148@2x.png in Resources */,
 				0529D86F2493795400EA22B9 /* 061@2x.png in Resources */,
@@ -1398,6 +1460,7 @@
 				0529D8A72493795400EA22B9 /* 070@2x.png in Resources */,
 				0529D8792493795400EA22B9 /* 119@2x.png in Resources */,
 				0529D87C2493795400EA22B9 /* 007@2x.png in Resources */,
+				05C4FEC324A1EB0000260E73 /* BMChannelVC.xib in Resources */,
 				0529D8352493795400EA22B9 /* 008@2x.png in Resources */,
 				0529D86C2493795400EA22B9 /* 073@2x.png in Resources */,
 				0529D8292493795400EA22B9 /* 014@2x.png in Resources */,
@@ -1464,10 +1527,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMLongPressDragCellCollectionView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPageController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1484,23 +1555,26 @@
 				0529D8CC2493795400EA22B9 /* AppDelegate.m in Sources */,
 				0529D8022493795400EA22B9 /* BMAlipayCell.m in Sources */,
 				0529D8C92493795400EA22B9 /* UICollectionReusableView+BMAutomaticRegister.m in Sources */,
+				05C4FEC424A1EB0000260E73 /* BMHomeVC.m in Sources */,
 				0529D8052493795400EA22B9 /* BMAlipay2VC.m in Sources */,
 				0529D8C82493795400EA22B9 /* UICollectionView+BMDynamicLayout.m in Sources */,
 				0529D8002493795400EA22B9 /* BMAlipayVC.m in Sources */,
-				0529D80E2493795400EA22B9 /* BMTouTiaoModel.m in Sources */,
 				0529D80F2493795400EA22B9 /* BMQQImageVC.m in Sources */,
 				0529D8012493795400EA22B9 /* BMAlipayModel.m in Sources */,
+				05C4FEC624A1EB0000260E73 /* UICollectionView+BMRect.m in Sources */,
 				0529D8082493795400EA22B9 /* BMAlipay2HeaderView.m in Sources */,
+				05C4FEC224A1EB0000260E73 /* BMChannelVC.m in Sources */,
 				0529D7FD2493795400EA22B9 /* BMTestSizeCell.m in Sources */,
 				0529D7FA2493795400EA22B9 /* BMRootVC.m in Sources */,
+				05C4FEBD24A1EB0000260E73 /* BMChannelEditVC.m in Sources */,
+				05C4FEBF24A1EB0000260E73 /* BMChannelModel.m in Sources */,
 				0529D8CA2493795400EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */,
-				0529D80D2493795400EA22B9 /* BMTouTiaoCell.m in Sources */,
 				0529D8072493795400EA22B9 /* BMAlipay2FooterView.m in Sources */,
 				0529D7F92493795400EA22B9 /* BMModel.m in Sources */,
 				0529D8122493795400EA22B9 /* BMImageCell.m in Sources */,
-				0529D80A2493795400EA22B9 /* BMTouTiaoVC.m in Sources */,
 				0529D7FC2493795400EA22B9 /* BMTestSizeVC.m in Sources */,
 				0529D8CB2493795400EA22B9 /* main.m in Sources */,
+				05C4FEC024A1EB0000260E73 /* BMChannelEditCell.m in Sources */,
 				0529D7F82493795400EA22B9 /* UITableViewCell+BMReusable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
