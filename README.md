@@ -89,15 +89,12 @@ pod install
 
 ## 感谢
 
-- 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView)，特别感谢。
+- 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView) 特别感谢。
 
 ## 相关推荐
 
 - 🖖高性能的自动计算采用 Autolayout 布局的 UITableViewCell 和 UITableViewHeaderFooterView 的高度，内部自动管理高度缓存。
 [https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight)
-
-## 其他
-- https://github.com/liangdahong/ToutiaoDemo 基于本框架实现的头条频道编辑效果。
 
 ## License    
 BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
