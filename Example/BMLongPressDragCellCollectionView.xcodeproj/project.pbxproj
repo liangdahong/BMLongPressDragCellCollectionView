@@ -215,6 +215,9 @@
 		0529D8CA2493795400EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7ED2493795300EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m */; };
 		0529D8CB2493795400EA22B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F02493795300EA22B9 /* main.m */; };
 		0529D8CC2493795400EA22B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529D7F12493795300EA22B9 /* AppDelegate.m */; };
+		056CBE6B24AC5D8300FAD464 /* SwiftDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CBE6924AC5D8300FAD464 /* SwiftDemoVC.swift */; };
+		056CBE6C24AC5D8300FAD464 /* SwiftDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056CBE6A24AC5D8300FAD464 /* SwiftDemoVC.xib */; };
+		056CBE6F24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CBE6D24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift */; };
 		05C4FEBD24A1EB0000260E73 /* BMChannelEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */; };
 		05C4FEBE24A1EB0000260E73 /* BMChannelEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */; };
 		05C4FEBF24A1EB0000260E73 /* BMChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEAA24A1EB0000260E73 /* BMChannelModel.m */; };
@@ -476,6 +479,10 @@
 		0529D7EF2493795300EA22B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0529D7F02493795300EA22B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0529D7F12493795300EA22B9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		056CBE6424AC5B9200FAD464 /* BMLongPressDragCellCollectionView_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMLongPressDragCellCollectionView_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		056CBE6924AC5D8300FAD464 /* SwiftDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoVC.swift; sourceTree = "<group>"; };
+		056CBE6A24AC5D8300FAD464 /* SwiftDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftDemoVC.xib; sourceTree = "<group>"; };
+		056CBE6D24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		05C4FEA524A1EB0000260E73 /* BMChannelEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChannelEditVC.h; sourceTree = "<group>"; };
 		05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChannelEditVC.m; sourceTree = "<group>"; };
 		05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMChannelEditVC.xib; sourceTree = "<group>"; };
@@ -543,6 +550,7 @@
 		0529D6E52493795300EA22B9 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				056CBE6824AC5D5D00FAD464 /* Swift */,
 				0529D6E62493795300EA22B9 /* Category */,
 				0529D6EA2493795300EA22B9 /* Classes */,
 				0529D72E2493795300EA22B9 /* Resources */,
@@ -1005,6 +1013,16 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		056CBE6824AC5D5D00FAD464 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				056CBE6924AC5D8300FAD464 /* SwiftDemoVC.swift */,
+				056CBE6A24AC5D8300FAD464 /* SwiftDemoVC.xib */,
+				056CBE6D24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		05C4FEA224A1EB0000260E73 /* Toutiao */ = {
 			isa = PBXGroup;
 			children = (
@@ -1148,6 +1166,7 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				056CBE6424AC5B9200FAD464 /* BMLongPressDragCellCollectionView_Example-Bridging-Header.h */,
 			);
 			name = "Example for BMLongPressDragCellCollectionView";
 			path = BMLongPressDragCellCollectionView;
@@ -1254,6 +1273,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = JURK72AKL4;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Manual;
 					};
 					6003F5AD195388D20070C39A = {
@@ -1395,6 +1415,7 @@
 				0529D8632493795400EA22B9 /* 034@2x.png in Resources */,
 				0529D84F2493795400EA22B9 /* 055@2x.png in Resources */,
 				0529D8472493795400EA22B9 /* 098@2x.png in Resources */,
+				056CBE6C24AC5D8300FAD464 /* SwiftDemoVC.xib in Resources */,
 				0529D8412493795400EA22B9 /* 151@2x.png in Resources */,
 				0529D8182493795400EA22B9 /* 091共享单车 copy.png in Resources */,
 				0529D85A2493795400EA22B9 /* 182@2x.png in Resources */,
@@ -1530,6 +1551,8 @@
 				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/UICollectionViewDynamicLayoutCacheSize/UICollectionViewDynamicLayoutCacheSize.framework",
 				"${BUILT_PRODUCTS_DIR}/WMPageController/WMPageController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1538,6 +1561,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICollectionViewDynamicLayoutCacheSize.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPageController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1557,6 +1582,7 @@
 				0529D8C92493795400EA22B9 /* UICollectionReusableView+BMAutomaticRegister.m in Sources */,
 				05C4FEC424A1EB0000260E73 /* BMHomeVC.m in Sources */,
 				0529D8052493795400EA22B9 /* BMAlipay2VC.m in Sources */,
+				056CBE6F24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift in Sources */,
 				0529D8C82493795400EA22B9 /* UICollectionView+BMDynamicLayout.m in Sources */,
 				0529D8002493795400EA22B9 /* BMAlipayVC.m in Sources */,
 				0529D80F2493795400EA22B9 /* BMQQImageVC.m in Sources */,
@@ -1571,6 +1597,7 @@
 				0529D8CA2493795400EA22B9 /* UICollectionViewCell+BMAutomaticRegister.m in Sources */,
 				0529D8072493795400EA22B9 /* BMAlipay2FooterView.m in Sources */,
 				0529D7F92493795400EA22B9 /* BMModel.m in Sources */,
+				056CBE6B24AC5D8300FAD464 /* SwiftDemoVC.swift in Sources */,
 				0529D8122493795400EA22B9 /* BMImageCell.m in Sources */,
 				0529D7FC2493795400EA22B9 /* BMTestSizeVC.m in Sources */,
 				0529D8CB2493795400EA22B9 /* main.m in Sources */,
@@ -1731,16 +1758,21 @@
 			baseConfigurationReference = 6A24FA3F018E7D4748EC4BDD /* Pods-BMLongPressDragCellCollectionView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JURK72AKL4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Prefix.pch";
 				INFOPLIST_FILE = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangdahong.dragCell;
 				PRODUCT_NAME = "拖拽重排";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard;
+				SWIFT_OBJC_BRIDGING_HEADER = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView_Example-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Example-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1751,16 +1783,20 @@
 			baseConfigurationReference = C0B3D81170FE7EEE1209AA88 /* Pods-BMLongPressDragCellCollectionView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JURK72AKL4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Prefix.pch";
 				INFOPLIST_FILE = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangdahong.dragCell;
 				PRODUCT_NAME = "拖拽重排";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard;
+				SWIFT_OBJC_BRIDGING_HEADER = "BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView_Example-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Example-Swift.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1769,6 +1805,7 @@
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -1793,6 +1830,7 @@
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

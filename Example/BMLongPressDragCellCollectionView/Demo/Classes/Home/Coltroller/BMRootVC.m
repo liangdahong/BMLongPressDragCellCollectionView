@@ -13,6 +13,7 @@
 #import "BMAlipayVC.h"
 #import "BMQQImageVC.h"
 #import "BMHomeVC.h"
+#import "Example-Swift.h"
 
 @interface BMRootVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -58,6 +59,9 @@
                         @[
                             [BMModel modelWithTitle:@"size不同，单组" selector:@selector(noEtcSizeSingleWithModel:)],
                             [BMModel modelWithTitle:@"size不同，多组" selector:@selector(noEtcSizeMultipleWithModel:)]
+                            ],
+                        @[
+                            [BMModel modelWithTitle:@"Swift" selector:@selector(swiftWithModel:)],
                             ],
                         ];
     }
@@ -161,6 +165,13 @@
 
 - (void)noEtcSizeMultipleWithModel:(BMModel *)mdoel {
     [self pushWithGroup:5 sizeObj:nil];
+}
+
+#pragma mark - swift
+
+- (void)swiftWithModel:(BMModel *)mdoel {
+    SwiftDemoVC *vc = SwiftDemoVC.new;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - size相同 size不同 的其他方法
