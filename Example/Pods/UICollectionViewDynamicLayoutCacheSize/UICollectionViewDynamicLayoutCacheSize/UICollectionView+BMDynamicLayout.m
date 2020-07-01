@@ -79,13 +79,19 @@ inline void dynamicLayoutLayoutIfNeeded(UIView *view) {
         objc_setAssociatedObject(self, _cmd, dict, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
 
-    UIView *view = dict[NSStringFromClass(clas)];
+    NSString *selfClassName = NSStringFromClass(clas);
+
+    if ([selfClassName rangeOfString:@"."].location != NSNotFound) {
+        selfClassName = [selfClassName componentsSeparatedByString:@"."].lastObject;
+    }
+    
+    UIView *view = dict[selfClassName];
     if (!view) {
         NSBundle *bundle = [NSBundle bundleForClass:clas];
-        NSString *path = [bundle pathForResource:NSStringFromClass(clas) ofType:@"nib"];
+        NSString *path = [bundle pathForResource:selfClassName ofType:@"nib"];
         UIView *cell = nil;
         if (path.length > 0) {
-            NSArray <UICollectionViewCell *> *arr = [[UINib nibWithNibName:NSStringFromClass(clas) bundle:bundle] instantiateWithOwner:nil options:nil];
+            NSArray <UICollectionViewCell *> *arr = [[UINib nibWithNibName:selfClassName bundle:bundle] instantiateWithOwner:nil options:nil];
             for (UICollectionViewCell *obj in arr) {
                 if ([obj isMemberOfClass:clas]) {
                     cell = obj;
@@ -100,7 +106,7 @@ inline void dynamicLayoutLayoutIfNeeded(UIView *view) {
         }
         view = [UIView new];
         [view addSubview:cell];
-        dict[NSStringFromClass(clas)] = view;
+        dict[selfClassName] = view;
     }
 
     view.frame = CGRectMake(0, 0, size.width, size.height);

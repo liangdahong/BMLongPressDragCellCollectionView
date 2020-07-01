@@ -23,9 +23,6 @@
 #import "UICollectionReusableView+BMDynamicLayout.h"
 #import <objc/runtime.h>
 
-static const void *headerRegisteredKey = &headerRegisteredKey;
-static const void *footerRegisteredKey = &footerRegisteredKey;
-
 @implementation UICollectionReusableView (BMDynamicLayout)
 
 + (instancetype)bm_collectionReusableViewFromNibWithCollectionView:(UICollectionView *)collectionView
@@ -37,16 +34,14 @@ static const void *footerRegisteredKey = &footerRegisteredKey;
                                                            isNib:YES
                                                             kind:UICollectionElementKindSectionHeader
                                                     forIndexPath:indexPath
-                                                 reuseIdentifier:reuseIdentifier
-                                                             key:headerRegisteredKey];
+                                                 reuseIdentifier:reuseIdentifier];
     }
     NSString *reuseIdentifier = [NSStringFromClass(self.class) stringByAppendingString:@"FooterViewreuseIdentifier"];
     return [self bm_collectionReusableViewWithCollectionView:collectionView
                                                        isNib:YES
                                                         kind:UICollectionElementKindSectionFooter
                                                 forIndexPath:indexPath
-                                             reuseIdentifier:reuseIdentifier
-                                                         key:footerRegisteredKey];
+                                             reuseIdentifier:reuseIdentifier];
 }
 
 + (instancetype)bm_collectionReusableViewFromAllocWithCollectionView:(UICollectionView *)collectionView
@@ -58,33 +53,36 @@ static const void *footerRegisteredKey = &footerRegisteredKey;
                                                            isNib:NO
                                                             kind:UICollectionElementKindSectionHeader
                                                     forIndexPath:indexPath
-                                                 reuseIdentifier:reuseIdentifier
-                                                             key:headerRegisteredKey];
+                                                 reuseIdentifier:reuseIdentifier];
     }
     NSString *reuseIdentifier = [NSStringFromClass(self.class) stringByAppendingString:@"FooterViewreuseIdentifier"];
     return [self bm_collectionReusableViewWithCollectionView:collectionView
                                                        isNib:NO
                                                         kind:UICollectionElementKindSectionFooter
                                                 forIndexPath:indexPath
-                                             reuseIdentifier:reuseIdentifier
-                                                         key:footerRegisteredKey];
+                                             reuseIdentifier:reuseIdentifier];
 }
-
 
 + (instancetype)bm_collectionReusableViewWithCollectionView:(UICollectionView *)collectionView
                                                       isNib:(BOOL)isNib
                                                        kind:(NSString *)elementKind
                                                forIndexPath:(NSIndexPath *)indexPath
-                                            reuseIdentifier:(NSString *)reuseIdentifier
-                                                        key:(const void *)key {
-    NSString *selfClassName = NSStringFromClass(self.class);
-    BOOL registered = [objc_getAssociatedObject(collectionView, key) boolValue];
+                                            reuseIdentifier:(NSString *)reuseIdentifier {
+    
+    BOOL registered = [objc_getAssociatedObject(collectionView, (__bridge const void * _Nonnull)(self)) boolValue];
     if (registered) {
         return [collectionView dequeueReusableSupplementaryViewOfKind:elementKind withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     }
 
+    NSString *selfClassName = NSStringFromClass(self.class);
+
+    // 兼容 Swift
+    if ([selfClassName rangeOfString:@"."].location != NSNotFound) {
+        selfClassName = [selfClassName componentsSeparatedByString:@"."].lastObject;
+    }
+
     // 绑定
-    objc_setAssociatedObject(collectionView, key, @(YES), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(collectionView, (__bridge const void * _Nonnull)(self), @(YES), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
     if (!isNib) {
         [collectionView registerClass:self.class forSupplementaryViewOfKind:elementKind withReuseIdentifier:reuseIdentifier];
@@ -92,11 +90,13 @@ static const void *footerRegisteredKey = &footerRegisteredKey;
     }
     
     NSBundle *bundle = [NSBundle bundleForClass:self.class];
+    
     NSString *path = [bundle pathForResource:selfClassName ofType:@"nib"];
     if (path.length == 0) {
         NSAssert(NO, @"你的 UICollectionReusableView 不是 IB 创建的");
         return nil;
-    }
+    }    
+    
     [collectionView registerNib:[UINib nibWithNibName:selfClassName bundle:bundle] forSupplementaryViewOfKind:elementKind withReuseIdentifier:reuseIdentifier];
     return [collectionView dequeueReusableSupplementaryViewOfKind:elementKind withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
 }

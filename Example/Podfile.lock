@@ -18,7 +18,7 @@ PODS:
   - Masonry (1.1.0)
   - SnapKit (4.2.0)
   - SVProgressHUD (2.2.2)
-  - UICollectionViewDynamicLayoutCacheSize (3.1.0)
+  - UICollectionViewDynamicLayoutCacheSize (3.1.3)
   - WMPageController (2.3.0)
 
 DEPENDENCIES:
@@ -27,7 +27,7 @@ DEPENDENCIES:
   - Masonry
   - SnapKit
   - SVProgressHUD (= 2.2.2)
-  - UICollectionViewDynamicLayoutCacheSize (= 3.1.0)
+  - UICollectionViewDynamicLayoutCacheSize (= 3.1.3)
   - WMPageController (= 2.3.0)
 
 SPEC REPOS:
@@ -49,9 +49,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
-  UICollectionViewDynamicLayoutCacheSize: 7d2f586f3cda41f06f09576ec06523a3029da605
+  UICollectionViewDynamicLayoutCacheSize: 647ec45e5e90a7354cc44ef31ea44cdf648df287
   WMPageController: 9f219bb8912a1a1f51af11fde61e2682a7b7e7f2
 
-PODFILE CHECKSUM: c12d6845624ab2ecb1f82b2d961c3aa0fb35fea4
+PODFILE CHECKSUM: 3d724a8950549559553d65573a863ad98038f183
 
 COCOAPODS: 1.9.3

@@ -7,8 +7,7 @@ target 'BMLongPressDragCellCollectionView_Example' do
   pod 'BlocksKit', '2.2.5'
   pod 'SVProgressHUD', '2.2.2'
   pod 'Masonry'
-  pod 'UICollectionViewDynamicLayoutCacheSize', '3.1.0'
+  pod 'UICollectionViewDynamicLayoutCacheSize', '3.1.3'
   
   pod 'SnapKit'
-
 end

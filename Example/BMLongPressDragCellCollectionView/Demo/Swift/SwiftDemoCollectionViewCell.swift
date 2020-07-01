@@ -12,7 +12,7 @@ import SnapKit
 class SwiftDemoCollectionViewCell: UICollectionViewCell {
     
     var descLabel = UILabel()
-
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         contentView.addSubview(descLabel)

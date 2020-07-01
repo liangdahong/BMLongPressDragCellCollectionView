@@ -23,8 +23,6 @@
 #import "UICollectionViewCell+BMDynamicLayout.h"
 #import <objc/runtime.h>
 
-static const void *cellRegisteredKey = &cellRegisteredKey;
-
 @implementation UICollectionViewCell (BMDynamicLayout)
 
 - (BOOL)bm_maxXViewFixed {
@@ -58,12 +56,17 @@ static const void *cellRegisteredKey = &cellRegisteredKey;
                                                   isNib:(BOOL)isNib
                                            forIndexPath:(NSIndexPath *)indexPath {
     NSString *selfClassName = NSStringFromClass(self.class);
+    // 兼容 Swift
+    if ([selfClassName rangeOfString:@"."].location != NSNotFound) {
+        selfClassName = [selfClassName componentsSeparatedByString:@"."].lastObject;
+    }
+
     NSString *reuseIdentifier = [selfClassName stringByAppendingString:@"CellViewReuseIdentifier"];
-    BOOL registerCell = [objc_getAssociatedObject(collectionView, cellRegisteredKey) boolValue];
+    BOOL registerCell = [objc_getAssociatedObject(collectionView, (__bridge const void * _Nonnull)(self)) boolValue];
     if (registerCell) {
         return [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     }
-    objc_setAssociatedObject(collectionView, cellRegisteredKey, @(YES) , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(collectionView, (__bridge const void * _Nonnull)(self), @(YES) , OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
     if (!isNib) {
         // 注册
@@ -73,6 +76,7 @@ static const void *cellRegisteredKey = &cellRegisteredKey;
     }
 
     NSBundle *bundle = [NSBundle bundleForClass:self.class];
+    
     NSString *path = [bundle pathForResource:selfClassName ofType:@"nib"];
     if (path.length == 0) {
         NSAssert(NO, @"你的 UICollectionViewCell 不是 IB 创建的");

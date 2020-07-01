@@ -10,10 +10,10 @@ import UIKit
 
 class SwiftDemoVC: UIViewController {
     @IBOutlet weak var collectionView: BMLongPressDragCellCollectionView!
-    lazy var dataSourceArray: [String] = {
-        var arr = [String]()
+    lazy var dataSourceArray: [Int8] = {
+        var arr = [Int8]()
         for i in 0...10 {
-            arr.append(String(i))
+            arr.append(Int8(i))
         }
         return arr
     }()
@@ -21,7 +21,7 @@ class SwiftDemoVC: UIViewController {
 
 extension SwiftDemoVC : BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource {
     func dragCellCollectionView(_ dragCellCollectionView: BMLongPressDragCellCollectionView, newDataArrayAfterMove newDataArray: [Any]?) {
-        if let arr = newDataArray as? [String] {
+        if let arr = newDataArray as? [Int8] {
             dataSourceArray = arr
         }
     }
@@ -35,10 +35,18 @@ extension SwiftDemoVC : BMLongPressDragCellCollectionViewDelegate, BMLongPressDr
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = SwiftDemoCollectionViewCell.bm_collectionViewCellFromAlloc(with: collectionView, for: indexPath)
-        if let cell1 = cell {
-            cell1.desc = dataSourceArray[indexPath.item]
-            return cell1
+        let num = dataSourceArray[indexPath.item]
+        if num%2 == 0 {
+            let cell = SwiftDemoCollectionViewCell.bm_collectionViewCellFromAlloc(with: collectionView, for: indexPath)
+            if let cell1 = cell {
+                cell1.desc = String(dataSourceArray[indexPath.item])
+                return cell1
+            }
+        } else {
+            let cell = SwiftDemoXibCollectionViewCell.bm_collectionViewCellFromNib(with: collectionView, for: indexPath)
+            if let cell1 = cell {
+                return cell1
+            }
         }
         return UICollectionViewCell()
     }

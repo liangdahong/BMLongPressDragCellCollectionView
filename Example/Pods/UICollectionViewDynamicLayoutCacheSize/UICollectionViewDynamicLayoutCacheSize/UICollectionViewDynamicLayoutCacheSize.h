@@ -21,7 +21,7 @@
 //    SOFTWARE.
 
 ///////////////
-///   v3.1.0
+///   v3.1.3
 ///////////////
 
 #ifndef UICollectionViewDynamicLayoutCacheSize_h

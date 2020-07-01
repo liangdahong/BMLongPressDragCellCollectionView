@@ -1,5 +1,3 @@
-# UIColle/Users/bluemoon/Desktop/WebViewJavascriptBridgeDemoctionViewDynamicLayoutCacheSize
-
 ## 效果演示
 
 <p align="center">
