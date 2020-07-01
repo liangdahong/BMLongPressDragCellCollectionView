@@ -20,6 +20,7 @@ class SwiftDemoVC: UIViewController {
 }
 
 extension SwiftDemoVC : BMLongPressDragCellCollectionViewDelegate, BMLongPressDragCellCollectionViewDataSource {
+    
     func dragCellCollectionView(_ dragCellCollectionView: BMLongPressDragCellCollectionView, newDataArrayAfterMove newDataArray: [Any]?) {
         if let arr = newDataArray as? [Int8] {
             dataSourceArray = arr

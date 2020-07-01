@@ -8,4 +8,6 @@
 
 import UIKit
 
-class SwiftDemoXibCollectionViewCell: UICollectionViewCell {}
+class SwiftDemoXibCollectionViewCell: UICollectionViewCell {
+
+}

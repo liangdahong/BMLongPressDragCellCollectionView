@@ -10,8 +10,17 @@ import UIKit
 import SnapKit
 
 class SwiftDemoCollectionViewCell: UICollectionViewCell {
-    
+
     var descLabel = UILabel()
+
+    var desc: String? {
+        get {
+            descLabel.text
+        }
+        set {
+            descLabel.text  = newValue
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -22,15 +31,6 @@ class SwiftDemoCollectionViewCell: UICollectionViewCell {
         descLabel.textAlignment = .center
         descLabel.snp.makeConstraints { (make) in
             make.edges.equalTo(10)
-        }
-    }
-
-    var desc: String? {
-        get {
-            descLabel.text
-        }
-        set {
-            descLabel.text  = newValue
         }
     }
 
