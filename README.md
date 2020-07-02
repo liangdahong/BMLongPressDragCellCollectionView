@@ -84,8 +84,7 @@ pod install
 
 ## 联系
 - 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
-- 也可以添加如下的微信交流和学习
-- <img width="20%" src="Images/wx.jpg"/> 
+- 也可以添加微信<img width="20%" src="https://user-images.githubusercontent.com/12118567/86319172-72fb9d80-bc66-11ea-8c6e-8127f9e5535f.jpg"/> 进微信交流群。
 
 ## 感谢
 
