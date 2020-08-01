@@ -74,7 +74,7 @@ pod install
 <img  width="80%" src="Images/code01.png"/>
 <img  width="80%" src="Images/code02.png"/>
 <img  width="80%" src="Images/code03.png"/>
-<img  width="22%" src="Images/code04.gif"/>
+<img  width="22%" src="https://user-images.githubusercontent.com/12118567/89103546-28c43280-d445-11ea-95ab-d599a0e5b41e.gif"/>
 
 - 在纯代码实现中只需要上面的 `3 步` 就可以让你的 `UICollectionView` 完美支持拖拽重排了。
 
