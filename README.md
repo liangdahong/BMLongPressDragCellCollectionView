@@ -86,6 +86,10 @@ pod install
 - 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
 - 也可以添加微信<img width="20%" src="https://user-images.githubusercontent.com/12118567/86319172-72fb9d80-bc66-11ea-8c6e-8127f9e5535f.jpg"/> 进微信交流群。
 
+## 其他
+
+- 定个小目标 😂 2020年08月05日 纯 Swift 正在计划中... 
+
 ## 感谢
 
 - 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView) 特别感谢。
