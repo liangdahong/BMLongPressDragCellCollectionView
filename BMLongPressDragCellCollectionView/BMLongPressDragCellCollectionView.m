@@ -642,7 +642,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             self.userInteractionEnabled = YES;
             
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAtIndexPath:toIndexPath:)]) {
-                [self.delegate dragCellCollectionView:self endedDragAtIndexPath:self.beginIndexPath toIndexPath:self.currentIndexPath];
+                [self.delegate dragCellCollectionView:self endedDragAtIndexPath:self.beginIndexPath toIndexPath:self.oldIndexPath];
             }
             
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAtPoint:)]) {
