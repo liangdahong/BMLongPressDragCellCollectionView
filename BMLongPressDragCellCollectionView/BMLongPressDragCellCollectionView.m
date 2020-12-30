@@ -38,6 +38,8 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
 @property (nonatomic, strong, nullable) UIView *snapedView;
 /// 定时器
 @property (nonatomic, strong, nullable) CADisplayLink *edgeTimer;
+/// 一开始的IndexPath
+@property (nonatomic, strong, nullable) NSIndexPath *beginIndexPath;
 /// 旧的IndexPath
 @property (nonatomic, strong, nullable) NSIndexPath *oldIndexPath;
 /// 当前路径
@@ -493,6 +495,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
         case UIGestureRecognizerStateBegan: {
             // 手势开始
             self.userInteractionEnabled = NO;
+            _beginIndexPath = indexPath;
             _oldIndexPath = indexPath;
             // 判断手势落点位置是否在 Cell 上, 没有按在 cell 上就 break
             if (_oldIndexPath == nil) {
@@ -508,6 +511,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             // 将要开始拖拽时，询问此位置的Cell是否可以拖拽
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionViewShouldBeginMove:indexPath:)]) {
                 if (![self.delegate dragCellCollectionViewShouldBeginMove:self indexPath:_oldIndexPath]) {
+                    _beginIndexPath = nil;
                     _oldIndexPath = nil;
                     self.longGesture.enabled = NO;
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -636,6 +640,11 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
             
         default: {
             self.userInteractionEnabled = YES;
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAtIndexPath:toIndexPath:)]) {
+                [self.delegate dragCellCollectionView:self endedDragAtIndexPath:self.beginIndexPath toIndexPath:self.currentIndexPath];
+            }
+            
             if (self.delegate && [self.delegate respondsToSelector:@selector(dragCellCollectionView:endedDragAtPoint:)]) {
                 [self.delegate dragCellCollectionView:self endedDragAtPoint:point];
             }
@@ -668,6 +677,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
                 }];
             }
             // 关闭定时器
+            self.beginIndexPath = nil;
             self.oldIndexPath = nil;
             [self _stopEdgeTimer];
         }
@@ -722,6 +732,7 @@ typedef NS_ENUM(NSUInteger, BMLongPressDragCellCollectionViewScrollDirection) {
     }
 
     // 关闭定时器
+    _beginIndexPath = nil;
     _oldIndexPath = nil;
     [self _stopEdgeTimer];
 }

@@ -93,6 +93,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 可以参考 https://github.com/liangdahong/ToutiaoDemo/blob/master/ToutiaoDemo/Classes/Edit/Controller/BMChannelEditVC.m 的使用
 - (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtPoint:(CGPoint)point;
 
+/// 结束拖拽时
+/// @param dragCellCollectionView dragCellCollectionView
+/// @param beginIndexPath 一开始的 IndexPath
+/// @param endIndexPath 被交换的 IndexPath
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView endedDragAtIndexPath:(NSIndexPath *)beginIndexPath toIndexPath:(NSIndexPath *)endIndexPath;
+
 @end
 
 NS_ASSUME_NONNULL_END
