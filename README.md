@@ -66,7 +66,6 @@ pod install
 <img  width="80%" src="Images/xib01.png"/>
 <img  width="80%" src="Images/xib02.png"/>
 <img  width="80%" src="Images/xib03.png"/>
-<img  width="22%" src="Images/1.gif"/>
 
 - 在 `Xib`或者 `StoryBoard` 中只需要上面的 `3 步`就可以让你的 `UICollectionView` 完美支持拖拽重排了。
 
