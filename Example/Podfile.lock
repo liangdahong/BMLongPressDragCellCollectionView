@@ -14,7 +14,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - BMLongPressDragCellCollectionView (3.1.3)
+  - BMLongPressDragCellCollectionView (3.1.4)
   - Masonry (1.1.0)
   - SnapKit (4.2.0)
   - SVProgressHUD (2.2.2)
@@ -45,7 +45,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  BMLongPressDragCellCollectionView: 915011b2594cd4e6037e43792ce8e1b4c994071e
+  BMLongPressDragCellCollectionView: 99f224009d4137999b35b8a810a54edc8b34eb85
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
