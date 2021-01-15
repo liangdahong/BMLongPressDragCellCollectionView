@@ -18,7 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet BMLongPressDragCellCollectionView *dragCellCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
-@property (strong, nonatomic) NSMutableArray <BMAlipayModel *> *dataSourceArray;
+@property (strong, nonatomic) NSMutableArray <NSArray <BMAlipayModel *> *> *dataSourceArray;
 
 @end
 
@@ -69,23 +69,22 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     [self presentViewController:alertVC animated:YES completion:nil];
 }
 
-- (NSMutableArray<BMAlipayModel *> *)dataSourceArray {
+
+- (NSMutableArray<NSArray<BMAlipayModel *> *> *)dataSourceArray {
     if (!_dataSourceArray) {
-        _dataSourceArray = [@[] mutableCopy];
-        
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]];
-        
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]];
-        
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"来分期" iconName:@"分期"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"商家服务" iconName:@"商家服务2"]];
-        [_dataSourceArray addObject:[BMAlipayModel modelWithTitle:@"ofo小黄车" iconName:@"ofo共享单车"]];
+        NSMutableArray <BMAlipayModel *> *arr = [@[] mutableCopy];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"转账" iconName:@"转账"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"信用卡还款" iconName:@"信用卡"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"充值中心" iconName:@"充值中心"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"芝麻信用" iconName:@"芝麻信用"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"共享单车" iconName:@"091共享单车 copy"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"花呗" iconName:@"花呗"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"滴滴出行" iconName:@"滴滴出行"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"火车票机票" iconName:@"火车票"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"来分期" iconName:@"分期"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"商家服务" iconName:@"商家服务2"]];
+        [arr addObject:[BMAlipayModel modelWithTitle:@"ofo小黄车" iconName:@"ofo共享单车"]];
+        _dataSourceArray = @[arr].mutableCopy;
     }
     return _dataSourceArray;
 }
@@ -104,25 +103,31 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     return _collectionViewFlowLayout;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return self.dataSourceArray.count;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.dataSourceArray[section].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     return [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
 }
 
+
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(BMAlipayCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    cell.model = self.dataSourceArray[indexPath.row];
+    cell.model = self.dataSourceArray[indexPath.section][indexPath.item];
 }
 
 // === BMLongPressDragCellCollectionView 的核心方法 ↓
 
-- (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+- (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataSourceArray;
 }
 
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
+
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray<NSArray<id> *> *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 

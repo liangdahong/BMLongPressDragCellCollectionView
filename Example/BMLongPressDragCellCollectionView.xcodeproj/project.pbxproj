@@ -37,8 +37,6 @@
 		056CBE6B24AC5D8300FAD464 /* SwiftDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CBE6924AC5D8300FAD464 /* SwiftDemoVC.swift */; };
 		056CBE6C24AC5D8300FAD464 /* SwiftDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056CBE6A24AC5D8300FAD464 /* SwiftDemoVC.xib */; };
 		056CBE6F24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CBE6D24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift */; };
-		059F341824AC705200634413 /* SwiftDemoXibCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F341624AC705200634413 /* SwiftDemoXibCollectionViewCell.swift */; };
-		059F341924AC705200634413 /* SwiftDemoXibCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059F341724AC705200634413 /* SwiftDemoXibCollectionViewCell.xib */; };
 		05C4FEBD24A1EB0000260E73 /* BMChannelEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */; };
 		05C4FEBE24A1EB0000260E73 /* BMChannelEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */; };
 		05C4FEBF24A1EB0000260E73 /* BMChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4FEAA24A1EB0000260E73 /* BMChannelModel.m */; };
@@ -123,8 +121,6 @@
 		056CBE6924AC5D8300FAD464 /* SwiftDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoVC.swift; sourceTree = "<group>"; };
 		056CBE6A24AC5D8300FAD464 /* SwiftDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftDemoVC.xib; sourceTree = "<group>"; };
 		056CBE6D24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoCollectionViewCell.swift; sourceTree = "<group>"; };
-		059F341624AC705200634413 /* SwiftDemoXibCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDemoXibCollectionViewCell.swift; sourceTree = "<group>"; };
-		059F341724AC705200634413 /* SwiftDemoXibCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftDemoXibCollectionViewCell.xib; sourceTree = "<group>"; };
 		05C4FEA524A1EB0000260E73 /* BMChannelEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMChannelEditVC.h; sourceTree = "<group>"; };
 		05C4FEA624A1EB0000260E73 /* BMChannelEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMChannelEditVC.m; sourceTree = "<group>"; };
 		05C4FEA724A1EB0000260E73 /* BMChannelEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BMChannelEditVC.xib; sourceTree = "<group>"; };
@@ -456,8 +452,6 @@
 				056CBE6924AC5D8300FAD464 /* SwiftDemoVC.swift */,
 				056CBE6A24AC5D8300FAD464 /* SwiftDemoVC.xib */,
 				056CBE6D24AC5FC000FAD464 /* SwiftDemoCollectionViewCell.swift */,
-				059F341624AC705200634413 /* SwiftDemoXibCollectionViewCell.swift */,
-				059F341724AC705200634413 /* SwiftDemoXibCollectionViewCell.xib */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -754,7 +748,6 @@
 				05C4FEBE24A1EB0000260E73 /* BMChannelEditVC.xib in Resources */,
 				0529D8042493795400EA22B9 /* BMAlipay2VC.xib in Resources */,
 				056CBE6C24AC5D8300FAD464 /* SwiftDemoVC.xib in Resources */,
-				059F341924AC705200634413 /* SwiftDemoXibCollectionViewCell.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				0529D8092493795400EA22B9 /* BMAlipay2HeaderView.xib in Resources */,
@@ -858,7 +851,6 @@
 				0529D7F92493795400EA22B9 /* BMModel.m in Sources */,
 				056CBE6B24AC5D8300FAD464 /* SwiftDemoVC.swift in Sources */,
 				0529D8122493795400EA22B9 /* BMImageCell.m in Sources */,
-				059F341824AC705200634413 /* SwiftDemoXibCollectionViewCell.swift in Sources */,
 				0529D7FC2493795400EA22B9 /* BMTestSizeVC.m in Sources */,
 				0529D8CB2493795400EA22B9 /* main.m in Sources */,
 				05C4FEC024A1EB0000260E73 /* BMChannelEditCell.m in Sources */,
@@ -935,6 +927,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -959,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -989,6 +982,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1006,8 +1000,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

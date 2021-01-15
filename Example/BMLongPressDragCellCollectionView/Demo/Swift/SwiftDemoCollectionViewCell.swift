@@ -25,13 +25,13 @@ class SwiftDemoCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         contentView.addSubview(descLabel)
-        descLabel.backgroundColor = .darkGray
-        descLabel.layer.cornerRadius = 20
-        descLabel.layer.masksToBounds = true
+        descLabel.backgroundColor = .init(red: 0, green: 0, blue: 0, alpha: 0.2)
         descLabel.textAlignment = .center
         descLabel.snp.makeConstraints { (make) in
-            make.edges.equalTo(10)
+            make.edges.equalToSuperview().inset(10)
         }
+        descLabel.layer.cornerRadius = 15
+        descLabel.layer.masksToBounds = true
     }
 
     required init?(coder: NSCoder) {

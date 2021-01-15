@@ -36,11 +36,11 @@ NS_ASSUME_NONNULL_BEGIN
  @param dragCellCollectionView dragCellCollectionView
  @param newDataArray 最新的数据源，需要使用者保存，在拖拽的时候 Cell 已经移动，需保存最新的数据源
 
- - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
+ - (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray <NSArray <id> *> *)newDataArray  {
     self.dataArray = [newDataArray copy];
  }
  */
-- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray;
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray <NSArray <id> *> *)newDataArray;
 
 @optional
 

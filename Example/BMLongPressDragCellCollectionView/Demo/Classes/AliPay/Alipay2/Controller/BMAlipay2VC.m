@@ -108,7 +108,7 @@ static NSString *reuseIdentifier = @"reuseIdentifier";
     cell.model = self.dataSourceArray[indexPath.section][indexPath.item];
 }
 
-- (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+- (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataSourceArray;
 }
 

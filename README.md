@@ -43,7 +43,7 @@ pod install
 如下：
 
 ```
-- (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+- (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataSourceArray;
 }
 ```

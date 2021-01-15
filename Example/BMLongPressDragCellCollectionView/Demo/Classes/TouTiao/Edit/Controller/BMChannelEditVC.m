@@ -170,7 +170,7 @@ static NSString *kBMChannelEditCell = @"kBMChannelEditCell";
 
 #pragma mark - BMLongPressDragCellCollectionViewDataSource
 
-- (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+- (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.channelModelArray;
 }
 
@@ -214,7 +214,7 @@ static NSString *kBMChannelEditCell = @"kBMChannelEditCell";
 }
 
 ///  Cell 有交换时调用
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray {
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray<NSArray<id> *> *)newDataArray {
     self.channelModelArray = [newDataArray mutableCopy];
 }
 

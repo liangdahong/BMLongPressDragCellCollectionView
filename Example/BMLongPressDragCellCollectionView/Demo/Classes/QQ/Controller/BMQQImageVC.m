@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet BMLongPressDragCellCollectionView *imageCollectionView;
 @property (strong, nonatomic) UICollectionViewFlowLayout *collectionViewFlowLayout;
-@property (strong, nonatomic) NSMutableArray <NSDictionary *>*dataSourceArray;
+@property (strong, nonatomic) NSMutableArray <NSArray <NSDictionary *> *> *dataSourceArray;
 
 @end
 
@@ -44,25 +44,30 @@ static NSString *imageIdentifier = @"imageIdentifier";
     [self.imageCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass(BMImageCell.class) bundle:nil] forCellWithReuseIdentifier:imageIdentifier];
 }
 
-- (NSMutableArray<NSDictionary *> *)dataSourceArray {
+- (NSMutableArray<NSArray<NSDictionary *> *> *)dataSourceArray {
     if (!_dataSourceArray) {
-        _dataSourceArray = [@[] mutableCopy];
+        NSMutableArray <NSDictionary *> *arr = [@[] mutableCopy];
         int sec = 193;
         while (--sec > 0) {
             CGFloat width = arc4random_uniform(60) + 40;
-            [_dataSourceArray addObject:@{@"icon" : [NSString stringWithFormat:@"%03d.png", sec], @"size" : [NSValue valueWithCGSize:CGSizeMake(width, width)]}];
+            [arr addObject:@{@"icon" : [NSString stringWithFormat:@"%03d.png", sec], @"size" : [NSValue valueWithCGSize:CGSizeMake(width, width)]}];
         }
+        _dataSourceArray = @[arr].mutableCopy;
     }
     return _dataSourceArray;
 }
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return self.dataSourceArray.count;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.dataSourceArray count];
+    return self.dataSourceArray[section].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     BMImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:imageIdentifier forIndexPath:indexPath];
-    UIImage *image = [UIImage imageNamed:self.dataSourceArray[indexPath.row][@"icon"]];
+    UIImage *image = [UIImage imageNamed:self.dataSourceArray[indexPath.section][indexPath.item][@"icon"]];
     if (!image) {
         image = [UIImage imageNamed:@"001.png"];
     }
@@ -70,15 +75,15 @@ static NSString *imageIdentifier = @"imageIdentifier";
     return cell;
 }
 
-- (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+- (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
     return self.dataSourceArray;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.dataSourceArray[indexPath.row][@"size"] CGSizeValue];
+    return [self.dataSourceArray[indexPath.section][indexPath.item][@"size"] CGSizeValue];
 }
 
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray *)newDataArray {
+- (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(NSArray<NSArray<id> *> *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 

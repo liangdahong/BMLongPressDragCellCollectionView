@@ -29,12 +29,12 @@
 #import "BMLongPressDragCellCollectionViewDataSource.h"
 
 /*
- - (NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView {
+ - (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
      return self.dataSourceArray;
      // 此协议方法里返回数据源
  }
 
- - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
+ - (void)dragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray <NSArray <id> *> *)newDataArray {
      self.dataSourceArray = [newDataArray mutableCopy];
      // 此协议方法里保存数据源
  }
