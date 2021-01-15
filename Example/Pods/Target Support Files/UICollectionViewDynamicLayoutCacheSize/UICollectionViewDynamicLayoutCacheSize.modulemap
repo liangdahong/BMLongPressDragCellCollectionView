@@ -1,6 +1,0 @@
-framework module UICollectionViewDynamicLayoutCacheSize {
-  umbrella header "UICollectionViewDynamicLayoutCacheSize-umbrella.h"
-
-  export *
-  module * { export * }
-}
