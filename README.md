@@ -34,10 +34,10 @@ pod install
 1. `BMLongPressDragCellCollectionView` 是继自 `UICollectionView` ，其使用方式和 `UICollectionView` 一致，只需要把 `UICollectionView` 修改为 `BMLongPressDragCellCollectionView` 即可【支持 Xib，StoryBoard】。
 2. 原来的 `UICollectionViewDataSource` 换为 B`MLongPressDragCellCollectionViewDataSource` 
 3. 原来的 `UICollectionViewDelegateFlowLayout` 换为 `BMLongPressDragCellCollectionViewDelegate`。
-4. 实现数据源方法，内部会使用此方法获取数据源，必须实现。 
+4. 实现数据源方法，内部会使用此方法获取数据源，必须实现，之所以设计为  `NSArray< NSArray<id> *> *` 的数据结构是因为内部要对  `cell` 【数据源】做排序处理。
 
 ```
-- (nullable NSArray *)dataSourceWithDragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView;
+- (NSArray< NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView;
 ```
 
 如下：
@@ -51,12 +51,12 @@ pod install
 5. 实现代理方法，当 Cell 有交换时调用，需要外面保存最新的数据源【如果有交换时，数据源已经更新】，必须实现。
 
 ```
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray;
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray< NSArray<id> *> *)newDataArray;
 ```
 如下：
 
 ```
-- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray *)newDataArray {
+- (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray< NSArray<id> *> *)newDataArray {
     self.dataSourceArray = [newDataArray mutableCopy];
 }
 ```
