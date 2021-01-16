@@ -62,17 +62,19 @@ pod install
 ```
 
 ## 图文演示
+
 ### 在 `Xib`或者 `StoryBoard` 中使用
-<img  width="80%" src="Images/xib01.png"/>
-<img  width="80%" src="Images/xib02.png"/>
-<img  width="80%" src="Images/xib03.png"/>
+<img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813292-421a3900-5843-11eb-9bd9-13a46ebcf015.png"/>
+<img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813294-447c9300-5843-11eb-9b31-29046218b913.png"/>
+<img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813295-45adc000-5843-11eb-8fa3-b8300a0ae03a.png"/>
 
 - 在 `Xib`或者 `StoryBoard` 中只需要上面的 `3 步`就可以让你的 `UICollectionView` 完美支持拖拽重排了。
 
 ### 使用纯代码实现
-<img  width="80%" src="Images/code01.png"/>
-<img  width="80%" src="Images/code02.png"/>
-<img  width="80%" src="Images/code03.png"/>
+
+<img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813262-0d0de680-5843-11eb-97d2-145527ffa90b.png"/>
+<img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813264-0f704080-5843-11eb-80c2-3e7a5e59bf65.png"/>
+<img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813266-113a0400-5843-11eb-9df7-4fb3ad14c752.png"/>
 <img  width="22%" src="https://user-images.githubusercontent.com/12118567/89103546-28c43280-d445-11ea-95ab-d599a0e5b41e.gif"/>
 
 - 在纯代码实现中只需要上面的 `3 步` 就可以让你的 `UICollectionView` 完美支持拖拽重排了。
