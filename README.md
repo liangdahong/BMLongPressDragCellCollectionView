@@ -14,6 +14,9 @@
 <a href="https://github.com/liangdahong/BMLongPressDragCellCollectionView/blob/master/LICENSE"><img src="https://img.shields.io/badge/licenses-MIT-red.svg"></a>
 </p>
 
+
+[**English version**](README-English.md)
+
 ## 介绍
 
 - 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，`iOS8+`，具体可查看代码。

@@ -14,6 +14,7 @@
 <a href="https://github.com/liangdahong/BMLongPressDragCellCollectionView/blob/master/LICENSE"><img src="https://img.shields.io/badge/licenses-MIT-red.svg"></a>
 </p>
 
+
 ## Introduction
 
 - This framework lets you easily add drag-and-drop rearrangement functionality similar to the Alipay app. It supports customization - check out the code for details. (`iOS 8+`)
@@ -27,11 +28,11 @@ pod install
 ```
 
 ## Installation (Manual)
-- Download the project `git clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git`
+- Download the project: `git clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git`
 - Drag and drop all the contents of the `BMLongPressDragCellCollectionView` folder to your project
 
 ## Usage
-1. `BMLongPressDragCellCollectionView` is a subclass of `UICollectionView`, so usage is the exact same as `UICollectionView`. Just replace `UICollectionView` with `BMLongPressDragCellCollectionView` in your Xib or StoryBoard.
+1. `BMLongPressDragCellCollectionView` is a subclass of `UICollectionView`, so usage is the exact same as `UICollectionView`. Just replace `UICollectionView` with `BMLongPressDragCellCollectionView` in your Xib or Storyboard.
 2. Replace your `UICollectionViewDataSource` with `MLongPressDragCellCollectionViewDataSource`
 3. Replace your `UICollectionViewDelegateFlowLayout` with `BMLongPressDragCellCollectionViewDelegate`
 4. Implement the data source method, which will be used internally to obtain the data source. **This is required.** The data structure of `NSArray< NSArray<id> *> *` is for the internal `cell` data source's sort processing.
@@ -64,12 +65,12 @@ Implementation:
 
 ## Usage screenshots
 
-### Xib or StoryBoard
+### Xib or Storyboard
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813292-421a3900-5843-11eb-9bd9-13a46ebcf015.png"/>
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813294-447c9300-5843-11eb-9b31-29046218b913.png"/>
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813295-45adc000-5843-11eb-8fa3-b8300a0ae03a.png"/>
 
-In a Xib or StoryBoard, you only need the above 3 steps to make your `UICollectionView` support drag and drop rearrangement perfectly.
+In a Xib or Storyboard, you only need the above 3 steps to make your `UICollectionView` support drag and drop rearrangement perfectly.
 
 
 ### Programmatically
