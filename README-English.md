@@ -15,13 +15,11 @@
 </p>
 
 
-[**English version**](README-English.md)
+## Introduction
 
-## 介绍
+- This framework lets you easily add drag-and-drop rearrangement functionality similar to the Alipay app. It supports customization - check out the code for details. (`iOS 8+`)
 
-- 本框架是一个让你轻松实现类似支付宝的拖拽重排功能，支持自定义，`iOS8+`，具体可查看代码。
-
-##  CocoaPods 安装
+## Installation (CocoaPods)
 
 ```ruby
 pod 'BMLongPressDragCellCollectionView'
@@ -29,21 +27,21 @@ pod install
 #import "BMLongPressDragCellCollectionView.h"
 ```
 
-##  手动安装
-- 下载项目 「 `clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git` 」
--  将 `BMLongPressDragCellCollectionView`  文件夹下的全部内容拖拽到你的项目。
+## Installation (Manual)
+- Download the project: `git clone https://github.com/liangdahong/BMLongPressDragCellCollectionView.git`
+- Drag and drop all the contents of the `BMLongPressDragCellCollectionView` folder to your project
 
-## 使用说明
-1. `BMLongPressDragCellCollectionView` 是继自 `UICollectionView` ，其使用方式和 `UICollectionView` 一致，只需要把 `UICollectionView` 修改为 `BMLongPressDragCellCollectionView` 即可【支持 Xib，StoryBoard】。
-2. 原来的 `UICollectionViewDataSource` 换为 B`MLongPressDragCellCollectionViewDataSource` 
-3. 原来的 `UICollectionViewDelegateFlowLayout` 换为 `BMLongPressDragCellCollectionViewDelegate`。
-4. 实现数据源方法，内部会使用此方法获取数据源，必须实现，之所以设计为  `NSArray< NSArray<id> *> *` 的数据结构是因为内部要对  `cell` 【数据源】做排序处理。
+## Usage
+1. `BMLongPressDragCellCollectionView` is a subclass of `UICollectionView`, so usage is the exact same as `UICollectionView`. Just replace `UICollectionView` with `BMLongPressDragCellCollectionView` in your Xib or Storyboard.
+2. Replace your `UICollectionViewDataSource` with `MLongPressDragCellCollectionViewDataSource`
+3. Replace your `UICollectionViewDelegateFlowLayout` with `BMLongPressDragCellCollectionViewDelegate`
+4. Implement the data source method, which will be used internally to obtain the data source. **This is required.** The data structure of `NSArray< NSArray<id> *> *` is for the internal `cell` data source's sort processing.
 
 ```
 - (NSArray< NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView;
 ```
 
-如下：
+Implementation:
 
 ```
 - (NSArray<NSArray<id> *> *)dataSourceWithDragCellCollectionView:(__kindof BMLongPressDragCellCollectionView *)dragCellCollectionView {
@@ -51,12 +49,13 @@ pod install
 }
 ```
 
-5. 实现代理方法，当 Cell 有交换时调用，需要外面保存最新的数据源【如果有交换时，数据源已经更新】，必须实现。
+5. Implement the proxy method, which is called when a `cell` is swapped with another `cell`. The latest data source needs to be saved outside (If there is an exchange, the data source is updated). **This is also required.**
 
 ```
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray< NSArray<id> *> *)newDataArray;
 ```
-如下：
+
+Implementation:
 
 ```
 - (void)dragCellCollectionView:(BMLongPressDragCellCollectionView *)dragCellCollectionView newDataArrayAfterMove:(nullable NSArray< NSArray<id> *> *)newDataArray {
@@ -64,52 +63,50 @@ pod install
 }
 ```
 
-## 图文演示
+## Usage screenshots
 
-### 在 `Xib`或者 `StoryBoard` 中使用
+### Xib or Storyboard
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813292-421a3900-5843-11eb-9bd9-13a46ebcf015.png"/>
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813294-447c9300-5843-11eb-9b31-29046218b913.png"/>
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813295-45adc000-5843-11eb-8fa3-b8300a0ae03a.png"/>
 
-- 在 `Xib`或者 `StoryBoard` 中只需要上面的 `3 步`就可以让你的 `UICollectionView` 完美支持拖拽重排了。
+In a Xib or Storyboard, you only need the above 3 steps to make your `UICollectionView` support drag and drop rearrangement perfectly.
 
-### 使用纯代码实现
+
+### Programmatically
 
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813262-0d0de680-5843-11eb-97d2-145527ffa90b.png"/>
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813264-0f704080-5843-11eb-80c2-3e7a5e59bf65.png"/>
 <img  width="80%" src="https://user-images.githubusercontent.com/12118567/104813266-113a0400-5843-11eb-9df7-4fb3ad14c752.png"/>
 <img  width="22%" src="https://user-images.githubusercontent.com/12118567/89103546-28c43280-d445-11ea-95ab-d599a0e5b41e.gif"/>
 
-- 在纯代码实现中只需要上面的 `3 步` 就可以让你的 `UICollectionView` 完美支持拖拽重排了。
+Programmatically, you only need the above 3 steps to make your `UICollectionView` support drag and drop rearrangement perfectly.
 
-## 更多自定义方案
+## Customization
 
-如果要做一些自定义的操作可以通过设置 `BMLongPressDragCellCollectionView` 的相关属性或者实现一些特定的协议方法来处理，可查看 `BMLongPressDragCellCollectionView` 的头文件和 `BMLongPressDragCellCollectionViewDelegate` 与 `BMLongPressDragCellCollectionViewDataSource` 协议。
+If you want to add custom behavior, you can set the relevant properties of `BMLongPressDragCellCollectionView` or implement some specific protocol methods (find them in the header file of `BMLongPressDragCellCollectionView` and the protocol of `BMLongPressDragCellCollectionViewDelegate` and `BMLongPressDragCellCollectionViewDataSource`)
 
-## 联系
-- 欢迎 [issues](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) 和 [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
-- 也可以添加微信<img width="20%" src="https://user-images.githubusercontent.com/12118567/86319172-72fb9d80-bc66-11ea-8c6e-8127f9e5535f.jpg"/> 进微信交流群。
+## Contact
+- Please raise an [issue](https://github.com/liangdahong/BMLongPressDragCellCollectionView/issues) or make a [PR](https://github.com/liangdahong/BMLongPressDragCellCollectionView/pulls)
+- Check out our WeChat group <img width="20%" src="https://user-images.githubusercontent.com/12118567/86319172-72fb9d80-bc66-11ea-8c6e-8127f9e5535f.jpg"/>
 
-## 其他
+## Other
 
-- 定个小目标 😂 2020年08月05日 纯 Swift 正在计划中... 
+- A pure Swift rewrite is planned for August 5, 2020...
 
-## 感谢
+## Credits
 
-- 核心实现参考自[XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView) 特别感谢。
+- The core implementation is based off [XWDragCellCollectionView](https://github.com/wazrx/XWDragCellCollectionView). Special thanks!
 
-## 相关推荐
+## Tips
 
-- 🖖高性能的自动计算采用 Autolayout 布局的 UITableViewCell 和 UITableViewHeaderFooterView 的高度，内部自动管理高度缓存。
-[https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight)
+- 🖖 Use a high-performance auto-height for `UITableViewCell` and `UITableViewHeaderFooterView`. An [internal height cache](https://github.com/liangdahong/UITableViewDynamicLayoutCacheHeight) is also automatically managed.
 
 ## License    
 BMLongPressDragCellCollectionView is released under the [MIT license](LICENSE). See LICENSE for details.
 
-## 广告时间 😁，下面是我开发的几款小程序，感兴趣的可以看看，点点广告就更好了，哈哈哈~~~
-- 便捷的日历小程序，支持节假日，调休等
-- ![rl](https://user-images.githubusercontent.com/12118567/109082668-64a34a00-773f-11eb-93cd-bc83b55fd846.jpg)
----
-- 便捷的工资扣税计算器。
-- ![jsq](https://user-images.githubusercontent.com/12118567/109082681-6836d100-773f-11eb-9700-c8d217ccdbd5.jpg)
----
+## Self-promo time! Here's some of my other programs. If you're interested, please check them out!
+
+Convenient calendar app, supports holidays, breaks, etc | Convenient payroll tax cut calculator
+--- | ---
+![rl](https://user-images.githubusercontent.com/12118567/109082668-64a34a00-773f-11eb-93cd-bc83b55fd846.jpg) | ![jsq](https://user-images.githubusercontent.com/12118567/109082681-6836d100-773f-11eb-9700-c8d217ccdbd5.jpg)
