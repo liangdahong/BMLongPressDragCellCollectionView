@@ -33,7 +33,7 @@ pod install
 
 ## Usage
 1. `BMLongPressDragCellCollectionView` is a subclass of `UICollectionView`, so usage is the exact same as `UICollectionView`. Just replace `UICollectionView` with `BMLongPressDragCellCollectionView` in your Xib or Storyboard.
-2. Replace your `UICollectionViewDataSource` with `MLongPressDragCellCollectionViewDataSource`
+2. Replace your `UICollectionViewDataSource` with `BMLongPressDragCellCollectionViewDataSource`
 3. Replace your `UICollectionViewDelegateFlowLayout` with `BMLongPressDragCellCollectionViewDelegate`
 4. Implement the data source method, which will be used internally to obtain the data source. **This is required.** The data structure of `NSArray< NSArray<id> *> *` is for the internal `cell` data source's sort processing.
 
