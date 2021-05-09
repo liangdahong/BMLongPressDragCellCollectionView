@@ -35,7 +35,7 @@ pod install
 
 ## 使用说明
 1. `BMLongPressDragCellCollectionView` 是继自 `UICollectionView` ，其使用方式和 `UICollectionView` 一致，只需要把 `UICollectionView` 修改为 `BMLongPressDragCellCollectionView` 即可【支持 Xib，StoryBoard】。
-2. 原来的 `UICollectionViewDataSource` 换为 B`MLongPressDragCellCollectionViewDataSource` 
+2. 原来的 `UICollectionViewDataSource` 换为 `BMLongPressDragCellCollectionViewDataSource` 
 3. 原来的 `UICollectionViewDelegateFlowLayout` 换为 `BMLongPressDragCellCollectionViewDelegate`。
 4. 实现数据源方法，内部会使用此方法获取数据源，必须实现，之所以设计为  `NSArray< NSArray<id> *> *` 的数据结构是因为内部要对  `cell` 【数据源】做排序处理。
 
