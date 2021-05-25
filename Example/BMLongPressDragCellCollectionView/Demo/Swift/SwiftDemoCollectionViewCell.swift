@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class SwiftDemoCollectionViewCell: UICollectionViewCell {
-
+    
     var descLabel = UILabel()
 
     var desc: String? {
@@ -23,7 +23,7 @@ class SwiftDemoCollectionViewCell: UICollectionViewCell {
     }
     
     override init(frame: CGRect) {
-        super.init(frame: .zero)
+        super.init(frame: frame)
         contentView.addSubview(descLabel)
         descLabel.backgroundColor = .init(red: 0, green: 0, blue: 0, alpha: 0.2)
         descLabel.textAlignment = .center

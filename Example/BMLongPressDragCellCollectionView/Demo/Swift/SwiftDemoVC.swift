@@ -9,14 +9,14 @@
 import UIKit
 
 
-
 // ---------------------------------------------------------
 // MARK: - SwiftDemoVC
 // ---------------------------------------------------------
+
 class SwiftDemoVC: UIViewController {
     
     @IBOutlet weak var collectionView: BMLongPressDragCellCollectionView!
-    var dataSourceArray = [(1...10).map { $0 }]
+    var dataSourceArray = [(1...100).map { $0 }]
 }
 
 
@@ -49,18 +49,13 @@ extension SwiftDemoVC : BMLongPressDragCellCollectionViewDataSource {
 extension SwiftDemoVC : BMLongPressDragCellCollectionViewDelegate {
     
     func dragCellCollectionView(_ dragCellCollectionView: BMLongPressDragCellCollectionView, newDataArrayAfterMove newDataArray: [[Any]]?) {
-        if let arr = newDataArray as? [[Int]] {
-            dataSourceArray = arr
-        }
+        dataSourceArray = newDataArray as! [[Int]]
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = SwiftDemoCollectionViewCell.bm_collectionViewCellFromAlloc(with: collectionView, for: indexPath)
-        if let cell1 = cell {
-            let num = dataSourceArray[indexPath.section][indexPath.item]
-            cell1.desc = "\(num)"
-            return cell1
-        }
-        return UICollectionViewCell()
+        let cell = SwiftDemoCollectionViewCell.bm_collectionViewCellFromAlloc(with: collectionView, for: indexPath)!
+        let num = dataSourceArray[indexPath.section][indexPath.item]
+        cell.desc = "\(num)"
+        return cell
     }
 }

@@ -305,8 +305,8 @@
 			isa = PBXGroup;
 			children = (
 				0529D6FE2493795300EA22B9 /* BMAlipayVC.h */,
-				0529D6FF2493795300EA22B9 /* BMAlipayVC.xib */,
 				0529D7002493795300EA22B9 /* BMAlipayVC.m */,
+				0529D6FF2493795300EA22B9 /* BMAlipayVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -799,6 +799,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BMLongPressDragCellCollectionView_Example/Pods-BMLongPressDragCellCollectionView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMLeaksFinder/AMLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/BMLongPressDragCellCollectionView/BMLongPressDragCellCollectionView.framework",
 				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -809,6 +810,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMLongPressDragCellCollectionView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",

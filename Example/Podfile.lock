@@ -1,4 +1,5 @@
 PODS:
+  - AMLeaksFinder (1.2.9)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -22,6 +23,7 @@ PODS:
   - WMPageController (2.3.0)
 
 DEPENDENCIES:
+  - AMLeaksFinder
   - BlocksKit (= 2.2.5)
   - BMLongPressDragCellCollectionView (from `../`)
   - Masonry
@@ -32,6 +34,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AMLeaksFinder
     - BlocksKit
     - Masonry
     - SnapKit
@@ -44,6 +47,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AMLeaksFinder: e017afe425bba794d61dd84eacbd75f976ae68e3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   BMLongPressDragCellCollectionView: 99f224009d4137999b35b8a810a54edc8b34eb85
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -52,6 +56,6 @@ SPEC CHECKSUMS:
   UICollectionViewDynamicLayoutCacheSize: 647ec45e5e90a7354cc44ef31ea44cdf648df287
   WMPageController: 9f219bb8912a1a1f51af11fde61e2682a7b7e7f2
 
-PODFILE CHECKSUM: 912a7db83ceede4158dfe7662553b39d33e94e4a
+PODFILE CHECKSUM: b30952c3f7b7e4c34be6414c321455c113dc5622
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
